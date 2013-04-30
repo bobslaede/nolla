@@ -1,0 +1,6 @@
+node_modules
+public/app/dist
+.tmp
+.sass-cache
+public/app/components
+.idea
