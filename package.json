@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
+    "pretest": "./node_modules/bower/bin/bower install",
     "test": "grunt test"
   },
   "main": "app.js",
@@ -43,7 +44,8 @@
     "matchdep": "~0.1.1",
     "grunt-google-cdn": "~0.1.1",
     "grunt-ngmin": "~0.0.2",
-    "grunt-mocha-cli": "~1.0.3"
+    "grunt-mocha-cli": "~1.0.3",
+    "bower": "~0.9.2"
   },
   "engines": {
     "node": ">=0.8.0"
