@@ -1,14 +1,16 @@
 {
-  "name": "vixi",
+  "name": "nolla",
   "version": "0.0.0",
-  "appPath" : "public/app",
+  "appPath": "public/app",
   "dependencies": {
     "angular": "~1.0.5",
     "json3": "~3.2.4",
     "es5-shim": "~2.0.8",
     "angular-resource": "~1.0.5",
     "angular-cookies": "~1.0.5",
-    "angular-sanitize": "~1.0.5"
+    "angular-sanitize": "~1.0.5",
+    "angular-ui-router": "latest",
+    "jquery": "~2.0.0"
   },
   "devDependencies": {
     "angular-mocks": "~1.0.5",

@@ -15,7 +15,7 @@ module.exports = {
     views : {
       path : 'public/app/templates',
       engine: {
-        module: 'handlebars'
+        module: 'ejs'
       }
     }
   }
