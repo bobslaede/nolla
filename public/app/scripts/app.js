@@ -8,12 +8,12 @@ angular.module('nolla', ['ui.compat'])
 
     $stateProvider
       .state('clients', {
-        url :'/',
+        url : '/',
         templateUrl : '/public/app/views/main.html'
-      })
+      });
 
   }])
-  .run(function($rootScope, $state, $stateParams) {
+  .run(function ($rootScope, $state, $stateParams) {
     $rootScope.$state = $state;
     $rootScope.$stateParams = $stateParams;
   });

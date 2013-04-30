@@ -9,8 +9,7 @@
     "angular-resource": "~1.0.5",
     "angular-cookies": "~1.0.5",
     "angular-sanitize": "~1.0.5",
-    "angular-ui-router": "latest",
-    "jquery": "~2.0.0"
+    "angular-ui-router": "latest"
   },
   "devDependencies": {
     "angular-mocks": "~1.0.5",

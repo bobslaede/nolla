@@ -26,6 +26,9 @@ module.exports = function (grunt) {
     yeoman: yeomanConfig,
     pkg: grunt.file.readJSON('package.json'),
     serverConfig : serverConfig,
+    'bower-install' : {
+      html : 'public/app/index.html'
+    },
     develop: {
       server: {
         file: '<%= pkg.main %>'
@@ -259,6 +262,7 @@ module.exports = function (grunt) {
 
   grunt.registerTask('server', [
     'clean:server',
+    'bower-install',
     'compass:server',
     'livereload-start',
     'develop',
@@ -268,6 +272,7 @@ module.exports = function (grunt) {
 
   grunt.registerTask('test', [
     'clean:server',
+    'bower-install',
     'mochacli',
     'compass',
     'connect:test',
@@ -276,6 +281,7 @@ module.exports = function (grunt) {
 
   grunt.registerTask('build', [
     'clean:dist',
+    'bower-install',
     'jshint',
     'test',
     'compass:dist',
