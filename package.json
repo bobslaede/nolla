@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "test": "grunt test"
+    "test": "./node_modules/grunt/lib/grunt grunt test"
   },
   "main": "app.js",
   "dependencies": {
