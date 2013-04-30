@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "pretest": "./node_modules/bower/bin/bower install",
+    "pretest": "bower install",
     "test": "grunt test"
   },
   "main": "app.js",
