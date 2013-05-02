@@ -26,8 +26,12 @@ module.exports = function (grunt) {
     yeoman: yeomanConfig,
     pkg: grunt.file.readJSON('package.json'),
     serverConfig : serverConfig,
-    'bower-install' : {
-      html : 'public/app/index.html'
+    bower : {
+      install : {
+        options : {
+          targetDir : '<%= yeoman.app %>/lib'
+        }
+      }
     },
     develop: {
       server: {
@@ -260,9 +264,9 @@ module.exports = function (grunt) {
 
   grunt.renameTask('regarde', 'watch');
 
+
   grunt.registerTask('server', [
     'clean:server',
-    'bower-install',
     'compass:server',
     'livereload-start',
     'develop',
@@ -272,7 +276,7 @@ module.exports = function (grunt) {
 
   grunt.registerTask('test', [
     'clean:server',
-    'bower-install',
+    'bower',
     'mochacli',
     'compass',
     'connect:test',
@@ -281,7 +285,7 @@ module.exports = function (grunt) {
 
   grunt.registerTask('build', [
     'clean:dist',
-    'bower-install',
+    'bower',
     'jshint',
     'test',
     'compass:dist',
@@ -296,6 +300,11 @@ module.exports = function (grunt) {
     'uglify',
     'rev',
     'usemin'
+  ]);
+
+  grunt.registerTask('build-dev', [
+    'clean:server',
+    'bower'
   ]);
 
   grunt.registerTask('default', ['build']);
