@@ -1,0 +1,9 @@
+{
+  "name": "angular-ui-router",
+  "version": "0.0.0",
+  "commit": "b1db79a2907f41a67baa80db884885c952d3f224",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/angular-ui/ui-router"
+  }
+}

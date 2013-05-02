@@ -92,11 +92,18 @@ module.exports = function (grunt) {
             '.tmp',
             '.sass-cache',
             '<%= yeoman.dist %>/*',
-            '!<%= yeoman.dist %>/.git*'
+            '!<%= yeoman.dist %>/.git*',
+            '<%= yeoman.app %>/lib'
           ]
         }]
       },
-      server: '.tmp'
+      server: {
+        files: [{
+          src: [
+            '.tmp'
+          ]
+        }]
+      }
     },
     jshint: {
       options: {
@@ -204,11 +211,6 @@ module.exports = function (grunt) {
         }]
       }
     },
-    cdnify: {
-      dist: {
-        html: ['<%= yeoman.dist %>/*.html']
-      }
-    },
     ngmin: {
       dist: {
         files: [{
@@ -295,7 +297,6 @@ module.exports = function (grunt) {
     'htmlmin',
     'concat',
     'copy',
-   // 'cdnify',
     'ngmin',
     'uglify',
     'rev',
