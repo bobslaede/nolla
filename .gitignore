@@ -1,6 +1,5 @@
 node_modules
 public/app/dist
-.tmp
-.sass-cache
 public/app/components
+public/app/lib
 .idea/workspace.xml

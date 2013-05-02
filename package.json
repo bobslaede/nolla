@@ -43,7 +43,8 @@
     "grunt-ngmin": "~0.0.2",
     "grunt-mocha-cli": "~1.0.3",
     "grunt-bower": "~0.5.1",
-    "grunt-bower-task": "~0.2.2"
+    "grunt-bower-task": "~0.2.2",
+    "grunt-contrib-less": "~0.5.1"
   },
   "engines": {
     "node": ">=0.10.5"
