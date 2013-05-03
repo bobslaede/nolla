@@ -122,7 +122,7 @@ module.exports = function (grunt) {
     },
     mochacli : {
       options : {
-        reporter : 'nyan',
+        reporter : 'dot',
         bail : true
       },
       all : ['test/*.js']
