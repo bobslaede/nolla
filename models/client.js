@@ -7,6 +7,8 @@ require('./journal-entry');
 require('./app');
 require('./user');
 
+var meta = require('./meta-schema');
+
 var contactInfo = new Schema({
   type: String,
   contact: String
@@ -17,10 +19,7 @@ var schema = new Schema({
     type: Schema.Types.ObjectId,
     ref: 'App'
   },
-  owner: {
-    type: Schema.Types.ObjectId,
-    ref: 'User'
-  },
+  meta: [meta],
   firstName: String,
   lastName: String,
   ssno: String,
@@ -34,7 +33,7 @@ var schema = new Schema({
     subsidy: Number,
     notes: String
   },
-  journals: [
+  journalEntries: [
     {
       type: Schema.Types.ObjectId,
       ref: 'JournalEntry'

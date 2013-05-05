@@ -1,34 +1,48 @@
 'use strict';
 
-var serverConf = require('./config/server');
-var pluginsConf = require('./config/plugins');
+var config = require('./config');
+var express = require('express');
+var http = require('http');
+var path = require('path');
+var routes = require('./routes');
 var mongoose = require('mongoose');
+var passport = require('passport');
+
 mongoose.connect('mongodb://localhost/nolla');
 
-var db = mongoose.connection;
-db.on('error', function (err) {
-  console.error(err);
+var MongoStore = require('connect-mongo')(express);
+
+var app = express();
+
+app.configure(function () {
+  app.set('port', process.env.PORT || config.port);
+  app.set('views', __dirname + '/views');
+  app.set('view engine', 'hbs');
+  app.use(express.favicon());
+  app.use(express.logger('dev'));
+  app.use(express.bodyParser());
+  app.use(express.cookieParser());
+  app.use(express.session({
+    secret: config.secret,
+    store : new MongoStore({
+      'mongoose_connection' : mongoose.connection
+    })
+  }));
+  app.use(express.methodOverride());
+
+  app.use(passport.initialize());
+  app.use(passport.session());
+
+  app.use(app.router);
+  app.use(express.static(path.join(__dirname, 'public')));
 });
-db.once('open', function () {
-  console.log('yyeeehhhaa');
+
+app.configure('development', function () {
+  app.use(express.errorHandler());
 });
 
-var Hapi = require('hapi');
+routes.initialize(app);
 
-var server = new Hapi.server(serverConf.hostname, serverConf.port, serverConf.options);
-
-server.plugin.allow({
-    ext: true
-  })
-  .require(pluginsConf, function (err) {
-    if (err) {
-      throw err;
-    }
-  });
-
-require('./models').initialize(server);
-require('./routes').initialize(server);
-
-server.start(function () {
-  console.log('server has started on port: %d', serverConf.port);
+http.createServer(app).listen(app.get('port'), function () {
+  console.log('Express server listening on port ' + app.get('port'));
 });

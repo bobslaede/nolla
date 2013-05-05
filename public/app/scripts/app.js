@@ -9,7 +9,7 @@ angular.module('nolla', ['ui.compat'])
     $stateProvider
       .state('clients', {
         url : '/',
-        templateUrl : '/public/app/views/main.html'
+        templateUrl : '/app/views/main.html'
       });
 
   }])

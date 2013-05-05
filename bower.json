@@ -3,17 +3,18 @@
   "version": "0.0.0",
   "appPath": "public/app",
   "dependencies": {
-    "angular": "~1.0.5",
-    "angular-resource": "~1.0.5",
-    "angular-cookies": "~1.0.5",
-    "angular-sanitize": "~1.0.5",
-    "angular-ui-router": "latest",
-    "jquery": "~2.0.0",
-    "lodash": "~1.2.1"
+    "angular": "git://github.com/angular/bower-angular.git#~1.0.6",
+    "angular-resource": "git://github.com/angular/bower-angular-resource.git#~1.0.6",
+    "angular-cookies": "git://github.com/angular/bower-angular-cookies.git#~1.0.6",
+    "angular-sanitize": "git://github.com/angular/bower-angular-sanitize.git#~1.0.6",
+    "angular-ui-router": "git://github.com/angular-ui/ui-router",
+    "jquery": "git://github.com/components/jquery.git#~2.0.0",
+    "lodash": "git://github.com/bestiejs/lodash.git#~1.2.1",
+    "restangular": "git://github.com/mgonto/restangular#~0.6.2"
   },
   "devDependencies": {
-    "angular-mocks": "~1.0.5",
-    "angular-scenario": "~1.0.5"
+    "angular-mocks": "git://github.com/angular/bower-angular-mocks.git#~1.0.6",
+    "angular-scenario": "git://github.com/angular/bower-angular-scenario.git#~1.0.6"
   },
   "ignore": [
     "**/.*",

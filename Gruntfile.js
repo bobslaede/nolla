@@ -6,7 +6,7 @@ var mountFolder = function (connect, dir) {
   return connect.static(require('path').resolve(dir));
 };
 
-var serverConfig = require('./config/server');
+var serverConfig = require('./config');
 
 module.exports = function (grunt) {
   // load all grunt tasks
@@ -50,7 +50,7 @@ module.exports = function (grunt) {
           'routes/*.js',
           'models/*.js'
         ],
-        tasks: ['develop']
+        tasks: ['develop', 'delayed-livereload']
       },
       livereload: {
         files: [
@@ -250,6 +250,14 @@ module.exports = function (grunt) {
         }]
       }
     }
+  });
+
+  grunt.registerTask('delayed-livereload', 'delayed livereload', function () {
+    var done = this.async();
+    setTimeout(function () {
+      grunt.task.run('livereload');
+      done();
+    }, 500);
   });
 
   grunt.renameTask('regarde', 'watch');

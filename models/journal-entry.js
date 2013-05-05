@@ -3,15 +3,12 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
-require('./user');
+var meta = require('./meta-schema');
 
 var schema = new Schema({
   date: Date,
   entry: String,
-  owner: {
-    type: Schema.Types.ObjectId,
-    ref: 'User'
-  }
+  meta: [meta]
 });
 
 var model = mongoose.model('JournalEntry', schema);
