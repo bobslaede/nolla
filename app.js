@@ -1,6 +1,17 @@
+'use strict';
 
 var serverConf = require('./config/server');
 var pluginsConf = require('./config/plugins');
+var mongoose = require('mongoose');
+mongoose.connect('mongodb://localhost/nolla');
+
+var db = mongoose.connection;
+db.on('error', function (err) {
+  console.error(err);
+});
+db.once('open', function () {
+  console.log('yyeeehhhaa');
+});
 
 var Hapi = require('hapi');
 
@@ -9,80 +20,15 @@ var server = new Hapi.server(serverConf.hostname, serverConf.port, serverConf.op
 server.plugin.allow({
     ext: true
   })
-  .require(pluginsConf, function(err) {
+  .require(pluginsConf, function (err) {
     if (err) {
       throw err;
     }
   });
 
-var Passport = server.plugins.travelogue.passport;
+require('./models').initialize(server);
+require('./routes').initialize(server);
 
-var GoogleStrategy = require('passport-google-oauth').OAuth2Strategy;
-
-Passport.use(new GoogleStrategy(serverConf.google,
-  function(accessToken, refreshToken, profile, done) {
-    console.log(profile);
-    done(null, profile);
-  }
-));
-
-server.addRoute({
-  method: 'GET',
-  path: serverConf.urls.failureRedirect,
-  config: {
-    handler: function (request) {
-      Passport.authenticate('google', {
-        scope : ['email', 'profile']
-      })(request);
-    }
-  }
-});
-
-server.addRoute({
-  method: 'GET',
-  path: '/auth/google/callback',
-  config: {
-    handler: function (request) {
-
-      Passport.authenticate('google', {
-        failureRedirect: serverConf.urls.failureRedirect,
-        successRedirect: serverConf.urls.successRedirect,
-        failureFlash: true
-      })(request, function () {
-        return request.reply.redirect('/').send();
-      });
-
-    }
-  }
-});
-
-server.addRoute({
-  method: 'GET',
-  path : '/public/{path*}',
-  config : {
-    handler : {
-      directory : {
-        path : './public',
-        listing : true,
-        index : true
-      }
-    }
-  }
-})
-
-server.addRoute({
-  method : 'GET',
-  path : '/app/',
-  config : {
-    handler : function(request) {
-      var response = request.reply.view('index.html', {
-        world : 'foobar'
-      });
-      response.send();
-    }
-  }
-});
-
-server.start(function() {
+server.start(function () {
   console.log('server has started on port: %d', serverConf.port);
 });
