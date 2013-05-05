@@ -15,10 +15,6 @@ var contactInfo = new Schema({
 });
 
 var schema = new Schema({
-  app: {
-    type: Schema.Types.ObjectId,
-    ref: 'App'
-  },
   meta: [meta],
   firstName: String,
   lastName: String,

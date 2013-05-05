@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('nolla', ['ui.compat'])
+angular.module('nolla', ['ui.compat', 'restangular'])
   .config(['$routeProvider', '$stateProvider', '$urlRouterProvider', function ($routeProvider, $stateProvider, $urlRouterProvider) {
 
     $urlRouterProvider
