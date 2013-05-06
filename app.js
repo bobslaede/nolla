@@ -8,7 +8,14 @@ var routes = require('./routes');
 var mongoose = require('mongoose');
 var passport = require('passport');
 
-mongoose.connect('mongodb://localhost/nolla');
+mongoose.connect(config.db);
+var db = mongoose.connection;
+db.on('error', function(err) {
+  console.warn('database error: %s', err);
+})
+db.once('open', function() {
+  console.info('database is connected');
+})
 
 var MongoStore = require('connect-mongo')(express);
 
