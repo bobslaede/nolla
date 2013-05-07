@@ -1,0 +1,25 @@
+
+<nav>
+  <ul>
+    <li ng-class="{ active : $state.includes('app.clients') }">
+      <a href="#/clients/{{ $stateParams.clientId }}">clients</a>
+    </li>
+    <li ng-class="{ active : $state.includes('app.journals') }">
+      <a href="#/journals/{{ $stateParams.clientId }}">journals</a>
+    </li>
+  </ul>
+</nav>
+  <p>{{$state.current | json}}</p>
+  <p>{{$stateParams | json}}</p>
+<nav>
+  <ul>
+    <li ng-repeat="client in clients">
+      <a href="#/{{currentPath}}/{{client._id}}">{{client.firstName}} -- </a>
+    </li>
+  </ul>
+</nav>
+
+<div class="main">
+  <ui-view></ui-view>
+</div>
+

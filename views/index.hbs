@@ -12,11 +12,17 @@
   <!-- build:css(/) styles/main.css -->
   <link rel="stylesheet" href="/app/styles/main.css">
   <!-- endbuild -->
+  <style>
+    .active {
+      border: 2px solid lime;
+    }
+  </style>
 </head>
 <body ng-app="nolla">
 
-<!-- Add your site or application content here -->
-<div class="container" ng-view></div>
+<div class="app" ng-controller="AppCtrl">
+  <div class="container" ui-view></div>
+</div>
 
 <!-- build:js(/) scripts/libs.js -->
 <script src="/app/components/lodash/dist/lodash.js"></script>
@@ -30,7 +36,10 @@
 <!-- endbuild -->
 <!-- build:js(/) scripts/app.js -->
 <script src="/app/scripts/app.js"></script>
+<script src="/app/scripts/controllers/app.js"></script>
 <script src="/app/scripts/controllers/main.js"></script>
+<script src="/app/scripts/controllers/home.js"></script>
+<script src="/app/scripts/controllers/client.js"></script>
 <!-- endbuild -->
 
 </body>

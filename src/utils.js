@@ -13,9 +13,25 @@ module.exports.findModelFromCollection = function (collection) {
   return false;
 };
 
+/**
+ * Get the current users apps, if given index, return only that app
+ * @param user
+ * @param {Int} index
+ * @returns {Mixed} Object/Array
+ */
+module.exports.getUserApps = function (user, index) {
+  var apps = user.apps;
+  if (index !== undefined) {
+    return apps[index];
+  } else {
+    return apps;
+  }
+};
+
 module.exports.createSearchMetaData = function (user, appIndex) {
   var ret = {};
-  var app = user.apps[appIndex];
+  var app = user.apps[appIndex || 0];
   ret['meta.app'] = app._id;
   return ret;
 };
+

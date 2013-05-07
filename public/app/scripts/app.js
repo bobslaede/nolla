@@ -1,18 +1,38 @@
 'use strict';
 
 angular.module('nolla', ['ui.compat', 'restangular'])
-  .config(['$routeProvider', '$stateProvider', '$urlRouterProvider', function ($routeProvider, $stateProvider, $urlRouterProvider) {
+  .config(function ($routeProvider, $stateProvider, $urlRouterProvider, RestangularProvider) {
 
-    $urlRouterProvider
-      .otherwise('/');
+    RestangularProvider.setBaseUrl('/api');
+    RestangularProvider.setRestangularFields({
+      id: '_id'
+    });
 
     $stateProvider
-      .state('clients', {
+      .state('app', {
+        abstract: true,
+        templateUrl : '/app/views/index.html',
+        controller : 'MainCtrl'
+      })
+      .state('app.home', {
         url : '/',
-        templateUrl : '/app/views/main.html'
+        urlPath : '',
+        templateUrl : '/app/views/home.html',
+        controller : 'HomeCtrl'
+      })
+      .state('app.clients', {
+        url : '/clients/{clientId}',
+        urlPath : 'clients',
+        templateUrl : '/app/views/client.html',
+        controller : 'ClientCtrl'
+      })
+      .state('app.journals', {
+        url : '/journals/{clientId}',
+        urlPath : 'journals',
+        template : '<p>journals</p>'
       });
 
-  }])
+  })
   .run(function ($rootScope, $state, $stateParams) {
     $rootScope.$state = $state;
     $rootScope.$stateParams = $stateParams;
