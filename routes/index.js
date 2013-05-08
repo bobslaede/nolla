@@ -55,21 +55,21 @@ module.exports = {
 
     var rest = restMiddleware();
 
-    rest.addPreFilter('*', 'users', function (req, res, search) {
-      var app = utils.getUserApps(req.user, req.session.activeApp);
-      search.apps = app._id;
-    });
-
-    rest.addPreFilter('*', 'apps', function (req, res, search) {
-      search.users = req.user._id;
-    });
-
-    rest.addPreFilter('*', 'clients', function (req, res, search) {
+    rest.on('pre.*.clients', function(req, res, model, search) {
       var meta = utils.createSearchMetaData(req.user, req.session.activeApp);
       _.extend(search, meta);
     });
 
-    var createPreFilter = function (req, res, search, data) {
+    rest.on('pre.*.users', function(req, res, model, search) {
+      var app = utils.getUserApps(req.user, req.session.activeApp);
+      search.apps = app._id;
+    });
+
+    rest.on('pre.*.apps', function(req, res, model, search) {
+      search.users = req.user._id;
+    });
+
+    var createPreFilter = function (req, res, model, search, data) {
       var meta = utils.createSearchMetaData(req.user, req.session.activeApp);
       _.extend(search, meta);
       data.meta = {
@@ -79,11 +79,10 @@ module.exports = {
       };
     };
 
-    rest.addPreFilter('CREATE', 'clients', createPreFilter);
-    rest.addPreFilter('CREATE', 'journalentries', createPreFilter);
+    rest.on('pre.put.*', createPreFilter);
 
     app.use('/api', AuthController.ensureAuthenticated);
-    app.use('/api', rest.middleware);
+    app.use('/api', rest.getMiddleware());
 
   }
 };
