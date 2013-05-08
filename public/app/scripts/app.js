@@ -8,6 +8,9 @@ angular.module('nolla', ['ui.compat', 'restangular'])
       id: '_id'
     });
 
+    $urlRouterProvider
+      .otherwise('/');
+
     $stateProvider
       .state('app', {
         abstract: true,
@@ -23,6 +26,11 @@ angular.module('nolla', ['ui.compat', 'restangular'])
       .state('app.clients', {
         url : '/clients/{clientId}',
         urlPath : 'clients',
+        resolve : {
+          client : function(Restangular, $stateParams) {
+            return Restangular.one('clients', $stateParams.clientId).get()
+          }
+        },
         templateUrl : '/app/views/client.html',
         controller : 'ClientCtrl'
       })
