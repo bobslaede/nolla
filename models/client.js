@@ -15,7 +15,7 @@ var contactInfo = new Schema({
 });
 
 var schema = new Schema({
-  meta: [meta],
+  meta: meta,
   firstName: String,
   lastName: String,
   ssno: String,

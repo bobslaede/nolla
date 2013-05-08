@@ -72,10 +72,11 @@ module.exports = {
     var createPreFilter = function (req, res, search, data) {
       var meta = utils.createSearchMetaData(req.user, req.session.activeApp);
       _.extend(search, meta);
-      data.meta = [{
+      data.meta = {
         app : req.user.apps[req.session.activeApp]._id,
-        owner : req.user._id
-      }];
+        owner : req.user._id,
+        createdAt : Date.now()
+      };
     };
 
     rest.addPreFilter('CREATE', 'clients', createPreFilter);

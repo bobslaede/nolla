@@ -16,7 +16,8 @@
     "passport-google-oauth": "~0.1.5",
     "connect-mongo": "~0.3.2",
     "hbs": "~2.1.0",
-    "mers": "~0.6.1"
+    "mers": "~0.6.1",
+    "eventemitter2": "~0.4.11"
   },
   "devDependencies": {
     "grunt": "~0.4.1",

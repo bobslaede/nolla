@@ -5,10 +5,16 @@ var Schema = mongoose.Schema;
 
 var meta = require('./meta-schema');
 
+require('./client');
+
 var schema = new Schema({
   date: Date,
   entry: String,
-  meta: [meta]
+  meta: meta,
+  client : {
+    type : Schema.Types.ObjectId,
+    ref : 'Client'
+  }
 });
 
 var model = mongoose.model('JournalEntry', schema);

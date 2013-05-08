@@ -6,7 +6,7 @@ var Schema = mongoose.Schema;
 require('./app');
 require('./user');
 
-var schema = new Schema({
+var schema = {
   owner: {
     type: Schema.Types.ObjectId,
     ref: 'User'
@@ -14,7 +14,10 @@ var schema = new Schema({
   app : {
     type: Schema.Types.ObjectId,
     ref: 'App'
+  },
+  createdAt : {
+    type : Date
   }
-});
+};
 
 module.exports = schema;
