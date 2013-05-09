@@ -1,9 +1,9 @@
 'use strict';
 
-angular.module('nolla').controller('MainCtrl', function ($scope, $state, Restangular, $stateParams) {
+angular.module('nolla').controller('MainCtrl', function ($scope, $state, Clients, $stateParams) {
 
   console.log('MainCtrl');
-  $scope.clients = Restangular.all('clients').getList();
+  $scope.clients = Clients.getList();
 
   $scope.$state = $state;
   $scope.model = {};

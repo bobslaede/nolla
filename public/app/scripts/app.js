@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('nolla', ['ui.compat', 'restangular'])
+angular.module('nolla', ['ui.compat', 'restangular', 'hashKeyCopier'])
   .config(function ($routeProvider, $stateProvider, $urlRouterProvider, RestangularProvider) {
 
     RestangularProvider.setBaseUrl('/api');
@@ -26,11 +26,6 @@ angular.module('nolla', ['ui.compat', 'restangular'])
       .state('app.clients', {
         url : '/clients/{clientId}',
         urlPath : 'clients',
-        resolve : {
-          client : function(Restangular, $stateParams) {
-            return Restangular.one('clients', $stateParams.clientId).get()
-          }
-        },
         templateUrl : '/app/views/client.html',
         controller : 'ClientCtrl'
       })

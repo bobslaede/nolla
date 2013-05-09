@@ -55,31 +55,36 @@ module.exports = {
 
     var rest = restMiddleware();
 
-    rest.on('pre.*.clients', function(req, res, model, search) {
+    rest.on('pre.*.clients', function (req, res, model, search) {
       var meta = utils.createSearchMetaData(req.user, req.session.activeApp);
       _.extend(search, meta);
     });
 
-    rest.on('pre.*.users', function(req, res, model, search) {
+    rest.on('pre.*.users', function (req, res, model, search) {
       var app = utils.getUserApps(req.user, req.session.activeApp);
       search.apps = app._id;
     });
 
-    rest.on('pre.*.apps', function(req, res, model, search) {
+    rest.on('pre.*.apps', function (req, res, model, search) {
       search.users = req.user._id;
     });
 
     var createPreFilter = function (req, res, model, search, data) {
       var meta = utils.createSearchMetaData(req.user, req.session.activeApp);
       _.extend(search, meta);
+      var app = utils.getUserApps(req.user, req.session.activeApp);
       data.meta = {
-        app : req.user.apps[req.session.activeApp]._id,
+        app : app._id,
         owner : req.user._id,
         createdAt : Date.now()
       };
     };
 
     rest.on('pre.put.*', createPreFilter);
+
+    rest.on('pre.update.*', function (req, res, model, search, data) {
+      delete data.meta;
+    });
 
     app.use('/api', AuthController.ensureAuthenticated);
     app.use('/api', rest.getMiddleware());

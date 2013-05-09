@@ -14,7 +14,7 @@
 <nav>
   <ul>
     <li ng-repeat="client in clients">
-      <a href="#/{{model.currentPath}}/{{client._id}}">{{client.firstName}} -- </a>
+      <a href="#/{{model.currentPath}}/{{client._id}}">{{client.firstName}} -- {{client.$$hashKey}}</a>
     </li>
   </ul>
 </nav>

@@ -18,37 +18,37 @@ var respondFromMongo = function (req, res, collection) {
     if (err !== null) {
       res.status(404).send(err);
     } else {
-      res.send(result);
+      res.send(result || []);
     }
   };
 };
 
 /*
-var createRoute = function (req, res, next) {
-  var collection = req.params.collection;
-  var Model = utils.findModelFromCollection(collection);
-  if (!Model) {
-    next();
-  } else {
-    var search = {};
-    var body = req.body;
-    var query = req.query;
-    var data = _.extend(query, body);
-    console.log('before', data);
-    getFilters('pre', collection, 'CREATE')(req, res, search, data);
-    console.log('after', data);
+ var createRoute = function (req, res, next) {
+ var collection = req.params.collection;
+ var Model = utils.findModelFromCollection(collection);
+ if (!Model) {
+ next();
+ } else {
+ var search = {};
+ var body = req.body;
+ var query = req.query;
+ var data = _.extend(query, body);
+ console.log('before', data);
+ getFilters('pre', collection, 'CREATE')(req, res, search, data);
+ console.log('after', data);
 
-    var model = new Model(data);
-    model.save(function (err) {
-      if (err !== null) {
-        res.status(500).send(err);
-      } else {
-        Model.findById(model, respondFromMongo(req, res, collection));
-      }
-    });
-  }
-};
-*/
+ var model = new Model(data);
+ model.save(function (err) {
+ if (err !== null) {
+ res.status(500).send(err);
+ } else {
+ Model.findById(model, respondFromMongo(req, res, collection));
+ }
+ });
+ }
+ };
+ */
 
 var Rester = function () {
 
@@ -56,6 +56,7 @@ var Rester = function () {
   this.router = new express.Router();
 
   this.router.route('GET', '/:collection', this.list.bind(this));
+
   this.router.route('GET', '/:collection/:id', this.one.bind(this));
 
   this.router.route('GET', '/:collection/create', this.put.bind(this));
@@ -65,20 +66,21 @@ var Rester = function () {
   this.router.route('GET', '/:collection/:id/update', this.update.bind(this));
   this.router.route('UPDATE', '/:collection/:id', this.update.bind(this));
   this.router.route('POST', '/:collection/:id', this.update.bind(this));
+  this.router.route('PUT', '/:collection/:id', this.update.bind(this));
   this.router.route('PATCH', '/:collection/:id', this.update.bind(this));
 
   this.router.route('DELETE', '/:collection/:id', this['delete'].bind(this));
 
 
-}
+};
 
 Rester.prototype = _.extend(Rester.prototype, new EventEmitter2({
-    wildcard : true
-  }), {
-  getMiddleware : function() {
+  wildcard: true
+}), {
+  getMiddleware: function () {
     return this.router.middleware;
   },
-  list : function (req, res, next) {
+  list: function (req, res, next) {
     console.log('get route', req.url);
     var collection = req.params.collection;
     var Model = utils.findModelFromCollection(collection);
@@ -92,21 +94,21 @@ Rester.prototype = _.extend(Rester.prototype, new EventEmitter2({
         .exec(respondFromMongo.call(this, req, res, collection));
     }
   },
-  one : function (req, res, next) {
+  one: function (req, res, next) {
     var collection = req.params.collection;
     var Model = utils.findModelFromCollection(collection);
     if (!Model) {
       next();
     } else {
       var search = {
-        _id : req.params.id
+        _id: req.params.id
       };
       this.emit('pre.get.' + collection, req, res, Model, search);
       Model.findOne(search)
         .exec(respondFromMongo.call(this, req, res, collection));
     }
   },
-  put : function (req, res, next) {
+  put: function (req, res, next) {
     var collection = req.params.collection;
     var Model = utils.findModelFromCollection(collection);
     if (!Model) {
@@ -129,19 +131,44 @@ Rester.prototype = _.extend(Rester.prototype, new EventEmitter2({
       });
     }
   },
-  update : function (req, res, next) {
+  update: function (req, res, next) {
+    var collection = req.params.collection;
+    var Model = utils.findModelFromCollection(collection);
+    if (!Model) {
+      next();
+    } else {
+      var search = {
+        _id: req.params.id
+      };
+      var body = req.body;
+      var query = req.query;
+      var data = _.extend(query, body);
 
+      this.emit('pre.update.' + collection, req, res, Model, search, data);
+      delete data.id;
+      delete data._id;
+      delete data.__v;
+
+      Model.update(search, { $set : data })
+        .exec(respondFromMongo.call(this, req, res, collection));
+    }
   },
-  'delete' : function (req, res, next) {
-
+  'delete': function (req, res, next) {
+    var collection = req.params.collection;
+    var Model = utils.findModelFromCollection(collection);
+    if (!Model) {
+      next();
+    } else {
+      var search = {
+        _id: req.params.id
+      };
+      this.emit('pre.delete.' + collection, req, res, Model, search);
+      Model.remove(search)
+        .exec(respondFromMongo.call(this, req, res, collection));
+    }
   }
-})
+});
 
-module.exports = function() {
+module.exports = function () {
   return new Rester();
-}
-
-
-
-
-
+};
