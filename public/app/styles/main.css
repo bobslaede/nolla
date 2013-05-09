@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700|Indie+Flower);
 /*!
  * Bootstrap v2.3.1
  *
@@ -7243,5 +7243,29 @@ body {
   display: block;
 }
 .client-list nav ul li.active a {
-  background: ;
+  background: rgba(119, 41, 83, 0.9);
+  color: #ffffff;
+}
+.home {
+  position: relative;
+  color: rgba(26, 26, 26, 0.1);
+  left: 50px;
+  top: 20px;
+  cursor: default;
+  pointer-events: none;
+  width: 170px;
+  height: 250px;
+}
+.home i {
+  font-size: 200px;
+  position: absolute;
+  left: 6px;
+  top: 0;
+}
+.home span {
+  font-size: 100px;
+  font-family: 'Indie Flower';
+  position: absolute;
+  left: 0px;
+  top: 210px;
 }
