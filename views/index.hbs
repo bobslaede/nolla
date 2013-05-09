@@ -1,8 +1,5 @@
 <!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<html ng-app="nolla">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -12,17 +9,10 @@
   <!-- build:css(/) styles/main.css -->
   <link rel="stylesheet" href="/app/styles/main.css">
   <!-- endbuild -->
-  <style>
-    .active {
-      border: 2px solid lime;
-    }
-  </style>
 </head>
-<body ng-app="nolla">
+<body>
 
-<div class="app" ng-controller="AppCtrl">
-  <div class="container" ui-view></div>
-</div>
+<div class="app" ng-controller="AppCtrl" ui-view></div>
 
 <!-- build:js(/) scripts/libs.js -->
 <script src="/app/components/lodash/dist/lodash.js"></script>

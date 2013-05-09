@@ -1,0 +1,33 @@
+.client-list {
+
+  width: 280px;
+  .flex-display(flex);
+  .flex-flow(column);
+
+
+  nav {
+    .flex(1);
+    overflow-y: auto;
+    min-height: 0;
+
+    ul {
+      margin: 0;
+      padding: 0;
+      display: block;
+      list-style-type:none;
+
+      li {
+        margin: 0;
+
+        a {
+          padding: @baseLineHeight;
+          display: block;
+        }
+
+        &.active a {
+          background: ;
+        }
+      }
+    }
+  }
+}

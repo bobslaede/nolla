@@ -1,0 +1,36 @@
+
+
+.navbar {
+
+  background: @navbarBackground;
+
+  .nav {
+    & > li {
+
+      &.active > a {
+
+        .box-shadow(none);
+        &:after {
+          @width: 8px;
+          @height: 8px;
+          display: block;
+          content: "";
+          width: @width;
+          height: @height;
+          background: @navbarLinkBackgroundActive;
+          position: absolute;
+          bottom: @height / 2 * -1;
+          left: 50%;
+          margin-left: @width / 2 * -1;
+          .rotate(-45deg);
+        }
+      }
+
+      & > a {
+        position: relative;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+}
