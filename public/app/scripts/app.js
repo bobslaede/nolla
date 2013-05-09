@@ -14,6 +14,14 @@ angular.module('nolla', ['ui.compat', 'restangular', '$strap.directives'])
     $stateProvider
       .state('app', {
         abstract: true,
+        resolve : {
+          'user' : function (Restangular) {
+            return Restangular.one('me', '').get();
+          },
+          'apps' : function (Restangular) {
+            return Restangular.all('apps').getList();
+          }
+        },
         templateUrl : '/app/views/index.html',
         controller : 'MainCtrl'
       })

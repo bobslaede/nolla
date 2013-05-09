@@ -1,47 +1,82 @@
-<div ng-form="clientForm" ng-submit="saveClient()" class="form form-horizontal" nl-form-autosave>
-  <fieldset>
-    <div class="legend">
-      <div class="form-header">
-        <span>Rediger: {{model.client.firstName}} {{model.client.lastName}}</span>
-      </div>
+<div class="client">
 
-      <div class="form-controls">
-        <div class="btn-group">
+  <div class="column">
 
-          <button type="button" class="btn dropdown-toggle" data-toggle="dropdown"><i class="icon-cog"></i></button>
+    <div ng-form="clientForm" ng-submit="saveClient()" class="form form-horizontal" nl-form-autosave>
+      <fieldset>
+        <div class="legend">
+          <div class="form-header">
+            <span>Rediger: {{model.client.firstName}} {{model.client.lastName}}</span>
+          </div>
 
-          <ul class="dropdown-menu">
-            <li>
-              <a tabindex="-1" href="#" ng-click="addClient()">
-                <i class="icon-plus-sign"></i>
-                Opret ny klient
-              </a>
-            </li>
-            <li>
-              <a tabindex="-1" href="#" bs-modal="'/app/views/partials/client-del.html'">
-                <i class="icon-trash"></i>
-                Slet
-              </a>
-            </li>
-          </ul>
+          <div class="form-controls">
+            <div class="btn-group">
 
+              <button type="button" class="btn dropdown-toggle" data-toggle="dropdown"><i class="icon-cog"></i></button>
+
+              <ul class="dropdown-menu">
+                <li>
+                  <a tabindex="-1" href="#" ng-click="addClient()">
+                    <i class="icon-plus-sign"></i>
+                    Opret ny klient
+                  </a>
+                </li>
+                <li>
+                  <a tabindex="-1" href="#" bs-modal="'/app/views/partials/client-del.html'">
+                    <i class="icon-trash"></i>
+                    Slet
+                  </a>
+                </li>
+              </ul>
+
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
 
-    <div class="control-group">
-      <label class="control-label" for="client.firstName">Fornavn:</label>
-      <div class="controls">
-        <input type="text" id="client.firstName" ng-model="model.client.firstName" />
-      </div>
-    </div>
+        <div class="control-group">
+          <label class="control-label" for="client.firstName">Fornavn:</label>
+          <div class="controls">
+            <input type="text" id="client.firstName" ng-model="model.client.firstName" />
+          </div>
+        </div>
 
-    <div class="control-group">
-      <label class="control-label" for="client.lastName">Efternavn:</label>
-      <div class="controls">
-        <input type="text" id="client.lastName" ng-model="model.client.lastName" />
-      </div>
-    </div>
+        <div class="control-group">
+          <label class="control-label" for="client.lastName">Efternavn:</label>
+          <div class="controls">
+            <input type="text" id="client.lastName" ng-model="model.client.lastName" />
+          </div>
+        </div>
 
-  </fieldset>
+        <div class="control-group">
+          <label class="control-label" for="client.ssno">CPR:</label>
+          <div class="controls">
+            <input type="text" id="client.ssno" ng-model="model.client.ssno" />
+          </div>
+        </div>
+
+        <div class="control-group">
+          <label class="control-label" for="client.address">Adresse:</label>
+          <div class="controls">
+            <input type="text" id="client.address" ng-model="model.client.address" />
+          </div>
+        </div>
+
+        <div class="control-group">
+          <label class="control-label" for="client.zip">Postnr:</label>
+          <div class="controls">
+            <input type="text" id="client.zip" ng-model="model.client.zip" />
+          </div>
+        </div>
+
+        <div class="control-group">
+          <label class="control-label" for="client.city">By:</label>
+          <div class="controls">
+            <input type="text" id="client.city" ng-model="model.client.city" />
+          </div>
+        </div>
+
+
+      </fieldset>
+    </div>
+  </div>
 </div>

@@ -19,6 +19,9 @@ var schema = new Schema({
   firstName: String,
   lastName: String,
   ssno: String,
+  address: String,
+  zip: String,
+  city: String,
   phone: [contactInfo],
   email: [contactInfo],
   details: {

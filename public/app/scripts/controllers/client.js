@@ -42,7 +42,6 @@ angular.module('nolla').controller('ClientCtrl', function ($scope, $stateParams,
     content : 'Vil du slette denne klient? Det kan ikke fortrydes',
     header : 'Vil du slette denne klient?',
     action : function () {
-      console.log('delete client');
       Clients.deleteClient(client)
         .then(function () {
           $state.transitionTo('app.home');

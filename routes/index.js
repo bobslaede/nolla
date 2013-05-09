@@ -86,8 +86,13 @@ module.exports = {
       delete data.meta;
     });
 
+    app.get('/api/me', AuthController.ensureAuthenticated, function (req, res, next) {
+      res.send(req.user);
+    });
+
     app.use('/api', AuthController.ensureAuthenticated);
     app.use('/api', rest.getMiddleware());
+
 
   }
 };

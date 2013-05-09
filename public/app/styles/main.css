@@ -7180,12 +7180,22 @@ body {
   -moz-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  overflow-y: auto;
-  min-height: 0;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: flex;
+  -webkit-flex-flow: column;
+  -moz-flex-flow: column;
+  -ms-flex-flow: column;
+  flex-flow: column;
+}
+.app .app-container > .main > .main-content {
+  -webkit-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  overflow-y: auto;
+  min-height: 0;
 }
 .alerts {
   position: fixed;
@@ -7343,4 +7353,16 @@ body {
   position: absolute;
   left: 0px;
   top: 210px;
+}
+.client {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: flex;
+}
+.client .column {
+  -webkit-flex: 0;
+  -moz-flex: 0;
+  -ms-flex: 0;
+  flex: 0;
 }
