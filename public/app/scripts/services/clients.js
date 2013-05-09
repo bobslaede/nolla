@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('nolla')
-  .factory('Clients', function (Restangular, $q, HashKeyCopier, $rootScope) {
+  .factory('Clients', function (Restangular, $q, $rootScope) {
 
     var rest = Restangular.all('clients');
     var clientsDeferred = rest.getList();
@@ -26,11 +26,14 @@ angular.module('nolla')
         return d.promise;
       },
       addClient : function (client) {
+        var d = $q.defer();
         clientsDeferred.then(function (clients) {
           clients.post(client).then(function (response) {
             clientsDeferred.push(response);
+            d.resolve(response);
           });
         });
+        return d.promise;
       },
       deleteClient : function (client) {
         var d = $q.defer();

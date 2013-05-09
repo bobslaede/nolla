@@ -45,7 +45,7 @@
   <div class="client-list">
     <nav>
       <ul>
-        <li ng-repeat="client in clients"  ng-class="{ active : $stateParams.clientId == client._id }">
+        <li ng-repeat="client in clients | orderBy:clientOrder"  ng-class="{ active : $stateParams.clientId == client._id }">
           <a href="#/{{model.currentPath}}/{{client._id}}">
             <span class="lead">{{client.firstName}} {{client.lastName}}</span>
             <small>tlf, email, osv</small>

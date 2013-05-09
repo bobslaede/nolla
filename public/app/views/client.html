@@ -1,11 +1,57 @@
-<div>
-  Hej {{model.client.firstName}}
-<br>
-  <label>firstName
-    <input type="text" ng-model="model.client.firstName">
-  </label>
-</div>
+<form ng-submit="saveClient()" class="form-horizontal">
+  <fieldset>
+    <div class="legend">
+      <div class="form-header">
+        <span>Rediger: {{model.client.firstName}} {{model.client.lastName}}</span>
+      </div>
 
-  <button type="button" ng-click="saveClient()">save</button>
-  <button type="button" ng-click="addClient()">add</button>
-  <button type="button" ng-click="delClient()">del</button>
+      <div class="form-controls">
+        <div class="btn-group">
+
+          <button type="button" class="btn dropdown-toggle" data-toggle="dropdown"><i class="icon-cog"></i></button>
+
+          <ul class="dropdown-menu">
+            <li>
+              <a tabindex="-1" href="#" ng-click="addClient()">
+                <i class="icon-plus-sign"></i>
+                Opret ny klient
+              </a>
+            </li>
+            <li>
+              <a tabindex="-1" href="#" bs-modal="'/app/views/partials/client-del.html'">
+                <i class="icon-trash"></i>
+                Slet
+              </a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <label class="control-label" for="client.firstName">Fornavn:</label>
+      <div class="controls">
+        <input type="text" id="client.firstName" ng-model="model.client.firstName" />
+      </div>
+    </div>
+
+    <div class="control-group">
+      <label class="control-label" for="client.lastName">Efternavn:</label>
+      <div class="controls">
+        <input type="text" id="client.lastName" ng-model="model.client.lastName" />
+      </div>
+    </div>
+
+    <div class="control-group">
+      <div class="controls">
+        <button class="btn btn-success btn-large">
+          <i class="icon-save"></i>
+          Gem
+        </button>
+      </div>
+    </div>
+
+
+  </fieldset>
+</form>
