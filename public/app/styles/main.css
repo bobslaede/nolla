@@ -7196,6 +7196,14 @@ body {
   flex: 1;
   overflow-y: auto;
   min-height: 0;
+  -webkit-flex-flow: column;
+  -moz-flex-flow: column;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: flex;
 }
 .alerts {
   position: fixed;
@@ -7332,22 +7340,50 @@ body {
   left: 10px;
 }
 .home {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  -webkit-align-content: center;
+  -moz-align-content: center;
+  -ms-align-content: center;
+  align-content: center;
+  -webkit-flex-flow: row;
+  -moz-flex-flow: row;
+  -ms-flex-flow: row;
+  flex-flow: row;
+  -webkit-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-align-self: center;
+  -moz-align-self: center;
+  -ms-align-self: center;
+  align-self: center;
+}
+.home .logo {
+  -webkit-flex: 0;
+  -moz-flex: 0;
+  -ms-flex: 0;
+  flex: 0;
   position: relative;
   color: rgba(26, 26, 26, 0.1);
-  left: 50px;
-  top: 20px;
   cursor: default;
   pointer-events: none;
   width: 170px;
   height: 250px;
 }
-.home i {
+.home .logo i {
   font-size: 200px;
   position: absolute;
   left: 6px;
   top: 0;
 }
-.home span {
+.home .logo span {
   font-size: 100px;
   font-family: 'Indie Flower';
   position: absolute;
@@ -7359,6 +7395,14 @@ body {
   display: -moz-flex;
   display: -ms-flex;
   display: flex;
+  -webkit-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-align-self: flex-start;
+  -moz-align-self: flex-start;
+  -ms-align-self: flex-start;
+  align-self: flex-start;
 }
 .client .column {
   -webkit-flex: 0;
