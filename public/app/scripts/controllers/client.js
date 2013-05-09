@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('nolla').controller('ClientCtrl', function ($scope, $stateParams, Restangular, $state, Clients, $modal) {
+angular.module('nolla').controller('ClientCtrl', function ($scope, $stateParams, Restangular, $state, Clients) {
   if ($stateParams.clientId === '') {
     $state.transitionTo('app.home');
   }
@@ -34,6 +34,7 @@ angular.module('nolla').controller('ClientCtrl', function ($scope, $stateParams,
 
   $scope.saveClient = function () {
     $scope.model.client.put();
+    $scope.$emit('saved');
   };
 
   $scope.modals = {};

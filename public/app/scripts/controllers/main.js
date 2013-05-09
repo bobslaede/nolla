@@ -2,7 +2,6 @@
 
 angular.module('nolla').controller('MainCtrl', function ($scope, $state, Clients, $stateParams) {
 
-  console.log('MainCtrl');
   $scope.clients = Clients.getList();
 
   $scope.$state = $state;
@@ -12,6 +11,15 @@ angular.module('nolla').controller('MainCtrl', function ($scope, $state, Clients
     $scope.model.currentPath = $state.current.urlPath ? $state.current.urlPath : 'clients';
   });
 
-  console.log($stateParams);
+  $scope.alerts = [];
+
+  $scope.$on('saved', function () {
+    $scope.alerts.pop();
+    $scope.alerts.push({
+      type : 'success',
+      title : 'data saved',
+      content : 'woo'
+    });
+  });
 
 });

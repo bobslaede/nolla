@@ -1,63 +1,68 @@
+<div class="app">
 
+  <div class="header">
 
-<div class="header">
-
-  <div class="navbar">
-    <div class="navbar-inner-">
-      <div class="container">
-        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">&hellip;</a>
-        <div class="nav-collapse collapse">
-          <ul class="nav">
-            <li ng-class="{ active : $state.includes('app.clients') }">
-              <a href="#/clients/{{ $stateParams.clientId }}">
-                <i class="icon-user icon-large"></i>
-                Klienter
-              </a>
-            </li>
-            <li ng-class="{ active : $state.includes('app.journals') }">
-              <a href="#/journals/{{ $stateParams.clientId }}">
-                <i class="icon-book icon-large"></i>
-                Journaler
-              </a>
-            </li>
-            <li>
-              <a href="#/appointments/{{ $stateParams.clientId }}">
-                <i class="icon-calendar icon-large"></i>
-                Aftalebog
-              </a>
-            </li>
-            <li>
-              <a href="#/accounting/{{ $stateParams.clientId }}">
-                <i class="icon-money icon-large"></i>
-                Regnskab
-              </a>
-            </li>
-          </ul>
+    <div class="navbar">
+      <div class="navbar-inner-">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">&hellip;</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li ng-class="{ active : $state.includes('app.clients') }">
+                <a href="#/clients/{{ $stateParams.clientId }}">
+                  <i class="icon-user icon-large"></i>
+                  Klienter
+                </a>
+              </li>
+              <li ng-class="{ active : $state.includes('app.journals') }">
+                <a href="#/journals/{{ $stateParams.clientId }}">
+                  <i class="icon-book icon-large"></i>
+                  Journaler
+                </a>
+              </li>
+              <li>
+                <a href="#/appointments/{{ $stateParams.clientId }}">
+                  <i class="icon-calendar icon-large"></i>
+                  Aftalebog
+                </a>
+              </li>
+              <li>
+                <a href="#/accounting/{{ $stateParams.clientId }}">
+                  <i class="icon-money icon-large"></i>
+                  Regnskab
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
+
+  </div>
+
+  <div class="app-container">
+
+    <div class="client-list">
+      <nav>
+        <ul>
+          <li ng-repeat="client in clients | orderBy:clientOrder"  ng-class="{ active : $stateParams.clientId == client._id }">
+            <a href="#/{{model.currentPath}}/{{client._id}}">
+              <span class="lead">{{client.firstName}} {{client.lastName}}</span>
+              <small>tlf, email, osv</small>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="main">
+      <ui-view></ui-view>
+    </div>
+
   </div>
 
 </div>
 
-<div class="app-container">
-
-  <div class="client-list">
-    <nav>
-      <ul>
-        <li ng-repeat="client in clients | orderBy:clientOrder"  ng-class="{ active : $stateParams.clientId == client._id }">
-          <a href="#/{{model.currentPath}}/{{client._id}}">
-            <span class="lead">{{client.firstName}} {{client.lastName}}</span>
-            <small>tlf, email, osv</small>
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-
-  <div class="main">
-    <ui-view></ui-view>
-  </div>
-
+<div class="alerts">
+  <div class="alert fade" ng-repeat="alert in alerts" bs-alert="alert"></div>
 </div>
-

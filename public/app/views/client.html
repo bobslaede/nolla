@@ -1,4 +1,4 @@
-<form ng-submit="saveClient()" class="form-horizontal">
+<div ng-form="clientForm" ng-submit="saveClient()" class="form form-horizontal" nl-form-autosave>
   <fieldset>
     <div class="legend">
       <div class="form-header">
@@ -43,15 +43,5 @@
       </div>
     </div>
 
-    <div class="control-group">
-      <div class="controls">
-        <button class="btn btn-success btn-large">
-          <i class="icon-save"></i>
-          Gem
-        </button>
-      </div>
-    </div>
-
-
   </fieldset>
-</form>
+</div>
