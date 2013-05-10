@@ -7219,6 +7219,91 @@ a {
 .navbar {
   background: #dd4814;
 }
+.navbar .client-search {
+  width: 280px;
+  height: 60px;
+}
+.navbar .client-search .input-prepend {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: flex;
+  margin: 0;
+}
+.navbar .client-search .input-prepend .add-on {
+  border: 0;
+  background: transparent;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+  color: #ffffff;
+  width: 40px;
+  float: none;
+  display: block;
+  margin: 0;
+  padding: 0;
+  height: 60px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-flow: row;
+  -moz-flex-flow: row;
+  -ms-flex-flow: row;
+  flex-flow: row;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  position: relative;
+}
+.navbar .client-search .input-prepend .add-on i {
+  -webkit-align-self: center;
+  -moz-align-self: center;
+  -ms-align-self: center;
+  align-self: center;
+  -webkit-flex: 0;
+  -moz-flex: 0;
+  -ms-flex: 0;
+  flex: 0;
+  margin: 8px;
+}
+.navbar .client-search .input-prepend .add-on:after {
+  display: block;
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: #dd4814;
+  position: absolute;
+  right: -4px;
+  top: 50%;
+  margin-top: -4px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  z-index: 10;
+}
+.navbar .client-search .input-prepend input {
+  -webkit-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  height: 60px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 0;
+  font-size: 17.5px;
+  padding-left: 10px;
+}
+.navbar .client-search .input-prepend input:focus {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.navbar .nav {
+  margin: 0;
+}
 .navbar .nav > li.active > a {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
