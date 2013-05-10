@@ -7125,6 +7125,21 @@ html,
 body {
   height: 100%;
 }
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(25, 182, 238, 0.09999999999999998);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(25, 182, 238, 0.09999999999999998);
+}
+*:hover > ::-webkit-scrollbar-thumb {
+  background: rgba(25, 182, 238, 0.4);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(25, 182, 238, 0.6);
+}
 .nolla {
   position: fixed;
   top: 0;
@@ -7212,12 +7227,14 @@ body {
 }
 .column {
   margin-right: 20px;
+  margin-top: 10px;
 }
 a {
   cursor: pointer;
 }
 .navbar {
   background: #dd4814;
+  margin-bottom: 0;
 }
 .navbar .client-search {
   width: 280px;
@@ -7367,8 +7384,12 @@ a {
   margin: 0;
 }
 .client-list nav ul li a {
-  padding: 20px;
+  padding: 13.333333333333334px 20px;
   display: block;
+}
+.client-list nav ul li a:hover {
+  background: rgba(56, 180, 74, 0.9);
+  color: #ffffff;
 }
 .client-list nav ul li.active a {
   background: rgba(119, 41, 83, 0.9);

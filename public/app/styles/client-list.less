@@ -20,8 +20,12 @@
         margin: 0;
 
         a {
-          padding: @baseLineHeight;
+          padding: ((@baseLineHeight / 3) * 2) (@baseLineHeight) ;
           display: block;
+          &:hover {
+            background: fadeout(@green, 10%);
+            color: @white;
+          }
         }
 
         &.active a {

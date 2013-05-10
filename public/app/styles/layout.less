@@ -5,6 +5,24 @@ body {
 
 }
 
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: fadeout(@blue, 90%);
+}
+
+::-webkit-scrollbar-thumb {
+  background: fadeout(@blue, 90%);
+  *:hover > & {
+    background: fadeout(@blue, 60%);
+  }
+  &:hover {
+    background: fadeout(@blue, 40%);
+  }
+}
+
 .nolla {
   position: fixed;
   top: 0; left: 0; bottom: 0; right: 0;
@@ -54,6 +72,7 @@ body {
 
 .column {
   margin-right: 20px;
+  margin-top: 10px;
 }
 
 a {
