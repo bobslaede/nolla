@@ -50,6 +50,7 @@ angular.module('nolla').controller('ClientCtrl', function ($scope, $stateParams,
   };
 
   $scope.addContact = function (type) {
+    $scope.pushState();
     $scope.model.client[type].push({
       type : '',
       contact : ''
@@ -57,9 +58,17 @@ angular.module('nolla').controller('ClientCtrl', function ($scope, $stateParams,
   };
 
   $scope.removeContact = function (type, index) {
+    $scope.pushState();
     $scope.model.client[type].splice(index, 1);
     $scope.saveClient();
   };
 
+  $scope.$on('undo', function () {
+    $scope.saveClient();
+  });
+
+  $scope.$on('redo', function () {
+    $scope.saveClient();
+  });
 
 });

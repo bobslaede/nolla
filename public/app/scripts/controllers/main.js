@@ -16,16 +16,44 @@ angular.module('nolla').controller('MainCtrl', function ($scope, $state, Clients
   });
 
   $scope.alerts = [];
+
+  var shiftAlerts = function () {
+
+    $timeout(function () {
+      $scope.alerts.shift();
+    }, 3000);
+  };
+
   $scope.$on('saved', function (msg) {
-    console.log(arguments);
     $scope.alerts.push({
       type : 'success',
       title : 'Data gemt',
       content : ''
     });
-    $timeout(function () {
-      $scope.alerts.shift();
-    }, 3000);
+    shiftAlerts();
   });
 
+  /*
+
+  $scope.$on('undo', function (msg) {
+    console.log(arguments);
+    $scope.alerts.push({
+      type : 'success',
+      title : 'Fortryd',
+      content : ''
+    });
+    shiftAlerts();
+  });
+
+  $scope.$on('redo', function (msg) {
+    console.log(arguments);
+    $scope.alerts.push({
+      type : 'success',
+      title : 'Fortryd',
+      content : ''
+    });
+    shiftAlerts();
+  });
+
+  */
 });

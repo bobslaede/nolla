@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('nolla', ['ui.compat', 'restangular', '$strap.directives'])
+angular.module('nolla', ['ui.compat', 'restangular', '$strap.directives', 'hashKeyCopier'])
   .config(function ($routeProvider, $stateProvider, $urlRouterProvider, RestangularProvider) {
 
     RestangularProvider.setBaseUrl('/api');
