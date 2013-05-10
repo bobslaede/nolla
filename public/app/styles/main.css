@@ -7371,7 +7371,7 @@ a {
   -moz-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  overflow-y: auto;
+  overflow-y: scroll;
   min-height: 0;
 }
 .client-list nav ul {
