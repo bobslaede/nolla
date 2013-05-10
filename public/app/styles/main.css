@@ -7210,10 +7210,21 @@ body {
   bottom: 0px;
   right: 20px;
 }
+.column {
+  margin-right: 20px;
+}
+a {
+  cursor: pointer;
+}
 .navbar {
   background: #dd4814;
 }
 .navbar .nav > li.active > a {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.navbar .nav > li.active > a:hover {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
@@ -7279,6 +7290,7 @@ body {
   color: #ffffff;
 }
 .legend {
+  display: block;
   width: 100%;
   padding: 0;
   margin-bottom: 20px;
@@ -7287,6 +7299,7 @@ body {
   color: #333333;
   border: 0;
   border-bottom: 1px solid #e5e5e5;
+  height: 40px;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
@@ -7299,6 +7312,10 @@ body {
   -moz-flex-wrap: nowrap;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
+}
+.legend small {
+  font-size: 15px;
+  color: #999999;
 }
 .legend .form-header {
   -webkit-flex: 1;
@@ -7318,6 +7335,21 @@ body {
   -moz-flex: 0;
   -ms-flex: 0;
   flex: 0;
+}
+.form .control-label-input {
+  padding: 0;
+}
+.form .control-label-input input {
+  width: 116px;
+}
+.control-group.compact {
+  margin-bottom: 5px;
+}
+input.input-subtle {
+  border: 1px solid rgba(204, 204, 204, 0.4);
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
 }
 .form .dropdown-menu:before {
   content: '';
@@ -7410,4 +7442,13 @@ body {
   -moz-flex: 0;
   -ms-flex: 0;
   flex: 0;
+}
+.client .form.client-contacts {
+  width: 356px;
+}
+.client .form.client-contacts .controls .btn {
+  white-space: nowrap;
+}
+.client .form.client-contacts .add-client-contact-button {
+  height: 30px;
 }

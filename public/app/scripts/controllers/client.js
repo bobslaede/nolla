@@ -49,5 +49,17 @@ angular.module('nolla').controller('ClientCtrl', function ($scope, $stateParams,
     }
   };
 
+  $scope.addContact = function (type) {
+    $scope.model.client[type].push({
+      type : '',
+      contact : ''
+    });
+  };
+
+  $scope.removeContact = function (type, index) {
+    $scope.model.client[type].splice(index, 1);
+    $scope.saveClient();
+  };
+
 
 });

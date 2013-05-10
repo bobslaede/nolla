@@ -1,13 +1,21 @@
 .legend {
 
+  display: block;
   width: 100%;
   padding: 0;
-  margin-bottom: 20px;
-  font-size: 21px;
-  line-height: 40px;
-  color: #333333;
+  margin-bottom: @baseLineHeight;
+  font-size: @baseFontSize * 1.5;
+  line-height: @baseLineHeight * 2;
+  color: @grayDark;
   border: 0;
   border-bottom: 1px solid #e5e5e5;
+  height: @baseLineHeight * 2;
+
+  // Small
+  small {
+    font-size: @baseLineHeight * .75;
+    color: @grayLight;
+  }
 
   .flex-display(flex);
   .flex-flow(row);
@@ -26,6 +34,26 @@
   .form-controls {
     .flex(0);
   }
+}
+
+.form {
+  .control-label-input {
+    padding: 0;
+
+    input {
+      width: 160px - 12 - 2 - 30;
+    }
+
+  }
+}
+
+.control-group.compact {
+  margin-bottom: @baseLineHeight / 4;
+}
+
+input.input-subtle {
+  border: 1px solid fadeout(@inputBorder, 60%);
+  .box-shadow(none);
 }
 
 // Menu position and menu carets
