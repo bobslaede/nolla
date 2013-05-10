@@ -28,13 +28,20 @@ angular.module('nolla').controller('ClientCtrl', function ($scope, $stateParams,
     };
     Clients.addClient(c)
       .then(function (newClient) {
+        $scope.$emit('status', {
+          type: 'success',
+          msg : 'Ny klient er blevet tilføjet'
+        });
         $state.transitionTo('app.clients', { clientId : newClient._id });
       });
   };
 
   $scope.saveClient = function () {
     $scope.model.client.put();
-    $scope.$emit('saved');
+    $scope.$emit('status', {
+      type: 'success',
+      msg : $scope.model.client.firstName + ' er blevet gemt :)'
+    });
   };
 
   $scope.modals = {};
@@ -42,9 +49,14 @@ angular.module('nolla').controller('ClientCtrl', function ($scope, $stateParams,
     content : 'Vil du slette denne klient? Det kan ikke fortrydes',
     header : 'Vil du slette denne klient?',
     action : function () {
+      var name = $scope.model.client.firstName;
       Clients.deleteClient(client)
         .then(function () {
           $state.transitionTo('app.home');
+          $scope.$emit('status', {
+            type: 'success',
+            msg : name + ' er blevet slettet'
+          });
         });
     }
   };

@@ -24,11 +24,11 @@ angular.module('nolla').controller('MainCtrl', function ($scope, $state, Clients
     }, 3000);
   };
 
-  $scope.$on('saved', function (msg) {
+  $scope.$on('status', function (e, data) {
     $scope.alerts.push({
-      type : 'success',
-      title : 'Data gemt',
-      content : ''
+      type : data.type,
+      title : '',
+      content : data.msg
     });
     shiftAlerts();
   });
