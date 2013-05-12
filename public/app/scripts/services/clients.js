@@ -35,6 +35,31 @@ angular.module('nolla')
         });
         return d.promise;
       },
+      getSchema : function () {
+        var d = $q.defer();
+        var schema = {};
+        schema.danmark = [
+          'Gruppe 5',
+          'Gruppe 1',
+          'Gruppe 2',
+          'Basis-Sygeforsikring'
+        ];
+        schema.insurance = [
+          'Gruppe 1',
+          'Gruppe 2'
+        ];
+        schema.phone = [
+          'Hjemme',
+          'Arbejde',
+          'Mobil'
+        ];
+        schema.email = [
+          'Hjemme',
+          'Arbejde'
+        ];
+        d.resolve(schema);
+        return d.promise;
+      },
       deleteClient : function (client) {
         var d = $q.defer();
         client.then(function (client) {

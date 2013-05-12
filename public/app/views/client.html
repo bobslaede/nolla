@@ -165,14 +165,11 @@
 
 
         <datalist id="client.contact.phones">
-          <option>Hjemme</option>
-          <option>Arbejde</option>
-          <option>Mobil</option>
+          <option ng-repeat="type in model.schema.phone">{{type}}</option>
         </datalist>
 
         <datalist id="client.contact.emails">
-          <option>Hjemme</option>
-          <option>Arbejde</option>
+          <option ng-repeat="type in model.schema.email">{{type}}</option>
         </datalist>
 
 
@@ -196,7 +193,7 @@
             <label class="control-label" for="client.details.danmark">Danmark:</label>
             <div class="controls">
               <select id="client.details.danmark" ng-model="model.client.details.danmark"
-                      ng-options="item for item in model.details.danmark">
+                      ng-options="item for item in model.schema.danmark">
                 <option></option>
               </select>
             </div>
@@ -206,7 +203,7 @@
             <label class="control-label" for="client.details.insurance">Sygesikringsgruppe:</label>
             <div class="controls">
               <select id="client.details.insurance" ng-model="model.client.details.insurance"
-                      ng-options="item for item in model.details.insurance">
+                      ng-options="item for item in model.schema.insurance">
                 <option></option>
               </select>
             </div>
