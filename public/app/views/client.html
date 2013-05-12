@@ -180,4 +180,70 @@
     </div>
 
   </div>
-</div>
+
+
+    <div class="column">
+
+      <div class="form form-horizontal client-details">
+        <fieldset>
+          <div class="legend">
+            <div class="form-header">
+              <span>Detaljer:</span>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label" for="client.details.danmark">Danmark:</label>
+            <div class="controls">
+              <select id="client.details.danmark" ng-model="model.client.details.danmark"
+                      ng-options="item for item in model.details.danmark">
+                <option></option>
+              </select>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label" for="client.details.insurance">Sygesikringsgruppe:</label>
+            <div class="controls">
+              <select id="client.details.insurance" ng-model="model.client.details.insurance"
+                      ng-options="item for item in model.details.insurance">
+                <option></option>
+              </select>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label" for="client.details.municipality">Kommune:</label>
+            <div class="controls">
+              <input type="text" id="client.details.municipality" ng-model="model.client.details.municipality" />
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label" for="client.details.reminder">Skal rykkes:</label>
+            <div class="controls">
+              <input type="checkbox" id="client.details.reminder" ng-model="model.client.details.reminder" />
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label" for="client.details.subsidy">Tilskud:</label>
+            <div class="controls">
+              <div class="input-append">
+                <input type="text" id="client.details.subsidy" ng-model="model.client.details.subsidy" />
+                <span class="add-on">%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label" for="client.details.notes">Noter:</label>
+            <div class="controls">
+              <textarea id="client.details.notes" ng-model="model.client.details.notes"></textarea>
+            </div>
+          </div>
+
+        </fieldset>
+      </div>
+
+  </div>

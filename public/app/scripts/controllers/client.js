@@ -13,6 +13,18 @@ angular.module('nolla').controller('ClientCtrl', function ($scope, $stateParams,
 
   $scope.model = {};
 
+  $scope.model.details = {};
+  $scope.model.details.danmark = [
+    'Gruppe 5',
+    'Gruppe 1',
+    'Gruppe 2',
+    'Basis-Sygeforsikring'
+  ];
+  $scope.model.details.insurance = [
+    'Gruppe 1',
+    'Gruppe 2'
+  ];
+
   var client = Clients.findById($stateParams.clientId);
   client.then(function (client) {
     $scope.model.client = client;

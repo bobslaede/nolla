@@ -25,8 +25,22 @@ var schema = new Schema({
   phone: [contactInfo],
   email: [contactInfo],
   details: {
-    danmark: String,
-    insurance: String,
+    danmark: {
+      type : String,
+      enum : [
+        'Gruppe 5',
+        'Gruppe 1',
+        'Gruppe 2',
+        'Basis-Sygeforsikring'
+      ]
+    },
+    insurance: {
+      type : String,
+      enum : [
+        'Gruppe 1',
+        'Gruppe 2'
+      ]
+    },
     municipality: String,
     reminder: Boolean,
     subsidy: Number,

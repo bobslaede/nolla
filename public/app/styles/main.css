@@ -7550,11 +7550,17 @@ input.input-subtle {
   flex: 0;
 }
 .client .form.client-contacts {
-  width: 356px;
+  width: 400px;
 }
 .client .form.client-contacts .controls .btn {
   white-space: nowrap;
 }
 .client .form.client-contacts .add-client-contact-button {
   height: 30px;
+}
+.client .form.client-contacts .input-append input {
+  width: 170px;
+}
+.client .form.client-details .input-append input {
+  width: 179px;
 }

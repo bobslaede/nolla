@@ -10,7 +10,7 @@ angular.module('nolla')
           element.trigger('submit');
         }, 500);
 
-        element.on('input', 'input,select,textarea', function (e) {
+        element.on('input change', 'input,select,textarea', function (e) {
           save();
         });
       }
