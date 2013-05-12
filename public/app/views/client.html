@@ -230,7 +230,7 @@
             <label class="control-label" for="client.details.subsidy">Tilskud:</label>
             <div class="controls">
               <div class="input-append">
-                <input type="text" id="client.details.subsidy" ng-model="model.client.details.subsidy" />
+                <input type="number" min="0" max="100" id="client.details.subsidy" ng-model="model.client.details.subsidy" />
                 <span class="add-on">%</span>
               </div>
             </div>

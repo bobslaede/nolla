@@ -18,6 +18,7 @@ angular.module('nolla').controller('ClientCtrl', function ($scope, $stateParams,
     'Gruppe 5',
     'Gruppe 1',
     'Gruppe 2',
+    'Gruppe asdsad',
     'Basis-Sygeforsikring'
   ];
   $scope.model.details.insurance = [
