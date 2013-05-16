@@ -23,6 +23,7 @@
     "angular" : true,
     "$" : true,
     "jQuery" : true,
+    "window" : true,
     "_" : true
   }
 }

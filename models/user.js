@@ -8,6 +8,7 @@ require('./app');
 var schema = new Schema({
   email: { type: String, lowercase: true },
   displayName : { type: String },
+  avatar : { type: String },
   providers : [
     {
       providerName : { type: String },

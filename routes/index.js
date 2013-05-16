@@ -13,6 +13,7 @@ module.exports = {
     require('../models/client');
     require('../models/app');
     require('../models/journal-entry');
+    require('../models/journal-helper');
     require('../models/user');
 
     app.get('/', function (req, res) {
@@ -63,6 +64,14 @@ module.exports = {
     rest.on('pre.*.users', function (req, res, model, search) {
       var app = utils.getUserApps(req.user, req.session.activeApp);
       search.apps = app._id;
+    });
+
+    rest.on('pre.get.journalhelpers', function (req, res, model, search) {
+
+    });
+
+    rest.on('post.get.journalhelpers', function (req, res, Model, result) {
+      console.log(result);
     });
 
     rest.on('pre.*.apps', function (req, res, model, search) {

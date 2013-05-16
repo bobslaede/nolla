@@ -13,11 +13,13 @@ var EventEmitter2 = require('eventemitter2').EventEmitter2;
  * @param {String} collection
  * @returns {Function} function (err, result)
  */
-var respondFromMongo = function (req, res, collection) {
+var respondFromMongo = function (req, res, Model, type) {
+  var collection = Model.collection.name;
   return function (err, result) {
     if (err !== null) {
       res.status(404).send(err);
     } else {
+      this.emit('post.' + type + '.' + collection, req, res, Model, result);
       res.send(result || []);
     }
   };
@@ -91,7 +93,7 @@ Rester.prototype = _.extend(Rester.prototype, new EventEmitter2({
       this.emit('pre.get.' + collection, req, res, Model, search);
       console.log('search for', search);
       Model.find(search)
-        .exec(respondFromMongo.call(this, req, res, collection));
+        .exec(respondFromMongo.call(this, req, res, Model, 'get'));
     }
   },
   one: function (req, res, next) {
@@ -104,8 +106,12 @@ Rester.prototype = _.extend(Rester.prototype, new EventEmitter2({
         _id: req.params.id
       };
       this.emit('pre.get.' + collection, req, res, Model, search);
+      Model.schema.eachPath(function (path) {
+        console.log(path, Model.schema.pathType(path));
+      });
       Model.findOne(search)
-        .exec(respondFromMongo.call(this, req, res, collection));
+        .populate('children')
+        .exec(respondFromMongo.call(this, req, res, Model, 'get'));
     }
   },
   put: function (req, res, next) {
@@ -126,7 +132,7 @@ Rester.prototype = _.extend(Rester.prototype, new EventEmitter2({
         if (err !== null) {
           res.status(500).send(err);
         } else {
-          Model.findById(model, respondFromMongo.call(this, req, res, collection));
+          Model.findById(model, respondFromMongo.call(this, req, res, Model, 'put'));
         }
       });
     }
@@ -150,7 +156,7 @@ Rester.prototype = _.extend(Rester.prototype, new EventEmitter2({
       delete data.__v;
 
       Model.update(search, { $set : data })
-        .exec(respondFromMongo.call(this, req, res, collection));
+        .exec(respondFromMongo.call(this, req, res, Model, 'update'));
     }
   },
   'delete': function (req, res, next) {
@@ -164,7 +170,7 @@ Rester.prototype = _.extend(Rester.prototype, new EventEmitter2({
       };
       this.emit('pre.delete.' + collection, req, res, Model, search);
       Model.remove(search)
-        .exec(respondFromMongo.call(this, req, res, collection));
+        .exec(respondFromMongo.call(this, req, res, Model, 'delete'));
     }
   }
 });

@@ -12,6 +12,15 @@ angular.module('nolla', ['ui.compat', 'restangular', '$strap.directives', 'hashK
       .otherwise('/');
 
     $stateProvider
+      .state('login', {
+        url : '/login',
+        templateUrl : '/app/views/login.html',
+        controller : 'LoginCtrl'
+      })
+      .state('logout', {
+        url : '/logout',
+        controller : 'LogoutCtrl'
+      })
       .state('app', {
         abstract: true,
         resolve : {

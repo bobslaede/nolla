@@ -7,11 +7,16 @@ var config = require('../config');
 var UserModel = require('../models/user');
 var UserController = require('./user');
 
+var updateUser = function (user, profile) {
+  user.email = profile._json.email;
+  user.displayName = profile.displayName;
+  user.avatar = profile._json.picture;
+  user.save();
+};
+
 var createUser = function (profile) {
   var d = when.defer();
   var user = new UserModel({
-    email : profile.emails.pop(),
-    displayName : profile.displayName,
     providers : [{
       providerName : profile.provider,
       providerId : profile.id
@@ -21,6 +26,7 @@ var createUser = function (profile) {
     if (err) {
       d.reject(err);
     } else {
+      updateUser(user, profile);
       d.resolve(user);
     }
   });
@@ -37,6 +43,7 @@ var findOrCreateUser = function (profile) {
       d.reject(err);
     }
     if (user) {
+      updateUser(user, profile);
       d.resolve(user);
     } else {
       d.resolve(createUser(profile));

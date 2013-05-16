@@ -17,7 +17,8 @@
     "connect-mongo": "~0.3.2",
     "hbs": "~2.1.0",
     "mers": "~0.6.1",
-    "eventemitter2": "~0.4.11"
+    "eventemitter2": "~0.4.11",
+    "googleapis": "~0.2.8-alpha"
   },
   "devDependencies": {
     "grunt": "~0.4.1",

@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('nolla')
-  .factory('Clients', function (Restangular, $q, $rootScope) {
+  .factory('Clients', function (Restangular, $q) {
 
     var rest = Restangular.all('clients');
     var clientsDeferred = rest.getList();
