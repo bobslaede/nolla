@@ -3,3 +3,4 @@ public/app/dist
 public/app/components
 public/app/lib
 .idea/workspace.xml
+.cache

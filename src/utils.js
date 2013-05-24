@@ -28,9 +28,8 @@ module.exports.getUserApps = function (user, index) {
   }
 };
 
-module.exports.createSearchMetaData = function (user, appIndex) {
+module.exports.createSearchMetaData = function (user, app) {
   var ret = {};
-  var app = user.apps[appIndex || 0];
   ret['meta.app'] = app._id;
   return ret;
 };

@@ -84,6 +84,7 @@ controller.callback = passport.authenticate('google', {
   failureFlash: true
 });
 
+
 controller.login = passport.authenticate('google', {
   scope : [
     'https://www.googleapis.com/auth/userinfo.profile',
@@ -92,6 +93,7 @@ controller.login = passport.authenticate('google', {
 });
 
 controller.ensureAuthenticated = function (req, res, next) {
+  console.log('ensure authenticated');
   if (req.isAuthenticated()) {
     return next();
   }

@@ -24,6 +24,7 @@
     "$" : true,
     "jQuery" : true,
     "window" : true,
-    "_" : true
+    "_" : true,
+    "chrome" : true
   }
 }

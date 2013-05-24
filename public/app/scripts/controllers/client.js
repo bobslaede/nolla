@@ -1,6 +1,8 @@
 'use strict';
 
 angular.module('nolla').controller('ClientCtrl', function ($scope, $stateParams, Restangular, $state, Clients) {
+  console.log('ClientCtrl')
+
   if ($stateParams.clientId === '') {
     $state.transitionTo('app.home');
   }
@@ -34,7 +36,7 @@ angular.module('nolla').controller('ClientCtrl', function ($scope, $stateParams,
           type: 'success',
           msg : 'Ny klient er blevet tilføjet'
         });
-        $state.transitionTo('app.clients', { clientId : newClient._id });
+        $state.transitionTo('app.home.client', { clientId : newClient._id });
       });
   };
 

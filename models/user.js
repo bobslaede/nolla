@@ -13,7 +13,7 @@ var schema = new Schema({
     {
       providerName : { type: String },
       providerId : { type: String, unique: true },
-      token : { type: String }
+      refreshToken : { type: String }
     }
   ],
   apps: [

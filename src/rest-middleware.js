@@ -57,21 +57,21 @@ var Rester = function () {
 
   this.router = new express.Router();
 
-  this.router.route('GET', '/:collection', this.list.bind(this));
+  this.router.route('GET',    '/:collection',         this.list.bind(this));
 
-  this.router.route('GET', '/:collection/:id', this.one.bind(this));
+  this.router.route('GET',    '/:collection/:id',     this.one.bind(this));
 
-  this.router.route('GET', '/:collection/create', this.put.bind(this));
-  this.router.route('POST', '/:collection', this.put.bind(this));
-  this.router.route('PUT', '/:collection', this.put.bind(this));
+  this.router.route('GET',    '/:collection/create',  this.put.bind(this));
+  this.router.route('POST',   '/:collection',         this.put.bind(this));
+  this.router.route('PUT',    '/:collection',         this.put.bind(this));
 
-  this.router.route('GET', '/:collection/:id/update', this.update.bind(this));
-  this.router.route('UPDATE', '/:collection/:id', this.update.bind(this));
-  this.router.route('POST', '/:collection/:id', this.update.bind(this));
-  this.router.route('PUT', '/:collection/:id', this.update.bind(this));
-  this.router.route('PATCH', '/:collection/:id', this.update.bind(this));
+  this.router.route('GET',    '/:collection/:id/update',  this.update.bind(this));
+  this.router.route('UPDATE', '/:collection/:id',         this.update.bind(this));
+  this.router.route('POST',   '/:collection/:id',         this.update.bind(this));
+  this.router.route('PUT',    '/:collection/:id',         this.update.bind(this));
+  this.router.route('PATCH',  '/:collection/:id',         this.update.bind(this));
 
-  this.router.route('DELETE', '/:collection/:id', this['delete'].bind(this));
+  this.router.route('DELETE', '/:collection/:id',         this['delete'].bind(this));
 
 
 };
@@ -175,6 +175,4 @@ Rester.prototype = _.extend(Rester.prototype, new EventEmitter2({
   }
 });
 
-module.exports = function () {
-  return new Rester();
-};
+module.exports = new Rester();

@@ -1,68 +1,49 @@
 'use strict';
 
 var config = require('../config');
-
-var AuthController = require('../controllers/auth');
-var restMiddleware = require('../src/rest-middleware');
+var rest = require('../src/rest-middleware');
 var utils = require('../src/utils');
 var _ = require('underscore');
+var auth = require('../src/auth');
 
 module.exports = {
-  initialize : function (app) {
+  initialize: function (app) {
 
-    require('../models/client');
-    require('../models/app');
+    var UserModel = require('../models/client');
+    var AppModel = require('../models/app');
     require('../models/journal-entry');
     require('../models/journal-helper');
     require('../models/user');
 
     app.get('/', function (req, res) {
-      if (req.isAuthenticated()) {
-        res.redirect('/nolla');
+      res.redirect('/index.html');
+    });
+
+    app.use('/api', auth.getMiddleware());
+
+    app.get('/api/activeApp', auth.ensureAuthenticated, function (req, res, next) {
+      res.send(req.app);
+    });
+
+    app.get('/api/activeApp/:id', auth.ensureAuthenticated, function (req, res, next) {
+      var app = _.filter(req.user.apps, function (app) {
+        return app._id == req.params.id;
+      }).pop();
+      if (app) {
+        req.session.activeAppId = app._id;
+        res.send(app);
       } else {
-        res.render('login');
+        res.status(404).send('No such app');
       }
     });
 
-    app.get('/nolla/:app?',
-      AuthController.ensureAuthenticated,
-      function (req, res) {
-        if (req.params.app !== undefined && req.user.apps[req.params.app] !== undefined) {
-          req.session.activeApp = req.params.app;
-          res.render('index', { user : req.user });
-        } else {
-          var activeApp = 0;
-          if (req.user.apps.length === 0) {
-            res.render('create-app', { user: req.user });
-          } else if (req.user.apps.length === 1) {
-            res.redirect('/nolla/' + activeApp + '/');
-          } else {
-            res.render('choose-app', { user: req.user });
-          }
-        }
-      });
-
-    app.get(config.urls.login, function (req, res, next) {
-      if (req.isAuthenticated()) {
-        res.redirect('/nolla');
-      } else {
-        next();
-      }
-    }, AuthController.login);
-
-    app.get(config.urls.callback, AuthController.callback);
-
-    app.get(config.urls.logout, AuthController.logout);
-
-    var rest = restMiddleware();
-
     rest.on('pre.*.clients', function (req, res, model, search) {
-      var meta = utils.createSearchMetaData(req.user, req.session.activeApp);
+      var meta = utils.createSearchMetaData(req.user, req.app);
       _.extend(search, meta);
     });
 
     rest.on('pre.*.users', function (req, res, model, search) {
-      var app = utils.getUserApps(req.user, req.session.activeApp);
+      var app = utils.getUserApps(req.user, req.app);
       search.apps = app._id;
     });
 
@@ -79,13 +60,13 @@ module.exports = {
     });
 
     var createPreFilter = function (req, res, model, search, data) {
-      var meta = utils.createSearchMetaData(req.user, req.session.activeApp);
+      var meta = utils.createSearchMetaData(req.user, req.app);
       _.extend(search, meta);
-      var app = utils.getUserApps(req.user, req.session.activeApp);
+      var app = req.app;
       data.meta = {
-        app : app._id,
-        owner : req.user._id,
-        createdAt : Date.now()
+        app: app._id,
+        owner: req.user._id,
+        createdAt: Date.now()
       };
     };
 
@@ -95,11 +76,10 @@ module.exports = {
       delete data.meta;
     });
 
-    app.get('/api/me', AuthController.ensureAuthenticated, function (req, res, next) {
+    app.get('/api/me', function (req, res, next) {
       res.send(req.user);
     });
 
-    app.use('/api', AuthController.ensureAuthenticated);
     app.use('/api', rest.getMiddleware());
 
 
