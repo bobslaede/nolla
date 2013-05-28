@@ -16,20 +16,22 @@ angular.module('nolla', ['ui.compat', 'restangular', '$strap.directives', 'goog'
       'https://www.googleapis.com/auth/userinfo.email'
     ]);
 
+    $urlRouterProvider
+      .otherwise('/app');
 
     $stateProvider
       .state('app', {
-        url : '/',
+        url : '',
         controller : 'AppCtrl',
         templateUrl : '/app/views/index.html'
       })
       .state('app.login', {
-        url : 'login',
+        url : '/login',
         controller : 'LoginCtrl',
         templateUrl : '/app/views/login.html'
       })
       .state('app.home', {
-        url : 'app',
+        url : '/app',
         resolve : {
           user : function (Auth) {
             return Auth.getAuth();
@@ -39,63 +41,22 @@ angular.module('nolla', ['ui.compat', 'restangular', '$strap.directives', 'goog'
         templateUrl : '/app/views/main.html'
       })
       .state('app.home.client', {
-        url : 'client/{clientId}',
+        url : '/client/{clientId}',
         urlPath : 'client',
         controller: 'ClientCtrl',
         templateUrl : '/app/views/client.html'
       })
-      .state('app.home.journals', {
-        url : 'journals',
-        urlPath : 'journals',
-        template: 'journals'
+      .state('app.home.journal', {
+        url : '/journal/{clientId}',
+        urlPath : 'journal',
+        controller: 'JournalCtrl',
+        templateUrl : '/app/views/journal.html'
       });
 
-    /*
-    $stateProvider
-      .state('login', {
-        url : '/login',
-        templateUrl : '/app/views/login.html',
-        controller : 'LoginCtrl'
-      })
-      .state('logout', {
-        url : '/logout',
-        controller : 'LogoutCtrl'
-      })
-      .state('app', {
-        abstract: true,
-        resolve : {
-          'user' : function (User) {
-            return User.getUser();
-          },
-          'apps' : function (Restangular) {
-            return Restangular.all('apps').getList();
-          }
-        },
-        templateUrl : '/app/views/index.html',
-        controller : 'MainCtrl'
-      })
-      .state('app.home', {
-        url : '/',
-        urlPath : '',
-        templateUrl : '/app/views/home.html',
-        controller : 'HomeCtrl'
-      })
-      .state('app.clients', {
-        url : '/clients/{clientId}',
-        urlPath : 'clients',
-        templateUrl : '/app/views/client.html',
-        controller : 'ClientCtrl'
-      })
-      .state('app.journals', {
-        url : '/journals/{clientId}',
-        urlPath : 'journals',
-        template : '<p>journals</p>'
-      });
-    */
 
   })
   .run(function ($rootScope, $state, $stateParams) {
-    $state.transitionTo('app');
+ //   $state.transitionTo('app');
     $rootScope.$state = $state;
     $rootScope.$stateParams = $stateParams;
   });

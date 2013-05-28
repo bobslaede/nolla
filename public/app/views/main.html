@@ -21,13 +21,13 @@
             </ul>
             <ul class="nav">
               <li ng-class="{ active : $state.includes('app.home.client') }">
-                <a href="#/app/client/{{ $stateParams.clientId }}">
+                <a ng-click="selectAction('app.home.client')">
                   <i class="icon-group icon-large"></i>
                   Klienter
                 </a>
               </li>
-              <li ng-class="{ active : $state.includes('app.home.journals') }">
-                <a href="#/app/journals/{{ $stateParams.clientId }}">
+              <li ng-class="{ active : $state.includes('app.home.journal') }">
+                <a ng-click="selectAction('app.home.journal')">
                   <i class="icon-book icon-large"></i>
                   Journaler
                 </a>
@@ -57,16 +57,16 @@
                     <i class="icon-cogs"></i>
                     Indstillinger
                   </a></li>
-                  <li><a href="#" ng-click="logout()">
+                  <li><a ng-click="logout()">
                     <i class="icon-signout"></i>
                     Logud
                   </a></li>
                   <li class="divider" ng-hide="model.apps.length==0"></li>
                   <li class="dropdown-submenu" ng-hide="model.apps.length==0">
-                    <a href="#">Mine apps</a>
+                    <a>Mine apps</a>
                     <ul class="dropdown-menu">
                       <li ng-repeat="app in model.apps">
-                        <a href="#" ng-click="chooseApp(app._id)">{{app.name}}</a>
+                        <a ng-click="chooseApp(app._id)">{{app.name}}</a>
                       </li>
                     </ul>
                   </li>
@@ -85,8 +85,8 @@
     <div class="client-list">
       <nav>
         <ul>
-          <li ng-repeat="client in clients | orderBy:clientOrder"  ng-class="{ active : $stateParams.clientId == client._id }">
-            <a href="#/app/{{model.currentPath}}/{{client._id}}">
+          <li ng-repeat="client in clients | orderBy:clientOrder"  ng-class="{ active : $state.params.clientId == client._id }">
+            <a ng-click="selectClient({{client}})">
               <span class="lead">{{client.firstName}} {{client.lastName}}</span>
               <small>
                 <span ng-repeat="contact in client.phone" title="{{contact.type}}">{{contact.contact}} </span>

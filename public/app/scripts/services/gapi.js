@@ -48,13 +48,13 @@ angular.module('goog', [])
 
 
 
-    this.$get = function ($q, $http, $rootScope, $log) {
+    this.$get = function ($q, $http, $rootScope, $log, $window) {
       var loadedDeferred = $q.defer();
       var authorizedDeferred = $q.defer();
 
       this.load = function () {
-        window[onloadName] = angular.bind(this, function () {
-          gapi = window['gapi'];
+        $window[onloadName] = angular.bind(this, function () {
+          gapi = $window.gapi;
           $log.info('gapi onload callback fired');
           loadedDeferred.resolve(gapi);
           $rootScope.$digest();

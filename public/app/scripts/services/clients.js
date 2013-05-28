@@ -11,13 +11,20 @@ angular.module('nolla')
       getList : function () {
         return clientsDeferred;
       },
+      updateList : function (client) {
+        console.log('updating!', client);
+        this.findById(client._id)
+          .then(function (listClient) {
+            _.extend(listClient, client);
+          });
+      },
       findById : function (id) {
         var d = $q.defer();
 
         clientsDeferred.then(function (clients) {
           var client = _.filter(clients, { _id : id });
           if (client.length === 1) {
-            d.resolve(client.pop());
+            d.resolve(client[0]);
           } else {
             d.reject('no such client');
           }

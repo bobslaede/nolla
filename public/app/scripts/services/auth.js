@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('nolla')
-  .service('Auth', function ($http, $q, $rootScope, gapi, $log) {
+  .service('Auth', function ($http, $q, $rootScope, gapi, $log, $state) {
 
     this.isAuthed = false;
     this.user = undefined;

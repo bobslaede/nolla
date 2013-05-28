@@ -1,19 +1,23 @@
 'use strict';
 
 var config = require('../config');
-var rest = require('../src/rest-middleware');
+//var Rester = require('../src/rest-middleware');
 var utils = require('../src/utils');
 var _ = require('underscore');
 var auth = require('../src/auth');
 
+var SimpleRest = require('../src/mongoose-simple-rest');
+
+var rest = new SimpleRest();
+
 module.exports = {
   initialize: function (app) {
 
-    var UserModel = require('../models/client');
+    var ClientModel = require('../models/client');
     var AppModel = require('../models/app');
-    require('../models/journal-entry');
-    require('../models/journal-helper');
-    require('../models/user');
+    var JournalEntryModel = require('../models/journal-entry');
+    var JournalHelperModel = require('../models/journal-helper');
+    var UserModel = require('../models/user');
 
     app.get('/', function (req, res) {
       res.redirect('/index.html');
@@ -36,6 +40,38 @@ module.exports = {
         res.status(404).send('No such app');
       }
     });
+
+    rest.addModel(AppModel);
+    rest.addModel(UserModel);
+    rest.addModel(ClientModel);
+    rest.addModel(JournalEntryModel);
+    rest.addModel(JournalHelperModel);
+
+    rest.addQueryFilter(function (req, res, next) {
+      var Model = req.rest.Model;
+      var query = req.rest.query;
+      query['meta.app'] = req.app._id;
+      next();
+    });
+
+    rest.addPostFilter(function (req, res, next) {
+      var data = req.rest.data;
+      var app = req.app;
+      if (data.meta) {
+        data.meta.app = app._id;
+      } else {
+        data.meta = {
+          app: app._id,
+          owner: req.user._id,
+          createdAt: Date.now()
+        };
+      }
+      next();
+    });
+
+    app.use('/api', rest.middleware);
+
+    /*
 
     rest.on('pre.*.clients', function (req, res, model, search) {
       var meta = utils.createSearchMetaData(req.user, req.app);
@@ -79,8 +115,8 @@ module.exports = {
     app.get('/api/me', function (req, res, next) {
       res.send(req.user);
     });
-
-    app.use('/api', rest.getMiddleware());
+    */
+    //app.use('/api', rest.getMiddleware());
 
 
   }

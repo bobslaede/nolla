@@ -1,15 +1,19 @@
 .client {
+  .flex(0);
   .flex-display(flex);
-  .align-self(flex-start);
-  .flex-direction(row);
   .flex-wrap(wrap);
+  .flex-direction(row);
 
   .column {
-    .flex(0);
+    width: 400px;
+  }
+
+  .form-horizontal {
+    min-width: 400px;
+    max-width: 400px;
   }
 
   .form.client-contacts {
-    min-width: 400px;
 
     .controls {
       .btn {

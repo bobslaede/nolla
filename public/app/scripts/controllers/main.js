@@ -1,10 +1,14 @@
 'use strict';
 
-angular.module('nolla').controller('MainCtrl', function ($scope, $state, Clients, $stateParams, $timeout, user, Auth) {
+angular.module('nolla').controller('MainCtrl', function ($scope, $state, Clients, $stateParams, $timeout, user, Auth, $window, App) {
+
+  console.log('MainCtrl');
 
   if (!user) {
     $state.transitionTo('login');
   }
+
+  $scope.$stateParams = $stateParams;
 
   $scope.logout = function () {
     Auth.logout();
@@ -12,7 +16,19 @@ angular.module('nolla').controller('MainCtrl', function ($scope, $state, Clients
   };
 
   $scope.chooseApp = function (appId) {
-    alert(appId);
+    App.setActiveApp(appId)
+      .then(function () {
+        $state.transitionTo('app.home');
+      });
+  };
+
+  $scope.selectClient = function (client) {
+    var to = $state.current.urlPath ? $state.current : 'app.home.client';
+    $state.transitionTo(to, { clientId : client._id });
+  };
+
+  $scope.selectAction = function (action) {
+    $state.transitionTo(action, $state.params);
   };
 
   $scope.clients = Clients.getList();

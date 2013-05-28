@@ -19,7 +19,8 @@
     "mers": "~0.6.1",
     "eventemitter2": "~0.4.11",
     "googleapis": "~0.2.8-alpha",
-    "node-rest-client": "0.0.4"
+    "node-rest-client": "0.0.4",
+    "methods": "0.0.1"
   },
   "devDependencies": {
     "grunt": "~0.4.1",

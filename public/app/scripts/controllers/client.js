@@ -7,23 +7,34 @@ angular.module('nolla').controller('ClientCtrl', function ($scope, $stateParams,
     $state.transitionTo('app.home');
   }
 
-  $scope.actions = [
-    {
-      'text' : 'Slet'
-    }
-  ];
-
   $scope.model = {};
 
   $scope.model.schema = Clients.getSchema();
 
-  var client = Clients.findById($stateParams.clientId);
-  client.then(function (client) {
-    $scope.model.client = client;
-  }, function (err) {
-    console.warn(err);
-    $state.transitionTo('app.home');
+
+  var client = Restangular.one('clients', $stateParams.clientId).get();
+
+  client.then(function (clientData) {
+    $scope.model.client = clientData;
   });
+
+  $scope.saveClient = function () {
+    console.log('save');
+    $scope.model.client.put()
+      .then(function (savedClient) {
+        console.log('saved!');
+        Clients.updateList(savedClient);
+      });
+  };
+
+  /*
+
+   client.then(function (client) {
+   $scope.model.client = client;
+   }, function (err) {
+   console.warn(err);
+   $state.transitionTo('app.home');
+   });
 
   $scope.addClient = function () {
     var c = {
@@ -64,9 +75,9 @@ angular.module('nolla').controller('ClientCtrl', function ($scope, $stateParams,
         });
     }
   };
+  */
 
   $scope.addContact = function (type) {
-    $scope.pushState();
     $scope.model.client[type].push({
       type : '',
       contact : ''
@@ -74,17 +85,7 @@ angular.module('nolla').controller('ClientCtrl', function ($scope, $stateParams,
   };
 
   $scope.removeContact = function (type, index) {
-    $scope.pushState();
     $scope.model.client[type].splice(index, 1);
-    $scope.saveClient();
   };
-
-  $scope.$on('undo', function () {
-    $scope.saveClient();
-  });
-
-  $scope.$on('redo', function () {
-    $scope.saveClient();
-  });
 
 });
