@@ -35,11 +35,15 @@ app.configure(function(){
   }));
   app.use(express.methodOverride());
   app.use(app.router);
-  app.use(express.static(path.join(__dirname, 'public', 'app')));
 });
 
 app.configure('development', function(){
+  app.use(express.static(path.join(__dirname, 'public', 'app')));
   app.use(express.errorHandler());
+});
+
+app.configure('production', function(){
+  app.use(express.static(path.join(__dirname, 'public', 'dist')));
 });
 
 var server = http.createServer(app);
