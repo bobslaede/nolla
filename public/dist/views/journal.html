@@ -1,0 +1,157 @@
+<div class="journal" ng-form="journalForm">
+
+  <div class="column well well-small journal-list">
+
+    <div class="journals">
+      <div class="legend">
+        <div class="form-header">
+          Journal: {{model.client.firstName}} {{model.client.lastName}}
+        </div>
+
+        <div class="form-controls">
+          <div class="btn-group">
+
+            <button type="button" class="btn btn-small" ng-click="addJournalEntry()" ng-disabled="locked">
+              <i class="icon-plus-sign"></i>
+              Tilføj
+            </button>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="journals-content well well-small">
+
+        <div class="journals-entries" nl-scroll="bottom">
+
+          <div class="journals-entry" ng-repeat="entry in model.journal.list" nl-journal-entry="entry" tabindex="-1" ng-disabled="locked || entry.locked">
+
+            <div id="delete-journal-entry-{{entry._id}}" nl-modal="" class="modal hide animated bounceInDown" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h3 id="myModalLabel">Slet journalen?</h3>
+              </div>
+              <div class="modal-body">
+                <p>Vil du slette denne journal? Den kan ikke genskabes.</p>
+              </div>
+              <div class="modal-footer">
+                <button class="btn" data-dismiss="modal" aria-hidden="true">Luk</button>
+                <button class="btn btn-danger" data-dismiss="modal" ng-click="removeJournalEntry(entry)">Slet journal</button>
+              </div>
+            </div>
+
+            <div class="journals-toolbar">
+              <div class="journals-entry-header">
+                {{entry.date | moment:'LL'}}
+              </div>
+              <div class="btn-group">
+                <button type="button" class="btn" ng-disabled="locked || entry.locked" data-toggle="modal" data-target="#delete-journal-entry-{{entry._id}}" data-backdrop="true" title="Slet dette indlæg i journalen">
+                  <i class="icon-trash"></i>
+                </button>
+                <button type="button" class="btn" ng-disabled="locked" title="Gå til, eller konverter til, regning">
+                  <i class="icon-money"></i>
+                </button>
+                <button type="button" class="btn" ng-disabled="locked" ng-click="entry.locked =! entry.locked" title="Lås indlægget i journalen">
+                  <span ng-switch="entry.locked">
+                    <i ng-switch-when="false" class="icon-unlock"></i>
+                    <i ng-switch-when="true" class="icon-lock"></i>
+                  </span>
+                </button>
+              </div>
+            </div>
+
+            <div class="journals-entry-tags" ng-disabled="locked">
+              <ol>
+                <li ng-repeat="data in entry.entryData">
+                  <input type="text" ng-model="data.description" class="description" ng-disabled="locked || entry.locked">
+                  <div class="menu" tabindex="-1">
+                    <span><i class="icon-move"></i></span>
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-mini" ng-click="removeJournalEntryData(data, entry)">
+                        <i class="icon-trash"></i>
+                      </button>
+                    </div>
+                  </div>
+                </li>
+              </ol>
+            </div>
+
+          </div>
+
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <div class="column well well-small journal-helpers">
+
+    <div class="legend">
+      <div class="form-header">
+        Hjælpere:
+      </div>
+
+      <div class="form-controls">
+        <div class="btn-group">
+          <button type="button" class="btn btn-small" ng-click="addJournalHelper()" ng-disabled="locked">
+            <i class="icon-plus-sign"></i>
+            Tilføj
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <ul class="tree">
+      <li ng-repeat="helper in model.helpers.list">
+
+
+        <div id="edit-journal-entry-helper-{{helper._id}}" nl-modal="" class="modal hide animated bounceInDown" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h3 id="myModalLabel">Ret hjælper</h3>
+          </div>
+          <div class="modal-body">
+            <div class="form form-horizontal">
+
+              <div class="control-group">
+                <label class="control-label" for="editHelper.name-{{helper._id}}">Navn:</label>
+                <div class="controls">
+                  <input type="text" id="editHelper.name-{{helper._id}}" ng-model="helper.name" ng-disabled="locked">
+                </div>
+              </div>
+
+              <div class="control-group">
+                <label class="control-label" for="editHelper.description-{{helper._id}}">Beskrivelse:</label>
+                <div class="controls">
+                  <input type="text" id="editHelper.description-{{helper._id}}" ng-model="helper.description" ng-disabled="locked">
+                </div>
+              </div>
+
+              <div class="control-group">
+                <label class="control-label" for="editHelper.price-{{helper._id}}">Pris:</label>
+                <div class="controls">
+                  <input type="number" id="editHelper.price-{{helper._id}}" ng-model="helper.price" ng-disabled="locked">
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btn" data-dismiss="modal" aria-hidden="true">Luk</button>
+          </div>
+        </div>
+
+        <div class="draggable" nl-journal-entry-helper="helper" draggable="true">{{helper.name}}</div>
+        <div class="btn-group">
+          <button type="button" class="btn btn-mini" data-toggle="modal" data-target="#edit-journal-entry-helper-{{helper._id}}" data-backdrop="true">
+            <i class="icon-edit"></i>
+          </button>
+        </div>
+      </li>
+    </ul>
+
+  </div>
+
+</div>

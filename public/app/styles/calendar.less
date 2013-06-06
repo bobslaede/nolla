@@ -1,0 +1,118 @@
+.calendar {
+  .flex(1);
+  .flex-display(flex);
+  .flex-wrap(wrap);
+  .flex-direction(row);
+
+  .column {
+    padding-top: 9px;
+  }
+  .calendar-main {
+    .flex(4);
+    .flex-display(flex);
+    .flex-direction(column);
+  }
+  .calendar-list {
+    .flex(1);
+    max-width: 300px;
+  }
+
+}
+
+.cal {
+
+  .flex-display(flex);
+  .flex(1);
+
+
+  .month {
+    .flex-display(flex);
+    .flex(1);
+    .flex-direction(column);
+
+    border: 0;
+    border-color: @inputBorder;
+    border-style: solid;
+    border-bottom-width: 1px;
+    margin-left: 20px;
+
+    .header {
+      .flex-display(flex);
+      .flex-direction(row);
+      .flex(0);
+
+      .day {
+        margin: 4px;
+        .flex(1);
+        text-align: left;
+        text-transform: uppercase;
+        font-size: @fontSizeSmall;
+      }
+    }
+
+    .week {
+      .flex-display(flex);
+      .flex-direction(row);
+      .flex(1);
+
+      border: 0;
+      border-color: @inputBorder;
+      border-style: solid;
+      border-right-width: 1px;
+      border-top-width: 1px;
+      position: relative;
+
+      .week-number {
+        position: absolute;
+        width: 20px;
+        left: -20px;
+        top: -1px;
+        bottom: -1px;
+        background: @white;
+        .flex-display(flex);
+        .title {
+          font-size: @fontSizeSmall;
+          color: @grayLight;
+          .flex(0);
+          padding: 3px 0 0 2px;
+        }
+      }
+
+      .day {
+        .flex(1);
+        min-height: 40px;
+        border: 0;
+        border-color: @inputBorder;
+        border-style: solid;
+        border-left-width: 1px;
+        padding: 2px;
+        position: relative;
+
+        &.active {
+          background: @green;
+          color: @white;
+          .title {
+            color: @white;
+          }
+        }
+
+        .title {
+          font-size: @fontSizeSmall;
+          color: @gray;
+          position: absolute;
+          top: 2px;
+          right: 2px;
+        }
+        &.old {
+          .title {
+            color: @grayLight;
+            text-shadow: 1px 1px @white;
+          }
+        }
+      }
+
+    }
+
+  }
+
+}

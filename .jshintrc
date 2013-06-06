@@ -25,6 +25,7 @@
     "jQuery" : true,
     "window" : true,
     "_" : true,
-    "chrome" : true
+    "chrome" : true,
+    "watch" : true
   }
 }

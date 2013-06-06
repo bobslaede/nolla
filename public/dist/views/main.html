@@ -1,0 +1,112 @@
+<div class="app">
+
+  <div class="header">
+
+    <div class="navbar">
+      <div class="navbar-inner-">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">&hellip;</a>
+
+          <div class="nav-collapse collapse">
+            <ul class="nav pull-left">
+              <li>
+                <div class="client-search">
+                  <div class="input-prepend">
+                                        <span class="add-on">
+                                          <i class="icon-search icon-large"></i>
+                                        </span>
+                    <input type="search" placeholder="Søg i klienter" ng-model="clientFilter">
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <ul class="nav">
+              <li ng-class="{ active : $state.includes('app.main.client') }">
+                <a ng-click="selectAction('app.main.client')">
+                  <i class="icon-group icon-large"></i>
+                  Klienter
+                </a>
+              </li>
+              <li ng-class="{ active : $state.includes('app.main.journal') }">
+                <a ng-click="selectAction('app.main.journal')">
+                  <i class="icon-book icon-large"></i>
+                  Journaler
+                </a>
+              </li>
+              <li ng-class="{ active : $state.includes('app.main.calendar') }">
+                <a ng-click="selectAction('app.main.calendar')">
+                  <i class="icon-calendar icon-large"></i>
+                  Aftalebog
+                </a>
+              </li>
+              <li>
+                <a>
+                  <i class="icon-money icon-large"></i>
+                  Regnskab
+                </a>
+              </li>
+            </ul>
+            <ul class="nav pull-right">
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown">
+                  <i class="icon-user"></i>
+                  {{user.displayName}}
+                  <i class="caret"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#/settings">
+                    <i class="icon-cogs"></i>
+                    Indstillinger
+                  </a></li>
+                  <li><a ng-click="logout()">
+                    <i class="icon-signout"></i>
+                    Logud
+                  </a></li>
+                  <li class="divider" ng-hide="user.apps.length==0"></li>
+                  <li class="dropdown-submenu" ng-hide="user.apps.length==0">
+                    <a>Mine apps</a>
+                    <ul class="dropdown-menu">
+                      <li ng-repeat="app in user.apps">
+                        <a ng-click="chooseApp(app._id)">{{app.name}}</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="app-container">
+
+    <div class="client-list">
+      <nav>
+        <ul>
+          <li ng-repeat="client in clients.list | filter:clientFilter | orderBy:'firstName'" ng-class="{ active : $state.params.clientId == client._id }">
+            <a ng-click="selectClient(client)">
+              <span class="lead">{{client.firstName}} {{client.lastName}}</span>
+              <small>
+                <span ng-repeat="contact in client.phone" title="{{contact.type}}">{{contact.contact}} </span>
+                <span ng-repeat="contact in client.email" title="{{contact.type}}">{{contact.contact}} </span>
+              </small>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="main">
+      <div class="main-content" ui-view=""></div>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="alerts">
+  <div class="alert" ng-repeat="alert in alerts" bs-alert="alert"></div>
+</div>
