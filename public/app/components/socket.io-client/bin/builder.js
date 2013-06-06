@@ -43,7 +43,7 @@ var starttagIF = '// if node'
  */
 
 var base = [
-  'io.js'
+    'io.js'
   , 'util.js'
   , 'events.js'
   , 'json.js'
@@ -51,11 +51,11 @@ var base = [
   , 'transport.js'
   , 'socket.js'
   , 'namespace.js'
-];
+  ];
 
 /**
  * The available transports for Socket.IO. These are mapped as:
- *
+ * 
  *   - `key` the name of the transport
  *   - `value` the dependencies for the transport
  *
@@ -65,18 +65,22 @@ var base = [
  */
 
 var baseTransports = {
-  'websocket': ['transports/websocket.js'], 'flashsocket': [
-    'transports/websocket.js'
-    , 'transports/flashsocket.js'
-    , 'vendor/web-socket-js/swfobject.js'
-    , 'vendor/web-socket-js/web_socket.js'
-  ], 'htmlfile': ['transports/xhr.js', 'transports/htmlfile.js']
+    'websocket': ['transports/websocket.js']
+  , 'flashsocket': [
+        'transports/websocket.js'
+      , 'transports/flashsocket.js'
+      , 'vendor/web-socket-js/swfobject.js'
+      , 'vendor/web-socket-js/web_socket.js'
+    ] 
+  , 'htmlfile': ['transports/xhr.js', 'transports/htmlfile.js']
   /* FIXME: re-enable me once we have multi-part support
-   , 'xhr-multipart': ['transports/xhr.js', 'transports/xhr-multipart.js'] */, 'xhr-polling': ['transports/xhr.js', 'transports/xhr-polling.js'], 'jsonp-polling': [
-    'transports/xhr.js'
-    , 'transports/xhr-polling.js'
-    , 'transports/jsonp-polling.js'
-  ]
+  , 'xhr-multipart': ['transports/xhr.js', 'transports/xhr-multipart.js'] */
+  , 'xhr-polling': ['transports/xhr.js', 'transports/xhr-polling.js']
+  , 'jsonp-polling': [
+        'transports/xhr.js'
+      , 'transports/xhr-polling.js'
+      , 'transports/jsonp-polling.js'
+    ]
 };
 
 /**
@@ -88,8 +92,8 @@ var baseTransports = {
 var wrapperPre = "\nvar io = ('undefined' === typeof module ? {} : module.exports);\n(function() {\n";
 
 var wrapperPost = "\nif (typeof define === \"function\" && define.amd) {" +
-  "\n  define([], function () { return io; });" +
-  "\n}\n})();";
+                  "\n  define([], function () { return io; });" +
+                  "\n}\n})();";
 
 
 /**
@@ -110,14 +114,16 @@ var builder = module.exports = function () {
   var transports, options, callback, error = null
     , args = Array.prototype.slice.call(arguments, 0)
     , settings = {
-      minify: true, node: false, custom: []
-    };
+        minify: true
+      , node: false
+      , custom: []
+      };
 
   // Fancy pancy argument support this makes any pattern possible mainly
   // because we require only one of each type
   args.forEach(function (arg) {
     var type = Object.prototype.toString.call(arg)
-      .replace(/\[object\s(\w+)\]/gi, '$1').toLowerCase();
+        .replace(/\[object\s(\w+)\]/gi , '$1' ).toLowerCase();
 
     switch (type) {
       case 'array':
@@ -134,7 +140,7 @@ var builder = module.exports = function () {
   transports = transports || Object.keys(baseTransports);
 
   // Merge the data
-  for (var option in options) {
+  for(var option in options) {
     settings[option] = options[option];
   }
 
@@ -196,7 +202,7 @@ var builder = module.exports = function () {
 
       // post-wrapper for non-server-side builds
       if (!settings.node) {
-        code += wrapperPost;
+          code += wrapperPost;
       }
 
       code = activeXObfuscator(code);
@@ -248,7 +254,7 @@ var builder = module.exports = function () {
  * @type {String}
  * @api public
  */
-
+ 
 builder.version = socket.version;
 
 /**
@@ -257,24 +263,24 @@ builder.version = socket.version;
  * @type {Object}
  * @api public
  */
-
+ 
 builder.transports = baseTransports;
 
 /**
  * Command line support, this allows us to generate builds without having
  * to load it as module.
  */
-
-if (!module.parent) {
+ 
+if (!module.parent){
   // the first 2 are `node` and the path to this file, we don't need them
   var args = process.argv.slice(2);
 
   // build a development build
-  builder(args.length ? args : false, { minify: false }, function (err, content) {
+  builder(args.length ? args : false, { minify:false }, function (err, content) {
     if (err) return console.error(err);
 
     fs.write(
-      fs.openSync(__dirname + '/../dist/socket.io.js', 'w')
+        fs.openSync(__dirname + '/../dist/socket.io.js', 'w')
       , content
       , 0
       , 'utf8'
@@ -285,9 +291,9 @@ if (!module.parent) {
   // and build a production build
   builder(args.length ? args : false, function (err, content) {
     if (err) return console.error(err);
-
+ 
     fs.write(
-      fs.openSync(__dirname + '/../dist/socket.io.min.js', 'w')
+        fs.openSync(__dirname + '/../dist/socket.io.min.js', 'w')
       , content
       , 0
       , 'utf8'

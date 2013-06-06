@@ -18,7 +18,7 @@ describe('modal', function () {
 
   }));
 
-  afterEach(function () {
+  afterEach(function() {
     $sandbox.remove();
     scope.$destroy();
     $('.modal-backdrop, .modal').remove();
@@ -33,13 +33,9 @@ describe('modal', function () {
   function compileDirective(template, expectCache) {
     template = template ? templates[template] : templates['default'];
     template = $(template).appendTo($sandbox);
-    if (!expectCache) {
-      $httpBackend.expectGET('partials/modal.html').respond(scope.modal);
-    }
+    if(!expectCache) { $httpBackend.expectGET('partials/modal.html').respond(scope.modal); }
     var elm = $compile(template)(scope);
-    if (!expectCache) {
-      $httpBackend.flush();
-    }
+    if(!expectCache) { $httpBackend.flush(); }
     scope.$digest(); // evaluate $evalAsync queue used by $q
     return elm;
   }
@@ -81,31 +77,30 @@ describe('modal', function () {
     expect(spy).toHaveBeenCalled();
   });
 
-  it('should resolve scope variables in the external partial', function () {
+  it('should resolve scope variables in the external partial', function() {
     var elm = compileDirective();
     var $modal = $(elm.attr('data-target'));
-    $modal.modal('show');
-    $timeout.flush();
+    $modal.modal('show'); $timeout.flush();
     expect($modal.text()).toBe('Hello ' + scope.content.replace(/<br \/>/g, ''));
   });
 
-  it('should show the modal on click', function (/*done*/) {
+  it('should show the modal on click', function(/*done*/) {
     var elm = compileDirective();
     var $modal = $(elm.attr('data-target'));
     expect($modal.hasClass('hide')).toBe(true);
     elm.trigger('click');
     /*setTimeout(function() {
-     dump($('body').html());
-     expect($modal.hasClass('in')).toBe(true); //@fixme
-     expect($modal.hasClass('hide')).toBe(false); //@fixme
-     done();
-     }, 100);*/
+      dump($('body').html());
+      expect($modal.hasClass('in')).toBe(true); //@fixme
+      expect($modal.hasClass('hide')).toBe(false); //@fixme
+      done();
+    }, 100);*/
   });
 
-  describe("events", function () {
+  describe("events", function() {
     var elm, $modal, spy;
 
-    beforeEach(function () {
+    beforeEach(function() {
       elm = compileDirective();
       $modal = $(elm.attr('data-target'));
       spy = jasmine.createSpy('event');

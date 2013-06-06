@@ -4,7 +4,7 @@
  * of search parameters. Multiple search parameter names are separated by '&'. Search parameters
  * do not influence whether or not a URL is matched, but their values are passed through into
  * the matched parameters returned by {@link UrlMatcher#exec exec}.
- *
+ * 
  * Path parameter placeholders can be specified using simple colon/catch-all syntax or curly brace
  * syntax, which optionally allows a regular expression for the parameter to be specified:
  *
@@ -15,13 +15,13 @@
  *   curly braces, they must be in matched pairs or escaped with a backslash.
  *
  * Parameter names may contain only word characters (latin letters, digits, and underscore) and
- * must be unique within the pattern (across both path and search parameters). For colon
+ * must be unique within the pattern (across both path and search parameters). For colon 
  * placeholders or curly placeholders without an explicit regexp, a path parameter matches any
  * number of characters other than '/'. For catch-all placeholders the path parameter matches
  * any number of characters.
- *
+ * 
  * ### Examples
- *
+ * 
  * * '/hello/' - Matches only if the path is exactly '/hello/'. There is no special treatment for
  *   trailing slashes, and patterns have to match the entire path, not just a prefix.
  * * '/user/:id' - Matches '/user/bob' or '/user/1234!!!' or even '/user/' but not '/user' or
@@ -57,9 +57,9 @@ function UrlMatcher(pattern) {
   //    \\.                       - a backslash escape
   //    \{(?:[^{}\\]+|\\.)*\}     - a matched set of curly braces containing other atoms
   var placeholder = /([:*])(\w+)|\{(\w+)(?:\:((?:[^{}\\]+|\\.|\{(?:[^{}\\]+|\\.)*\})+))?\}/g,
-    names = {}, compiled = '^', last = 0, m,
-    segments = this.segments = [],
-    params = this.params = [];
+      names = {}, compiled = '^', last = 0, m,
+      segments = this.segments = [], 
+      params = this.params = [];
 
   function addParameter(id) {
     if (!/^\w+$/.test(id)) throw new Error("Invalid parameter name '" + id + "' in pattern '" + pattern + "'");
@@ -94,7 +94,7 @@ function UrlMatcher(pattern) {
   if (i >= 0) {
     var search = this.sourceSearch = segment.substring(i);
     segment = segment.substring(0, i);
-    this.sourcePath = pattern.substring(0, last + i);
+    this.sourcePath = pattern.substring(0, last+i);
 
     // Allow parameters to be separated by '?' as well as '&' to make concat() easier
     forEach(search.substring(1).split(/[&?]/), addParameter);
@@ -158,11 +158,11 @@ UrlMatcher.prototype.exec = function (path, searchParams) {
   if (!m) return null;
 
   var params = this.params, nTotal = params.length,
-    nPath = this.segments.length - 1,
+    nPath = this.segments.length-1,
     values = {}, i;
 
-  for (i = 0; i < nPath; i++) values[params[i]] = decodeURIComponent(m[i + 1]);
-  for (/**/; i < nTotal; i++) values[params[i]] = searchParams[params[i]];
+  for (i=0; i<nPath; i++) values[params[i]] = decodeURIComponent(m[i+1]);
+  for (/**/; i<nTotal; i++) values[params[i]] = searchParams[params[i]];
 
   return values;
 };
@@ -194,16 +194,16 @@ UrlMatcher.prototype.format = function (values) {
   var segments = this.segments, params = this.params;
   if (!values) return segments.join('');
 
-  var nPath = segments.length - 1, nTotal = params.length,
+  var nPath = segments.length-1, nTotal = params.length,
     result = segments[0], i, search, value;
 
-  for (i = 0; i < nPath; i++) {
+  for (i=0; i<nPath; i++) {
     value = values[params[i]];
     // TODO: Maybe we should throw on null here? It's not really good style to use '' and null interchangeabley
     if (value != null) result += value;
-    result += segments[i + 1];
+    result += segments[i+1];
   }
-  for (/**/; i < nTotal; i++) {
+  for (/**/; i<nTotal; i++) {
     value = values[params[i]];
     if (value != null) {
       result += (search ? '&' : '?') + params[i] + '=' + encodeURIComponent(value);

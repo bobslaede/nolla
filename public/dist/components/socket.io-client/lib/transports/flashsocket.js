@@ -1,3 +1,4 @@
+
 /**
  * socket.io
  * Copyright(c) 2011 LearnBoost <dev@learnboost.com>
@@ -24,7 +25,7 @@
    * @api public
    */
 
-  function Flashsocket() {
+  function Flashsocket () {
     io.Transport.websocket.apply(this, arguments);
   };
 
@@ -43,8 +44,8 @@
   Flashsocket.prototype.name = 'flashsocket';
 
   /**
-   * Disconnect the established `FlashSocket` connection. This is done by adding a
-   * new task to the FlashSocket. The rest will be handled off by the `WebSocket`
+   * Disconnect the established `FlashSocket` connection. This is done by adding a 
+   * new task to the FlashSocket. The rest will be handled off by the `WebSocket` 
    * transport.
    *
    * @returns {Transport}
@@ -60,10 +61,10 @@
     });
     return this;
   };
-
+  
   /**
    * Sends a message to the Socket.IO server. This is done by adding a new
-   * task to the FlashSocket. The rest will be handled off by the `WebSocket`
+   * task to the FlashSocket. The rest will be handled off by the `WebSocket` 
    * transport.
    *
    * @returns {Transport}
@@ -102,16 +103,16 @@
    */
 
   Flashsocket.prototype.ready = function (socket, fn) {
-    function init() {
+    function init () {
       var options = socket.options
         , port = options['flash policy port']
         , path = [
-          'http' + (options.secure ? 's' : '') + ':/'
-          , options.host + ':' + options.port
-          , options.resource
-          , 'static/flashsocket'
-          , 'WebSocketMain' + (socket.isXDomain() ? 'Insecure' : '') + '.swf'
-        ];
+              'http' + (options.secure ? 's' : '') + ':/'
+            , options.host + ':' + options.port
+            , options.resource
+            , 'static/flashsocket'
+            , 'WebSocketMain' + (socket.isXDomain() ? 'Insecure' : '') + '.swf'
+          ];
 
       // Only start downloading the swf file when the checked that this browser
       // actually supports it
@@ -149,15 +150,15 @@
 
   Flashsocket.check = function () {
     if (
-      typeof WebSocket == 'undefined'
-        || !('__initialize' in WebSocket) || !swfobject
-      ) return false;
+        typeof WebSocket == 'undefined'
+      || !('__initialize' in WebSocket) || !swfobject
+    ) return false;
 
     return swfobject.getFlashPlayerVersion().major >= 10;
   };
 
   /**
-   * Check if the FlashSocket transport can be used as cross domain / cross origin
+   * Check if the FlashSocket transport can be used as cross domain / cross origin 
    * transport. Because we can't see which type (secure or insecure) of .swf is used
    * we will just return true.
    *
@@ -186,5 +187,5 @@
   io.transports.push('flashsocket');
 })(
     'undefined' != typeof io ? io.Transport : module.exports
-    , 'undefined' != typeof io ? io : module.parent.exports
-  );
+  , 'undefined' != typeof io ? io : module.parent.exports
+);

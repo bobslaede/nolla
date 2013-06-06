@@ -1,4 +1,4 @@
-module.exports = function (grunt) {
+module.exports = function(grunt) {
   'use strict';
 
   grunt.loadNpmTasks('grunt-contrib-jshint');
@@ -26,11 +26,11 @@ module.exports = function (grunt) {
     },
     jasmine: {
       build: {
-        src: ['spec/js/libs/jquery/jquery.min.js', 'spec/js/libs/bootstrap/js/bootstrap.min.js', 'spec/js/libs/autotype/index.js', 'js/bootstrap-timepicker.js'],
+        src : ['spec/js/libs/jquery/jquery.min.js', 'spec/js/libs/bootstrap/js/bootstrap.min.js', 'spec/js/libs/autotype/index.js', 'js/bootstrap-timepicker.js'],
         options: {
-          specs: 'spec/js/*Spec.js',
-          helpers: 'spec/js/helpers/*.js',
-          timeout: 100
+          specs : 'spec/js/*Spec.js',
+          helpers : 'spec/js/helpers/*.js',
+          timeout : 100
         }
       }
     },
@@ -96,13 +96,13 @@ module.exports = function (grunt) {
           '*/'
       },
       build: {
-        src: ['<banner:meta.banner>', 'js/<%= pkg.name %>.js'],
+        src: ['<banner:meta.banner>','js/<%= pkg.name %>.js'],
         dest: 'js/<%= pkg.name %>.min.js'
       }
     }
   });
 
-  grunt.registerTask('default', ['jasmine', 'jshint', 'uglify', 'less:production']);
-  grunt.registerTask('test', ['jasmine', 'lint']);
+  grunt.registerTask('default', ['jasmine','jshint','uglify','less:production']);
+  grunt.registerTask('test', ['jasmine','lint']);
   grunt.registerTask('copy', ['exec:copyAssets']);
 };

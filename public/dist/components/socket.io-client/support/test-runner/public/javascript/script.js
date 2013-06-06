@@ -1,23 +1,22 @@
-!function (win, doc, timeout) {
+!function(win, doc, timeout) {
   var head = doc.getElementsByTagName('head')[0],
-    list = {}, ids = {}, delay = {},
-    scripts = {}, s = 'string', f = false,
-    push = 'push', domContentLoaded = 'DOMContentLoaded', readyState = 'readyState',
-    addEventListener = 'addEventListener', onreadystatechange = 'onreadystatechange',
-    every = function (ar, fn) {
-      for (var i = 0, j = ar.length; i < j; ++i) {
-        if (!fn(ar[i])) {
-          return f;
+      list = {}, ids = {}, delay = {},
+      scripts = {}, s = 'string', f = false,
+      push = 'push', domContentLoaded = 'DOMContentLoaded', readyState = 'readyState',
+      addEventListener = 'addEventListener', onreadystatechange = 'onreadystatechange',
+      every = function(ar, fn) {
+        for (var i = 0, j = ar.length; i < j; ++i) {
+          if (!fn(ar[i])) {
+            return f;
+          }
         }
+        return 1;
+      };
+      function each(ar, fn) {
+        every(ar, function(el) {
+          return !fn(el);
+        });
       }
-      return 1;
-    };
-
-  function each(ar, fn) {
-    every(ar, function (el) {
-      return !fn(el);
-    });
-  }
 
   if (!doc[readyState] && doc[addEventListener]) {
     doc[addEventListener](domContentLoaded, function fn() {
@@ -27,29 +26,26 @@
     doc[readyState] = "loading";
   }
 
-  var $script = function (paths, idOrDone, optDone) {
+  var $script = function(paths, idOrDone, optDone) {
     paths = paths[push] ? paths : [paths];
     var idOrDoneIsDone = idOrDone && idOrDone.call,
-      done = idOrDoneIsDone ? idOrDone : optDone,
-      id = idOrDoneIsDone ? paths.join('') : idOrDone,
-      queue = paths.length;
-
-    function loopFn(item) {
-      return item.call ? item() : list[item];
-    }
-
-    function callback() {
-      if (!--queue) {
-        list[id] = 1;
-        done && done();
-        for (var dset in delay) {
-          every(dset.split('|'), loopFn) && !each(delay[dset], loopFn) && (delay[dset] = []);
+        done = idOrDoneIsDone ? idOrDone : optDone,
+        id = idOrDoneIsDone ? paths.join('') : idOrDone,
+        queue = paths.length;
+        function loopFn(item) {
+          return item.call ? item() : list[item];
         }
-      }
-    }
-
-    timeout(function () {
-      each(paths, function (path) {
+        function callback() {
+          if (!--queue) {
+            list[id] = 1;
+            done && done();
+            for (var dset in delay) {
+              every(dset.split('|'), loopFn) && !each(delay[dset], loopFn) && (delay[dset] = []);
+            }
+          }
+        }
+    timeout(function() {
+      each(paths, function(path) {
         if (scripts[path]) {
           id && (ids[id] = 1);
           callback();
@@ -67,7 +63,7 @@
 
   function create(path, fn) {
     var el = doc.createElement("script"),
-      loaded = f;
+        loaded = f;
     el.onload = el.onerror = el[onreadystatechange] = function () {
       if ((el[readyState] && !(/^c|loade/.test(el[readyState]))) || loaded) {
         return;
@@ -83,14 +79,14 @@
 
   $script.get = create;
 
-  $script.ready = function (deps, ready, req) {
+  $script.ready = function(deps, ready, req) {
     deps = deps[push] ? deps : [deps];
     var missing = [];
-    !each(deps, function (dep) {
+    !each(deps, function(dep) {
       list[dep] || missing[push](dep);
-    }) && every(deps, function (dep) {
+    }) && every(deps, function(dep) {
       return list[dep];
-    }) ? ready() : !function (key) {
+    }) ? ready() : !function(key) {
       delay[key] = delay[key] || [];
       delay[key][push](ready);
       req && req(missing);

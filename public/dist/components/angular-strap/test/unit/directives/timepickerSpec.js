@@ -14,7 +14,7 @@ describe('timepicker', function () {
     scope.model = {};
   }));
 
-  afterEach(function () {
+  afterEach(function() {
     $sandbox.remove();
     scope.$destroy();
     $('.bootstrap-timepicker').remove();
@@ -45,25 +45,25 @@ describe('timepicker', function () {
     expect(spy).toHaveBeenCalled();
   });
 
-  it('should show the timepicker on click', function () {
+  it('should show the timepicker on click', function() {
     var elm = compileDirective();
     elm.trigger('click');
     expect(elm.data('timepicker').$widget.hasClass('open')).toBe(true);
   });
 
-  it('should show the timepicker on focus', function () {
+  it('should show the timepicker on focus', function() {
     var elm = compileDirective();
     elm.trigger('focus');
     expect(elm.data('timepicker').$widget.hasClass('open')).toBe(true);
   });
 
-  it('should show the timepicker on [data-toggle="timepicker"] click', function () {
+  it('should show the timepicker on [data-toggle="timepicker"] click', function() {
     var elm = compileDirective('addon');
     elm.next('[data-toggle="timepicker"]').trigger('click');
     expect(elm.data('timepicker').$widget.hasClass('open')).toBe(true);
   });
 
-  it('should correctly update both input value and bound model', function () {
+  it('should correctly update both input value and bound model', function() {
     var elm = compileDirective();
     elm.trigger('focus');
     elm.data('timepicker').$widget.find('a[data-action="incrementHour"]').trigger('click');

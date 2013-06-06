@@ -1,3 +1,4 @@
+
 /**
  * socket.io
  * Copyright(c) 2011 LearnBoost <dev@learnboost.com>
@@ -23,7 +24,7 @@
    * @api public
    */
 
-  function WS(socket) {
+  function WS (socket) {
     io.Transport.apply(this, arguments);
   };
 
@@ -90,15 +91,15 @@
    * @api public
    */
 
-  // Do to a bug in the current IDevices browser, we need to wrap the send in a
-  // setTimeout, when they resume from sleeping the browser will crash if
+  // Do to a bug in the current IDevices browser, we need to wrap the send in a 
+  // setTimeout, when they resume from sleeping the browser will crash if 
   // we don't allow the browser time to detect the socket has been closed
   if (io.util.ua.iDevice) {
     WS.prototype.send = function (data) {
       var self = this;
-      setTimeout(function () {
-        self.websocket.send(data);
-      }, 0);
+      setTimeout(function() {
+         self.websocket.send(data);
+      },0);
       return this;
     };
   } else {
@@ -167,7 +168,7 @@
     return true;
     // end node
     return ('WebSocket' in global && !('__addTask' in WebSocket))
-      || 'MozWebSocket' in global;
+          || 'MozWebSocket' in global;
   };
 
   /**
@@ -191,6 +192,6 @@
 
 })(
     'undefined' != typeof io ? io.Transport : module.exports
-    , 'undefined' != typeof io ? io : module.parent.exports
-    , this
-  );
+  , 'undefined' != typeof io ? io : module.parent.exports
+  , this
+);

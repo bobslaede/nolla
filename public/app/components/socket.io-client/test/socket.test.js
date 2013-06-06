@@ -1,3 +1,4 @@
+
 /*!
  * socket.io-node
  * Copyright(c) 2011 LearnBoost <dev@learnboost.com>
@@ -7,8 +8,7 @@
 (function (module, io, should) {
 
   if ('object' == typeof global) {
-    return module.exports = { '': function () {
-    } };
+    return module.exports = { '': function () {} };
   }
 
   module.exports = {
@@ -150,33 +150,33 @@
         , namespaces = 2
         , connect = 0;
 
-      function finish() {
+      function finish () {
         socket.of('').disconnect();
         connect.should().equal(3);
         next();
       }
 
-      socket.on('connect', function () {
+      socket.on('connect', function(){
         connect++;
       });
 
-      socket.of('/woot').on('connect',function () {
+      socket.of('/woot').on('connect', function () {
         connect++;
-      }).on('message',function (msg) {
-          msg.should().equal('connected to woot');
-          --namespaces || finish();
-        }).on('error', function (msg) {
-          throw new Error(msg || 'Received an error');
-        });
+      }).on('message', function (msg) {
+        msg.should().equal('connected to woot');
+        --namespaces || finish();
+      }).on('error', function (msg) {
+        throw new Error(msg || 'Received an error');
+      });
 
-      socket.of('/chat').on('connect',function () {
+      socket.of('/chat').on('connect', function () {
         connect++;
-      }).on('message',function (msg) {
-          msg.should().equal('connected to chat');
-          --namespaces || finish();
-        }).on('error', function (msg) {
-          throw new Error(msg || 'Received an error');
-        });
+      }).on('message', function (msg) {
+        msg.should().equal('connected to chat');
+        --namespaces || finish();
+      }).on('error', function (msg) {
+        throw new Error(msg || 'Received an error');
+      });
     },
 
     'test disconnecting from namespaces': function (next) {
@@ -184,7 +184,7 @@
         , namespaces = 2
         , disconnections = 0;
 
-      function finish() {
+      function finish () {
         socket.of('').disconnect();
         next();
       };
@@ -217,7 +217,7 @@
     'test authorizing for namespaces': function (next) {
       var socket = create().socket
 
-      function finish() {
+      function finish () {
         socket.of('').disconnect();
         next();
       };
@@ -417,6 +417,6 @@
 
 })(
     'undefined' == typeof module ? module = {} : module
-    , 'undefined' == typeof io ? require('socket.io-client') : io
-    , 'undefined' == typeof should ? require('should-browser') : should
-  );
+  , 'undefined' == typeof io ? require('socket.io-client') : io
+  , 'undefined' == typeof should ? require('should-browser') : should
+);

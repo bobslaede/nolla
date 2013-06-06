@@ -1,3 +1,4 @@
+
 /*!
  * socket.io-node
  * Copyright(c) 2011 LearnBoost <dev@learnboost.com>
@@ -25,9 +26,7 @@
 
     'remove listener': function () {
       var event = new io.EventEmitter;
-
-      function empty() {
-      }
+      function empty () { }
 
       event.on('test', empty);
       event.on('test:more', empty);
@@ -39,9 +38,7 @@
 
     'remove all listeners with no arguments': function () {
       var event = new io.EventEmitter;
-
-      function empty() {
-      }
+      function empty () { }
 
       event.on('test', empty);
       event.on('test:more', empty);
@@ -55,17 +52,9 @@
       var event = new io.EventEmitter
         , calls = 0;
 
-      function one() {
-        ++calls
-      }
-
-      function two() {
-        ++calls
-      }
-
-      function three() {
-        ++calls
-      }
+      function one () { ++calls }
+      function two () { ++calls }
+      function three () { ++calls }
 
       event.on('one', one);
       event.removeListener('one', one);
@@ -111,7 +100,7 @@
       event.emit('test', 'a', 'b');
       event.emit('test', 'a', 'b');
 
-      function removed() {
+      function removed () {
         should().fail('not removed');
       };
 
@@ -126,6 +115,6 @@
 
 })(
     'undefined' == typeof module ? module = {} : module
-    , 'undefined' == typeof io ? require('socket.io-client') : io
-    , 'undefined' == typeof should || !should.fail ? require('should') : should
-  );
+  , 'undefined' == typeof io ? require('socket.io-client') : io
+  , 'undefined' == typeof should || !should.fail ? require('should') : should
+);

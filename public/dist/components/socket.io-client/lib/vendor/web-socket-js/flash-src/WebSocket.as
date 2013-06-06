@@ -25,12 +25,12 @@ import mx.events.*;
 import mx.utils.*;
 
 public class WebSocket extends EventDispatcher {
-
+  
   private static var CONNECTING:int = 0;
   private static var OPEN:int = 1;
   private static var CLOSING:int = 2;
   private static var CLOSED:int = 3;
-
+  
   private var id:int;
   private var rawSocket:Socket;
   private var tlsSocket:TLSSocket;
@@ -53,7 +53,11 @@ public class WebSocket extends EventDispatcher {
   private var expectedDigest:String;
   private var logger:IWebSocketLogger;
 
-  public function WebSocket(id:int, url:String, protocols:Array, origin:String, proxyHost:String, proxyPort:int, cookie:String, headers:String, logger:IWebSocketLogger) {
+  public function WebSocket(
+      id:int, url:String, protocols:Array, origin:String,
+      proxyHost:String, proxyPort:int,
+      cookie:String, headers:String,
+      logger:IWebSocketLogger) {
     this.logger = logger;
     this.id = id;
     initNoiseChars();
@@ -72,8 +76,8 @@ public class WebSocket extends EventDispatcher {
     // headers should be zero or more complete lines, for example
     // "Header1: xxx\r\nHeader2: yyyy\r\n"
     this.headers = headers;
-
-    if (proxyHost != null && proxyPort != 0) {
+    
+    if (proxyHost != null && proxyPort != 0){
       if (scheme == "wss") {
         fatal("wss with proxy is not supported");
       }
@@ -84,9 +88,9 @@ public class WebSocket extends EventDispatcher {
     } else {
       rawSocket = new Socket();
       if (scheme == "wss") {
-        tlsConfig = new TLSConfig(TLSEngine.CLIENT,
-          null, null, null, null, null,
-          TLSSecurityParameters.PROTOCOL_VERSION);
+        tlsConfig= new TLSConfig(TLSEngine.CLIENT,
+            null, null, null, null, null,
+            TLSSecurityParameters.PROTOCOL_VERSION);
         tlsConfig.trustAllCertificates = true;
         tlsConfig.ignoreCommonNameMismatch = true;
         tlsSocket = new TLSSocket();
@@ -103,14 +107,14 @@ public class WebSocket extends EventDispatcher {
     rawSocket.addEventListener(SecurityErrorEvent.SECURITY_ERROR, onSocketSecurityError);
     rawSocket.connect(host, port);
   }
-
+  
   /**
    * @return  This WebSocket's ID.
    */
   public function getId():int {
     return this.id;
   }
-
+  
   /**
    * @return this WebSocket's readyState.
    */
@@ -121,7 +125,7 @@ public class WebSocket extends EventDispatcher {
   public function getAcceptedProtocol():String {
     return this.acceptedProtocol;
   }
-
+  
   public function send(encData:String):int {
     var data:String = decodeURIComponent(encData);
     if (readyState == OPEN) {
@@ -140,7 +144,7 @@ public class WebSocket extends EventDispatcher {
       return 0;
     }
   }
-
+  
   public function close(isError:Boolean = false):void {
     logger.log("close");
     try {
@@ -150,12 +154,11 @@ public class WebSocket extends EventDispatcher {
         socket.flush();
       }
       socket.close();
-    } catch (ex:Error) {
-    }
+    } catch (ex:Error) { }
     readyState = CLOSED;
     this.dispatchEvent(new WebSocketEvent(isError ? "error" : "close"));
   }
-
+  
   private function onSocketConnect(event:Event):void {
     logger.log("connected");
 
@@ -163,7 +166,7 @@ public class WebSocket extends EventDispatcher {
       logger.log("starting SSL/TLS");
       tlsSocket.startTLS(rawSocket, host, tlsConfig);
     }
-
+    
     var defaultPort:int = scheme == "wss" ? 443 : 80;
     var hostValue:String = host + (port == defaultPort ? "" : ":" + port);
     var key1:String = generateKey();
@@ -176,18 +179,18 @@ public class WebSocket extends EventDispatcher {
     }
     // if caller passes additional headers they must end with "\r\n"
     if (headers) opt += headers;
-
+    
     var req:String = StringUtil.substitute(
       "GET {0} HTTP/1.1\r\n" +
-        "Upgrade: WebSocket\r\n" +
-        "Connection: Upgrade\r\n" +
-        "Host: {1}\r\n" +
-        "Origin: {2}\r\n" +
-        "Cookie: {3}\r\n" +
-        "Sec-WebSocket-Key1: {4}\r\n" +
-        "Sec-WebSocket-Key2: {5}\r\n" +
-        "{6}" +
-        "\r\n",
+      "Upgrade: WebSocket\r\n" +
+      "Connection: Upgrade\r\n" +
+      "Host: {1}\r\n" +
+      "Origin: {2}\r\n" +
+      "Cookie: {3}\r\n" +
+      "Sec-WebSocket-Key1: {4}\r\n" +
+      "Sec-WebSocket-Key2: {5}\r\n" +
+      "{6}" +
+      "\r\n",
       path, hostValue, origin, cookie, key1, key2, opt);
     logger.log("request header:\n" + req);
     socket.writeUTFBytes(req);
@@ -216,14 +219,14 @@ public class WebSocket extends EventDispatcher {
     var message:String;
     if (readyState == CONNECTING) {
       message =
-        "cannot connect to Web Socket server at " + url + " (SecurityError)\n" +
+          "cannot connect to Web Socket server at " + url + " (SecurityError)\n" +
           "make sure the server is running and Flash socket policy file is correctly placed";
     } else {
       message = "error communicating with Web Socket server at " + url + " (SecurityError)";
     }
     onError(message);
   }
-
+  
   private function onError(message:String):void {
     if (readyState == CLOSED) return;
     logger.error(message);
@@ -284,7 +287,7 @@ public class WebSocket extends EventDispatcher {
       }
     }
   }
-
+  
   private function validateHeader(headerStr:String):Boolean {
     var lines:Array = headerStr.split(/\r\n/);
     if (!lines[0].match(/^HTTP\/1.1 101 /)) {
@@ -315,9 +318,9 @@ public class WebSocket extends EventDispatcher {
       if (lowerHeader["websocket-origin"]) {
         onError(
           "The WebSocket server speaks old WebSocket protocol, " +
-            "which is not supported by web-socket-js. " +
-            "It requires WebSocket protocol 76 or later. " +
-            "Try newer version of the server if available.");
+          "which is not supported by web-socket-js. " +
+          "It requires WebSocket protocol 76 or later. " +
+          "Try newer version of the server if available.");
       } else {
         onError("header Sec-WebSocket-Origin is missing");
       }
@@ -346,7 +349,7 @@ public class WebSocket extends EventDispatcher {
     buffer.readBytes(nextBuffer);
     buffer = nextBuffer;
   }
-
+  
   private function initNoiseChars():void {
     noiseChars = new Array();
     for (var i:int = 0x21; i <= 0x2f; ++i) {
@@ -356,7 +359,7 @@ public class WebSocket extends EventDispatcher {
       noiseChars.push(String.fromCharCode(j));
     }
   }
-
+  
   private function generateKey():String {
     var spaces:uint = randomInt(1, 12);
     var max:uint = uint.MAX_VALUE / spaces;
@@ -375,7 +378,7 @@ public class WebSocket extends EventDispatcher {
     }
     return key;
   }
-
+  
   private function generateKey3():String {
     var key3:String = "";
     for (var i:int = 0; i < 8; ++i) {
@@ -383,13 +386,13 @@ public class WebSocket extends EventDispatcher {
     }
     return key3;
   }
-
+  
   private function getSecurityDigest(key1:String, key2:String, key3:String):String {
     var bytes1:String = keyToBytes(key1);
     var bytes2:String = keyToBytes(key2);
     return MD5.rstr_md5(bytes1 + bytes2 + key3);
   }
-
+  
   private function keyToBytes(key:String):String {
     var keyNum:uint = parseInt(key.replace(/[^\d]/g, ""));
     var spaces:uint = 0;
@@ -403,7 +406,7 @@ public class WebSocket extends EventDispatcher {
     }
     return bytes;
   }
-
+  
   // Writes byte sequence to socket.
   // bytes is String in special format where bytes[i] is i-th byte, not i-th character.
   private function writeBytes(bytes:String):void {
@@ -411,7 +414,7 @@ public class WebSocket extends EventDispatcher {
       socket.writeByte(bytes.charCodeAt(i));
     }
   }
-
+  
   // Reads specified number of bytes from buffer, and returns it as special format String
   // where bytes[i] is i-th byte (not i-th character).
   private function readBytes(buffer:ByteArray, start:int, numBytes:int):String {
@@ -423,11 +426,11 @@ public class WebSocket extends EventDispatcher {
     }
     return bytes;
   }
-
+  
   private function readUTFBytes(buffer:ByteArray, start:int, numBytes:int):String {
     buffer.position = start;
     var data:String = "";
-    for (var i:int = start; i < start + numBytes; ++i) {
+    for(var i:int = start; i < start + numBytes; ++i) {
       // Workaround of a bug of ByteArray#readUTFBytes() that bytes after "\x00" is discarded.
       if (buffer[i] == 0x00) {
         data += buffer.readUTFBytes(i - buffer.position) + "\x00";
@@ -437,11 +440,11 @@ public class WebSocket extends EventDispatcher {
     data += buffer.readUTFBytes(start + numBytes - buffer.position);
     return data;
   }
-
+  
   private function randomInt(min:uint, max:uint):uint {
     return min + Math.floor(Math.random() * (Number(max) - min + 1));
   }
-
+  
   private function fatal(message:String):void {
     logger.error(message);
     throw message;
@@ -455,7 +458,7 @@ public class WebSocket extends EventDispatcher {
     }
     logger.log(output);
   }
-
+  
 }
 
 }

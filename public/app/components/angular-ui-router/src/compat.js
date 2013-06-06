@@ -1,10 +1,10 @@
 $RouteProvider.$inject = ['$stateProvider', '$urlRouterProvider'];
-function $RouteProvider($stateProvider, $urlRouterProvider) {
+function $RouteProvider(  $stateProvider,    $urlRouterProvider) {
 
   var routes = [];
 
   onEnterRoute.$inject = ['$$state'];
-  function onEnterRoute($$state) {
+  function onEnterRoute(   $$state) {
     /*jshint validthis: true */
     this.locals = $$state.locals.globals;
     this.params = this.locals.$stateParams;
@@ -49,7 +49,7 @@ function $RouteProvider($stateProvider, $urlRouterProvider) {
 
   this.$get = $get;
   $get.$inject = ['$state', '$rootScope', '$routeParams'];
-  function $get($state, $rootScope, $routeParams) {
+  function $get(   $state,   $rootScope,   $routeParams) {
 
     var $route = {
       routes: routes,

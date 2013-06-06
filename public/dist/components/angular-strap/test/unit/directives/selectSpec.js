@@ -16,18 +16,14 @@ describe('select', function () {
     $sandbox = $('<div id="sandbox"></div>').appendTo('body');
   }));
 
-  afterEach(function () {
+  afterEach(function() {
     $sandbox.remove();
     scope.$destroy();
   });
 
   var templates = {
     'default': {
-      scope: {items: [
-        {id: '1', name: 'foo'},
-        {id: '2', name: 'bar'},
-        {id: '3', name: 'baz'}
-      ], selectedItem: '2'},
+      scope: {items: [{id: '1', name: 'foo'}, {id: '2', name: 'bar'}, {id: '3', name: 'baz'}], selectedItem: '2'},
       element: '<select ng-model="selectedItem" ng-options="value.id as value.name for (key, value) in items" bs-select></select>'
     }
   };
@@ -42,10 +38,10 @@ describe('select', function () {
     return $element;
   }
 
-  describe('default template', function () {
+  describe('default template', function() {
 
     var elm, select, menu;
-    beforeEach(function () {
+    beforeEach(function() {
       elm = compileDirective();
       select = elm.next('.bootstrap-select');
       menu = select.find('ul[role=menu]');

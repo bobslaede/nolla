@@ -7,10 +7,10 @@
  * @requires $injector
  */
 $TemplateFactory.$inject = ['$http', '$templateCache', '$injector'];
-function $TemplateFactory($http, $templateCache, $injector) {
+function $TemplateFactory(  $http,   $templateCache,   $injector) {
 
   /**
-   * Creates a template from a configuration object.
+   * Creates a template from a configuration object. 
    * @function
    * @name $templateFactory#fromConfig
    * @methodOf $templateFactory
@@ -32,10 +32,10 @@ function $TemplateFactory($http, $templateCache, $injector) {
   this.fromConfig = function (config, params, locals) {
     return (
       isDefined(config.template) ? this.fromString(config.template, params) :
-        isDefined(config.templateUrl) ? this.fromUrl(config.templateUrl, params) :
-          isDefined(config.templateProvider) ? this.fromProvider(config.templateProvider, params, locals) :
-            null
-      );
+      isDefined(config.templateUrl) ? this.fromUrl(config.templateUrl, params) :
+      isDefined(config.templateProvider) ? this.fromProvider(config.templateProvider, params, locals) :
+      null
+    );
   };
 
   /**
@@ -65,10 +65,8 @@ function $TemplateFactory($http, $templateCache, $injector) {
     if (isFunction(url)) url = url(params);
     if (url == null) return null;
     else return $http
-      .get(url, { cache: $templateCache })
-      .then(function (response) {
-        return response.data;
-      });
+        .get(url, { cache: $templateCache })
+        .then(function(response) { return response.data; });
   };
 
   /**

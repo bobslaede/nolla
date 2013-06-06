@@ -13,7 +13,7 @@ describe('datepicker', function () {
     $sandbox = $('<div id="sandbox"></div>').appendTo($('body'));
   }));
 
-  afterEach(function () {
+  afterEach(function() {
     $sandbox.remove();
     scope.$destroy();
     $('.datepicker').remove();
@@ -49,7 +49,7 @@ describe('datepicker', function () {
   // Tests
   describe('desktop', function () {
     var isAppleTouch = /(iPad|iPho(ne|d))/g.test(navigator.userAgent);
-    if (isAppleTouch) return;
+    if(isAppleTouch) return;
 
     it('should add "data-toggle" attr for you', function () {
       var elm = compileDirective();
@@ -64,14 +64,12 @@ describe('datepicker', function () {
     });
 
     it('should handle "data-language" attr', function () {
-      (function ($) {
-        $.fn.datepicker.dates["fr"] = {days: ["Dimanche", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"], daysShort: ["Dim", "Lun", "Mar", "Mer", "Jeu", "Ven", "Sam", "Dim"], daysMin: ["D", "L", "Ma", "Me", "J", "V", "S", "D"], months: ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"], monthsShort: ["Jan", "Fev", "Mar", "Avr", "Mai", "Jui", "Jul", "Aou", "Sep", "Oct", "Nov", "Dec"], today: "Aujourd'hui", weekStart: 1, format: "dd/mm/yyyy"}
-      })(jQuery);
+      (function($){$.fn.datepicker.dates["fr"]={days:["Dimanche","Lundi","Mardi","Mercredi","Jeudi","Vendredi","Samedi","Dimanche"],daysShort:["Dim","Lun","Mar","Mer","Jeu","Ven","Sam","Dim"],daysMin:["D","L","Ma","Me","J","V","S","D"],months:["Janvier","Février","Mars","Avril","Mai","Juin","Juillet","Août","Septembre","Octobre","Novembre","Décembre"],monthsShort:["Jan","Fev","Mar","Avr","Mai","Jui","Jul","Aou","Sep","Oct","Nov","Dec"],today:"Aujourd'hui",weekStart:1,format:"dd/mm/yyyy"}})(jQuery);
       var elm = compileDirective('language');
       expect(elm.data('datepicker').language).toBe('fr');
     });
 
-    it('should show/hide the datepicker', function () {
+    it('should show/hide the datepicker', function() {
       var elm = compileDirective();
       elm.datepicker('show');
       expect(elm.data('datepicker').picker.is(':visible')).toBe(true);
@@ -79,22 +77,23 @@ describe('datepicker', function () {
       expect(elm.data('datepicker').picker.is(':visible')).toBe(false);
     });
 
-    it('should show the datepicker on focus', function () {
+    it('should show the datepicker on focus', function() {
       var elm = compileDirective();
       elm.trigger('focus');
       expect(elm.data('datepicker').picker.is(':visible')).toBe(true);
     });
 
-    it('should show the datepicker on [data-toggle="datepicker"] click', function () {
+    it('should show the datepicker on [data-toggle="datepicker"] click', function() {
       var elm = compileDirective('addon');
       elm.next('[data-toggle="datepicker"]').trigger('click');
       expect(elm.data('datepicker').picker.is(':visible')).toBe(true);
     });
 
 
-    describe("data-binding", function () {
 
-      it('should support date as a string', function () {
+    describe("data-binding", function() {
+
+      it('should support date as a string', function() {
         var elm = compileDirective('string');
         expect(+elm.data('datepicker').date).toBe(+new Date('2012-09-01T00:00:00.000Z'));
         expect(elm.prop('value')).toBe('2012/09/01');
@@ -102,15 +101,15 @@ describe('datepicker', function () {
 
     });
 
-    describe("data-binding", function () {
+    describe("data-binding", function() {
 
-      it('should correctly apply model defaults to the view', function () {
+      it('should correctly apply model defaults to the view', function() {
         var elm = compileDirective();
         expect(elm.data('datepicker').date).toBe(scope.foo.date);
         expect(elm.val()).toBe('09/01/2012');
       });
 
-      it('should correctly apply model changes to the view', function () {
+      it('should correctly apply model changes to the view', function() {
         var elm = compileDirective();
         scope.foo.date = new Date('2000-01-01T00:00:00.000Z');
         scope.$digest();
@@ -118,7 +117,7 @@ describe('datepicker', function () {
         expect(elm.val()).toBe('01/01/2000');
       });
 
-      it('should correctly apply view changes to the model', function () {
+      it('should correctly apply view changes to the model', function() {
         var elm = compileDirective();
         elm.trigger('focus');
         elm.data('datepicker').picker.find('td').trigger('click');

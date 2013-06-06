@@ -24,8 +24,8 @@
   var re = /^(?:(?![^:@]+:[^:@\/]*@)([^:\/?#.]+):)?(?:\/\/)?((?:(([^:@]*)(?::([^:@]*))?)?@)?([^:\/?#]*)(?::(\d*))?)(((\/(?:[^?#](?![^?#\/]*\.[^?#\/.]+(?:[?#]|$)))*\/?)?([^?#\/]*))(?:\?([^#]*))?(?:#(.*))?)/;
 
   var parts = ['source', 'protocol', 'authority', 'userInfo', 'user', 'password',
-    'host', 'port', 'relative', 'path', 'directory', 'file', 'query',
-    'anchor'];
+               'host', 'port', 'relative', 'path', 'directory', 'file', 'query',
+               'anchor'];
 
   util.parseUri = function (str) {
     var m = re.exec(str || '')
@@ -170,8 +170,7 @@
     if (!xdomain) {
       try {
         return new ActiveXObject('Microsoft.XMLHTTP');
-      } catch (e) {
-      }
+      } catch(e) { }
     }
 
     return null;
@@ -217,7 +216,7 @@
    * @api public
    */
 
-  util.merge = function merge(target, additional, deep, lastseen) {
+  util.merge = function merge (target, additional, deep, lastseen) {
     var seen = lastseen || []
       , depth = typeof deep == 'undefined' ? 2 : deep
       , prop;
@@ -253,8 +252,7 @@
    */
 
   util.inherit = function (ctor, ctor2) {
-    function f() {
-    };
+    function f() {};
     f.prototype = ctor2.prototype;
     ctor.prototype = new f;
   };
@@ -302,8 +300,7 @@
   util.indexOf = function (arr, o, i) {
 
     for (var j = arr.length, i = i < 0 ? i + j < 0 ? 0 : i + j : i || 0;
-         i < j && arr[i] !== o; i++) {
-    }
+         i < j && arr[i] !== o; i++) {}
 
     return j <= i ? -1 : i;
   };
@@ -356,13 +353,13 @@
   util.ua.webkit = 'undefined' != typeof navigator
     && /webkit/i.test(navigator.userAgent);
 
-  /**
+   /**
    * Detect iPad/iPhone/iPod.
    *
    * @api public
    */
 
   util.ua.iDevice = 'undefined' != typeof navigator
-    && /iPad|iPhone|iPod/i.test(navigator.userAgent);
+      && /iPad|iPhone|iPod/i.test(navigator.userAgent);
 
 })('undefined' != typeof io ? io : module.exports, this);

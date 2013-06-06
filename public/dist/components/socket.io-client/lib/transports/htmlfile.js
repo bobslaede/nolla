@@ -14,7 +14,7 @@
 
   /**
    * The HTMLFile transport creates a `forever iframe` based transport
-   * for Internet Explorer. Regular forever iframe implementations will
+   * for Internet Explorer. Regular forever iframe implementations will 
    * continuously trigger the browsers buzy indicators. If the forever iframe
    * is created inside a `htmlfile` these indicators will not be trigged.
    *
@@ -23,7 +23,7 @@
    * @api public
    */
 
-  function HTMLFile(socket) {
+  function HTMLFile (socket) {
     io.Transport.XHR.apply(this, arguments);
   };
 
@@ -65,7 +65,7 @@
     iframeC.appendChild(this.iframe);
 
     var self = this
-      , query = io.util.query(this.socket.options.query, 't=' + +new Date);
+      , query = io.util.query(this.socket.options.query, 't='+ +new Date);
 
     this.iframe.src = this.prepareUrl() + query;
 
@@ -85,12 +85,13 @@
    */
 
   HTMLFile.prototype._ = function (data, doc) {
+    // unescape all forward slashes. see GH-1251
+    data = data.replace(/\\\//g, '/');
     this.onData(data);
     try {
       var script = doc.getElementsByTagName('script')[0];
       script.parentNode.removeChild(script);
-    } catch (e) {
-    }
+    } catch (e) { }
   };
 
   /**
@@ -102,11 +103,10 @@
    */
 
   HTMLFile.prototype.destroy = function () {
-    if (this.iframe) {
+    if (this.iframe){
       try {
         this.iframe.src = 'about:blank';
-      } catch (e) {
-      }
+      } catch(e){}
 
       this.doc = null;
       this.iframe.parentNode.removeChild(this.iframe);
@@ -137,12 +137,11 @@
    */
 
   HTMLFile.check = function (socket) {
-    if (typeof window != "undefined" && 'ActiveXObject' in window) {
+    if (typeof window != "undefined" && 'ActiveXObject' in window){
       try {
         var a = new ActiveXObject('htmlfile');
         return a && io.Transport.XHR.check(socket);
-      } catch (e) {
-      }
+      } catch(e){}
     }
     return false;
   };
@@ -170,5 +169,5 @@
 
 })(
     'undefined' != typeof io ? io.Transport : module.exports
-    , 'undefined' != typeof io ? io : module.parent.exports
-  );
+  , 'undefined' != typeof io ? io : module.parent.exports
+);

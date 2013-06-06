@@ -18,8 +18,7 @@
    * @api public.
    */
 
-  function EventEmitter() {
-  };
+  function EventEmitter () {};
 
   /**
    * Adds a listener
@@ -54,7 +53,7 @@
   EventEmitter.prototype.once = function (name, fn) {
     var self = this;
 
-    function on() {
+    function on () {
       self.removeListener(name, on);
       fn.apply(this, arguments);
     };
@@ -179,5 +178,5 @@
 
 })(
     'undefined' != typeof io ? io : module.exports
-    , 'undefined' != typeof io ? io : module.parent.exports
-  );
+  , 'undefined' != typeof io ? io : module.parent.exports
+);

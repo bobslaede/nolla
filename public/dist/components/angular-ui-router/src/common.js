@@ -3,17 +3,16 @@
 'use strict';
 
 var isDefined = angular.isDefined,
-  isFunction = angular.isFunction,
-  isString = angular.isString,
-  isObject = angular.isObject,
-  isArray = angular.isArray,
-  forEach = angular.forEach,
-  extend = angular.extend,
-  copy = angular.copy;
+    isFunction = angular.isFunction,
+    isString = angular.isString,
+    isObject = angular.isObject,
+    isArray = angular.isArray,
+    forEach = angular.forEach,
+    extend = angular.extend,
+    copy = angular.copy;
 
 function inherit(parent, extra) {
-  return extend(new (extend(function () {
-  }, { prototype: parent }))(), extra);
+  return extend(new (extend(function() {}, { prototype: parent }))(), extra);
 }
 
 /**
@@ -26,9 +25,9 @@ function inherit(parent, extra) {
  * @see angular.extend
  */
 function merge(dst) {
-  forEach(arguments, function (obj) {
+  forEach(arguments, function(obj) {
     if (obj !== dst) {
-      forEach(obj, function (value, key) {
+      forEach(obj, function(value, key) {
         if (!dst.hasOwnProperty(key)) dst[key] = value;
       });
     }

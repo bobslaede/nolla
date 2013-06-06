@@ -24,7 +24,7 @@ describe("UrlMatcher", function () {
     expect(
       new UrlMatcher('/users/:id/details/{type}/{repeat:[0-9]+}?from&to')
         .exec('/users/123/details//0', {}))
-      .toEqual({ id: '123', type: '', repeat: '0' });
+      .toEqual({ id:'123', type:'', repeat:'0' });
   });
 
   it(".exec() captures catch-all parameters", function () {
@@ -43,7 +43,7 @@ describe("UrlMatcher", function () {
   it(".format() reconstitutes the URL", function () {
     expect(
       new UrlMatcher('/users/:id/details/{type}/{repeat:[0-9]+}?from')
-        .format({ id: '123', type: 'default', repeat: 444, ignored: 'value', from: '1970' }))
+        .format({ id:'123', type:'default', repeat:444, ignored:'value', from:'1970' }))
       .toEqual('/users/123/details/default/444?from=1970');
   });
 
@@ -66,11 +66,11 @@ describe("UrlMatcher", function () {
 });
 
 describe("urlMatcherFactory", function () {
-
+  
   var $umf;
 
   beforeEach(module('ui.util'));
-  beforeEach(inject(function ($urlMatcherFactory) {
+  beforeEach(inject(function($urlMatcherFactory) {
     $umf = $urlMatcherFactory;
   }));
 

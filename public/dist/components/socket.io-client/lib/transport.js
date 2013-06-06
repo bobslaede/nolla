@@ -19,7 +19,7 @@
    * @api public
    */
 
-  function Transport(socket, sessid) {
+  function Transport (socket, sessid) {
     this.socket = socket;
     this.sessid = sessid;
   };
@@ -213,9 +213,9 @@
     var self = this;
 
     /* FIXME: reopen delay causing a infinit loop
-     this.reopenTimeout = setTimeout(function () {
-     self.open();
-     }, this.socket.options['reopen delay']);*/
+    this.reopenTimeout = setTimeout(function () {
+      self.open();
+    }, this.socket.options['reopen delay']);*/
 
     this.isOpen = false;
     this.socket.onClose();
@@ -252,5 +252,5 @@
   };
 })(
     'undefined' != typeof io ? io : module.exports
-    , 'undefined' != typeof io ? io : module.parent.exports
-  );
+  , 'undefined' != typeof io ? io : module.parent.exports
+);

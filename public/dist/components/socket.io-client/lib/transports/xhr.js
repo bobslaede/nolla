@@ -1,3 +1,4 @@
+
 /**
  * socket.io
  * Copyright(c) 2011 LearnBoost <dev@learnboost.com>
@@ -21,7 +22,7 @@
    * @api public
    */
 
-  function XHR(socket) {
+  function XHR (socket) {
     if (!socket) return;
 
     io.Transport.apply(this, arguments);
@@ -90,19 +91,18 @@
    * @api private
    */
 
-  function empty() {
-  };
+  function empty () { };
 
   XHR.prototype.post = function (data) {
     var self = this;
     this.socket.setBuffer(true);
 
-    function stateChange() {
+    function stateChange () {
       if (this.readyState == 4) {
         this.onreadystatechange = empty;
         self.posting = false;
 
-        if (this.status == 200) {
+        if (this.status == 200){
           self.socket.setBuffer(false);
         } else {
           self.onClose();
@@ -110,7 +110,7 @@
       }
     }
 
-    function onload() {
+    function onload () {
       this.onload = empty;
       self.socket.setBuffer(false);
     };
@@ -161,8 +161,7 @@
           // XDomainRequest
           req.contentType = 'text/plain';
         }
-      } catch (e) {
-      }
+      } catch (e) {}
     }
 
     return req;
@@ -189,14 +188,13 @@
   XHR.check = function (socket, xdomain) {
     try {
       var request = io.util.request(xdomain),
-        usesXDomReq = (global.XDomainRequest && request instanceof XDomainRequest),
-        socketProtocol = (socket && socket.options && socket.options.secure ? 'https:' : 'http:'),
-        isXProtocol = (global.location && socketProtocol != global.location.protocol);
+          usesXDomReq = (global.XDomainRequest && request instanceof XDomainRequest),
+          socketProtocol = (socket && socket.options && socket.options.secure ? 'https:' : 'http:'),
+          isXProtocol = (global.location && socketProtocol != global.location.protocol);
       if (request && !(usesXDomReq && isXProtocol)) {
         return true;
       }
-    } catch (e) {
-    }
+    } catch(e) {}
 
     return false;
   };
@@ -214,6 +212,6 @@
 
 })(
     'undefined' != typeof io ? io.Transport : module.exports
-    , 'undefined' != typeof io ? io : module.parent.exports
-    , this
-  );
+  , 'undefined' != typeof io ? io : module.parent.exports
+  , this
+);

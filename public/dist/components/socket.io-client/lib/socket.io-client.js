@@ -1,3 +1,4 @@
+
 /**
  * socket.io
  * Copyright(c) 2011 LearnBoost <dev@learnboost.com>
@@ -20,7 +21,7 @@
    * @api public
    */
 
-  io.version = '0.9.11';
+  io.version = '0.9.16';
 
   /**
    * Protocol implemented.
@@ -99,7 +100,7 @@
      * @api private
      */
 
-    io.SocketNamespace = require('./namespace').SocketNamespace;
+     io.SocketNamespace = require('./namespace').SocketNamespace;
 
     /**
      * Expose Transport
@@ -180,7 +181,10 @@
     uuri = io.util.uniqueUri(uri);
 
     var options = {
-      host: uri.host, secure: 'https' == uri.protocol, port: uri.port || ('https' == uri.protocol ? 443 : 80), query: uri.query || ''
+        host: uri.host
+      , secure: 'https' == uri.protocol
+      , port: uri.port || ('https' == uri.protocol ? 443 : 80)
+      , query: uri.query || ''
     };
 
     io.util.merge(options, details);

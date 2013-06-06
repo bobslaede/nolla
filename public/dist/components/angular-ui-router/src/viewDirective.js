@@ -1,32 +1,27 @@
+
 $ViewDirective.$inject = ['$state', '$compile', '$controller', '$injector', '$anchorScroll'];
-function $ViewDirective($state, $compile, $controller, $injector, $anchorScroll) {
+function $ViewDirective(   $state,   $compile,   $controller,   $injector,   $anchorScroll) {
   // Unfortunately there is no neat way to ask $injector if a service exists
-  var $animator;
-  try {
-    $animator = $injector.get('$animator');
-  } catch (e) { /* do nothing */
-  }
+  var $animator; try { $animator = $injector.get('$animator'); } catch (e) { /* do nothing */ }
 
   var directive = {
     restrict: 'ECA',
     terminal: true,
-    link: function (scope, element, attr) {
+    link: function(scope, element, attr) {
       var viewScope, viewLocals,
-        name = attr[directive.name] || attr.name || '',
-        onloadExp = attr.onload || '',
-        animate = isDefined($animator) && $animator(scope, attr);
-
+          name = attr[directive.name] || attr.name || '',
+          onloadExp = attr.onload || '',
+          animate = isDefined($animator) && $animator(scope, attr);
+      
       // Find the details of the parent view directive (if any) and use it
       // to derive our own qualified view name, then hang our own details
       // off the DOM so child directives can find it.
       var parent = element.parent().inheritedData('$uiView');
-      if (name.indexOf('@') < 0) name = name + '@' + (parent ? parent.state.name : '');
+      if (name.indexOf('@') < 0) name  = name + '@' + (parent ? parent.state.name : '');
       var view = { name: name, state: null };
       element.data('$uiView', view);
 
-      scope.$on('$stateChangeSuccess', function () {
-        updateView(true);
-      });
+      scope.$on('$stateChangeSuccess', function() { updateView(true); });
       updateView(false);
 
       function updateView(doAnimate) {

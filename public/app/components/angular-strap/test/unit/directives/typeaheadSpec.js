@@ -13,7 +13,7 @@ describe('typeahead', function () {
     $sandbox = $('<div id="sandbox"></div>').appendTo($('body'));
   }));
 
-  afterEach(function () {
+  afterEach(function() {
     $sandbox.remove();
     scope.$destroy();
     $('.typeahead').remove();
@@ -21,7 +21,7 @@ describe('typeahead', function () {
 
   var templates = {
     'default': {
-      scope: {typeahead: ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan", "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey", "New Mexico", "New York", "North Dakota", "North Carolina", "Ohio", "Oklahoma", "Oregon", "Pennsylvania", "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington", "West Virginia", "Wisconsin", "Wyoming"]},
+      scope: {typeahead: ["Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York","North Dakota","North Carolina","Ohio","Oklahoma","Oregon","Pennsylvania","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virginia","Washington","West Virginia","Wisconsin","Wyoming"]},
       element: '<input type="text" class="span3" data-items="4" ng-model="typeaheadValue" bs-typeahead="typeahead">'
     },
     'minLength': {
@@ -55,7 +55,7 @@ describe('typeahead', function () {
     expect(spy).toHaveBeenCalled();
   });
 
-  it('should show the typeahead dropdown on keyup', function () {
+  it('should show the typeahead dropdown on keyup', function() {
     var elm = compileDirective();
     var $dropdown = $('body > .typeahead.dropdown-menu');
     expect($dropdown.attr('style')).toBeUndefined();
@@ -63,14 +63,14 @@ describe('typeahead', function () {
     expect($dropdown.attr('style') !== '').toBe(true);
   });
 
-  it('should show correctly limit dropdown to 4 items', function () {
+  it('should show correctly limit dropdown to 4 items', function() {
     var elm = compileDirective();
     elm.val('a').trigger('keyup');
     var $dropdown = elm.next('.typeahead.dropdown-menu');
     expect($dropdown.children('li').length).toBe(4);
   });
 
-  it('should show corretly set the value', function () {
+  it('should show corretly set the value', function() {
     var elm = compileDirective();
     elm.val('a').trigger('keyup');
     var $dropdown = elm.next('.typeahead.dropdown-menu');
@@ -78,7 +78,7 @@ describe('typeahead', function () {
     expect(elm.val()).toBe('Alabama');
   });
 
-  it('should show correctly handle source update', function () {
+  it('should show correctly handle source update', function() {
     var elm = compileDirective();
     scope.typeahead.push('Brazil');
     elm.val('brazil').trigger('keyup');
@@ -86,7 +86,7 @@ describe('typeahead', function () {
     expect($dropdown.children('li').length).toBe(1);
   });
 
-  it('should show correctly handle source replace', function () {
+  it('should show correctly handle source replace', function() {
     var elm = compileDirective();
     elm.val('a').trigger('keyup');
     var $dropdown = elm.next('.typeahead.dropdown-menu');
@@ -101,7 +101,7 @@ describe('typeahead', function () {
     expect($dropdown.children('li').length).toBe(1);
   });
 
-  it('should show correctly handle minLength attribute', function () {
+  it('should show correctly handle minLength attribute', function() {
     var elm = compileDirective('minLength');
     elm.val('a').trigger('keyup');
     var $dropdown = elm.next('.typeahead.dropdown-menu');
@@ -111,7 +111,7 @@ describe('typeahead', function () {
     expect($dropdown.children('li').length).toBe(1);
   });
 
-  it('should show correctly handle minLength=0 attribute', function () {
+  it('should show correctly handle minLength=0 attribute', function() {
     var elm = compileDirective('minLength-0');
     elm.trigger('focus');
     var $dropdown = elm.next('.typeahead.dropdown-menu');

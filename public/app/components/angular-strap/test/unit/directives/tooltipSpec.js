@@ -14,7 +14,7 @@ describe('tooltip', function () {
     $sandbox = $('<div id="sandbox"></div>').appendTo($('body'));
   }));
 
-  afterEach(function () {
+  afterEach(function() {
     $sandbox.remove();
     scope.$destroy();
   });
@@ -53,13 +53,13 @@ describe('tooltip', function () {
     expect(spy).toHaveBeenCalled();
   });
 
-  it('should define a correct title', function () {
+  it('should define a correct title', function() {
     var elm = compileDirective();
     elm.tooltip('show');
     expect(elm.data('tooltip').tip().find('.tooltip-inner').html()).toBe(scope.content);
   });
 
-  it('should show correctly handle title update/replace', function () {
+  it('should show correctly handle title update/replace', function() {
     var elm = compileDirective();
     scope.content += 'Update';
     scope.$digest();
@@ -72,13 +72,13 @@ describe('tooltip', function () {
     expect(elm.data('tooltip').tip().find('.tooltip-inner').html()).toBe(scope.content);
   });
 
-  it('should define the tooltip reference on the tip', function () {
+  it('should define the tooltip reference on the tip', function() {
     var elm = compileDirective();
     elm.tooltip('show');
     expect(elm.data('tooltip').tip().data('tooltip')).toBeDefined();
   });
 
-  it('should show/hide the tooltip on hover', function () {
+  it('should show/hide the tooltip on hover', function() {
     var elm = compileDirective();
     elm.trigger('mouseenter');
     expect(elm.data('tooltip').tip().hasClass('in')).toBe(true);
@@ -86,7 +86,7 @@ describe('tooltip', function () {
     expect(elm.data('tooltip').tip().hasClass('in')).toBe(false);
   });
 
-  it('should support data-unique attribute', function () {
+  it('should support data-unique attribute', function() {
     var elm = compileDirective();
     var elm2 = compileDirective('click');
     elm2.trigger('click');

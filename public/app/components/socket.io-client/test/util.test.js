@@ -1,3 +1,4 @@
+
 /*!
  * socket.io-node
  * Copyright(c) 2011 LearnBoost <dev@learnboost.com>
@@ -55,7 +56,7 @@
       base.should().eql('?foo=baz');
       add.should().eql('?foo=bar&bar=foo');
 
-      io.util.query('', '').should().eql('');
+      io.util.query('','').should().eql('');
       io.util.query('foo=bar', '').should().eql('?foo=bar');
       io.util.query('', 'foo=bar').should().eql('?foo=bar');
     },
@@ -76,33 +77,42 @@
 
     'merge, deep merge': function () {
       var start = {
-          foo: 'bar', bar: 'baz'
-        }
+            foo: 'bar'
+          , bar: 'baz'
+          }
         , duplicate = {
-          foo: 'foo', bar: 'bar'
-        }
+            foo: 'foo'
+          , bar: 'bar'
+          }
         , extra = {
-          ping: 'pong'
-        }
+            ping: 'pong'
+          }
         , deep = {
-          level1: {
-            foo: 'bar', level2: {
-              foo: 'bar', level3: {
-                foo: 'bar', rescursive: deep
+            level1:{
+              foo: 'bar'
+            , level2: {
+                foo: 'bar'
+              ,  level3:{
+                  foo: 'bar'
+                , rescursive: deep
+                }
               }
             }
           }
-        }
-      // same structure, but changed names
+          // same structure, but changed names
         , deeper = {
-          foo: 'bar', level1: {
-            foo: 'baz', level2: {
-              foo: 'foo', level3: {
-                foo: 'pewpew', rescursive: deep
+            foo: 'bar'
+          , level1:{
+              foo: 'baz'
+            , level2: {
+                foo: 'foo'
+              ,  level3:{
+                  foo: 'pewpew'
+                , rescursive: deep
+                }
               }
             }
-          }
-        };
+          };
 
       io.util.merge(start, duplicate);
 
@@ -141,6 +151,6 @@
 
 })(
     'undefined' == typeof module ? module = {} : module
-    , 'undefined' == typeof io ? require('socket.io-client') : io
-    , 'undefined' == typeof should ? require('should') : should
-  );
+  , 'undefined' == typeof io ? require('socket.io-client') : io
+  , 'undefined' == typeof should ? require('should') : should
+);

@@ -1,5 +1,5 @@
 $StateProvider.$inject = ['$urlRouterProvider', '$urlMatcherFactoryProvider'];
-function $StateProvider($urlRouterProvider, $urlMatcherFactory) {
+function $StateProvider(   $urlRouterProvider,   $urlMatcherFactory) {
 
   var root, states = {}, $state;
 
@@ -20,9 +20,7 @@ function $StateProvider($urlRouterProvider, $urlMatcherFactory) {
     // Wrap a new object around the state so we can store our private details easily.
     state = inherit(state, {
       self: state,
-      toString: function () {
-        return this.name;
-      }
+      toString: function () { return this.name; }
     });
 
     var name = state.name;
@@ -54,7 +52,7 @@ function $StateProvider($urlRouterProvider, $urlMatcherFactory) {
         url = state.url = (parent.navigable || root).url.concat(url);
       }
     } else if (isObject(url) &&
-      isFunction(url.exec) && isFunction(url.format) && isFunction(url.concat)) {
+        isFunction(url.exec) && isFunction(url.format) && isFunction(url.concat)) {
       /* use UrlMatcher (or compatible object) as is */
     } else if (url != null) {
       throw new Error("Invalid url '" + url + "' in state '" + state + "'");
@@ -72,10 +70,7 @@ function $StateProvider($urlRouterProvider, $urlMatcherFactory) {
       params = state.params = url ? url.parameters() : state.parent.params;
     }
 
-    var paramNames = {};
-    forEach(params, function (p) {
-      paramNames[p] = true;
-    });
+    var paramNames = {}; forEach(params, function (p) { paramNames[p] = true; });
     if (parent) {
       forEach(parent.params, function (p) {
         if (!paramNames[p]) {
@@ -148,7 +143,7 @@ function $StateProvider($urlRouterProvider, $urlMatcherFactory) {
   // $urlRouter is injected just to ensure it gets instantiated
   this.$get = $get;
   $get.$inject = ['$rootScope', '$q', '$templateFactory', '$injector', '$stateParams', '$location', '$urlRouter'];
-  function $get($rootScope, $q, $templateFactory, $injector, $stateParams, $location, $urlRouter) {
+  function $get(   $rootScope,   $q,   $templateFactory,   $injector,   $stateParams,   $location,   $urlRouter) {
 
     var TransitionSuperseded = $q.reject(new Error('transition superseded'));
     var TransitionPrevented = $q.reject(new Error('transition prevented'));
@@ -169,7 +164,7 @@ function $StateProvider($urlRouterProvider, $urlMatcherFactory) {
       to = findState(to);
       if (to['abstract']) throw new Error("Cannot transition to abstract state '" + to + "'");
       var toPath = to.path,
-        from = $state.$current, fromParams = $state.params, fromPath = from.path;
+          from = $state.$current, fromParams = $state.params, fromPath = from.path;
 
       // Starting from the root of the path, keep all levels that haven't changed
       var keep, state, locals = root.locals, toLocals = [];
@@ -193,7 +188,7 @@ function $StateProvider($urlRouterProvider, $urlMatcherFactory) {
 
       // Broadcast start event and cancel the transition if requested
       if ($rootScope.$broadcast('$stateChangeStart', to.self, toParams, from.self, fromParams)
-        .defaultPrevented) return TransitionPrevented;
+          .defaultPrevented) return TransitionPrevented;
 
       // Resolve locals for the remaining states, but don't update any global state just
       // yet -- if anything fails to resolve the current state needs to remain untouched.
@@ -203,9 +198,9 @@ function $StateProvider($urlRouterProvider, $urlMatcherFactory) {
       // empty and gets filled asynchronously. We need to keep track of the promise for the
       // (fully resolved) current locals, and pass this down the chain.
       var resolved = $q.when(locals);
-      for (var l = keep; l < toPath.length; l++, state = toPath[l]) {
+      for (var l=keep; l<toPath.length; l++, state=toPath[l]) {
         locals = toLocals[l] = inherit(locals);
-        resolved = resolveState(state, toParams, state === to, resolved, locals);
+        resolved = resolveState(state, toParams, state===to, resolved, locals);
       }
 
       // Once everything is resolved, we are ready to perform the actual transition
@@ -218,16 +213,16 @@ function $StateProvider($urlRouterProvider, $urlMatcherFactory) {
         if ($state.transition !== transition) return TransitionSuperseded;
 
         // Exit 'from' states not kept
-        for (l = fromPath.length - 1; l >= keep; l--) {
+        for (l=fromPath.length-1; l>=keep; l--) {
           exiting = fromPath[l];
           if (exiting.self.onExit) {
             $injector.invoke(exiting.self.onExit, exiting.self, exiting.locals.globals);
-          }
+          } 
           exiting.locals = null;
         }
 
         // Enter 'to' states not kept
-        for (l = keep; l < toPath.length; l++) {
+        for (l=keep; l<toPath.length; l++) {
           entering = toPath[l];
           entering.locals = toLocals[l];
           if (entering.self.onEnter) {
@@ -301,8 +296,8 @@ function $StateProvider($urlRouterProvider, $urlMatcherFactory) {
         forEach(deps, function (value, key) {
           promises.push($q
             .when(isString(value) ?
-              $injector.get(value) :
-              $injector.invoke(value, state.self, locals))
+                $injector.get(value) :
+                $injector.invoke(value, state.self, locals))
             .then(function (result) {
               dst[key] = result;
             }));
@@ -361,7 +356,7 @@ function $StateProvider($urlRouterProvider, $urlMatcherFactory) {
     }
 
     function equalForKeys(a, b, keys) {
-      for (var i = 0; i < keys.length; i++) {
+      for (var i=0; i<keys.length; i++) {
         var k = keys[i];
         if (a[k] != b[k]) return false; // Not '===', values aren't necessarily normalized
       }

@@ -1,13 +1,11 @@
 describe('state', function () {
-
+  
   beforeEach(module('ui.state'));
 
   var log, logEvents, logEnterExit;
-
   function eventLogger(event, to, toParams, from, fromParams) {
     if (logEvents) log += event.name + '(' + to.name + ',' + from.name + ');';
   }
-
   function callbackLogger(what) {
     return function () {
       if (logEnterExit) log += this.name + '.' + what + ';';
@@ -15,12 +13,12 @@ describe('state', function () {
   }
 
   var A = { data: {} },
-    B = {},
-    C = {},
-    D = { params: [ 'x', 'y' ] },
-    DD = { parent: D, params: [ 'x', 'y', 'z' ] },
-    E = { params: [ 'i' ] },
-    AppInjectable = {};
+      B = {},
+      C = {},
+      D = { params: [ 'x', 'y' ] },
+      DD = { parent: D, params: [ 'x', 'y', 'z' ] },
+      E = { params: [ 'i' ] },
+      AppInjectable = {};
 
   beforeEach(module(function ($stateProvider, $provide) {
     angular.forEach([ A, B, C, D, DD, E ], function (state) {
@@ -158,8 +156,8 @@ describe('state', function () {
       expect(resolvedError(superseded)).toBeTruthy();
       expect(log).toBe(
         '$stateChangeStart(B,A);' +
-          '$stateChangeStart(C,A);' +
-          '$stateChangeSuccess(C,A);');
+        '$stateChangeStart(C,A);' +
+        '$stateChangeSuccess(C,A);');
     }));
 
     it('aborts pending transitions even when going back to the curren state', inject(function ($state, $q) {
@@ -178,23 +176,20 @@ describe('state', function () {
     it('triggers onEnter and onExit callbacks', inject(function ($state, $q) {
       initStateTo(A);
       logEnterExit = true;
-      $state.transitionTo(D, {});
-      $q.flush();
+      $state.transitionTo(D, {}); $q.flush();
       log += $state.current.name + ';';
-      $state.transitionTo(DD, {});
-      $q.flush();
+      $state.transitionTo(DD, {}); $q.flush();
       log += $state.current.name + ';';
-      $state.transitionTo(A, {});
-      $q.flush();
+      $state.transitionTo(A, {}); $q.flush();
       expect(log).toBe(
         'A.onExit;' +
-          'D.onEnter;' +
-          'D;' +
-          'DD.onEnter;' +
-          'DD;' +
-          'DD.onExit;' +
-          'D.onExit;' +
-          'A.onEnter;');
+        'D.onEnter;' +
+        'D;' +
+        'DD.onEnter;' +
+        'DD;' +
+        'DD.onExit;' +
+        'D.onExit;' +
+        'A.onEnter;');
     }));
   });
 
@@ -255,9 +250,7 @@ describe('state', function () {
 
   describe('.href()', function () {
     it('aborts on un-navigable states', inject(function ($state) {
-      expect(function () {
-        $state.href("A");
-      }).toThrow("State 'A' is not navigable");
+      expect(function() { $state.href("A"); }).toThrow("State 'A' is not navigable");
     }));
 
     it('generates a URL without parameters', inject(function ($state) {

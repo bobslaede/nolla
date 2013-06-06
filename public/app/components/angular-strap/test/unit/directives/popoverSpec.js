@@ -15,7 +15,7 @@ describe('popover', function () {
     $sandbox = $('<div id="sandbox"></div>').appendTo($('body'));
   }));
 
-  afterEach(function () {
+  afterEach(function() {
     $sandbox.remove();
     scope.$destroy();
   });
@@ -45,11 +45,7 @@ describe('popover', function () {
       element: '<script type="text/ng-template" id="cached-popover">' + 'Hello <span ng-bind-html-unsafe="content"></span>' + '</script>' + '<a class="btn" bs-popover="\'cached-popover\'" data-title="aTitle"></a>'
     },
     'ngRepeatWithoutTitle': {
-      scope: {things: [
-        {name: "A"},
-        {name: "B"},
-        {name: "C"}
-      ]},
+      scope: {things: [{name: "A"}, {name: "B"}, {name: "C"}]},
       popover: '<ul><li ng-repeat="thing in things">{{thing.name}}</li></ul>',
       element: '<a class="btn" bs-popover="\'partials/popover.html\'"></a>'
     }
@@ -59,13 +55,9 @@ describe('popover', function () {
     template = template ? templates[template] : templates['default'];
     angular.extend(scope, template.scope);
     var $element = $(template.element).appendTo($sandbox);
-    if (!expectCache) {
-      $httpBackend.expectGET('partials/popover.html').respond(template.popover);
-    }
+    if(!expectCache) { $httpBackend.expectGET('partials/popover.html').respond(template.popover); }
     $element = $compile($element)(scope);
-    if (!expectCache) {
-      $httpBackend.flush();
-    }
+    if(!expectCache) { $httpBackend.flush(); }
     scope.$digest(); // evaluate $evalAsync queue used by $q
     return $element;
   }
@@ -100,26 +92,26 @@ describe('popover', function () {
     expect(spy).toHaveBeenCalled();
   });
 
-  it('should define a correct title', function () {
+  it('should define a correct title', function() {
     var elm = compileDirective();
     elm.popover('show');
     expect(elm.data('popover').tip().find('.popover-title').text()).toBe('aTitle');
   });
 
-  it('should resolve scope variables in the external partial', function () {
+  it('should resolve scope variables in the external partial', function() {
     var elm = compileDirective();
     elm.popover('show');
     expect(elm.data('popover').tip().find('.popover-content').text()).toBe('Hello ' + scope.content.replace(/<br \/>/g, ''));
   });
 
-  it('should define the popover reference on the tip', function () {
+  it('should define the popover reference on the tip', function() {
     var elm = compileDirective();
     elm.trigger('click');
     expect(elm.data('popover').tip().data('popover')).toBeDefined();
     expect(elm.data('popover')).toBe(elm.data('popover').tip().data('popover'));
   });
 
-  it('should show/hide the popover on click', function () {
+  it('should show/hide the popover on click', function() {
     var elm = compileDirective();
     elm.trigger('click');
     expect(elm.data('popover').tip().hasClass('in')).toBe(true);
@@ -127,7 +119,7 @@ describe('popover', function () {
     expect(elm.data('popover').tip().hasClass('in')).toBe(false);
   });
 
-  it('should support data-unique attribute', function () {
+  it('should support data-unique attribute', function() {
     var elm = compileDirective(), elm2 = compileDirective('unique', true);
     elm.trigger('click');
     expect(elm.data('popover').tip().hasClass('in')).toBe(true);
@@ -136,7 +128,7 @@ describe('popover', function () {
     //expect(elm.data('popover').tip().hasClass('in')).toBe(false);
   });
 
-  it('should support data-hide attribute', function () {
+  it('should support data-hide attribute', function() {
     var elm = compileDirective('hide');
     elm.trigger('click');
     expect(elm.data('popover').tip().hasClass('in')).toBe(true);
@@ -145,16 +137,16 @@ describe('popover', function () {
     expect(elm.data('popover').tip().hasClass('in')).toBe(false);
   });
 
-  it('should correctly compile ng-repeat without a title', function () {
+  it('should correctly compile ng-repeat without a title', function() {
     var elm = compileDirective('ngRepeatWithoutTitle');
     elm.popover('show');
     expect(elm.data('popover').tip().find('.popover-content').text()).toBe('ABC');
   });
 
-  describe("events", function () {
+  describe("events", function() {
     var elm, spy;
 
-    beforeEach(function () {
+    beforeEach(function() {
       elm = compileDirective();
       spy = jasmine.createSpy('event');
     });

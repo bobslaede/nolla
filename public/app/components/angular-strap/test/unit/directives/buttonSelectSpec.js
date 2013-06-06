@@ -14,7 +14,7 @@ describe('buttonSelect', function () {
     scope.buttonSelect = 'b';
   }));
 
-  afterEach(function () {
+  afterEach(function() {
     $sandbox.remove();
     scope.$destroy();
   });

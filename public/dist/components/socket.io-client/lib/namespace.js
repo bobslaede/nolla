@@ -19,7 +19,7 @@
    * @api public
    */
 
-  function SocketNamespace(socket, name) {
+  function SocketNamespace (socket, name) {
     this.socket = socket;
     this.name = name || '';
     this.flags = {};
@@ -74,7 +74,8 @@
 
   SocketNamespace.prototype.send = function (data, fn) {
     var packet = {
-      type: this.flags.json ? 'json' : 'message', data: data
+        type: this.flags.json ? 'json' : 'message'
+      , data: data
     };
 
     if ('function' == typeof fn) {
@@ -91,13 +92,14 @@
    *
    * @api public
    */
-
+  
   SocketNamespace.prototype.emit = function (name) {
     var args = Array.prototype.slice.call(arguments, 1)
       , lastArg = args[args.length - 1]
       , packet = {
-        type: 'event', name: name
-      };
+            type: 'event'
+          , name: name
+        };
 
     if ('function' == typeof lastArg) {
       packet.id = ++this.ackPackets;
@@ -137,9 +139,11 @@
   SocketNamespace.prototype.onPacket = function (packet) {
     var self = this;
 
-    function ack() {
+    function ack () {
       self.packet({
-        type: 'ack', args: io.util.toArray(arguments), ackId: packet.id
+          type: 'ack'
+        , args: io.util.toArray(arguments)
+        , ackId: packet.id
       });
     };
 
@@ -186,7 +190,7 @@
         break;
 
       case 'error':
-        if (packet.advice) {
+        if (packet.advice){
           this.socket.onError(packet);
         } else {
           if (packet.reason == 'unauthorized') {
@@ -205,7 +209,7 @@
    * @api private
    */
 
-  function Flag(nsp, name) {
+  function Flag (nsp, name) {
     this.namespace = nsp;
     this.name = name;
   };
@@ -234,5 +238,5 @@
 
 })(
     'undefined' != typeof io ? io : module.exports
-    , 'undefined' != typeof io ? io : module.parent.exports
-  );
+  , 'undefined' != typeof io ? io : module.parent.exports
+);

@@ -3,7 +3,7 @@
 var currentSuite, currentCase, testsList;
 
 // loads common.js module
-function load(test, fn) {
+function load (test, fn) {
   module = {};
   $script('/test/' + test, function () {
     fn(module.exports);
@@ -11,11 +11,11 @@ function load(test, fn) {
 };
 
 // load all tests
-function run() {
+function run () {
   var tests = Array.prototype.slice.call(arguments)
     , i = 0;
 
-  function complete() {
+  function complete () {
     $('body').append('<p>All suites completed</p>');
   };
 
@@ -25,7 +25,7 @@ function run() {
     $('body').append(testsList)
 
     // run suites
-    suite(tests[i], function check(res) {
+    suite(tests[i], function check (res) {
       if (tests[++i]) {
         suite(tests[i], check);
       } else {
@@ -38,7 +38,7 @@ function run() {
 };
 
 // gets keys for an object
-function keys(obj) {
+function keys (obj) {
   if (Object.keys) return Object.keys(obj);
 
   var keys = [];
@@ -53,7 +53,7 @@ function keys(obj) {
 };
 
 // runs a suite
-function suite(file, fn) {
+function suite (file, fn) {
   var passed = {}
     , failed = {};
 
@@ -73,7 +73,7 @@ function suite(file, fn) {
 
     var start = new Date;
 
-    function complete() {
+    function complete () {
       var ok = !keys(failed).length
         , elapsed = Math.round((new Date - start) / 1000);
 
@@ -91,10 +91,10 @@ function suite(file, fn) {
       li.append(
         $('<div class="details">')
           .html(
-            'Passed: ' + keys(passed).length
-              + ' &mdash; Failed: <em>' + keys(failed).length
-              + '</em> &mdash; Elapsed: <em>' + elapsed
-              + '</em> seconds &mdash; '
+              'Passed: ' + keys(passed).length
+            + ' &mdash; Failed: <em>' + keys(failed).length
+            + '</em> &mdash; Elapsed: <em>' + elapsed
+            + '</em> seconds &mdash; '
           )
           .append(
             $('<a>Show details</a>')
@@ -129,7 +129,9 @@ function suite(file, fn) {
 
       // fire callback
       fn({
-        status: ok, passed: passed, failed: failed
+          status: ok
+        , passed: passed
+        , failed: failed
       });
     };
 
@@ -142,7 +144,7 @@ function suite(file, fn) {
 
     currentCase = cases[i];
 
-    test(suite[cases[i]], function check(err) {
+    test(suite[cases[i]], function check (err) {
       if (err) {
         failed[cases[i]] = err;
       } else {
@@ -160,14 +162,14 @@ function suite(file, fn) {
 };
 
 // runs a test
-function test(testcase, fn) {
+function test (testcase, fn) {
   var timer;
 
   window.onerror = function (err) {
     complete(err);
   };
 
-  function complete(err) {
+  function complete (err) {
     if (complete.run) return;
     if (timer) clearTimeout(timer);
     complete.run = true;
@@ -193,7 +195,7 @@ function test(testcase, fn) {
 
 // exposes a function to easily create a server for the current test
 
-function create(nsp) {
+function create (nsp) {
   if (!testsPorts[currentSuite]) {
     throw new Error('No socket server defined for suite "' + currentSuite + '"');
   }
@@ -206,7 +208,7 @@ function create(nsp) {
   return io.connect(uri() + (nsp || ''));
 };
 
-function uri() {
+function uri () {
   return document.location.protocol + '//' + document.location.hostname
-    + ':' + testsPorts[currentSuite][currentCase];
+      + ':' + testsPorts[currentSuite][currentCase];
 }

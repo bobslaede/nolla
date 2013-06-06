@@ -14,7 +14,7 @@ describe('dropdown', function () {
     $sandbox = $('<div id="sandbox"></div>').appendTo($('body'));
   }));
 
-  afterEach(function () {
+  afterEach(function() {
     $sandbox.remove();
     scope.$destroy();
   });
@@ -22,30 +22,27 @@ describe('dropdown', function () {
   var templates = {
     'default': {
       element: '<button type="button" href="#" class="dropdown btn" bs-dropdown="items">Dropdown <b class="caret"></b></button>',
-      scope: { click: function () {
-        dump('click');
-      }, items: [
-        {text: 'Another action', href: "#A"},
-        {text: 'Something else here', href: "#B"},
+      scope: { click: function() { dump('click'); }, items: [
+        {text: 'Another action', href:"#A"},
+        {text: 'Something else here', href:"#B"},
         {divider: true},
-        {text: 'Separated link', href: "#", click: "click(1)"}
+        {text: 'Separated link', href:"#", click:"click(1)"}
       ]}
     },
     'submenu': {
       element: '<button type="button" href="#" class="dropdown btn" bs-dropdown="items">Dropdown <b class="caret"></b></button>',
-      scope: { click: function () {
-      }, items: [
-        {text: 'Another action', href: "#A"},
-        {text: 'Something else here', href: "#B"},
+      scope: { click: function() { }, items: [
+        {text: 'Another action', href:"#A"},
+        {text: 'Something else here', href:"#B"},
         {divider: true},
-        {text: 'Separated link', href: "#", click: "click(1)",
-          submenu: [
+        {text: 'Separated link', href:"#", click:"click(1)",
+        submenu: [
+          {text: 'Second level link', href: "#"},
+          {text: 'Second level link 2', href: "#", submenu: [
             {text: 'Second level link', href: "#"},
-            {text: 'Second level link 2', href: "#", submenu: [
-              {text: 'Second level link', href: "#"},
-              {text: 'Second level link 2', href: "#", click: "click(2)"}
-            ]}
+            {text: 'Second level link 2', href: "#", click:"click(2)"}
           ]}
+        ]}
       ]}
     }
   };
@@ -60,7 +57,6 @@ describe('dropdown', function () {
     $timeout.flush(); // relies on $timeout
     return $element;
   }
-
   // Tests
 
   it('should add "data-toggle" attr & "dropdown-toggle" class for you', function () {
@@ -69,7 +65,7 @@ describe('dropdown', function () {
     expect(elm.hasClass('dropdown-toggle')).toBe(true);
   });
 
-  it('should correctly build the dropdown ul element', function () {
+  it('should correctly build the dropdown ul element', function() {
     var elm = compileDirective();
     var ul = elm.next('ul');
     expect(ul.length).toBe(1);
@@ -77,14 +73,14 @@ describe('dropdown', function () {
     expect(ul.children('li').length).toBe(scope.items.length);
   });
 
-  it('should correctly set "href" & "ng-click" attrs', function () {
+  it('should correctly set "href" & "ng-click" attrs', function() {
     var elm = compileDirective('submenu');
     var ul = elm.next('ul');
     expect(ul.find('li:first a').attr('href')).toBe(scope.items[0].href);
     expect(ul.find('li:eq(3) a').attr('ng-click')).toBe(scope.items[3].click);
   });
 
-  it('should support ngClick directive', function () {
+  it('should support ngClick directive', function() {
     var elm = compileDirective('submenu');
     var ul = elm.next('ul');
     var spy = spyOn(scope, 'click').andCallThrough();
@@ -92,9 +88,9 @@ describe('dropdown', function () {
     expect(spy).toHaveBeenCalled();
   });
 
-  describe('submenus', function () {
+  describe('submenus', function() {
 
-    it('should correctly build submenus', function () {
+    it('should correctly build submenus', function() {
       var elm = compileDirective('submenu');
       var ul = elm.next('ul');
       expect(ul.find('ul.dropdown-menu').length).toBe(2);

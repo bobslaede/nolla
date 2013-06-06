@@ -1,3 +1,4 @@
+
 /**
  * Module dependencies.
  */
@@ -51,7 +52,9 @@ app.configure(function () {
 
 app.get('/', function (req, res) {
   res.render('index', {
-    layout: false, testsPorts: testsPorts, transport: transport
+      layout: false
+    , testsPorts: testsPorts
+    , transport: transport
   });
 });
 
@@ -68,7 +71,7 @@ app.listen(port++, function () {
  * Override handler to simplify development
  */
 
-function handler(req, res) {
+function handler (req, res) {
   fs.readFile(__dirname + '/../../dist/socket.io.js', 'utf8', function (err, b) {
     if (err) {
       res.writeHead(404);
@@ -90,7 +93,7 @@ var io = sio.listen(app);
 io.configure(function () {
   io.set('browser client handler', handler);
   io.set('transports', [
-    transport
+      transport
   ]);
 });
 
@@ -100,7 +103,7 @@ io.configure(function () {
 
 var currentSuite;
 
-function suite(name, fn) {
+function suite (name, fn) {
   currentSuite = testsPorts[name] = {};
   fn();
 };
@@ -109,7 +112,7 @@ function suite(name, fn) {
  * Creates a socket io server
  */
 
-function server(name, fn) {
+function server (name, fn) {
   currentSuite[name] = port;
 
   var io = sio.listen(port);
@@ -128,8 +131,7 @@ function server(name, fn) {
 suite('socket.test.js', function () {
 
   server('test connecting the socket and disconnecting', function (io) {
-    io.sockets.on('connection', function () {
-    });
+    io.sockets.on('connection', function () {});
   });
 
   server('test receiving messages', function (io) {
@@ -181,8 +183,7 @@ suite('socket.test.js', function () {
   });
 
   server('test acks sent from server', function (io) {
-    io.sockets.on('connection', function (socket) {
-    });
+    io.sockets.on('connection', function (socket) {});
   });
 
   server('test connecting to namespaces', function (io) {
@@ -196,10 +197,8 @@ suite('socket.test.js', function () {
   });
 
   server('test disconnecting from namespaces', function (io) {
-    io.of('/a').on('connection', function (socket) {
-    });
-    io.of('/b').on('connection', function (socket) {
-    });
+    io.of('/a').on('connection', function (socket) {});
+    io.of('/b').on('connection', function (socket) {});
   });
 
   server('test authorizing for namespaces', function (io) {
@@ -207,8 +206,7 @@ suite('socket.test.js', function () {
       .authorization(function (data, fn) {
         fn(null, false);
       })
-      .on('connection', function (socket) {
-      });
+      .on('connection', function (socket) {});
   });
 
   server('test sending json from server', function (io) {

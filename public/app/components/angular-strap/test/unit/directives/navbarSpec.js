@@ -14,7 +14,7 @@ describe('navbar', function () {
     $sandbox = $('<div id="sandbox"></div>').appendTo($('body'));
   }));
 
-  afterEach(function () {
+  afterEach(function() {
     $sandbox.remove();
     scope.$destroy();
   });
@@ -36,22 +36,18 @@ describe('navbar', function () {
 
   it('should toggle "active" class for you', function () {
     var elm = compileDirective();
-    $location.path('/network');
-    scope.$digest();
+    $location.path('/network'); scope.$digest();
     expect(elm.find('li:nth-child(1)').hasClass('active')).toBe(true);
-    $location.path('/profile');
-    scope.$digest();
+    $location.path('/profile'); scope.$digest();
     expect(elm.find('li:nth-child(1)').hasClass('active')).toBe(false);
     expect(elm.find('li:nth-child(2)').hasClass('active')).toBe(true);
   });
 
   it('should work with regular expressions', function () {
     var elm = compileDirective();
-    $location.path('/network');
-    scope.$digest();
+    $location.path('/network'); scope.$digest();
     expect(elm.find('li:first').hasClass('active')).toBe(true);
-    $location.path('/network/config');
-    scope.$digest();
+    $location.path('/network/config'); scope.$digest();
     expect(elm.find('li:first').hasClass('active')).toBe(true);
   });
 
@@ -61,11 +57,9 @@ describe('navbar', function () {
       {text: "Profile", href: "profile"}
     ];
     var elm = compileDirective('ngRepeat');
-    $location.path('/network');
-    scope.$digest();
+    $location.path('/network'); scope.$digest();
     expect(elm.find('li:nth-child(1)').hasClass('active')).toBe(true);
-    $location.path('/profile');
-    scope.$digest();
+    $location.path('/profile'); scope.$digest();
     expect(elm.find('li:nth-child(1)').hasClass('active')).toBe(false);
     expect(elm.find('li:nth-child(2)').hasClass('active')).toBe(true);
   });

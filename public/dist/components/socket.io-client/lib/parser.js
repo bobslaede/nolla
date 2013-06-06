@@ -1,3 +1,4 @@
+
 /**
  * socket.io
  * Copyright(c) 2011 LearnBoost <dev@learnboost.com>
@@ -19,7 +20,7 @@
    */
 
   var packets = parser.packets = [
-    'disconnect'
+      'disconnect'
     , 'connect'
     , 'heartbeat'
     , 'message'
@@ -35,7 +36,7 @@
    */
 
   var reasons = parser.reasons = [
-    'transport not supported'
+      'transport not supported'
     , 'client not handshaken'
     , 'unauthorized'
   ];
@@ -45,7 +46,7 @@
    */
 
   var advice = parser.advice = [
-    'reconnect'
+      'reconnect'
   ];
 
   /**
@@ -105,13 +106,13 @@
       case 'ack':
         data = packet.ackId
           + (packet.args && packet.args.length
-          ? '+' + JSON.stringify(packet.args) : '');
+              ? '+' + JSON.stringify(packet.args) : '');
         break;
     }
 
     // construct packet with required fragments
     var encoded = [
-      type
+        type
       , id + (ack == 'data' ? '+' : '')
       , endpoint
     ];
@@ -160,8 +161,9 @@
     var id = pieces[2] || ''
       , data = pieces[5] || ''
       , packet = {
-        type: packets[pieces[1]], endpoint: pieces[4] || ''
-      };
+            type: packets[pieces[1]]
+          , endpoint: pieces[4] || ''
+        };
 
     // whether we need to acknowledge the packet
     if (id) {
@@ -189,8 +191,7 @@
           var opts = JSON.parse(data);
           packet.name = opts.name;
           packet.args = opts.args;
-        } catch (e) {
-        }
+        } catch (e) { }
 
         packet.args = packet.args || [];
         break;
@@ -198,8 +199,7 @@
       case 'json':
         try {
           packet.data = JSON.parse(data);
-        } catch (e) {
-        }
+        } catch (e) { }
         break;
 
       case 'connect':
@@ -215,8 +215,7 @@
           if (pieces[3]) {
             try {
               packet.args = pieces[3] ? JSON.parse(pieces[3]) : [];
-            } catch (e) {
-            }
+            } catch (e) { }
           }
         }
         break;
@@ -224,8 +223,7 @@
       case 'disconnect':
       case 'heartbeat':
         break;
-    }
-    ;
+    };
 
     return packet;
   };
@@ -260,5 +258,5 @@
 
 })(
     'undefined' != typeof io ? io : module.exports
-    , 'undefined' != typeof io ? io : module.parent.exports
-  );
+  , 'undefined' != typeof io ? io : module.parent.exports
+);

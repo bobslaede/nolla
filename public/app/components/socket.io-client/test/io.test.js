@@ -1,3 +1,4 @@
+
 /*!
  * socket.io-node
  * Copyright(c) 2011 LearnBoost <dev@learnboost.com>
@@ -7,7 +8,7 @@
 (function (module, io, should) {
 
   module.exports = {
-
+    
     'client version number': function () {
       io.version.should().match(/([0-9]+)\.([0-9]+)\.([0-9]+)/);
     },
@@ -25,6 +26,6 @@
 
 })(
     'undefined' == typeof module ? module = {} : module
-    , 'undefined' == typeof io ? require('socket.io-client') : io
-    , 'undefined' == typeof should ? require('should') : should
-  );
+  , 'undefined' == typeof io ? require('socket.io-client') : io
+  , 'undefined' == typeof should ? require('should') : should
+);

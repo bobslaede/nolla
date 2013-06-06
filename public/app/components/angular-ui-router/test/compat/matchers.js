@@ -1,20 +1,20 @@
-beforeEach(function () {
+beforeEach(function() {
 
   function cssMatcher(presentClasses, absentClasses) {
-    return function () {
+    return function() {
       var element = angular.element(this.actual);
       var present = true;
       var absent = false;
 
-      angular.forEach(presentClasses.split(' '), function (className) {
+      angular.forEach(presentClasses.split(' '), function(className){
         present = present && element.hasClass(className);
       });
 
-      angular.forEach(absentClasses.split(' '), function (className) {
+      angular.forEach(absentClasses.split(' '), function(className){
         absent = absent || element.hasClass(className);
       });
 
-      this.message = function () {
+      this.message = function() {
         return "Expected to have " + presentClasses +
           (absentClasses ? (" and not have " + absentClasses + "" ) : "") +
           " but had " + element[0].className + ".";
@@ -24,7 +24,7 @@ beforeEach(function () {
   }
 
   function indexOf(array, obj) {
-    for (var i = 0; i < array.length; i++) {
+    for ( var i = 0; i < array.length; i++) {
       if (obj === array[i]) return i;
     }
     return -1;
@@ -36,21 +36,21 @@ beforeEach(function () {
     toBeDirty: cssMatcher('ng-dirty', 'ng-pristine'),
     toBePristine: cssMatcher('ng-pristine', 'ng-dirty'),
 
-    toEqual: function (expected) {
+    toEqual: function(expected) {
       if (this.actual && this.actual.$$log) {
         this.actual = (typeof expected === 'string')
-          ? this.actual.toString()
-          : this.actual.toArray();
+            ? this.actual.toString()
+            : this.actual.toArray();
       }
       return jasmine.Matchers.prototype.toEqual.call(this, expected);
     },
 
-    toEqualData: function (expected) {
+    toEqualData: function(expected) {
       return angular.equals(this.actual, expected);
     },
 
-    toEqualError: function (message) {
-      this.message = function () {
+    toEqualError: function(message) {
+      this.message = function() {
         var expected;
         if (this.actual.message && this.actual.name == 'Error') {
           expected = toJson(this.actual.message);
@@ -62,8 +62,8 @@ beforeEach(function () {
       return this.actual.name == 'Error' && this.actual.message == message;
     },
 
-    toMatchError: function (messageRegexp) {
-      this.message = function () {
+    toMatchError: function(messageRegexp) {
+      this.message = function() {
         var expected;
         if (this.actual.message && this.actual.name == 'Error') {
           expected = angular.toJson(this.actual.message);
@@ -75,7 +75,7 @@ beforeEach(function () {
       return this.actual.name == 'Error' && messageRegexp.test(this.actual.message);
     },
 
-    toHaveBeenCalledOnce: function () {
+    toHaveBeenCalledOnce: function() {
       if (arguments.length > 0) {
         throw new Error('toHaveBeenCalledOnce does not take arguments, use toHaveBeenCalledWith');
       }
@@ -84,12 +84,12 @@ beforeEach(function () {
         throw new Error('Expected a spy, but got ' + jasmine.pp(this.actual) + '.');
       }
 
-      this.message = function () {
+      this.message = function() {
         var msg = 'Expected spy ' + this.actual.identity + ' to have been called once, but was ',
-          count = this.actual.callCount;
+            count = this.actual.callCount;
         return [
           count === 0 ? msg + 'never called.' :
-            msg + 'called ' + count + ' times.',
+                        msg + 'called ' + count + ' times.',
           msg.replace('to have', 'not to have') + 'called once.'
         ];
       };
@@ -98,14 +98,14 @@ beforeEach(function () {
     },
 
 
-    toHaveBeenCalledOnceWith: function () {
+    toHaveBeenCalledOnceWith: function() {
       var expectedArgs = jasmine.util.argsToArray(arguments);
 
       if (!jasmine.isSpy(this.actual)) {
         throw new Error('Expected a spy, but got ' + jasmine.pp(this.actual) + '.');
       }
 
-      this.message = function () {
+      this.message = function() {
         if (this.actual.callCount != 1) {
           if (this.actual.callCount == 0) {
             return [
@@ -136,17 +136,17 @@ beforeEach(function () {
     },
 
 
-    toBeOneOf: function () {
+    toBeOneOf: function() {
       return indexOf(arguments, this.actual) !== -1;
     },
 
-    toHaveClass: function (clazz) {
-      this.message = function () {
+    toHaveClass: function(clazz) {
+      this.message = function() {
         return "Expected '" + angular.mock.dump(this.actual) + "' to have class '" + clazz + "'.";
       };
       return this.actual.hasClass ?
-        this.actual.hasClass(clazz) :
-        angular.element(this.actual).hasClass(clazz);
+              this.actual.hasClass(clazz) :
+              angular.element(this.actual).hasClass(clazz);
     }
 
   });

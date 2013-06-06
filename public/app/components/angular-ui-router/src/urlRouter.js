@@ -1,7 +1,8 @@
+
 $UrlRouterProvider.$inject = ['$urlMatcherFactoryProvider'];
-function $UrlRouterProvider($urlMatcherFactory) {
-  var rules = [],
-    otherwise = null;
+function $UrlRouterProvider(  $urlMatcherFactory) {
+  var rules = [], 
+      otherwise = null;
 
   // Returns a string that is a prefix of all strings matching the RegExp
   function regExpPrefix(re) {
@@ -27,9 +28,7 @@ function $UrlRouterProvider($urlMatcherFactory) {
     function (rule) {
       if (isString(rule)) {
         var redirect = rule;
-        rule = function () {
-          return redirect;
-        };
+        rule = function () { return redirect; };
       }
       else if (!isFunction(rule)) throw new Error("'rule' must be a function");
       otherwise = rule;
@@ -47,17 +46,15 @@ function $UrlRouterProvider($urlMatcherFactory) {
     function (what, handler) {
       var rule, redirect;
       if (isString(what))
-        what = $urlMatcherFactory.compile(what);
+          what = $urlMatcherFactory.compile(what);
 
       if ($urlMatcherFactory.isMatcher(what)) {
         if (isString(handler)) {
           redirect = $urlMatcherFactory.compile(handler);
-          handler = ['$match', function ($match) {
-            return redirect.format($match);
-          }];
+          handler = ['$match', function ($match) { return redirect.format($match); }];
         }
         else if (!isFunction(handler) && !isArray(handler))
-          throw new Error("invalid 'handler' in when()");
+            throw new Error("invalid 'handler' in when()");
 
         rule = function ($injector, $location) {
           return handleIfMatch($injector, handler, what.exec($location.path(), $location.search()));
@@ -67,15 +64,13 @@ function $UrlRouterProvider($urlMatcherFactory) {
       else if (what instanceof RegExp) {
         if (isString(handler)) {
           redirect = handler;
-          handler = ['$match', function ($match) {
-            return interpolate(redirect, $match);
-          }];
+          handler = ['$match', function ($match) { return interpolate(redirect, $match); }];
         }
         else if (!isFunction(handler) && !isArray(handler))
-          throw new Error("invalid 'handler' in when()");
+            throw new Error("invalid 'handler' in when()");
 
         if (what.global || what.sticky)
-          throw new Error("when() RegExp must not be global or sticky");
+            throw new Error("when() RegExp must not be global or sticky");
 
         rule = function ($injector, $location) {
           return handleIfMatch($injector, handler, what.exec($location.path()));
@@ -83,31 +78,31 @@ function $UrlRouterProvider($urlMatcherFactory) {
         rule.prefix = regExpPrefix(what);
       }
       else
-        throw new Error("invalid 'what' in when()");
+          throw new Error("invalid 'what' in when()");
 
       return this.rule(rule);
     };
 
   this.$get =
     [        '$location', '$rootScope', '$injector',
-      function ($location, $rootScope, $injector) {
-        if (otherwise) rules.push(otherwise);
+    function ($location,   $rootScope,   $injector) {
+      if (otherwise) rules.push(otherwise);
 
-        // TODO: Optimize groups of rules with non-empty prefix into some sort of decision tree
-        function update() {
-          var n = rules.length, i, handled;
-          for (i = 0; i < n; i++) {
-            handled = rules[i]($injector, $location);
-            if (handled) {
-              if (isString(handled)) $location.replace().url(handled);
-              break;
-            }
+      // TODO: Optimize groups of rules with non-empty prefix into some sort of decision tree
+      function update() {
+        var n=rules.length, i, handled;
+        for (i=0; i<n; i++) {
+          handled = rules[i]($injector, $location);
+          if (handled) {
+            if (isString(handled)) $location.replace().url(handled);
+            break;
           }
         }
+      }
 
-        $rootScope.$on('$locationChangeSuccess', update);
-        return {};
-      }];
+      $rootScope.$on('$locationChangeSuccess', update);
+      return {};
+    }];
 }
 
 angular.module('ui.router').provider('$urlRouter', $UrlRouterProvider);

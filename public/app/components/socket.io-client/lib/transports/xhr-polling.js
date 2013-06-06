@@ -1,3 +1,4 @@
+
 /**
  * socket.io
  * Copyright(c) 2011 LearnBoost <dev@learnboost.com>
@@ -20,7 +21,7 @@
    * @api public
    */
 
-  function XHRPolling() {
+  function XHRPolling () {
     io.Transport.XHR.apply(this, arguments);
   };
 
@@ -54,7 +55,7 @@
     return false;
   };
 
-  /**
+  /** 
    * Establish a connection, for iPhone and Android this will be done once the page
    * is loaded.
    *
@@ -75,15 +76,14 @@
    * @api private
    */
 
-  function empty() {
-  };
+  function empty () {};
 
   XHRPolling.prototype.get = function () {
     if (!this.isOpen) return;
 
     var self = this;
 
-    function stateChange() {
+    function stateChange () {
       if (this.readyState == 4) {
         this.onreadystatechange = empty;
 
@@ -96,7 +96,7 @@
       }
     };
 
-    function onload() {
+    function onload () {
       this.onload = empty;
       this.onerror = empty;
       self.retryCounter = 1;
@@ -104,10 +104,10 @@
       self.get();
     };
 
-    function onerror() {
-      self.retryCounter++;
-      if (!self.retryCounter || self.retryCounter > 3) {
-        self.onClose();
+    function onerror () {
+      self.retryCounter ++;
+      if(!self.retryCounter || self.retryCounter > 3) {
+        self.onClose();  
       } else {
         self.get();
       }
@@ -138,8 +138,7 @@
       this.xhr.onreadystatechange = this.xhr.onload = this.xhr.onerror = empty;
       try {
         this.xhr.abort();
-      } catch (e) {
-      }
+      } catch(e){}
       this.xhr = null;
     }
   };
@@ -173,6 +172,6 @@
 
 })(
     'undefined' != typeof io ? io.Transport : module.exports
-    , 'undefined' != typeof io ? io : module.parent.exports
-    , this
-  );
+  , 'undefined' != typeof io ? io : module.parent.exports
+  , this
+);

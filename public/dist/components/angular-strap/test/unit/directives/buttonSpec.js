@@ -5,9 +5,9 @@ describe('button', function () {
 
   beforeEach(module('$strap.directives'));
 
-  beforeEach(function () {
+  beforeEach(function() {
     this.addMatchers({
-      toEquals: function (expected) {
+      toEquals: function(expected) {
         return angular.equals(this.actual, expected);
       }
     });
@@ -32,7 +32,7 @@ describe('button', function () {
 
   }));
 
-  afterEach(function () {
+  afterEach(function() {
     $sandbox.remove();
     scope.$destroy();
   });
@@ -49,26 +49,26 @@ describe('button', function () {
     'checkbox': {
       scope: {checkbox: {left: false, middle: true, right: false}},
       element: '<div class="btn-group" bs-buttons-checkbox>'
-        + '<button type="button" class="btn" ng-model="checkbox.left">Left</button>'
-        + '<button type="button" class="btn" ng-model="checkbox.middle">Middle</button>'
-        + '<button type="button" class="btn" ng-model="checkbox.right">Right</button>'
-        + '</div>'
+      +   '<button type="button" class="btn" ng-model="checkbox.left">Left</button>'
+      +   '<button type="button" class="btn" ng-model="checkbox.middle">Middle</button>'
+      +   '<button type="button" class="btn" ng-model="checkbox.right">Right</button>'
+      + '</div>'
     },
     'radio': {
       scope: {radio: {left: false, middle: true, right: false}},
       element: '<div class="btn-group" bs-buttons-radio>'
-        + '<button type="button" class="btn" ng-model="radio.left">Left</button>'
-        + '<button type="button" class="btn" ng-model="radio.middle">Middle</button>'
-        + '<button type="button" class="btn" ng-model="radio.right">Right</button>'
-        + '</div>'
+      +   '<button type="button" class="btn" ng-model="radio.left">Left</button>'
+      +   '<button type="button" class="btn" ng-model="radio.middle">Middle</button>'
+      +   '<button type="button" class="btn" ng-model="radio.right">Right</button>'
+      + '</div>'
     },
     'radio-single-model': {
       scope: {radio: 'middle'},
       element: '<div class="btn-group" ng-model="radio" bs-buttons-radio>'
-        + '<button type="button" class="btn" value="left">Left</button>'
-        + '<button type="button" class="btn" value="middle">Middle</button>'
-        + '<button type="button" class="btn" value="right">Right</button>'
-        + '</div>'
+      +   '<button type="button" class="btn" value="left">Left</button>'
+      +   '<button type="button" class="btn" value="middle">Middle</button>'
+      +   '<button type="button" class="btn" value="right">Right</button>'
+      + '</div>'
     }
   };
 
@@ -78,7 +78,7 @@ describe('button', function () {
     var $element = $(template.element).appendTo($sandbox);
     $element = $compile($element)(scope);
     scope.$digest();
-    if (template === 'radio' || template === 'radio-single-model') {
+    if(template === 'radio' || template === 'radio-single-model') {
       $timeout.flush();
     }
     return $element;

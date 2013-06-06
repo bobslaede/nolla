@@ -1,3 +1,4 @@
+
 /**
  * socket.io
  * Copyright(c) 2011 LearnBoost <dev@learnboost.com>
@@ -33,7 +34,7 @@
    * @api public
    */
 
-  function JSONPPolling(socket) {
+  function JSONPPolling (socket) {
     io.Transport['xhr-polling'].apply(this, arguments);
 
     this.index = io.j.length;
@@ -72,9 +73,9 @@
   JSONPPolling.prototype.post = function (data) {
     var self = this
       , query = io.util.query(
-        this.socket.options.query
-        , 't=' + (+new Date) + '&i=' + this.index
-      );
+             this.socket.options.query
+          , 't='+ (+new Date) + '&i=' + this.index
+        );
 
     if (!this.form) {
       var form = document.createElement('form')
@@ -100,19 +101,19 @@
 
     this.form.action = this.prepareUrl() + query;
 
-    function complete() {
+    function complete () {
       initIframe();
       self.socket.setBuffer(false);
     };
 
-    function initIframe() {
+    function initIframe () {
       if (self.iframe) {
         self.form.removeChild(self.iframe);
       }
 
       try {
         // ie6 dynamic iframes with target="" support (thanks Chris Lambacher)
-        iframe = document.createElement('<iframe name="' + self.iframeId + '">');
+        iframe = document.createElement('<iframe name="'+ self.iframeId +'">');
       } catch (e) {
         iframe = document.createElement('iframe');
         iframe.name = self.iframeId;
@@ -132,8 +133,7 @@
 
     try {
       this.form.submit();
-    } catch (e) {
-    }
+    } catch(e) {}
 
     if (this.iframe.attachEvent) {
       iframe.onreadystatechange = function () {
@@ -159,9 +159,9 @@
     var self = this
       , script = document.createElement('script')
       , query = io.util.query(
-        this.socket.options.query
-        , 't=' + (+new Date) + '&i=' + this.index
-      );
+             this.socket.options.query
+          , 't='+ (+new Date) + '&i=' + this.index
+        );
 
     if (this.script) {
       this.script.parentNode.removeChild(this.script);
@@ -251,6 +251,6 @@
 
 })(
     'undefined' != typeof io ? io.Transport : module.exports
-    , 'undefined' != typeof io ? io : module.parent.exports
-    , this
-  );
+  , 'undefined' != typeof io ? io : module.parent.exports
+  , this
+);

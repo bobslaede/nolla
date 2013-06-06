@@ -13,7 +13,7 @@ public class WebSocketMainInsecure extends WebSocketMain {
     Security.allowDomain("*");
     super();
   }
-
+  
 }
 
 }

@@ -19,9 +19,24 @@
    * @api public
    */
 
-  function Socket(options) {
+  function Socket (options) {
     this.options = {
-      port: 80, secure: false, document: 'document' in global ? document : false, resource: 'socket.io', transports: io.transports, 'connect timeout': 10000, 'try multiple transports': true, 'reconnect': true, 'reconnection delay': 500, 'reconnection limit': Infinity, 'reopen delay': 3000, 'max reconnection attempts': 10, 'sync disconnect on unload': false, 'auto connect': true, 'flash policy port': 10843, 'manualFlush': false
+        port: 80
+      , secure: false
+      , document: 'document' in global ? document : false
+      , resource: 'socket.io'
+      , transports: io.transports
+      , 'connect timeout': 10000
+      , 'try multiple transports': true
+      , 'reconnect': true
+      , 'reconnection delay': 500
+      , 'reconnection limit': Infinity
+      , 'reopen delay': 3000
+      , 'max reconnection attempts': 10
+      , 'sync disconnect on unload': false
+      , 'auto connect': true
+      , 'flash policy port': 10843
+      , 'manualFlush': false
     };
 
     io.util.merge(this.options, options);
@@ -35,7 +50,7 @@
     this.doBuffer = false;
 
     if (this.options['sync disconnect on unload'] &&
-      (!this.isXDomain() || io.util.ua.hasCORS)) {
+        (!this.isXDomain() || io.util.ua.hasCORS)) {
       var self = this;
       io.util.on(global, 'beforeunload', function () {
         self.disconnectSync();
@@ -45,7 +60,7 @@
     if (this.options['auto connect']) {
       this.connect();
     }
-  };
+};
 
   /**
    * Apply EventEmitter mixin.
@@ -96,14 +111,13 @@
    * @api private
    */
 
-  function empty() {
-  };
+  function empty () { };
 
   Socket.prototype.handshake = function (fn) {
     var self = this
       , options = this.options;
 
-    function complete(data) {
+    function complete (data) {
       if (data instanceof Error) {
         self.connecting = false;
         self.onError(data.message);
@@ -113,12 +127,12 @@
     };
 
     var url = [
-      'http' + (options.secure ? 's' : '') + ':/'
-      , options.host + ':' + options.port
-      , options.resource
-      , io.protocol
-      , io.util.query(this.options.query, 't=' + +new Date)
-    ].join('/');
+          'http' + (options.secure ? 's' : '') + ':/'
+        , options.host + ':' + options.port
+        , options.resource
+        , io.protocol
+        , io.util.query(this.options.query, 't=' + +new Date)
+      ].join('/');
 
     if (this.isXDomain() && !io.util.ua.hasCORS) {
       var insertAt = document.getElementsByTagName('script')[0]
@@ -147,7 +161,7 @@
           } else if (xhr.status == 403) {
             self.onError(xhr.responseText);
           } else {
-            self.connecting = false;
+            self.connecting = false;            
             !self.reconnecting && self.onError(xhr.responseText);
           }
         }
@@ -191,20 +205,20 @@
 
     var self = this;
     self.connecting = true;
-
+    
     this.handshake(function (sid, heartbeat, close, transports) {
       self.sessionid = sid;
       self.closeTimeout = close * 1000;
       self.heartbeatTimeout = heartbeat * 1000;
-      if (!self.transports)
-        self.transports = self.origTransports = (transports ? io.util.intersect(
-          transports.split(',')
-          , self.options.transports
-        ) : self.options.transports);
+      if(!self.transports)
+          self.transports = self.origTransports = (transports ? io.util.intersect(
+              transports.split(',')
+            , self.options.transports
+          ) : self.options.transports);
 
       self.setHeartbeatTimeout();
 
-      function connect(transports) {
+      function connect (transports){
         if (self.transport) self.transport.clearTimeouts();
 
         self.transport = self.getTransport(transports);
@@ -224,15 +238,14 @@
                 if (self.options['try multiple transports']) {
                   var remaining = self.transports;
 
-                  while (remaining.length > 0 && remaining.splice(0, 1)[0] !=
-                    self.transport.name) {
-                  }
+                  while (remaining.length > 0 && remaining.splice(0,1)[0] !=
+                         self.transport.name) {}
 
-                  if (remaining.length) {
-                    connect(remaining);
-                  } else {
-                    self.publish('connect_failed');
-                  }
+                    if (remaining.length){
+                      connect(remaining);
+                    } else {
+                      self.publish('connect_failed');
+                    }
                 }
               }
             }, self.options['connect timeout']);
@@ -242,7 +255,7 @@
 
       connect(self.transports);
 
-      self.once('connect', function () {
+      self.once('connect', function (){
         clearTimeout(self.connectTimeoutTimer);
 
         fn && typeof fn == 'function' && fn();
@@ -261,7 +274,7 @@
 
   Socket.prototype.setHeartbeatTimeout = function () {
     clearTimeout(this.heartbeatTimeoutTimer);
-    if (this.transport && !this.transport.heartbeats()) return;
+    if(this.transport && !this.transport.heartbeats()) return;
 
     var self = this;
     this.heartbeatTimeoutTimer = setTimeout(function () {
@@ -310,11 +323,11 @@
    * @api public
    */
 
-  Socket.prototype.flushBuffer = function () {
+  Socket.prototype.flushBuffer = function() {
     this.transport.payload(this.buffer);
     this.buffer = [];
   };
-
+  
 
   /**
    * Disconnect the established connect.
@@ -346,7 +359,7 @@
     // ensure disconnection
     var xhr = io.util.request();
     var uri = [
-      'http' + (this.options.secure ? 's' : '') + ':/'
+        'http' + (this.options.secure ? 's' : '') + ':/'
       , this.options.host + ':' + this.options.port
       , this.options.resource
       , io.protocol
@@ -377,7 +390,7 @@
     var port = global.location.port ||
       ('https:' == global.location.protocol ? 443 : 80);
 
-    return this.options.host !== global.location.hostname
+    return this.options.host !== global.location.hostname 
       || this.options.port != port;
   };
 
@@ -492,11 +505,11 @@
       , tryMultiple = this.options['try multiple transports']
       , limit = this.options['reconnection limit'];
 
-    function reset() {
+    function reset () {
       if (self.connected) {
         for (var i in self.namespaces) {
           if (self.namespaces.hasOwnProperty(i) && '' !== i) {
-            self.namespaces[i].packet({ type: 'connect' });
+              self.namespaces[i].packet({ type: 'connect' });
           }
         }
         self.publish('reconnect', self.transport.name, self.reconnectionAttempts);
@@ -517,15 +530,14 @@
       self.options['try multiple transports'] = tryMultiple;
     };
 
-    function maybeReconnect() {
+    function maybeReconnect () {
       if (!self.reconnecting) {
         return;
       }
 
       if (self.connected) {
         return reset();
-      }
-      ;
+      };
 
       if (self.connecting && self.reconnecting) {
         return self.reconnectionTimer = setTimeout(maybeReconnect, 1000);
@@ -562,6 +574,6 @@
 
 })(
     'undefined' != typeof io ? io : module.exports
-    , 'undefined' != typeof io ? io : module.parent.exports
-    , this
-  );
+  , 'undefined' != typeof io ? io : module.parent.exports
+  , this
+);

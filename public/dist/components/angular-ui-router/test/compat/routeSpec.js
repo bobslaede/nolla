@@ -1,10 +1,10 @@
 'use strict';
 
-describe('$route', function () {
+describe('$route', function() {
   var $httpBackend;
 
-  beforeEach(module(function () {
-    return function (_$httpBackend_) {
+  beforeEach(module(function() {
+    return function(_$httpBackend_) {
       $httpBackend = _$httpBackend_;
       $httpBackend.when('GET', 'Chapter.html').respond('chapter');
       $httpBackend.when('GET', 'test.html').respond('test');
@@ -15,24 +15,24 @@ describe('$route', function () {
     };
   }));
 
-  it('should route and fire change event', function () {
+  it('should route and fire change event', function() {
     var log = '',
-      lastRoute,
-      nextRoute;
+        lastRoute,
+        nextRoute;
 
-    module(function ($routeProvider) {
+    module(function($routeProvider) {
       $routeProvider.when('/Book/:book/Chapter/:chapter',
-        {controller: noop, templateUrl: 'Chapter.html'});
+          {controller: noop, templateUrl: 'Chapter.html'});
       $routeProvider.when('/Blank', {});
     });
-    inject(function ($route, $location, $rootScope) {
-      $rootScope.$on('$routeChangeStart', function (event, next, current) {
+    inject(function($route, $location, $rootScope) {
+      $rootScope.$on('$routeChangeStart', function(event, next, current) {
         log += 'before();';
         expect(current).toBe($route.current);
         lastRoute = current;
         nextRoute = next;
       });
-      $rootScope.$on('$routeChangeSuccess', function (event, current, last) {
+      $rootScope.$on('$routeChangeSuccess', function(event, current, last) {
         log += 'after();';
         expect(current).toBe($route.current);
         expect(lastRoute).toBe(last);
@@ -44,13 +44,13 @@ describe('$route', function () {
       $httpBackend.flush();
       expect(log).toEqual('before();after();');
       debugger;
-      expect($route.current.params).toEqual({book: 'Moby', chapter: 'Intro', p: '123'});
+      expect($route.current.params).toEqual({book:'Moby', chapter:'Intro', p:'123'});
 
       log = '';
       $location.path('/Blank').search('ignore');
       $rootScope.$digest();
       expect(log).toEqual('before();after();');
-      expect($route.current.params).toEqual({ignore: true});
+      expect($route.current.params).toEqual({ignore:true});
 
       log = '';
       $location.path('/NONE');

@@ -2,7 +2,7 @@
 angular.module('ngMock')
   .config(function ($provide) {
     $provide.decorator('$q', function ($delegate, $rootScope) {
-      $delegate.flush = function () {
+      $delegate.flush = function() {
         $rootScope.$digest();
       };
 
@@ -70,5 +70,5 @@ function resolvedError(promise) {
 
 // Utils for test from core angular
 var noop = angular.noop,
-  toJson = angular.toJson;
+    toJson = angular.toJson;
 beforeEach(module('ui.compat'));
