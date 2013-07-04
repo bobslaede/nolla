@@ -13,9 +13,9 @@ var nolla = angular.module('nolla', ['socket', 'hashKeyCopier', 'ui.compat', 'go
         'https://www.googleapis.com/auth/userinfo.email'
       ]);
 
-      socketProvider.setServer('http://localhost:3003');
+      socketProvider.setServer(window.location.origin);
 
-      authProvider.setHost('http://localhost:3003');
+      authProvider.setHost(window.location.origin);
 
       moment.lang('da');
 

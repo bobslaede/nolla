@@ -1,0 +1,21 @@
+.client-list {
+  ul {
+    margin: 0;
+    list-style-type: none;
+    display: block;
+  }
+  li {
+
+    a {
+      text-decoration: none;
+      padding: 6px 4px;
+      display: block;
+    }
+
+    &.active a {
+      background-color: $blue;
+      color: $white;
+    }
+
+  }
+}

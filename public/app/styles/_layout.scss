@@ -1,3 +1,23 @@
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: fade-out($gray, .9);
+}
+
+::-webkit-scrollbar-thumb {
+  background: fade-out($gray, .9);
+  *:hover > & {
+    background: fade-out($gray, .6);
+  }
+  &:hover {
+    background: fade-out($gray, .4);
+  }
+}
+
+
 .app {
   @include flexbox();
   @include flex-flow(column nowrap);
@@ -10,7 +30,7 @@
   .header {
     @include flex-grow(0);
     @include flex-shrink(0);
-    @include box-shadow(0 2px 4px hsla(0, 0%, 0%, .2));
+    @include box-shadow(0 0px 2px hsla(0, 0%, 0%, .1));
     position: relative;
     z-index: 2;
   }
@@ -23,12 +43,15 @@
     @include flex-flow(row nowrap);
 
     .client-list {
-      width: 260px;
+      width: 250px;
       @include flex-grow(0);
+      @include flex-shrink(0);
       @include flexbox();
       min-height: 0;
       overflow: auto;
       padding: 15px;
+      position: relative;
+      z-index: 1;
     }
 
     .main {
@@ -37,6 +60,8 @@
       min-height: 0;
       overflow: auto;
       padding: 15px;
+      position: relative;
+      z-index: 1;
     }
 
   }

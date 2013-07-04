@@ -123,3 +123,24 @@ input[type="color"],
   }
 
 }
+
+.legend {
+  @include flexbox();
+  @include flex-flow(row nowrap);
+
+  margin-bottom: $baseLineHeight;
+  font-size: $baseFontSize * 1.5;
+  font-weight: 200;
+  line-height: $baseLineHeight * 1.5;
+
+  .form-header {
+    @include flex-grow(1);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-right: 1em;
+  }
+  .form-controls {
+    @include flex-shrink(0);
+  }
+}

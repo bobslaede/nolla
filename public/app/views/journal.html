@@ -79,6 +79,7 @@
                     <span><i class="icon-move"></i></span>
                     <div class="btn-group">
                       <button type="button" class="btn btn-mini"
+                        ng-disabled="locked || entry.locked"
                         ng-click="removeJournalEntryData(data, entry)">
                         <i class="icon-trash"></i>
                       </button>

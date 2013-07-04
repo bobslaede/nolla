@@ -38,11 +38,11 @@
     position: absolute;
     background: $blueDark;
     height: 2px;
-    bottom: 0px;
+    bottom: -1px;
     left: 0;
     right: 0;
     opacity: 0;
-    @include transition(opacity .2s linear);
+    @include transition(opacity .2s linear, bottom .1s ease-in);
   }
 }
 
@@ -54,6 +54,7 @@
 .navbar .nav > .active > a:focus {
   &:after {
     opacity: 1;
+    bottom: 0;
   }
 }
 
