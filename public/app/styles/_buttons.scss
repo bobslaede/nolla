@@ -1,0 +1,63 @@
+a {
+  cursor: pointer;
+}
+
+.btn {
+  background-color: $white;
+  border: 1px solid $btnBorder;
+  position: relative;
+
+  border-bottom-color: darken($btnBorder, 10%);
+
+  @include box-shadow(none);
+
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    background: $blueDark;
+    height: 2px;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    @include opacity(0);
+    @include transition(opacity .2s linear);
+  }
+
+  // Hover/focus state
+  &:hover,
+  &:active,
+  &:focus {
+    &:after {
+      @include opacity(100);
+    }
+  }
+
+  // Focus state for keyboard and accessibility
+  &:focus {
+    @include tab-focus();
+  }
+
+  // Active state
+  &.active,
+  &:active {
+    background-image: none;
+    background-color: $grayLighter;
+    outline: 0;
+    @include box-shadow(none);
+  }
+
+  // Disabled state
+  &.disabled,
+  &[disabled] {
+    cursor: default;
+    background-image: none;
+    @include opacity(65);
+    @include box-shadow(none);
+    pointer-events:none;
+    &:after {
+      display: none;
+    }
+  }
+
+}
