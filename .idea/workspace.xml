@@ -4,7 +4,7 @@
     <list default="true" id="342fdae3-dca1-48ea-93cd-e022978dd8f9" name="Default" comment="" />
     <ignored path="nolla-server.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/a.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280881430" ignored="false" />
+    <file path="/a.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1372922017412" ignored="false" />
     <file path="/app.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370360963221" ignored="false" />
     <file path="/socket.io.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370036720370" ignored="false" />
     <file path="/sockets.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370372736406" ignored="false" />
@@ -119,7 +119,7 @@
     <file path="$PROJECT_DIR$/public/dist/scripts/3253ec75.scripts.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370206379536" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/scripts/e47dca59.app.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370206379536" ignored="false" />
     <file path="/journal.html" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370378045357" ignored="false" />
-    <file path="/a.html" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370536383858" ignored="false" />
+    <file path="/a.html" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1372922033375" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/socket.io-client/lib/transports/xhr-polling.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955827" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/swfobject.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955827" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/sample.html" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955827" ignored="false" />
@@ -424,7 +424,7 @@
     <file path="$PROJECT_DIR$/public/dist/components/bootstrap/less/responsive-navbar.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370376710520" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/components/bootstrap/less/responsive-767px-max.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370376710521" ignored="false" />
     <file path="/wells.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370283372290" ignored="false" />
-    <file path="/layout.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370283514162" ignored="false" />
+    <file path="/layout.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1372925301952" ignored="false" />
     <file path="/client-list.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370283911967" ignored="false" />
     <file path="/draggables.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370284768825" ignored="false" />
     <file path="/scroll.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370287932750" ignored="false" />
@@ -444,6 +444,14 @@
     <file path="/calendar.html" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370462687181" ignored="false" />
     <file path="/calendar.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370462464605" ignored="false" />
     <file path="/.gitignore" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370536363453" ignored="false" />
+    <file path="$PROJECT_DIR$/../nolla2/nolla-back/config/express.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1372922091888" ignored="false" />
+    <file path="/a.coffee" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1372922053878" ignored="false" />
+    <file path="/a.dart" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1372922053248" ignored="false" />
+    <file path="/a.css" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1372922026473" ignored="false" />
+    <file path="/a.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1372922045035" ignored="false" />
+    <file path="/a.jade" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1372922049711" ignored="false" />
+    <file path="/express.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1372922091888" ignored="false" />
+    <file path="/nav.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1372925321731" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -466,34 +474,25 @@
       <file leaf-file-name="journal.less" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/app/styles/journal.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="175" column="1" selection-start="3116" selection-end="3116" vertical-scroll-proportion="0.0">
+            <state line="61" column="0" selection-start="1097" selection-end="1097" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.less" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/app/styles/home.less">
+      <file leaf-file-name="sockets.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/sockets.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="11" selection-start="112" selection-end="135" vertical-scroll-proportion="0.0">
+            <state line="59" column="0" selection-start="1613" selection-end="1613" vertical-scroll-proportion="0.50398636">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/app/scripts/app.js">
+      <file leaf-file-name="package.json" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="0" selection-start="780" selection-end="780" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="wells.less" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/app/styles/bootstrap/wells.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="48" selection-start="235" selection-end="235" vertical-scroll-proportion="0.0">
+            <state line="29" column="37" selection-start="774" selection-end="774" vertical-scroll-proportion="-18.125">
               <folding />
             </state>
           </provider>
@@ -502,34 +501,61 @@
       <file leaf-file-name="form.less" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/app/styles/form.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="21" selection-start="633" selection-end="633" vertical-scroll-proportion="-12.04">
+            <state line="36" column="13" selection-start="586" selection-end="586" vertical-scroll-proportion="-21.6">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file leaf-file-name="layout.less" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/app/styles/layout.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="11" selection-start="47" selection-end="47" vertical-scroll-proportion="0.0">
+            <state line="27" column="18" selection-start="367" selection-end="367" vertical-scroll-proportion="-16.2">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".nodemonignore" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.nodemonignore">
+      <file leaf-file-name="socket.io.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/app/scripts/services/socket.io.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="29" column="15" selection-start="710" selection-end="710" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app.js">
+      <file leaf-file-name="server.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/app/scripts/services/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="60" selection-start="1010" selection-end="1013" vertical-scroll-proportion="0.34168565">
+            <state line="37" column="0" selection-start="1052" selection-end="1052" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.less" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/app/styles/main.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="14" selection-start="267" selection-end="267" vertical-scroll-proportion="-5.4">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="nav.less" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/app/styles/nav.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="49" column="26" selection-start="1053" selection-end="1053" vertical-scroll-proportion="-22.2">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Gruntfile.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Gruntfile.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="204" column="23" selection-start="4827" selection-end="4827" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -545,8 +571,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/public/app/scripts/directives/journal-entry-helper.js" />
-        <option value="$PROJECT_DIR$/public/app/scripts/controllers/journal.js" />
         <option value="$PROJECT_DIR$/public/app/views/journal.html" />
         <option value="$PROJECT_DIR$/public/app/scripts/services/server.js" />
         <option value="$PROJECT_DIR$/public/app/views/main.html" />
@@ -556,16 +580,18 @@
         <option value="$PROJECT_DIR$/public/app/scripts/controllers/calendar.js" />
         <option value="$PROJECT_DIR$/public/app/views/calendar.html" />
         <option value="$PROJECT_DIR$/public/app/packaged-app.js" />
-        <option value="$PROJECT_DIR$/public/app/styles/journal.less" />
         <option value="$PROJECT_DIR$/public/app/styles/calendar.less" />
-        <option value="$PROJECT_DIR$/public/app/styles/form.less" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/public/app/styles/nav.less" />
+        <option value="$PROJECT_DIR$/public/app/styles/layout.less" />
+        <option value="$PROJECT_DIR$/public/app/styles/form.less" />
+        <option value="$PROJECT_DIR$/public/app/styles/journal.less" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1" />
+    <option name="x" value="3119" />
     <option name="y" value="-4" />
     <option name="width" value="1202" />
     <option name="height" value="1925" />
@@ -596,6 +622,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -611,6 +638,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="nolla" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nolla-server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nolla" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -656,27 +697,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nolla-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nolla" />
+              <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="styles" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -790,7 +824,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="-4" width="1202" height="1925" extended-state="6" />
+    <frame x="3119" y="-4" width="1202" height="1925" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -874,52 +908,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/app/styles/home.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="11" selection-start="112" selection-end="135" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/styles/form.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="11" selection-start="1250" selection-end="1250" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/scripts/controllers/client.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="1262" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/views/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="66" selection-start="1958" selection-end="1958" vertical-scroll-proportion="-31.25" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/views/journal.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="1" selection-end="98" vertical-scroll-proportion="-0.625" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/styles/main.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="19" selection-start="438" selection-end="438" vertical-scroll-proportion="-11.4" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/styles/bootstrap/forms.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="164" column="2" selection-start="3683" selection-end="3714" vertical-scroll-proportion="-24.28" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/styles/bootstrap/wells.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="48" selection-start="235" selection-end="235" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/app/scripts/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="0" selection-start="780" selection-end="780" vertical-scroll-proportion="0.0">
@@ -934,25 +922,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/styles/journal.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="175" column="1" selection-start="3116" selection-end="3116" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/styles/form.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="21" selection-start="633" selection-end="633" vertical-scroll-proportion="-12.04">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/app/manifest.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="5" selection-start="931" selection-end="931" vertical-scroll-proportion="0.24814604">
-          <folding />
-        </state>
+        <state line="27" column="5" selection-start="931" selection-end="931" vertical-scroll-proportion="0.24814604" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
@@ -971,7 +943,77 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="60" selection-start="1010" selection-end="1013" vertical-scroll-proportion="0.34168565">
+        <state line="40" column="60" selection-start="1010" selection-end="1013" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="37" selection-start="774" selection-end="774" vertical-scroll-proportion="-18.125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/styles/main.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="14" selection-start="267" selection-end="267" vertical-scroll-proportion="-5.4">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gruntfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="204" column="23" selection-start="4827" selection-end="4827" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/scripts/services/socket.io.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="15" selection-start="710" selection-end="710" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/scripts/services/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="0" selection-start="1052" selection-end="1052" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/styles/nav.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="26" selection-start="1053" selection-end="1053" vertical-scroll-proportion="-22.2">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/styles/layout.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="18" selection-start="367" selection-end="367" vertical-scroll-proportion="-16.2">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/styles/form.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="13" selection-start="586" selection-end="586" vertical-scroll-proportion="-21.6">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/styles/journal.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="0" selection-start="1097" selection-end="1097" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sockets.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="0" selection-start="1613" selection-end="1613" vertical-scroll-proportion="0.50398636">
           <folding />
         </state>
       </provider>

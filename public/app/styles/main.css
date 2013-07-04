@@ -6975,12 +6975,6 @@ body {
   -ms-flex: 1;
   flex: 1;
 }
-.app .header {
-  -webkit-flex: 0;
-  -moz-flex: 0;
-  -ms-flex: 0;
-  flex: 0;
-}
 .app .app-container {
   -webkit-flex: 1;
   -moz-flex: 1;
@@ -7261,12 +7255,6 @@ a {
   text-overflow: ellipsis;
   min-width: 0;
 }
-.legend .form-controls {
-  -webkit-flex: 0;
-  -moz-flex: 0;
-  -ms-flex: 0;
-  flex: 0;
-}
 .form .control-label-input {
   padding: 0;
 }
@@ -7516,12 +7504,6 @@ input[type=number] {
   display: flex;
   position: relative;
   margin-bottom: 8px;
-}
-.journal .journals-content .journals-entries .journals-entry .journals-toolbar > * {
-  -webkit-flex: 0;
-  -moz-flex: 0;
-  -ms-flex: 0;
-  flex: 0;
 }
 .journal .journals-content .journals-entries .journals-entry .journals-toolbar .journals-entry-header {
   -webkit-flex: 1;
