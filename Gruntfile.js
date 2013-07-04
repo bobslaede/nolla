@@ -261,21 +261,11 @@ module.exports = function (grunt) {
   grunt.renameTask('regarde', 'watch');
 
 
-  grunt.registerTask('server', [
-    'clean:server',
-    'less',
-    'livereload-start',
-    'develop',
-    'open',
-    'watch'
-  ]);
-
   grunt.registerTask('test', [
     'clean:server',
     'bower',
     'jshint',
-    'mochacli',
-    'less',
+    'mochacli',-
     'connect:test',
     'karma'
   ]);
@@ -285,10 +275,9 @@ module.exports = function (grunt) {
   //  'bower',
   //  'jshint',
     //'test',
-    'less',
     'useminPrepare',
     'imagemin',
-    //   'cssmin',
+    'cssmin',
     'htmlmin',
     'concat',
     'copy',

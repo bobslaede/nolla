@@ -12,6 +12,8 @@ var when = require('when');
 var passport = require('passport');
 var SessionSockets = require('session.socket.io');
 
+express.static.mime.define({'text/plain': ['map']});
+
 mongoose.connect(config.db);
 
 var app = express();
