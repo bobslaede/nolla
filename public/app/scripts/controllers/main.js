@@ -4,6 +4,13 @@ angular.module('nolla')
   .controller('MainCtrl', ['$scope', '$state', 'clients', 'app', 'auth', function ($scope, $state, clients, app, auth) {
     console.log('MainCtrl');
 
+    document.addEventListener('keyup', function (e) {
+      if (e.ctrlKey && e.which == 70) {
+        e.preventDefault();
+        $('.client-search').find('input').focus();
+      }
+    })
+
 
     $scope.clients = clients;
     $scope.appModel = app.model;

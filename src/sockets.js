@@ -21,15 +21,29 @@ var JournalEntryModel = require('../models/journal-entry');
 var JournalHelper = require('../models/journal-helper');
 var SocketModel = require('./socket-model');
 
+var findModelFromCollection = function (collection) {
+  var model = _.filter(mongoose.models, function (m) {
+    return m.collection.name === collection;
+  });
+  if (model.length === 1) {
+    return model[0];
+  }
+  return false;
+};
+
 module.exports = function (io, sessionSockets) {
 
 
-  var broadcast = function(room, event, data) {
-    io.sockets.in(room).emit(event, data);
+  var broadcast = function(room, type, model, data, origin) {
+    io.sockets.in(room).emit('msg', {
+      type : type,
+      model : model,
+      data : data,
+      origin: origin
+    });;
   };
 
   sessionSockets.on('connection', function (err, socket, session) {
-    console.log(session);
 
     if (session && session.userId) {
 
@@ -58,50 +72,91 @@ module.exports = function (io, sessionSockets) {
             selectRoom(app._id);
           });
 
-          var options = {
-            saveQuery : {
-              meta : {
-                app : function () {
-                  return room;
-                },
-                owner : session.userId,
-                'createdAt' : function () {
-                  return Date.now();
-                }
+          socket.on('msg', function (msg, ack) {
+            var type = msg.type;
+            var collection = msg.model;
+            var data = msg.data;
+            var Model = findModelFromCollection(collection);
+            if (Model) {
+              var findQuery = {
+                'meta.app' : room
+              };
+              switch (type) {
+                case 'get':
+                  Model.find(findQuery)
+                    .exec(function (err, data) {
+                      if (err) {
+
+                      } else {
+                        ack(data);
+                      }
+                    });
+                  break;
+                case 'delete':
+                  var deleteQuery = _.extend({}, findQuery, {
+                    _id : data._id
+                  });
+                  Model.findOneAndRemove(deleteQuery)
+                    .exec(function (err) {
+                      if (err) {
+                        // TODO: handle delete error
+                        ack(false);
+                      } else {
+                        ack(true);
+                        broadcast(room, 'delete', collection, data, socket.id);
+                      }
+                    });
+                  break;
+                case 'update':
+                  var updateQuery = _.extend({}, findQuery, {
+                    _id : data._id
+                  });
+                  var updateData = _.clone(data);
+                  // do not update these fields, they cannot be changed
+                  delete updateData._id;
+                  delete updateData.__v;
+                  delete updateData.meta;
+
+                  var update = {
+                    '$set' : updateData
+                  };
+                  Model.update(updateQuery, update)
+                    .exec(function (err) {
+                      if (err) {
+
+                      } else {
+                        Model.findOne(updateQuery)
+                          .exec(function (err, response) {
+                            console.log('updating stuff', collection);
+                            ack(response);
+                            broadcast(room, 'update', collection, response, socket.id);
+                          });
+                      }
+                    });
+
+                  break;
+                case 'add':
+                  var data = _.extend({}, data, {
+                    meta : {
+                      app : room,
+                      owner : session.userId,
+                      createdAt : Date.now()
+                    }
+                  });
+                  var model = new Model(data);
+                  model.save(function (err, response) {
+                    if (err) {
+
+                    } else {
+                      ack(model);
+                      broadcast(room, 'add', collection, model, socket.id);
+                    }
+                  });
+                  break;
               }
-            },
-            getQuery : {
-              'meta.app' : function () {
-                return room;
-              }
+            } else {
+              //TODO: Error reporting here
             }
-          };
-
-          var clients = new SocketModel(socket, ClientModel, options);
-          clients.on('broadcast', function (evt, data) {
-            console.log('broadcast', evt, room);
-            broadcast(room, evt, {
-              origin: socket.id,
-              data : data
-            });
-          });
-
-          var journals = new SocketModel(socket, JournalEntryModel, options);
-          journals.on('broadcast', function (evt, data) {
-            console.log('broadcast', evt, room);
-            broadcast(room, evt, {
-              origin: socket.id,
-              data : data
-            });
-          });
-
-          var journalHelpers = new SocketModel(socket, JournalHelper, options);
-          journalHelpers.on('broadcast', function (evt, data) {
-            console.log('broadcast', evt, room);
-            broadcast(room, evt, {
-              origin: socket.id,
-              data : data
-            });
           });
 
         })

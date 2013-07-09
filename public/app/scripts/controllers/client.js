@@ -7,8 +7,24 @@ angular.module('nolla')
     var id = $state.params.clientId;
 
     $scope.model = {};
-    $scope.model.client = clients.findById(id);
+    $scope.model.client = undefined;
+
+    $scope.model.schema = {
+      danmark : [
+        'Gruppe 1',
+        'Gruppe 2'
+      ]
+    };
+
     $scope.locked = $scope.model.client === false;
+
+    clients.findById(id)
+      .then(function (client) {
+        $scope.model.client = client;
+        $scope.locked = client === false;
+      }, function () {
+        $scope.locked = true;
+      });
 
     $scope.newClient = function () {
       clients.add({})
@@ -23,8 +39,12 @@ angular.module('nolla')
     $scope.deleteClient = function () {
       console.warn('DELETE');
       //$scope.model.client.$remove();
-      clients.remove($scope.model.client);
-      $state.transitionTo($state.current.name, {});
+      clients.remove($scope.model.client)
+        .then(function () {
+          $state.transitionTo($state.current.name, {});
+        }, function (err) {
+          console.error('something went wrong when trying to delete client');
+        });
     };
 
     $scope.addContact = function (type) {
@@ -32,7 +52,7 @@ angular.module('nolla')
         type: '',
         contact: ''
       });
-      $scope.model.client.$rewrap();
+      $scope.model.client.$wrap();
     };
 
     $scope.removeContact = function (type, contact) {

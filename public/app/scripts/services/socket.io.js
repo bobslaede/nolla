@@ -18,7 +18,10 @@ angular.module('socket', [])
       $window.socket = socket;
 
       socket.on('connect', function () {
-        d.resolve();
+        console.log('first connect');
+        $rootScope.$apply(function () {
+          d.resolve();
+        });
       });
 
       return {

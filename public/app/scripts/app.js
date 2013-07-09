@@ -1,6 +1,13 @@
 'use strict';
 
-var nolla = angular.module('nolla', ['socket', 'hashKeyCopier', 'ui.compat', 'goog', 'auth'])
+var nolla = angular.module('nolla', [
+    'socket',
+    'hashKeyCopier',
+    'ui.compat',
+    'goog',
+    'auth',
+    'serviceUtilities'
+  ])
   .config([
     'socketProvider', '$stateProvider', '$urlRouterProvider', 'gapiProvider', 'authProvider',
     function (socketProvider, $stateProvider, $urlRouterProvider, gapiProvider, authProvider) {
@@ -13,19 +20,25 @@ var nolla = angular.module('nolla', ['socket', 'hashKeyCopier', 'ui.compat', 'go
         'https://www.googleapis.com/auth/userinfo.email'
       ]);
 
-      socketProvider.setServer(window.location.origin);
-
-      authProvider.setHost(window.location.origin);
+      socketProvider.setServer('http://192.168.2.37:3003');
+      authProvider.setHost('http://192.168.2.37:3003');
 
       moment.lang('da');
 
-        /*
-      $urlRouterProvider
-        .otherwise('/app');
-        */
       $stateProvider
         .state('app', {
           url : '',
+          resolve : {
+            socketResolved : function (socket, $q) {
+              console.log('resolving socket');
+              var d = $q.defer();
+              socket.socketPromise.then(function () {
+                console.log('socket resolved');
+                d.resolve();
+              });
+              return d.promise;
+            }
+          },
           controller: 'InitCtrl',
           templateUrl: 'views/index.html'
         })
@@ -33,21 +46,6 @@ var nolla = angular.module('nolla', ['socket', 'hashKeyCopier', 'ui.compat', 'go
           url : '/nolla',
           abstract: true,
           resolve : {
-            clientListResolved : function (socket, clients, $q) {
-              var d = $q.defer();
-              socket.socketPromise
-                .then(function () {
-                  if (clients.list.length === 0) {
-                    clients.populate(function () {
-                      console.log('populated clients list early!')
-                      d.resolve();
-                    });
-                  } else {
-                    d.resolve();
-                  }
-                });
-              return d.promise;
-            },
             user : function (auth, $state, $q) {
               var d = $q.defer();
               console.log('getting when authed');
