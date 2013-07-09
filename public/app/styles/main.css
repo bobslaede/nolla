@@ -6633,6 +6633,18 @@ body {
       padding: 15px;
       position: relative;
       z-index: 1; }
+      .app .app-container .main .main-content {
+        -webkit-flex-grow: 1;
+        -moz-flex-grow: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flexbox;
+        display: flex; }
+        .app .app-container .main .main-content .column {
+          margin: 0 10px 10px 10px; }
 
 .client-search {
   margin: 6px 8px 0 8px; }
@@ -6672,8 +6684,7 @@ body {
     -moz-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    width: 400px;
-    margin: 0 10px 10px 10px; }
+    width: 400px; }
   .client .input-append select,
   .client .input-append input[type=text],
   .client .input-append input[type=password],
@@ -6685,5 +6696,209 @@ body {
     padding: 0; }
     .client .control-label-input input {
       width: 119px; }
+
+.calendar {
+  -webkit-flex-grow: 1;
+  -moz-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -moz-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap; }
+  .calendar .column {
+    -webkit-flex-grow: 1;
+    -moz-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -webkit-flex-shrink: 0;
+    -moz-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0; }
+  .calendar .calendar-main {
+    min-width: 480px;
+    -webkit-flex-grow: 6;
+    -moz-flex-grow: 6;
+    -ms-flex-positive: 6;
+    flex-grow: 6;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: column nowrap;
+    -moz-flex-flow: column nowrap;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap; }
+    .calendar .calendar-main .cal-nav {
+      -webkit-flex-grow: 0;
+      -moz-flex-grow: 0;
+      -ms-flex-positive: 0;
+      flex-grow: 0;
+      -webkit-flex-shrink: 0;
+      -moz-flex-shrink: 0;
+      -ms-flex-negative: 0;
+      flex-shrink: 0; }
+    .calendar .calendar-main .cal {
+      -webkit-flex-grow: 1;
+      -moz-flex-grow: 1;
+      -ms-flex-positive: 1;
+      flex-grow: 1; }
+  .calendar .calendar-list {
+    min-width: 220px;
+    min-height: 120px; }
+
+.cal .month, .cal .month .header, .cal .month .week, .cal .month .week .day {
+  border-width: 0;
+  border-color: #cccccc;
+  border-style: solid; }
+
+.cal {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column nowrap;
+  -moz-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap; }
+  .cal .month {
+    -webkit-flex-grow: 1;
+    -moz-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: column nowrap;
+    -moz-flex-flow: column nowrap;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    border-bottom-width: 1px;
+    margin-left: 2em;
+    margin-top: 10px; }
+    .cal .month .header {
+      -webkit-flex-grow: 0;
+      -moz-flex-grow: 0;
+      -ms-flex-positive: 0;
+      flex-grow: 0;
+      -webkit-flex-shrink: 0;
+      -moz-flex-shrink: 0;
+      -ms-flex-negative: 0;
+      flex-shrink: 0;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-direction: normal;
+      -webkit-box-orient: horizontal;
+      -webkit-flex-direction: row;
+      -moz-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-flex-wrap: nowrap;
+      -moz-flex-wrap: nowrap;
+      -ms-flex-wrap: none;
+      flex-wrap: nowrap;
+      border-left-width: 1px;
+      border-right-width: 1px;
+      border-top-width: 1px; }
+      .cal .month .header .day {
+        -webkit-flex-shrink: 0;
+        -moz-flex-shrink: 0;
+        -ms-flex-negative: 0;
+        flex-shrink: 0;
+        -webkit-flex-grow: 1;
+        -moz-flex-grow: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        margin: 4px;
+        text-align: left;
+        text-transform: uppercase;
+        font-size: 11.9px; }
+    .cal .month .week {
+      -webkit-flex-shrink: 0;
+      -moz-flex-shrink: 0;
+      -ms-flex-negative: 0;
+      flex-shrink: 0;
+      -webkit-flex-grow: 1;
+      -moz-flex-grow: 1;
+      -ms-flex-positive: 1;
+      flex-grow: 1;
+      min-height: 6em;
+      border-right-width: 1px;
+      border-top-width: 1px;
+      position: relative; }
+      .cal .month .week .week-number {
+        position: absolute;
+        width: 2em;
+        left: -2em;
+        top: -1px;
+        bottom: -1px;
+        background: white;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flexbox;
+        display: flex; }
+        .cal .month .week .week-number .title {
+          font-size: 11.9px;
+          color: #999999;
+          -webkit-flex-grow: 1;
+          -moz-flex-grow: 1;
+          -ms-flex-positive: 1;
+          flex-grow: 1;
+          padding: 3px 0 0 2px; }
+    .cal .month .week {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-direction: normal;
+      -webkit-box-orient: horizontal;
+      -webkit-flex-direction: row;
+      -moz-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-flex-wrap: nowrap;
+      -moz-flex-wrap: nowrap;
+      -ms-flex-wrap: none;
+      flex-wrap: nowrap; }
+      .cal .month .week .day {
+        -webkit-flex-shrink: 0;
+        -moz-flex-shrink: 0;
+        -ms-flex-negative: 0;
+        flex-shrink: 0;
+        -webkit-flex-grow: 1;
+        -moz-flex-grow: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        border-left-width: 1px;
+        padding: 2px;
+        position: relative; }
+        .cal .month .week .day.active {
+          background: #46a546;
+          color: white; }
+          .cal .month .week .day.active .title {
+            color: white; }
+        .cal .month .week .day .title {
+          font-size: 11.9px;
+          color: #555555;
+          position: absolute;
+          top: 2px;
+          right: 2px; }
+        .cal .month .week .day.old .title {
+          color: #999999;
+          text-shadow: 1px 1px white; }
 
 /*# sourceMappingURL=main.css.map */

@@ -62,6 +62,17 @@
       padding: 15px;
       position: relative;
       z-index: 1;
+
+      .main-content {
+        @include flex-grow(1);
+        @include flexbox();
+
+        .column {
+          margin: 0 10px 10px 10px;
+        }
+
+      }
+
     }
 
   }

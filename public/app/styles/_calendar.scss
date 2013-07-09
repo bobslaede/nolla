@@ -1,0 +1,32 @@
+.calendar {
+
+  @include flex-grow(1);
+  @include flexbox();
+  @include flex-flow(row wrap);
+
+  .column {
+    @include flex-grow(1);
+    @include flex-shrink(0);
+  }
+
+  .calendar-main {
+    min-width: 480px;
+    @include flex-grow(6);
+    @include flexbox();
+    @include flex-flow(column nowrap);
+
+    .cal-nav {
+      @include flex-grow(0);
+      @include flex-shrink(0);
+    }
+    .cal {
+      @include flex-grow(1);
+    }
+  }
+
+  .calendar-list {
+    min-width: 220px;
+    min-height: 120px;
+  }
+
+}

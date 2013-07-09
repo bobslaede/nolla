@@ -11,9 +11,26 @@ angular.module('nolla')
 
     $scope.model.schema = {
       danmark : [
+        'Gruppe 5',
+        'Gruppe 1',
+        'Gruppe 2',
+        'Basis-Sygeforsikring'
+      ],
+      insurance : [
         'Gruppe 1',
         'Gruppe 2'
-      ]
+      ],
+      contact : {
+        phones:  [
+          'Hjemme',
+          'Arbejde',
+          'Mobil'
+        ],
+        emails : [
+          'Hjemme',
+          'Arbejde'
+        ]
+      }
     };
 
     $scope.locked = $scope.model.client === false;

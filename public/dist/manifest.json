@@ -15,6 +15,7 @@
   },
   "permissions": [
     "experimental",
+    "storage",
     "http://localhost:3003/",
     "http://192.168.2.37:3003/",
     "https://apis.google.com/"

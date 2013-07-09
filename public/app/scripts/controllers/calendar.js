@@ -1,8 +1,19 @@
 'use strict';
 
 angular.module('nolla')
-  .controller('CalendarCtrl', ['$scope', '$state', function ($scope, $state) {
+  .controller('CalendarCtrl', [
+    '$scope',
+    '$state',
+    'storage',
+  function ($scope, $state, storage) {
     console.log('CalendarCtrl');
+
+    $scope.view = storage.get('calendar-view', 'month');
+
+    $scope.setView = function (view) {
+      storage.set('calendar-view', view);
+      $scope.view = view;
+    };
 
     var month = moment().month();
     $scope.month = month;
