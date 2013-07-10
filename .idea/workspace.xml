@@ -9,7 +9,7 @@
     <file path="/socket.io.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1372970117077" ignored="false" />
     <file path="/sockets.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1373394278756" ignored="false" />
     <file path="/main.html" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1372945576846" ignored="false" />
-    <file path="/index.html" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1373397869298" ignored="false" />
+    <file path="/index.html" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1373482992922" ignored="false" />
     <file path="/.jshintrc" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1369936783753" ignored="false" />
     <file path="/auth.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370036296756" ignored="false" />
     <file path="/main.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1372972356100" ignored="false" />
@@ -17,26 +17,14 @@
     <file path="/gapi.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370003781302" ignored="false" />
     <file path="/server.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370429778578" ignored="false" />
     <file path="/init.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370202167540" ignored="false" />
-    <file path="$PROJECT_DIR$/public/dist/components/socket.io-client/support/test-runner/public/javascript/jquery.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1373399430431" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/scripts/029d5d9f.components.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1369943639886" ignored="false" />
-    <file path="$PROJECT_DIR$/public/dist/components/ui-router/lib/angular-1.0.6.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1373398636640" ignored="false" />
-    <file path="$PROJECT_DIR$/public/dist/components/angular-scenario/angular-scenario.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1373399430431" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/components/angular/angular.min.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370000361351" ignored="false" />
     <file path="/index.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1369942667829" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/styles/c63fa633.main.css" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1369943639886" ignored="false" />
-    <file path="$PROJECT_DIR$/public/dist/components/angular-ui-router/sample/bootstrap.min.css" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1373397778665" ignored="false" />
+    <file path="$PROJECT_DIR$/public/dist/components/angular-ui-router/sample/bootstrap.min.css" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1373487499223" ignored="false" />
     <file path="/client.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1373394605132" ignored="false" />
     <file path="/client.html" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1372966204472" ignored="false" />
-    <file path="$PROJECT_DIR$/public/dist/components/angular-strap/test/lib/angular/angular.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1373399430431" ignored="false" />
-    <file path="$PROJECT_DIR$/public/dist/components/angular-ui-router/lib/angular-1.1.4.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1373399430431" ignored="false" />
-    <file path="$PROJECT_DIR$/public/dist/components/angular-ui-router/lib/angular-1.0.6.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1373399210194" ignored="false" />
-    <file path="$PROJECT_DIR$/public/dist/components/ui-router/lib/angular-1.1.4.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1373399210194" ignored="false" />
-    <file path="$PROJECT_DIR$/public/dist/components/angular/angular.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1373399430431" ignored="false" />
-    <file path="$PROJECT_DIR$/public/dist/components/angular-strap/test/lib/angular/angular-scenario.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1373399430431" ignored="false" />
-    <file path="$PROJECT_DIR$/public/dist/components/angular-ui-router/test/lib/angular-mocks-1.0.4.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1369947044812" ignored="false" />
-    <file path="$PROJECT_DIR$/public/dist/components/jquery/jquery.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1373399430431" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/scripts/f17111db.components.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370037127645" ignored="false" />
-    <file path="$PROJECT_DIR$/public/dist/components/angular-ui-router/release/angular-ui-router.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1369998713988" ignored="false" />
     <file path="/socket-model.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370357951792" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/components/bootstrap-timepicker/Gruntfile.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1373058975310" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/views/client.html" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370000361351" ignored="false" />
@@ -54,20 +42,17 @@
     <file path="$PROJECT_DIR$/public/dist/components/bootstrap-datepicker/build/build_standalone.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370463100894" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/components/bootstrap/less/sprites.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370463100895" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/components/bootstrap/docs/assets/css/bootstrap-responsive.css" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1373397778665" ignored="false" />
-    <file path="$PROJECT_DIR$/public/dist/components/bootstrap/docs/assets/css/bootstrap.css" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1373397778665" ignored="false" />
+    <file path="$PROJECT_DIR$/public/dist/components/bootstrap/docs/assets/css/bootstrap.css" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1373487499223" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/components/bootstrap/less/utilities.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370463100894" ignored="false" />
     <file path="/journal.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370376687347" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/styles/a93e2369.main.css" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370206037028" ignored="false" />
-    <file path="$PROJECT_DIR$/public/dist/components/angular-ui-router/src/state.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280127810" ignored="false" />
-    <file path="$PROJECT_DIR$/public/dist/components/bootstrap/less/forms.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1373396949389" ignored="false" />
     <file path="/packaged-app.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370205491882" ignored="false" />
     <file path="/modal.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370374264894" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/components/bootstrap-datepicker/tests/assets/qunit.css" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370463100895" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/components/bootstrap/js/tests/vendor/qunit.css" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370463100894" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/components/angular-ui-router/release/doc/styles/jsdoc-default.css" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370463100895" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/components/bootstrap/less/popovers.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370463100895" ignored="false" />
-    <file path="$PROJECT_DIR$/public/dist/components/bootstrap/less/labels-badges.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370463100895" ignored="false" />
-    <file path="$PROJECT_DIR$/public/dist/components/bootstrap-datepicker/less/datepicker.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370463100894" ignored="false" />
+    <file path="$PROJECT_DIR$/public/dist/components/bootstrap/less/labels-badges.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1373487499223" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/components/bootstrap/less/type.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370463100895" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/components/bootstrap-datepicker/css/datepicker.css" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370463100894" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/components/bootstrap/less/responsive-utilities.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370463100895" ignored="false" />
@@ -85,10 +70,9 @@
     <file path="$PROJECT_DIR$/public/dist/components/bootstrap/less/tooltip.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370463100894" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/components/bootstrap/docs/assets/js/google-code-prettify/prettify.css" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370463100895" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/components/bootstrap/less/thumbnails.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370463100894" ignored="false" />
-    <file path="$PROJECT_DIR$/public/dist/components/bootstrap/less/button-groups.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370463100894" ignored="false" />
+    <file path="$PROJECT_DIR$/public/dist/components/bootstrap/less/button-groups.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1373487499223" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/components/es5-shim/tests/lib/jasmine.css" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370463100894" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/components/angular-ui-router/release/doc/styles/prettify-tomorrow.css" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370463100895" ignored="false" />
-    <file path="$PROJECT_DIR$/public/dist/components/bootstrap/less/dropdowns.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370463100894" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/components/bootstrap/docs/build/node_modules/hogan.js/web/stylesheets/skeleton.css" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370463100895" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/components/angular-ui-router/release/doc/styles/prettify-jsdoc.css" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370463100894" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/components/bootstrap/less/code.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370463100895" ignored="false" />
@@ -109,7 +93,7 @@
     <file path="$PROJECT_DIR$/public/dist/components/bootstrap/docs/build/node_modules/hogan.js/web/stylesheets/layout.css" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370463100895" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/components/bootstrap/less/navbar.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370463100895" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/components/bootstrap/less/accordion.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370463100895" ignored="false" />
-    <file path="$PROJECT_DIR$/public/dist/components/bootstrap/less/buttons.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370463100895" ignored="false" />
+    <file path="$PROJECT_DIR$/public/dist/components/bootstrap/less/buttons.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1373487499223" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/components/bootstrap/less/alerts.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370463100895" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/components/bootstrap/less/media.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370463100895" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/components/bootstrap/less/wells.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370463100895" ignored="false" />
@@ -126,10 +110,8 @@
     <file path="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/KeyExchanges.as" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955827" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSError.as" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955827" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/socket.io-client/support/test-runner/public/javascript/runner.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955827" ignored="false" />
-    <file path="$PROJECT_DIR$/public/app/components/angular-scenario/jstd-scenario-adapter.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955827" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/angular-cookies/angular-cookies.min.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955827" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/angular-sanitize/angular-sanitize.min.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955827" ignored="false" />
-    <file path="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSEngine.as" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955827" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/socket.io-client/support/test-runner/app.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955827" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/socket.io-client/lib/transports/flashsocket.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955827" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/TLSPad.as" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955827" ignored="false" />
@@ -143,7 +125,6 @@
     <file path="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/tests/suites/keyboard_navigation/all.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955827" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/tests/suites/mouse_navigation/2012.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955827" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/tests/suites/mouse_navigation/2011.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955827" ignored="false" />
-    <file path="$PROJECT_DIR$/public/app/components/socket.io-client/support/test-runner/public/javascript/jquery.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955827" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/tests/suites/mouse_navigation/all.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955827" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/PrintableString.as" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955827" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/tests/suites/component.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955827" ignored="false" />
@@ -161,13 +142,10 @@
     <file path="$PROJECT_DIR$/public/app/components/angular-ui-router/release/angular-ui-router.min.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955827" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/tests/assets/mock.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955827" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/IPad.as" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955827" ignored="false" />
-    <file path="$PROJECT_DIR$/public/app/components/angular-ui-router/release/angular-ui-router.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955827" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/tests/assets/jquery-1.7.1.min.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955827" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/ICipher.as" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955827" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/angular-ui-router/release/doc/$templateFactory.html" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955827" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/tests/assets/utils.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955827" ignored="false" />
-    <file path="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/tests/assets/qunit.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955827" ignored="false" />
-    <file path="$PROJECT_DIR$/public/app/components/angular-cookies/angular-cookies.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955827" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/angular-ui-router/release/doc/global.html" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955827" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/tests/assets/qunit-logging.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955827" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/angular-ui-router/release/doc/index.html" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955827" ignored="false" />
@@ -183,7 +161,6 @@
     <file path="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/tests/tests.html" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955827" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/build/build.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955827" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/build/build_standalone.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955827" ignored="false" />
-    <file path="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/less/datepicker.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955827" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/css/datepicker.css" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955827" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/angular-ui-router/sample/contacts.detail.html" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955827" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/js/locales/bootstrap-datepicker.hu.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955827" ignored="false" />
@@ -193,7 +170,6 @@
     <file path="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/js/locales/bootstrap-datepicker.it.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955827" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/js/locales/bootstrap-datepicker.pt-BR.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955827" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/js/locales/bootstrap-datepicker.cs.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955827" ignored="false" />
-    <file path="$PROJECT_DIR$/public/app/components/socket.io-client/dist/socket.io.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955827" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/js/locales/bootstrap-datepicker.kr.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955827" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/socket.io-client/test/parser.test.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955827" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/js/locales/bootstrap-datepicker.zh-TW.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955827" ignored="false" />
@@ -253,23 +229,16 @@
     <file path="$PROJECT_DIR$/public/app/components/socket.io-client/lib/events.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/bootstrap-select/bootstrap-select.min.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/angular-ui-router/src/templateFactory.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
-    <file path="$PROJECT_DIR$/public/app/components/angular-ui-router/src/urlMatcherFactory.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
-    <file path="$PROJECT_DIR$/public/app/components/angular-ui-router/src/urlRouter.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/angular-strap/vendor/bootstrap-datepicker.css" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
-    <file path="$PROJECT_DIR$/public/app/components/angular-ui-router/src/viewDirective.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/angular-strap/vendor/bootstrap-datepicker.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
-    <file path="$PROJECT_DIR$/public/app/components/angular-ui-router/lib/angular-1.1.4.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/socket.io-client/lib/util.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/angular-strap/vendor/bootstrap-select.css" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
-    <file path="$PROJECT_DIR$/public/app/components/angular-ui-router/lib/angular-1.0.6.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/angular-strap/vendor/bootstrap-timepicker.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/angular-ui-router/src/common.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/socket.io-client/lib/socket.io-client.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/angular-strap/vendor/bootstrap-select.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/angular-ui-router/src/compat.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/angular-strap/vendor/bootstrap-timepicker.css" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
-    <file path="$PROJECT_DIR$/public/app/components/angular-ui-router/src/state.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
-    <file path="$PROJECT_DIR$/public/app/components/angular-strap/test/unit/directives/tabSpec.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/angular-ui-router/test/test-config.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/angular-strap/test/unit/directives/selectSpec.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/angular-ui-router/test/testUtils.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
@@ -286,31 +255,22 @@
     <file path="$PROJECT_DIR$/public/app/components/angular-strap/test/unit/directives/typeaheadSpec.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/angular-strap/test/unit/directives/tooltipSpec.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/CFBModeTest.as" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
-    <file path="$PROJECT_DIR$/public/app/components/angular-strap/test/unit/directives/modalSpec.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/SHABase.as" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/angular-strap/test/unit/directives/timepickerSpec.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/CipherSuites.as" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/angular-strap/test/unit/directives/dropdownSpec.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
-    <file path="$PROJECT_DIR$/public/app/components/socket.io-client/lib/transport.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/angular-strap/test/unit/directives/buttonSelectSpec.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
-    <file path="$PROJECT_DIR$/public/app/components/angular-ui-router/test/lib/angular-mocks-1.1.4.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/angular-strap/test/unit/directives/alertSpec.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
-    <file path="$PROJECT_DIR$/public/app/components/angular-ui-router/test/lib/angular-mocks-1.0.4.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSEvent.as" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/angular-ui-router/test/compat/matchers.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
-    <file path="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/SSLSecurityParameters.as" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
-    <file path="$PROJECT_DIR$/public/app/components/angular-strap/test/lib/angular/angular.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/socket.io-client/support/test-runner/public/javascript/script.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/MAC.as" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
-    <file path="$PROJECT_DIR$/public/app/components/angular-strap/test/lib/angular/angular-mocks.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/socket.io-client/lib/socket.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/cert/X509Certificate.as" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
-    <file path="$PROJECT_DIR$/public/app/components/angular-strap/test/lib/angular/angular-scenario.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/socket.io-client/lib/io.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/SHA224.as" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/angular-strap/test/lib/bootstrap.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/IHash.as" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
-    <file path="$PROJECT_DIR$/public/app/components/angular-strap/test/lib/jquery-lite.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/HMAC.as" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/angular-strap/test/lib/jquery.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/socket.io-client/lib/namespace.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
@@ -318,7 +278,6 @@
     <file path="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/SHA256.as" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/angular-strap/test/lib/async-callback.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/IHMAC.as" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
-    <file path="$PROJECT_DIR$/public/app/components/angular-sanitize/angular-sanitize.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/cert/MozillaRootCertificates.as" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/SSLConnectionState.as" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/TripleDESKey.as" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
@@ -350,7 +309,6 @@
     <file path="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/math/BarrettReduction.as" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/bootstrap-timepicker/spec/js/fixtures/timepicker.html" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/bootstrap-timepicker/spec/js/helpers/jasmine-jquery.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
-    <file path="$PROJECT_DIR$/public/app/components/bootstrap-timepicker/spec/js/MouseEventsSpec.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/bootstrap-timepicker/spec/js/TimepickerSpec.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/Integer.as" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/bootstrap-timepicker/spec/js/KeyboardEventsSpec.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
@@ -366,19 +324,16 @@
     <file path="$PROJECT_DIR$/public/app/components/bootstrap-timepicker/js/bootstrap-timepicker.min.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/MACs.as" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/socket.io-client/package.json" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
-    <file path="$PROJECT_DIR$/public/app/components/socket.io-client/bin/builder.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/bootstrap-timepicker/composer.json" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/bootstrap-timepicker/Gruntfile.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/SSLEvent.as" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/OFBMode.as" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/CTRMode.as" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSConnectionState.as" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
-    <file path="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/web_socket.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/BulkCiphers.as" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/WebSocketMainInsecure.as" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/WebSocketEvent.as" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/math/ClassicReduction.as" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
-    <file path="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/rsa/RSAKey.as" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/TripleDESKeyTest.as" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/IMode.as" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/SimpleIVMode.as" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
@@ -403,11 +358,9 @@
     <file path="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/WebSocketMain.as" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSSecurityParameters.as" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/angular-scenario/jstd-scenario-adapter-config.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
-    <file path="$PROJECT_DIR$/public/app/components/angular-scenario/angular-scenario.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/SSLPad.as" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/IVMode.as" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/CFB8Mode.as" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
-    <file path="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/AESKey.as" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/prng/IPRNG.as" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/AESKeyTest.as" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/gsolo/encryption/MD5.as" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
@@ -431,7 +384,7 @@
     <file path="/variables.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370290474588" ignored="false" />
     <file path="/journal-entry.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370376061960" ignored="false" />
     <file path="/journal-entry-helper.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370375700929" ignored="false" />
-    <file path="/dummy.xml" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370458626466" ignored="false" />
+    <file path="/dummy.xml" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1373484761321" ignored="false" />
     <file path="/journalentries.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370372810270" ignored="false" />
     <file path="/meta-schema.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370358576015" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/components/angular-strap/test/lib/bootstrap.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370359630629" ignored="false" />
@@ -441,8 +394,8 @@
     <file path="$PROJECT_DIR$/public/dist/components/bootstrap/js/tests/vendor/jquery.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1373399430431" ignored="false" />
     <file path="/contenteditable.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370375104034" ignored="false" />
     <file path="/calendar.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370464205994" ignored="false" />
-    <file path="/calendar.html" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1373397557901" ignored="false" />
-    <file path="/calendar.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1373397898984" ignored="false" />
+    <file path="/calendar.html" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1373487390960" ignored="false" />
+    <file path="/calendar.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1373487253968" ignored="false" />
     <file path="/.gitignore" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1372947766374" ignored="false" />
     <file path="$PROJECT_DIR$/../nolla2/nolla-back/config/express.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1372922091888" ignored="false" />
     <file path="/a.coffee" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1372922053878" ignored="false" />
@@ -474,20 +427,20 @@
     <file path="$PROJECT_DIR$/public/dist/components/socket.io-client/dist/socket.io.min.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1373059919313" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/scripts/67563dd3.components.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1373059764499" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/components/json3/vendor/prototype.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1373059764499" ignored="false" />
-    <file path="$PROJECT_DIR$/public/dist/components/bootstrap-datepicker/tests/assets/jquery-1.7.1.min.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1373399430431" ignored="false" />
-    <file path="$PROJECT_DIR$/public/dist/components/bootstrap/js/tests/vendor/qunit.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1373059764499" ignored="false" />
+    <file path="$PROJECT_DIR$/public/dist/components/bootstrap-datepicker/tests/assets/jquery-1.7.1.min.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1373487572973" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/components/bootstrap/docs/assets/js/bootstrap-tooltip.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1373059764499" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/components/bootstrap/js/bootstrap-tooltip.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1373059764499" ignored="false" />
-    <file path="$PROJECT_DIR$/public/dist/components/es5-shim/tests/lib/jasmine.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1373059764499" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/components/bootstrap/docs/assets/js/holder/holder.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1373059764499" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/components/bootstrap/docs/assets/js/bootstrap.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1373059764499" ignored="false" />
-    <file path="/_calendar.scss" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1373399524427" ignored="false" />
-    <file path="$PROJECT_DIR$/public/app/styles/main.css" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1373397590718" ignored="false" />
-    <file path="/_calendar-month.scss" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1373399474067" ignored="false" />
+    <file path="/_calendar.scss" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1373484834696" ignored="false" />
+    <file path="$PROJECT_DIR$/public/app/styles/main.css" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1373486968339" ignored="false" />
+    <file path="/_calendar-month.scss" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1373486948597" ignored="false" />
     <file path="/storage.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1373399219843" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/components/angular-strap/test/lib/jquery.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1373399430431" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/components/jquery/jquery-migrate.min.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1373399430431" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/components/moment/moment.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1373399430431" ignored="false" />
+    <file path="/calendar-month.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1373487556789" ignored="false" />
+    <file path="/calendar-month.html" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1373486859764" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -510,61 +463,34 @@
       <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/app/scripts/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="22" selection-start="151" selection-end="151" vertical-scroll-proportion="0.0">
+            <state line="32" column="46" selection-start="1046" selection-end="1046" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="manifest.json" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/app/manifest.json">
+      <file leaf-file-name="calendar.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/app/views/calendar.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="1" selection-start="985" selection-end="985" vertical-scroll-proportion="-19.375">
+            <state line="27" column="41" selection-start="898" selection-end="898" vertical-scroll-proportion="-16.875">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="calendar.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/app/scripts/controllers/calendar.js">
+      <file leaf-file-name="main.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/app/views/main.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="53" selection-start="240" selection-end="240" vertical-scroll-proportion="0.0">
+            <state line="79" column="8" selection-start="2925" selection-end="2925" vertical-scroll-proportion="-47.5">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sync.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/app/scripts/services/sync.js">
+      <file leaf-file-name="client.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/app/views/client.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="43" selection-start="166" selection-end="179" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_layout.scss" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/app/styles/_layout.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="19" selection-start="1119" selection-end="1119" vertical-scroll-proportion="0.5210706">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/app/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="49" selection-start="1301" selection-end="1301" vertical-scroll-proportion="-18.125">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_calendar-month.scss" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/app/styles/_calendar-month.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="0" selection-start="716" selection-end="716" vertical-scroll-proportion="0.0">
+            <state line="37" column="33" selection-start="1381" selection-end="1381" vertical-scroll-proportion="-23.125">
               <folding />
             </state>
           </provider>
@@ -573,25 +499,52 @@
       <file leaf-file-name="_calendar.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/app/styles/_calendar.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="0" selection-start="161" selection-end="161" vertical-scroll-proportion="0.0">
+            <state line="38" column="0" selection-start="567" selection-end="567" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_client.scss" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/app/styles/_client.scss">
+      <file leaf-file-name="_calendar-month.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/app/styles/_calendar-month.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="0" selection-start="124" selection-end="124" vertical-scroll-proportion="0.0">
+            <state line="12" column="13" selection-start="172" selection-end="172" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="storage.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/app/scripts/services/storage.js">
+      <file leaf-file-name="calendar-month.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/app/scripts/directives/calendar-month.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="19" selection-start="1267" selection-end="1267" vertical-scroll-proportion="0.0">
+            <state line="46" column="11" selection-start="1353" selection-end="1353" vertical-scroll-proportion="0.3929385">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="calendar-month.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/app/views/partials/calendar-month.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="6" selection-start="470" selection-end="470" vertical-scroll-proportion="-8.125">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="calendar.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/app/scripts/services/calendar.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="17" selection-start="132" selection-end="132" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="calendar.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/app/scripts/controllers/calendar.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="38" column="37" selection-start="938" selection-end="938" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -607,22 +560,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/sockets.js" />
-        <option value="$PROJECT_DIR$/public/app/scripts/services/sync.js" />
-        <option value="$PROJECT_DIR$/public/app/scripts/controllers/client.js" />
-        <option value="$PROJECT_DIR$/public/app/views/client.html" />
         <option value="$PROJECT_DIR$/public/app/styles/main.scss" />
         <option value="$PROJECT_DIR$/public/app/styles/mixins/_flex.scss" />
-        <option value="$PROJECT_DIR$/public/app/views/calendar.html" />
-        <option value="$PROJECT_DIR$/public/app/index.html" />
-        <option value="$PROJECT_DIR$/public/app/scripts/app.js" />
-        <option value="$PROJECT_DIR$/public/app/scripts/controllers/calendar.js" />
         <option value="$PROJECT_DIR$/public/app/manifest.json" />
         <option value="$PROJECT_DIR$/public/app/scripts/services/storage.js" />
-        <option value="$PROJECT_DIR$/public/app/styles/_calendar-month.scss" />
-        <option value="$PROJECT_DIR$/public/app/styles/_calendar.scss" />
         <option value="$PROJECT_DIR$/public/app/styles/_client.scss" />
         <option value="$PROJECT_DIR$/public/app/styles/_layout.scss" />
+        <option value="$PROJECT_DIR$/public/app/scripts/directives/journal-entry.js" />
+        <option value="$PROJECT_DIR$/public/app/index.html" />
+        <option value="$PROJECT_DIR$/public/app/scripts/services/calendar.js" />
+        <option value="$PROJECT_DIR$/public/app/scripts/app.js" />
+        <option value="$PROJECT_DIR$/public/app/views/partials/calendar-month.html" />
+        <option value="$PROJECT_DIR$/public/app/styles/_calendar.scss" />
+        <option value="$PROJECT_DIR$/public/app/styles/_calendar-month.scss" />
+        <option value="$PROJECT_DIR$/public/app/scripts/controllers/calendar.js" />
+        <option value="$PROJECT_DIR$/public/app/views/calendar.html" />
+        <option value="$PROJECT_DIR$/public/app/scripts/directives/calendar-month.js" />
       </list>
     </option>
   </component>
@@ -762,7 +715,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="styles" />
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="partials" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -785,10 +742,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="styles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mixins" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -836,7 +789,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="services" />
+              <option name="myItemId" value="directives" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1007,14 +960,34 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="-4" width="1202" height="1925" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2497876" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2735769" sideWeight="0.72601223" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294509" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2497876" sideWeight="0.6705491" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22344945" sideWeight="0.72601223" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2739878" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1092,114 +1065,114 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/app/scripts/controllers/client.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="49" selection-start="722" selection-end="722" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/styles/main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="394" selection-end="394" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/styles/mixins/_flex.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="23" selection-start="2963" selection-end="2963" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/views/client.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="188" column="46" selection-start="6066" selection-end="6066" vertical-scroll-proportion="-18.125">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/views/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="76" selection-start="1032" selection-end="1080" vertical-scroll-proportion="-16.875">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/views/calendar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="14" selection-start="1898" selection-end="1898" vertical-scroll-proportion="-34.375">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="49" selection-start="1301" selection-end="1301" vertical-scroll-proportion="-18.125">
+        <state line="65" column="0" selection-start="2903" selection-end="2903" vertical-scroll-proportion="-30.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/scripts/directives/contenteditable.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/scripts/directives/journal-entry.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="935" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/scripts/directives/journal-entry-helper.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/scripts/directives/modal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/scripts/directives/scroll.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="5" selection-start="0" selection-end="499" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/scripts/services/calendar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="17" selection-start="132" selection-end="132" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/app/scripts/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="22" selection-start="151" selection-end="151" vertical-scroll-proportion="0.0">
+        <state line="32" column="46" selection-start="1046" selection-end="1046" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/scripts/controllers/calendar.js">
+    <entry file="file://$PROJECT_DIR$/public/app/views/partials/calendar-month.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="53" selection-start="240" selection-end="240" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/manifest.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="1" selection-start="985" selection-end="985" vertical-scroll-proportion="-19.375">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/scripts/services/sync.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="43" selection-start="166" selection-end="179" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/scripts/services/storage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="19" selection-start="1267" selection-end="1267" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/styles/_calendar-month.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="0" selection-start="716" selection-end="716" vertical-scroll-proportion="0.0">
+        <state line="13" column="6" selection-start="470" selection-end="470" vertical-scroll-proportion="-8.125">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/app/styles/_calendar.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="161" selection-end="161" vertical-scroll-proportion="0.0">
+        <state line="38" column="0" selection-start="567" selection-end="567" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/styles/_client.scss">
+    <entry file="file://$PROJECT_DIR$/public/app/styles/_calendar-month.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="124" selection-end="124" vertical-scroll-proportion="0.0">
+        <state line="12" column="13" selection-start="172" selection-end="172" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/styles/_layout.scss">
+    <entry file="file://$PROJECT_DIR$/public/app/scripts/controllers/calendar.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="19" selection-start="1119" selection-end="1119" vertical-scroll-proportion="0.5210706">
+        <state line="38" column="37" selection-start="938" selection-end="938" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/views/client.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="33" selection-start="1381" selection-end="1381" vertical-scroll-proportion="-23.125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/views/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="79" column="8" selection-start="2925" selection-end="2925" vertical-scroll-proportion="-47.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/views/calendar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="41" selection-start="898" selection-end="898" vertical-scroll-proportion="-16.875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/scripts/directives/calendar-month.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="11" selection-start="1353" selection-end="1353" vertical-scroll-proportion="0.3929385">
           <folding />
         </state>
       </provider>

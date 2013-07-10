@@ -5,43 +5,52 @@ angular.module('nolla')
     '$scope',
     '$state',
     'storage',
-  function ($scope, $state, storage) {
+    'calendar',
+  function ($scope, $state, storage, calendar) {
     console.log('CalendarCtrl');
 
-    $scope.view = storage.get('calendar-view', 'month');
+    $scope.dateString = '';
+    $scope.date = moment();
+
+    var update = function () {
+      $scope.dateString = $scope.date.format();
+      storage.set('calendar-date', $scope.dateString);
+      $scope.dateTitle = $scope.date.format('MMMM YYYY');
+    }
+
+    $scope.dateTitle = '';
+
+    $scope.view = '';
 
     $scope.setView = function (view) {
       storage.set('calendar-view', view);
       $scope.view = view;
     };
+    storage.get('calendar-date', $scope.date)
+      .then(function (date) {
+        $scope.date = moment(date);
+        storage.get('calendar-view', 'month')
+          .then(function (view) {
+            $scope.view = view;
+          });
+        update();
+      });
 
-    var month = moment().month();
-    $scope.month = month;
-
-    $scope.today = moment();
-
-    var start = moment().startOf('month').startOf('week');
-    var end = moment().endOf('month').endOf('week');
-    var range = moment.twix(start, end);
-
-    var iter = range.iterate('days');
-    var weeks = [];
-    var day, i = 0, w = 0;
-    while (day = iter.next()) {
-      var week = weeks[w] ? weeks[w] : weeks[w] = [];
-      week.push(day);
-      week.number = day.isoWeek();
-      i += 1;
-      w += (i % 7 === 0 ? 1 : 0);
+    $scope.isView = function (view) {
+      return $scope.view == view;
     }
-    $scope.weeks = weeks;
 
-    var m = moment().startOf('week');
-    var dayNames = [];
-    for (var i = 0, l = 7; i < l; ++i) {
-      dayNames.push(m.format('ddd'));
-      m.add('days', 1);
-    }
-    $scope.dayNames = dayNames;
+    $scope.next = function () {
+      $scope.date.add(1, 'month');
+
+      update();
+    };
+
+    $scope.prev = function () {
+      $scope.date.subtract(1, 'month');
+
+      update();
+    };
+
 
   }]);

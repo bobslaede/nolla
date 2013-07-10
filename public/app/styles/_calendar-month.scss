@@ -9,6 +9,12 @@
 .cal {
   @include flexbox();
   @include flex-flow(column nowrap);
+
+  .cal-view {
+    @include flexbox();
+    @include flex-flow(column nowrap);
+    @include flex-grow(1);
+  }
   .month {
     @include flex-grow(1);
     @include flexbox();

@@ -15,12 +15,14 @@
     @include flexbox();
     @include flex-flow(column nowrap);
 
+    .date-title {
+      display: inline-block;
+      margin-left: 1em;
+    }
+
     .cal-nav {
       @include flex-grow(0);
       @include flex-shrink(0);
-    }
-    .cal {
-      @include flex-grow(1);
     }
   }
 
@@ -28,5 +30,11 @@
     min-width: 220px;
     min-height: 120px;
   }
+
+}
+
+
+.cal {
+  @include flex-grow(1);
 
 }
