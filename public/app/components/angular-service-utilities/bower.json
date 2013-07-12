@@ -1,0 +1,9 @@
+{
+  "name": "angular-service-utilities",
+  "version": "0.0.0",
+  "commit": "697574decb9315cc4cff923f037319836dd7e351",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mbertolacci/angular-service-utilities.git"
+  }
+}

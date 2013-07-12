@@ -6,12 +6,11 @@ angular.module('nolla')
       restrict: 'A',
       templateUrl: 'views/partials/calendar-month.html',
       scope : {
-        nlCalendarMonth: '='
+        date: '='
       },
-      replace: true,
       controller : ['$scope', function ($scope) {
 
-        var date = moment($scope.nlCalendarMonth);
+        var date = moment($scope.date);
 
         $scope.today = moment();
 
@@ -50,8 +49,8 @@ angular.module('nolla')
 
         };
 
-        $scope.$watch('nlCalendarMonth', function () {
-          date = moment($scope.nlCalendarMonth);
+        $scope.$watch('date', function () {
+          date = moment($scope.date);
           calcMonth();
         });
 

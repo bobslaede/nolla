@@ -4,7 +4,7 @@
 
     <div clas="cal-nav">
       <div class="btn-group">
-        <button type="button" class="btn">
+        <button type="button" class="btn" ng-click="today()">
           I dag
         </button>
       </div>
@@ -43,8 +43,10 @@
       </div>
     </div>
 
-    <div class="cal">
-      <div nl-calendar-month="dateString"></div>
+    <div class="cal" ng-switch="view">
+      <div ng-switch-when="day" class="cal-view">foo</div>
+      <div nl-calendar-week date="dateString" ng-switch-when="week" class="cal-view"></div>
+      <div nl-calendar-month date="dateString" ng-switch-when="month" class="cal-view"></div>
     </div>
 
   </div>

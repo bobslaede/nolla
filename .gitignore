@@ -1,4 +1,3 @@
 node_modules/
-public/app/components
 public/dist
 public/app/styles/.sass-cache

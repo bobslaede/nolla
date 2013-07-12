@@ -1,0 +1,18 @@
+<div class="week">
+  <div class="header">
+    <div class="day" ng-repeat="day in dayNames">{{day}}</div>
+  </div>
+  <div class="hours">
+    <div class="hour" ng-repeat="hour in hours"></div>
+  </div>
+  <div class="week" ng-repeat="week in weeks">
+    <div class="week-number">
+      <div class="title">{{week.number}}</div>
+    </div>
+    <div class="day" ng-repeat="day in week"
+         ng-class="{old: day.month() != month, active: day.format('LL') == today.format('LL')}">
+      <div class="title">{{day | moment:'D'}}</div>
+      <div class="hour" ng-repeat="hour in hours"></div>
+    </div>
+  </div>
+</div>
