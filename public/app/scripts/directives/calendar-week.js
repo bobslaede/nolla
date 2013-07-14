@@ -21,6 +21,14 @@ angular.module('nolla')
           m.add('days', 1);
         }
         $scope.dayNames = dayNames;
+        
+        var hour = moment();
+        var hours = [];
+        for (var i = 0, l = 24; i < l; ++i) {
+            hours.push(hour.hour(i).format('HH'));
+        }
+        $scope.hours = hours;
+        
 
         var calcWeek = function () {
           if (!date) return;
@@ -34,18 +42,14 @@ angular.module('nolla')
           console.log('calcing week', start.format('L'), end.format('L'))
 
           var iter = range.iterate('days');
-          var weeks = [];
-          var day, i = 0, w = 0;
+          var day;
 
+          var days = [];
           while (day = iter.next()) {
-            var week = weeks[w] ? weeks[w] : weeks[w] = [];
-            week.push(day);
-            week.number = day.isoWeek();
-            i += 1;
-            w += (i % 7 === 0 ? 1 : 0);
+            days.push(day);
           }
 
-          $scope.weeks = weeks;
+          $scope.days = days;
 
         };
 

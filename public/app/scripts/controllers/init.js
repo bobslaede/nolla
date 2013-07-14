@@ -6,10 +6,8 @@ angular.module('nolla')
 
     auth.getAuth()
       .then(function () {
-        console.log('trans to app.main', $state.current, $state.params);
         var state = $state.current;
         if (state.name == 'app') {
-          console.log('already here');
           state = 'app.main.client';
         }
         $state.transitionTo(state, $state.params);

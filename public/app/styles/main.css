@@ -42,7 +42,7 @@
   font-weight: 400;
   font-style: normal; }
 
-/*!
+/*
  * Bootstrap v2.3.2
  *
  * Copyright 2012 Twitter, Inc
@@ -525,7 +525,7 @@ cite {
 
 a.muted:hover,
 a.muted:focus {
-  color: grey; }
+  color: gray; }
 
 .text-warning {
   color: #c09853; }
@@ -4614,7 +4614,7 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-/*!
+/*
  *  Font Awesome 3.2.1
  *  the iconic font designed for Bootstrap
  *  ------------------------------------------------------------------------------
@@ -6755,14 +6755,7 @@ body {
   -webkit-flex-grow: 1;
   -moz-flex-grow: 1;
   -ms-flex-positive: 1;
-  flex-grow: 1; }
-
-.cal .month, .cal .month .header, .cal .month .week, .cal .month .week .day {
-  border-width: 0;
-  border-color: #cccccc;
-  border-style: solid; }
-
-.cal {
+  flex-grow: 1;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;
@@ -6786,64 +6779,57 @@ body {
     -moz-flex-grow: 1;
     -ms-flex-positive: 1;
     flex-grow: 1; }
-  .cal .month {
-    -webkit-flex-grow: 1;
-    -moz-flex-grow: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
+
+.cal .month, .cal .month .header, .cal .month .week, .cal .month .week .day, .cal-view > .week, .cal-view > .week .header {
+  border-width: 0;
+  border-color: #cccccc;
+  border-style: solid; }
+
+.cal .month {
+  -webkit-flex-grow: 1;
+  -moz-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column nowrap;
+  -moz-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  border-bottom-width: 1px;
+  margin-left: 2em;
+  margin-top: 10px; }
+  .cal .month .header {
+    -webkit-flex-grow: 0;
+    -moz-flex-grow: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    -webkit-flex-shrink: 0;
+    -moz-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-flex-flow: column nowrap;
-    -moz-flex-flow: column nowrap;
-    -ms-flex-flow: column nowrap;
-    flex-flow: column nowrap;
-    border-bottom-width: 1px;
-    margin-left: 2em;
-    margin-top: 10px; }
-    .cal .month .header {
-      -webkit-flex-grow: 0;
-      -moz-flex-grow: 0;
-      -ms-flex-positive: 0;
-      flex-grow: 0;
-      -webkit-flex-shrink: 0;
-      -moz-flex-shrink: 0;
-      -ms-flex-negative: 0;
-      flex-shrink: 0;
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -moz-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-direction: normal;
-      -webkit-box-orient: horizontal;
-      -webkit-flex-direction: row;
-      -moz-flex-direction: row;
-      -ms-flex-direction: row;
-      flex-direction: row;
-      -webkit-flex-wrap: nowrap;
-      -moz-flex-wrap: nowrap;
-      -ms-flex-wrap: none;
-      flex-wrap: nowrap;
-      border-left-width: 1px;
-      border-right-width: 1px;
-      border-top-width: 1px; }
-      .cal .month .header .day {
-        -webkit-flex-shrink: 0;
-        -moz-flex-shrink: 0;
-        -ms-flex-negative: 0;
-        flex-shrink: 0;
-        -webkit-flex-grow: 1;
-        -moz-flex-grow: 1;
-        -ms-flex-positive: 1;
-        flex-grow: 1;
-        margin: 4px;
-        text-align: left;
-        text-transform: uppercase;
-        font-size: 11.9px; }
-    .cal .month .week {
+    -webkit-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -moz-flex-wrap: nowrap;
+    -ms-flex-wrap: none;
+    flex-wrap: nowrap;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px; }
+    .cal .month .header .day {
       -webkit-flex-shrink: 0;
       -moz-flex-shrink: 0;
       -ms-flex-negative: 0;
@@ -6852,31 +6838,164 @@ body {
       -moz-flex-grow: 1;
       -ms-flex-positive: 1;
       flex-grow: 1;
-      min-height: 6em;
-      border-right-width: 1px;
-      border-top-width: 1px;
+      margin: 4px;
+      text-align: left;
+      text-transform: uppercase;
+      font-size: 11.9px; }
+  .cal .month .week {
+    -webkit-flex-shrink: 0;
+    -moz-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    -webkit-flex-grow: 1;
+    -moz-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    min-height: 6em;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    position: relative; }
+    .cal .month .week .week-number {
+      position: absolute;
+      width: 2em;
+      left: -2em;
+      top: -1px;
+      bottom: -1px;
+      background: white;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
+      display: flex; }
+      .cal .month .week .week-number .title {
+        font-size: 11.9px;
+        color: #999999;
+        -webkit-flex-grow: 1;
+        -moz-flex-grow: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        padding: 3px 0 0 2px; }
+  .cal .month .week {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -moz-flex-wrap: nowrap;
+    -ms-flex-wrap: none;
+    flex-wrap: nowrap; }
+    .cal .month .week .day {
+      -webkit-flex-shrink: 0;
+      -moz-flex-shrink: 0;
+      -ms-flex-negative: 0;
+      flex-shrink: 0;
+      -webkit-flex-grow: 1;
+      -moz-flex-grow: 1;
+      -ms-flex-positive: 1;
+      flex-grow: 1;
+      border-left-width: 1px;
+      padding: 2px;
       position: relative; }
-      .cal .month .week .week-number {
+      .cal .month .week .day.active {
+        background: #46a546;
+        color: white; }
+        .cal .month .week .day.active .title {
+          color: white; }
+      .cal .month .week .day .title {
+        font-size: 11.9px;
+        color: #555555;
         position: absolute;
-        width: 2em;
-        left: -2em;
-        top: -1px;
-        bottom: -1px;
-        background: white;
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -moz-flex;
-        display: -ms-flexbox;
-        display: flex; }
-        .cal .month .week .week-number .title {
-          font-size: 11.9px;
-          color: #999999;
-          -webkit-flex-grow: 1;
-          -moz-flex-grow: 1;
-          -ms-flex-positive: 1;
-          flex-grow: 1;
-          padding: 3px 0 0 2px; }
-    .cal .month .week {
+        top: 2px;
+        right: 2px; }
+      .cal .month .week .day.old .title {
+        color: #999999;
+        text-shadow: 1px 1px white; }
+
+.cal-view .cal .month, .cal .cal-view .month, .cal-view .cal .month .header, .cal .month .cal-view .header, .cal-view .cal .month .week, .cal .month .cal-view .week, .cal-view .cal .month .week .day, .cal .month .week .cal-view .day, .cal-view > .week, .cal-view > .week .header {
+  border-width: 0;
+  border-color: #cccccc;
+  border-style: solid; }
+.cal-view > .week {
+  -webkit-flex-grow: 1;
+  -moz-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column nowrap;
+  -moz-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  border-bottom-width: 1px;
+  margin-left: 2em;
+  margin-top: 10px; }
+  .cal-view > .week .header {
+    -webkit-flex-grow: 0;
+    -moz-flex-grow: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    -webkit-flex-shrink: 0;
+    -moz-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -moz-flex-wrap: nowrap;
+    -ms-flex-wrap: none;
+    flex-wrap: nowrap;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px; }
+    .cal-view > .week .header .day {
+      -webkit-flex-shrink: 0;
+      -moz-flex-shrink: 0;
+      -ms-flex-negative: 0;
+      flex-shrink: 0;
+      -webkit-flex-grow: 1;
+      -moz-flex-grow: 1;
+      -ms-flex-positive: 1;
+      flex-grow: 1;
+      margin: 4px;
+      text-align: left;
+      text-transform: uppercase;
+      font-size: 11.9px; }
+  .cal-view > .week .week-view {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -moz-flex-wrap: nowrap;
+    -ms-flex-wrap: none;
+    flex-wrap: nowrap; }
+    .cal-view > .week .week-view .days {
       display: -webkit-box;
       display: -webkit-flex;
       display: -moz-flex;
@@ -6892,31 +7011,3 @@ body {
       -moz-flex-wrap: nowrap;
       -ms-flex-wrap: none;
       flex-wrap: nowrap; }
-      .cal .month .week .day {
-        -webkit-flex-shrink: 0;
-        -moz-flex-shrink: 0;
-        -ms-flex-negative: 0;
-        flex-shrink: 0;
-        -webkit-flex-grow: 1;
-        -moz-flex-grow: 1;
-        -ms-flex-positive: 1;
-        flex-grow: 1;
-        border-left-width: 1px;
-        padding: 2px;
-        position: relative; }
-        .cal .month .week .day.active {
-          background: #46a546;
-          color: white; }
-          .cal .month .week .day.active .title {
-            color: white; }
-        .cal .month .week .day .title {
-          font-size: 11.9px;
-          color: #555555;
-          position: absolute;
-          top: 2px;
-          right: 2px; }
-        .cal .month .week .day.old .title {
-          color: #999999;
-          text-shadow: 1px 1px white; }
-
-/*# sourceMappingURL=main.css.map */

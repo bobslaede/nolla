@@ -2,7 +2,6 @@
 
 angular.module('nolla')
   .controller('ClientCtrl', ['$scope', '$state', 'clients', function ($scope, $state, clients) {
-    console.log('ClientCtrl');
 
     var id = $state.params.clientId;
 
@@ -54,7 +53,6 @@ angular.module('nolla')
     };
 
     $scope.deleteClient = function () {
-      console.warn('DELETE');
       //$scope.model.client.$remove();
       clients.remove($scope.model.client)
         .then(function () {

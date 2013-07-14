@@ -1,0 +1,63 @@
+
+  
+.cal-view {
+  
+  
+  %borderstyle {
+    border-width: 0;
+    border-color: $inputBorder;
+    border-style: solid;
+  }
+  
+  & > .week {
+    
+    @include flex-grow(1);
+    @include flexbox();
+    @include flex-flow(column nowrap);
+
+    $weekNumberWidth: 2em;
+    $weekMinHeight: 6em;
+
+    @extend %borderstyle;
+    border-bottom-width: 1px;
+    margin-left: $weekNumberWidth;
+    margin-top: 10px;
+
+    .header {
+      @include flex-grow(0);
+      @include flex-shrink(0);
+      @include flexbox();
+      @include flex-direction(row);
+      @include flex-wrap(nowrap);
+
+      @extend %borderstyle;
+      border-left-width: 1px;
+      border-right-width: 1px;
+      border-top-width: 1px;
+
+      .day {
+        @include flex-shrink(0);
+        @include flex-grow(1);
+        margin: 4px;
+        text-align: left;
+        text-transform: uppercase;
+        font-size: $fontSizeSmall;
+      }
+    }  
+    
+    .week-view {
+      @include flexbox();
+      @include flex-direction(row);
+      @include flex-wrap(nowrap);
+      
+      .days {
+        @include flexbox();
+        @include flex-direction(row);
+        @include flex-wrap(nowrap);
+      }
+      
+    }
+    
+  }
+  
+}
