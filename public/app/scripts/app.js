@@ -22,6 +22,7 @@ var nolla = angular.module('nolla', [
 
      // socketProvider.setServer('http://192.168.2.37:3003');
      // authProvider.setHost('http://192.168.2.37:3003');
+      var host = location.origin;
       socketProvider.setServer(host);
       authProvider.setHost(host);
 
