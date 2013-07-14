@@ -20,8 +20,10 @@ var nolla = angular.module('nolla', [
         'https://www.googleapis.com/auth/userinfo.email'
       ]);
 
-      socketProvider.setServer('http://192.168.2.37:3003');
-      authProvider.setHost('http://192.168.2.37:3003');
+     // socketProvider.setServer('http://192.168.2.37:3003');
+     // authProvider.setHost('http://192.168.2.37:3003');
+      socketProvider.setServer(host);
+      authProvider.setHost(host);
 
       moment.lang('da');
 
