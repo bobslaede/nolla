@@ -21,6 +21,7 @@
   "white": true,
   "globals" : {
     "angular" : true,
+    "moment" : true,
     "$" : true,
     "jQuery" : true,
     "window" : true,
