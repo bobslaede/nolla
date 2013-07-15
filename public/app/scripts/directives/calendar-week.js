@@ -13,14 +13,6 @@ angular.module('nolla')
         var date = moment($scope.date);
 
         $scope.today = moment();
-
-        var m = moment().startOf('week');
-        var dayNames = [];
-        for (var i = 0, l = 7; i < l; ++i) {
-          dayNames.push(m.format('ddd'));
-          m.add('days', 1);
-        }
-        $scope.dayNames = dayNames;
         
         var hour = moment();
         var hours = [];

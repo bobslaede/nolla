@@ -15,12 +15,12 @@
     @include flexbox();
     @include flex-flow(column nowrap);
 
-    $weekNumberWidth: 2em;
-    $weekMinHeight: 6em;
+    $hourWidth: 2em;
+    $hourMinHeight: 3em;
 
     @extend %borderstyle;
     border-bottom-width: 1px;
-    margin-left: $weekNumberWidth;
+    margin-left: $hourWidth;
     margin-top: 10px;
 
     .header {
@@ -49,11 +49,47 @@
       @include flexbox();
       @include flex-direction(row);
       @include flex-wrap(nowrap);
+      min-height: 1px;
+      
+      position: relative;
+      
+      .hours {
+        width: $hourWidth;
+        position: absolute;
+        top: 0;
+        left: $hourWidth * -1;
+        @extend %borderstyle;
+        border-right-width:1px;
+        .hour {
+          .title {
+            font-size: $fontSizeSmall;
+            color: $grayLight;
+            @include flex-grow(1);
+            padding: 3px 0 0 2px;
+          }
+        }
+      }
+      
+      .hour {
+        min-height: $hourMinHeight;
+      }
       
       .days {
+        @include flex-grow(1);
         @include flexbox();
         @include flex-direction(row);
         @include flex-wrap(nowrap);
+        
+        .day {
+          @include flex-grow(1);
+            @extend %borderstyle;
+            border-right-width:1px;
+          
+          .hour {
+            @extend %borderstyle;
+            border-top-width:1px;
+          }
+        }
       }
       
     }

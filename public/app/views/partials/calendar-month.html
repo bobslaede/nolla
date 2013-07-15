@@ -7,7 +7,7 @@
       <div class="title">{{week.number}}</div>
     </div>
     <div class="day" ng-repeat="day in week"
-         ng-class="{old: day.month() != month, active: day.format('LL') == today.format('LL')}">
+         ng-class="{old: day.month() != month, active: day.format('LL') == todayString}">
       <div class="title">{{day | moment:'D'}}</div>
     </div>
   </div>

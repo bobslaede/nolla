@@ -24,7 +24,11 @@ angular.module('nolla')
           break;
         case 'week':
           var tmp = moment($scope.date);
-          $scope.dateTitle = tmp.startOf('week').format('LL') + ' - ' + tmp.endOf('week').format('LL')
+          $scope.dateTitle = tmp.startOf('week').format('L') 
+            + ' - ' 
+            + tmp.endOf('week').format('L')
+            + ', uge '
+            + tmp.isoWeek();
           break;
       }
     }

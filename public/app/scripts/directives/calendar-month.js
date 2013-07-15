@@ -13,6 +13,7 @@ angular.module('nolla')
         var date = moment($scope.date);
 
         $scope.today = moment();
+        $scope.todayString = $scope.today.format('LL');
 
         var m = moment().startOf('week');
         var dayNames = [];
