@@ -1,14 +1,14 @@
 <div class="month">
   <div class="header">
-    <div class="day" ng-repeat="day in dayNames">{{day}}</div>
+    <div class="day" ng-repeat="day in calendar.dayNames">{{day}}</div>
   </div>
-  <div class="week" ng-repeat="week in weeks">
+  <div class="week" ng-repeat="week in calendar.weeks">
     <div class="week-number">
       <div class="title">{{week.number}}</div>
     </div>
     <div class="day" ng-repeat="day in week"
-         ng-class="{old: day.month() != month, active: day.format('LL') == todayString}">
-      <div class="title">{{day | moment:'D'}}</div>
+         ng-class="{old: day.month() != calendar.currentMonth, active: day.format('LL') == calendar.todayString}">
+      <div class="title">{{day | moment:'D'}}<div>
     </div>
   </div>
 </div>

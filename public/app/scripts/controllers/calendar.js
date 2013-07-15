@@ -1,14 +1,24 @@
 'use strict';
 
 angular.module('nolla')
-  .controller('CalendarCtrl', [
-    '$scope',
-    '$state',
-    'storage',
-    'calendar',
-  function ($scope, $state, storage, calendar) {
+  .controller('CalendarCtrl', function ($scope, $state, storage, calendar) {
     console.log('CalendarCtrl');
+    
+    $scope.view = storage.get('calendar-view', 'month');
+    
+    $scope.today = function () {
+      calendar.setDate(moment());
+    };
+    $scope.setView = function (view) {
+      $scope.view = storage.set('calendar-view', view);
+    };
+    $scope.calendar = calendar;
+    
+    calendar.$on('update', function () {
+      $scope.dateTitle = calendar.date.format('L');
+    })
 
+    /*
     $scope.dateString = '';
     $scope.date = moment();
     $scope.dateTitle = '';
@@ -80,6 +90,8 @@ angular.module('nolla')
 
       update();
     };
+    
+    */
 
 
-  }]);
+  });

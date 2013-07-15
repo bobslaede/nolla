@@ -6,6 +6,9 @@ angular.module('nolla')
       if (!str) {
         return '';
       }
+      if (str.format) {
+        return str.format(expression);
+      }
       return moment(str).format(expression);
     }
   });
