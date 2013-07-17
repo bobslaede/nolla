@@ -36,6 +36,7 @@
                   d.resolve(value[key]);
                 });
               } else {
+                console.log('storage using default value')
                 $scope.$apply(function () {
                   d.resolve(defaultValue);
                 });

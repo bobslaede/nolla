@@ -20,6 +20,7 @@ angular.module('nolla')
 
     $scope.$watch('clientListVisible', function () {
       var key = 'clientlist-visible-' + $state.current.name.replace(/\./g, '-');
+      console.log('saving client list visiblitity', key, $scope.clientListVisible);
       storage.set(key, $scope.clientListVisible);
     });
 
@@ -27,6 +28,7 @@ angular.module('nolla')
       var key = 'clientlist-visible-' + $state.current.name.replace(/\./g, '-');
       storage.get(key, true)
         .then(function (value) {
+          console.log('state change from ', key, 'got', value);
           $scope.clientListVisible = value;
         });
     });
