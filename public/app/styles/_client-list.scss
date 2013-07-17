@@ -4,25 +4,28 @@
   position: relative;
   padding-right: 15px;
 
+  @include translate(0, 0);
+  @include transition(margin .2s ease);
+
   &.hidden {
     margin-left: -250px;
   }
 
   .drawer {
     position: absolute;
-    top: 50%;
-    height: 40px;
-    right: -15px;
-    width: 30px;
-    @include translate(0, -50%);
-    z-index: 3;
+    top: 0;
+    bottom: 0;
     background: $white;
+    right: 0;
+    width: 15px;
+    z-index: 3;
     .handle {
       height: 40px;
       width: 15px;
       background: $white;
       position: absolute;
-      top: 0;
+      @include translate(0, -50%);
+      top: 50%;
       left: 15px;
       @include box-shadow(3px 0px 2px hsla(0, 0%, 0%, .1));
       @include flexbox();

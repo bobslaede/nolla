@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('nolla')
-  .controller('MainCtrl', ['$scope', '$state', 'clients', 'app', 'auth', function ($scope, $state, clients, app, auth, $rootScope) {
+  .controller('MainCtrl', function ($scope, $state, clients, app, auth, storage) {
 
     document.addEventListener('keyup', function (e) {
       if (e.ctrlKey && e.which == 70) {
@@ -16,6 +16,22 @@ angular.module('nolla')
     $scope.appModel = app.model;
     $scope.user = auth.user;
 
+    $scope.clientListVisible = true;
+
+    $scope.$watch('clientListVisible', function () {
+      var key = 'clientlist-visible-' + $state.current.name.replace(/\./g, '-');
+      storage.set(key, $scope.clientListVisible);
+    });
+
+    $scope.$on('$stateChangeSuccess', function () {
+      var key = 'clientlist-visible-' + $state.current.name.replace(/\./g, '-');
+      storage.get(key, true)
+        .then(function (value) {
+          $scope.clientListVisible = value;
+        });
+    });
+
+
     $scope.selectAction = function (action) {
       var params = _.clone($state.params);
       $state.transitionTo(action, params);
@@ -28,6 +44,4 @@ angular.module('nolla')
       $state.transitionTo(state, params);
     };
 
-    $scope.clientListVisible = true;
-
-  }]);
+  });

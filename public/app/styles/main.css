@@ -6658,28 +6658,37 @@ body {
   background: white;
   box-shadow: 3px 0px 2px rgba(0, 0, 0, 0.1);
   position: relative;
-  padding-right: 15px; }
+  padding-right: 15px;
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
+  -webkit-transition: margin 0.2s ease;
+  -moz-transition: margin 0.2s ease;
+  -o-transition: margin 0.2s ease;
+  transition: margin 0.2s ease; }
   .client-list.hidden {
     margin-left: -250px; }
   .client-list .drawer {
     position: absolute;
-    top: 50%;
-    height: 40px;
-    right: -15px;
-    width: 30px;
-    -webkit-transform: translate(0, -50%);
-    -moz-transform: translate(0, -50%);
-    -ms-transform: translate(0, -50%);
-    -o-transform: translate(0, -50%);
-    transform: translate(0, -50%);
-    z-index: 3;
-    background: white; }
+    top: 0;
+    bottom: 0;
+    background: white;
+    right: 0;
+    width: 15px;
+    z-index: 3; }
     .client-list .drawer .handle {
       height: 40px;
       width: 15px;
       background: white;
       position: absolute;
-      top: 0;
+      -webkit-transform: translate(0, -50%);
+      -moz-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+      -o-transform: translate(0, -50%);
+      transform: translate(0, -50%);
+      top: 50%;
       left: 15px;
       box-shadow: 3px 0px 2px rgba(0, 0, 0, 0.1);
       display: -webkit-box;

@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('nolla')
-  .controller('JournalCtrl', ['$scope', '$state', 'clients', 'journalentries', function ($scope, $state, clients, journalentries) {
+  .controller('JournalCtrl', function ($scope, $state, clients, journalentries, $rootScope, storage) {
     console.log('JournalCtrl');
 
     var id = $state.params.clientId;
@@ -48,5 +48,10 @@ angular.module('nolla')
         }
       }
 
+      storage.get('clientlist-visible-journal', false)
+        .then(function (visible) {
+          $rootScope.clientListVisible = visible;
+        });
+
     }
-  }]);
+  });

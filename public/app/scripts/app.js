@@ -22,7 +22,7 @@ var nolla = angular.module('nolla', [
 
       var host = window.location.origin;
       if (window.location.protocol == 'chrome-extension:') {
-        host = '192.168.2.37:3003';
+        host = 'http://192.168.2.37:3003';
       }
       socketProvider.setServer(host);
       authProvider.setHost(host);
