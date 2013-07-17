@@ -1,15 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="342fdae3-dca1-48ea-93cd-e022978dd8f9" name="Default" comment="" />
+    <list default="true" id="342fdae3-dca1-48ea-93cd-e022978dd8f9" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/views/partials/calendar.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/calendar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/directives/calendar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/services/calendars.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/event.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/services/events.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/directives/calendar-month.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/directives/calendar-week.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/views/partials/calendar-month.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/views/partials/calendar-week.html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/styles/_calendar-month.scss" afterPath="$PROJECT_DIR$/public/app/styles/_calendar-month.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/styles/_calendar-week.scss" afterPath="$PROJECT_DIR$/public/app/styles/_calendar-week.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/styles/_calendar.scss" afterPath="$PROJECT_DIR$/public/app/styles/_calendar.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/scripts/app.js" afterPath="$PROJECT_DIR$/public/app/scripts/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/views/calendar.html" afterPath="$PROJECT_DIR$/public/app/views/calendar.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/views/calendar.html" afterPath="$PROJECT_DIR$/public/dist/views/calendar.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/scripts/controllers/calendar.js" afterPath="$PROJECT_DIR$/public/app/scripts/controllers/calendar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/scripts/services/calendar.js" afterPath="$PROJECT_DIR$/public/app/scripts/services/calendar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/index.html" afterPath="$PROJECT_DIR$/public/app/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/index.html" afterPath="$PROJECT_DIR$/public/dist/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/styles/main.css.map" afterPath="$PROJECT_DIR$/public/app/styles/main.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/styles/main.css" afterPath="$PROJECT_DIR$/public/app/styles/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/views/main.html" afterPath="$PROJECT_DIR$/public/dist/views/main.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/scripts/controllers/main.js" afterPath="$PROJECT_DIR$/public/app/scripts/controllers/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sockets.js" afterPath="$PROJECT_DIR$/src/sockets.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/scripts/services/sync.js" afterPath="$PROJECT_DIR$/public/app/scripts/services/sync.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="nolla-server.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/a.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1372922017412" ignored="false" />
-    <file path="/app.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1372971604222" ignored="false" />
+    <file path="/app.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1374076528376" ignored="false" />
     <file path="/socket.io.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1372970117077" ignored="false" />
-    <file path="/sockets.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1373394278756" ignored="false" />
+    <file path="/sockets.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1374065420112" ignored="false" />
     <file path="/main.html" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1372945576846" ignored="false" />
-    <file path="/index.html" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1373660717294" ignored="false" />
+    <file path="/index.html" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1374058315893" ignored="false" />
     <file path="/.jshintrc" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1369936783753" ignored="false" />
     <file path="/auth.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370036296756" ignored="false" />
     <file path="/main.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1372972356100" ignored="false" />
@@ -22,7 +51,7 @@
     <file path="/index.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1369942667829" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/styles/c63fa633.main.css" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1369943639886" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/components/angular-ui-router/sample/bootstrap.min.css" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1373487499223" ignored="false" />
-    <file path="/client.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1373394605132" ignored="false" />
+    <file path="/client.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1374058439978" ignored="false" />
     <file path="/client.html" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1372966204472" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/scripts/f17111db.components.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370037127645" ignored="false" />
     <file path="/socket-model.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370357951792" ignored="false" />
@@ -37,68 +66,31 @@
     <file path="$PROJECT_DIR$/public/dist/components/bootstrap/less/variables.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370463100894" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/components/bootstrap/less/modals.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370463100895" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/components/bootstrap/less/navs.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370463100894" ignored="false" />
-    <file path="$PROJECT_DIR$/public/dist/components/ui-router/sample/bootstrap.min.css" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1373397778665" ignored="false" />
-    <file path="$PROJECT_DIR$/public/dist/components/bootstrap-datepicker/build/build.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370463100894" ignored="false" />
-    <file path="$PROJECT_DIR$/public/dist/components/bootstrap-datepicker/build/build_standalone.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370463100894" ignored="false" />
-    <file path="$PROJECT_DIR$/public/dist/components/bootstrap/less/sprites.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370463100895" ignored="false" />
-    <file path="$PROJECT_DIR$/public/dist/components/bootstrap/docs/assets/css/bootstrap-responsive.css" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1373397778665" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/components/bootstrap/docs/assets/css/bootstrap.css" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1373487499223" ignored="false" />
-    <file path="$PROJECT_DIR$/public/dist/components/bootstrap/less/utilities.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370463100894" ignored="false" />
     <file path="/journal.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370376687347" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/styles/a93e2369.main.css" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370206037028" ignored="false" />
     <file path="/packaged-app.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370205491882" ignored="false" />
     <file path="/modal.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370374264894" ignored="false" />
-    <file path="$PROJECT_DIR$/public/dist/components/bootstrap-datepicker/tests/assets/qunit.css" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370463100895" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/components/bootstrap/js/tests/vendor/qunit.css" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370463100894" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/components/angular-ui-router/release/doc/styles/jsdoc-default.css" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370463100895" ignored="false" />
-    <file path="$PROJECT_DIR$/public/dist/components/bootstrap/less/popovers.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370463100895" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/components/bootstrap/less/labels-badges.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1373487499223" ignored="false" />
-    <file path="$PROJECT_DIR$/public/dist/components/bootstrap/less/type.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370463100895" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/components/bootstrap-datepicker/css/datepicker.css" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370463100894" ignored="false" />
-    <file path="$PROJECT_DIR$/public/dist/components/bootstrap/less/responsive-utilities.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370463100895" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/components/bootstrap/less/close.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370463100895" ignored="false" />
-    <file path="$PROJECT_DIR$/public/dist/components/ui-router/release/doc/styles/jsdoc-default.css" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370463100894" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/components/bootstrap/less/pager.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370463100895" ignored="false" />
-    <file path="$PROJECT_DIR$/public/dist/components/ui-router/release/doc/styles/prettify-tomorrow.css" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370463100894" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/components/bootstrap/less/breadcrumbs.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370463100894" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/components/bootstrap/less/hero-unit.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370463100895" ignored="false" />
-    <file path="$PROJECT_DIR$/public/dist/components/ui-router/release/doc/styles/prettify-jsdoc.css" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370463100894" ignored="false" />
-    <file path="$PROJECT_DIR$/public/dist/components/socket.io-client/support/test-runner/public/stylesheets/main.css" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370463100895" ignored="false" />
-    <file path="$PROJECT_DIR$/public/dist/components/underscore/test/vendor/qunit.css" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370463100895" ignored="false" />
-    <file path="$PROJECT_DIR$/public/dist/components/bootstrap-select/bootstrap-select.css" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370463100895" ignored="false" />
-    <file path="$PROJECT_DIR$/public/dist/components/bootstrap/docs/assets/css/docs.css" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370463100895" ignored="false" />
-    <file path="$PROJECT_DIR$/public/dist/components/bootstrap/less/tooltip.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370463100894" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/components/bootstrap/docs/assets/js/google-code-prettify/prettify.css" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370463100895" ignored="false" />
-    <file path="$PROJECT_DIR$/public/dist/components/bootstrap/less/thumbnails.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370463100894" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/components/bootstrap/less/button-groups.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1373487499223" ignored="false" />
-    <file path="$PROJECT_DIR$/public/dist/components/es5-shim/tests/lib/jasmine.css" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370463100894" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/components/angular-ui-router/release/doc/styles/prettify-tomorrow.css" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370463100895" ignored="false" />
-    <file path="$PROJECT_DIR$/public/dist/components/bootstrap/docs/build/node_modules/hogan.js/web/stylesheets/skeleton.css" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370463100895" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/components/angular-ui-router/release/doc/styles/prettify-jsdoc.css" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370463100894" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/components/bootstrap/less/code.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370463100895" ignored="false" />
-    <file path="$PROJECT_DIR$/public/dist/components/bootstrap-timepicker/less/timepicker.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370463100894" ignored="false" />
-    <file path="$PROJECT_DIR$/public/dist/components/bootstrap-timepicker/css/bootstrap-timepicker.min.css" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370463100894" ignored="false" />
-    <file path="$PROJECT_DIR$/public/dist/components/bootstrap-select/bootstrap-select.min.css" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370463100894" ignored="false" />
-    <file path="$PROJECT_DIR$/public/dist/components/bootstrap-timepicker/css/bootstrap-timepicker.css" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370463100894" ignored="false" />
-    <file path="$PROJECT_DIR$/public/dist/components/angular-strap/vendor/bootstrap-datepicker.css" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370463100894" ignored="false" />
-    <file path="$PROJECT_DIR$/public/dist/components/angular-strap/vendor/bootstrap-select.css" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370463100894" ignored="false" />
-    <file path="$PROJECT_DIR$/public/dist/components/angular-strap/vendor/bootstrap-timepicker.css" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370463100894" ignored="false" />
-    <file path="$PROJECT_DIR$/public/dist/components/bootstrap/less/tests/css-tests.css" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370463100894" ignored="false" />
-    <file path="$PROJECT_DIR$/public/dist/components/bootstrap/less/reset.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370374467371" ignored="false" />
-    <file path="$PROJECT_DIR$/public/dist/components/underscore/docs/docco.css" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370463100894" ignored="false" />
-    <file path="$PROJECT_DIR$/public/dist/components/bootstrap/less/tables.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370463100894" ignored="false" />
-    <file path="$PROJECT_DIR$/public/dist/components/bootstrap/less/progress-bars.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370463100894" ignored="false" />
-    <file path="$PROJECT_DIR$/public/dist/components/bootstrap/less/pagination.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370463100894" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/components/bootstrap/less/carousel.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370463100895" ignored="false" />
-    <file path="$PROJECT_DIR$/public/dist/components/bootstrap/docs/build/node_modules/hogan.js/web/stylesheets/layout.css" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370463100895" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/components/bootstrap/less/navbar.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370463100895" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/components/bootstrap/less/accordion.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370463100895" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/components/bootstrap/less/buttons.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1373487499223" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/components/bootstrap/less/alerts.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370463100895" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/components/bootstrap/less/media.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370463100895" ignored="false" />
-    <file path="$PROJECT_DIR$/public/dist/components/bootstrap/less/wells.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370463100895" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/components/json3/page/style.css" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370463100895" ignored="false" />
-    <file path="$PROJECT_DIR$/public/dist/components/bootstrap/less/scaffolding.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370463100895" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/components/bootstrap/less/layouts.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370463100895" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/scripts/3253ec75.scripts.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370206379536" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/scripts/e47dca59.app.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370206379536" ignored="false" />
@@ -372,8 +364,6 @@
     <file path="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/BigIntegerTest.as" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
     <file path="/journal.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370464159838" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/styles/main.css" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370461690342" ignored="false" />
-    <file path="$PROJECT_DIR$/public/dist/components/bootstrap/less/responsive-1200px-min.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370283312153" ignored="false" />
-    <file path="$PROJECT_DIR$/public/dist/components/bootstrap/less/responsive-navbar.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370376710520" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/components/bootstrap/less/responsive-767px-max.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370376710521" ignored="false" />
     <file path="/wells.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370283372290" ignored="false" />
     <file path="/layout.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1372925301952" ignored="false" />
@@ -383,7 +373,7 @@
     <file path="/variables.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370290474588" ignored="false" />
     <file path="/journal-entry.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370376061960" ignored="false" />
     <file path="/journal-entry-helper.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370375700929" ignored="false" />
-    <file path="/dummy.xml" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1373659937977" ignored="false" />
+    <file path="/dummy.xml" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1374078061352" ignored="false" />
     <file path="/journalentries.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370372810270" ignored="false" />
     <file path="/meta-schema.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370358576015" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/components/angular-strap/test/lib/bootstrap.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370359630629" ignored="false" />
@@ -393,9 +383,9 @@
     <file path="$PROJECT_DIR$/public/dist/components/bootstrap/js/tests/vendor/jquery.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1373399430431" ignored="false" />
     <file path="/contenteditable.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370375104034" ignored="false" />
     <file path="/calendar.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370464205994" ignored="false" />
-    <file path="/calendar.html" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1373660785170" ignored="false" />
-    <file path="/calendar.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1373661169874" ignored="false" />
-    <file path="/.gitignore" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1372947766374" ignored="false" />
+    <file path="/calendar.html" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1374078061352" ignored="false" />
+    <file path="/calendar.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1374077260816" ignored="false" />
+    <file path="/.gitignore" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1373747097612" ignored="false" />
     <file path="$PROJECT_DIR$/../nolla2/nolla-back/config/express.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1372922091888" ignored="false" />
     <file path="/a.coffee" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1372922053878" ignored="false" />
     <file path="/a.dart" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1372922053248" ignored="false" />
@@ -421,7 +411,7 @@
     <file path="/_wells.scss" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1372947144632" ignored="false" />
     <file path="/_client-list.scss" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1372949285131" ignored="false" />
     <file path="/_client.scss" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1372951334285" ignored="false" />
-    <file path="/sync.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1373394304722" ignored="false" />
+    <file path="/sync.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1374058386396" ignored="false" />
     <file path="/fragment.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1372970786408" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/components/socket.io-client/dist/socket.io.min.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1373059919313" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/scripts/67563dd3.components.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1373059764499" ignored="false" />
@@ -431,17 +421,18 @@
     <file path="$PROJECT_DIR$/public/dist/components/bootstrap/js/bootstrap-tooltip.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1373059764499" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/components/bootstrap/docs/assets/js/holder/holder.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1373059764499" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/components/bootstrap/docs/assets/js/bootstrap.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1373059764499" ignored="false" />
-    <file path="/_calendar.scss" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1373484834696" ignored="false" />
-    <file path="$PROJECT_DIR$/public/app/styles/main.css" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1373486968339" ignored="false" />
-    <file path="/_calendar-month.scss" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1373486948597" ignored="false" />
+    <file path="/_calendar.scss" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1374075922162" ignored="false" />
+    <file path="/_calendar-month.scss" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1374076561291" ignored="false" />
     <file path="/storage.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1373399219843" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/components/angular-strap/test/lib/jquery.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1373399430431" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/components/jquery/jquery-migrate.min.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1373399430431" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/components/moment/moment.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1373399430431" ignored="false" />
-    <file path="/calendar-month.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1373487556789" ignored="false" />
-    <file path="/calendar-month.html" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1373486859764" ignored="false" />
-    <file path="/calendar-week.html" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1373660624149" ignored="false" />
-    <file path="/calendar-week.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1373660693275" ignored="false" />
+    <file path="/calendar-month.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1374075493299" ignored="false" />
+    <file path="/calendar-month.html" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1374076614181" ignored="false" />
+    <file path="/calendar-week.html" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1374077140860" ignored="false" />
+    <file path="/calendar-week.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1374077084859" ignored="false" />
+    <file path="/Dummy.txt" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1373747071494" ignored="false" />
+    <file path="/events.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1374058071104" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -464,19 +455,8 @@
       <file leaf-file-name="calendar.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/app/scripts/controllers/calendar.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="15" selection-start="919" selection-end="919" vertical-scroll-proportion="0.0">
+            <state line="41" column="5" selection-start="924" selection-end="924" vertical-scroll-proportion="0.0">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="da.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/app/components/moment/lang/da.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="38" selection-start="706" selection-end="706" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -484,25 +464,16 @@
       <file leaf-file-name="calendar.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/app/views/calendar.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="48" selection-start="1518" selection-end="1518" vertical-scroll-proportion="-28.75">
+            <state line="54" column="54" selection-start="1648" selection-end="1648" vertical-scroll-proportion="-33.75">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="calendar-week.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/app/views/partials/calendar-week.html">
+      <file leaf-file-name="_client-list.scss" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/app/styles/_client-list.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="6" selection-start="612" selection-end="612" vertical-scroll-proportion="-10.625">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="calendar-week.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/app/scripts/directives/calendar-week.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="27" selection-start="1348" selection-end="1348" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -511,25 +482,43 @@
       <file leaf-file-name="_calendar-month.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/app/styles/_calendar-month.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="12" selection-start="838" selection-end="838" vertical-scroll-proportion="0.0">
+            <state line="49" column="31" selection-start="719" selection-end="719" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="calendar-month.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/app/scripts/directives/calendar-month.js">
+      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/app/scripts/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="27" selection-start="1384" selection-end="1384" vertical-scroll-proportion="0.0">
+            <state line="64" column="35" selection-start="1910" selection-end="1910" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file leaf-file-name="_calendar-week.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/app/styles/_calendar-week.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="29" selection-start="55" selection-end="55" vertical-scroll-proportion="0.017084282">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="calendar.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/app/scripts/directives/calendar.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="50" selection-start="164" selection-end="164" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="calendar.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/app/views/partials/calendar.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="8" selection-start="556" selection-end="556" vertical-scroll-proportion="-11.875">
               <folding />
             </state>
           </provider>
@@ -538,16 +527,16 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/app/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="52" selection-start="1726" selection-end="1726" vertical-scroll-proportion="-23.75">
+            <state line="47" column="56" selection-start="2221" selection-end="2221" vertical-scroll-proportion="-29.375">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="calendar-month.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/app/views/partials/calendar-month.html">
+      <file leaf-file-name="client.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/app/views/client.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="470" vertical-scroll-proportion="-0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
@@ -560,25 +549,33 @@
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitLogSettings">
+    <option name="myDateState">
+      <MyDateState />
+    </option>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/public/app/styles/_layout.scss" />
-        <option value="$PROJECT_DIR$/public/app/scripts/directives/journal-entry.js" />
+        <option value="$PROJECT_DIR$/public/app/scripts/controllers/client.js" />
+        <option value="$PROJECT_DIR$/public/app/scripts/controllers/main.js" />
+        <option value="$PROJECT_DIR$/src/sockets.js" />
         <option value="$PROJECT_DIR$/public/app/scripts/services/calendar.js" />
+        <option value="$PROJECT_DIR$/public/app/styles/_calendar.scss" />
+        <option value="$PROJECT_DIR$/public/app/styles/_calendar-week.scss" />
         <option value="$PROJECT_DIR$/public/app/scripts/app.js" />
         <option value="$PROJECT_DIR$/public/app/views/partials/calendar-month.html" />
-        <option value="$PROJECT_DIR$/public/app/styles/_calendar.scss" />
         <option value="$PROJECT_DIR$/public/app/styles/_calendar-month.scss" />
-        <option value="$PROJECT_DIR$/bower.json" />
-        <option value="$PROJECT_DIR$/public/app/scripts/lib/twix.js" />
         <option value="$PROJECT_DIR$/public/app/views/partials/calendar-week.html" />
+        <option value="$PROJECT_DIR$/public/app/scripts/directives/calendar-week.js" />
+        <option value="$PROJECT_DIR$/public/app/scripts/controllers/calendar.js" />
+        <option value="$PROJECT_DIR$/public/app/scripts/directives/calendar-month.js" />
+        <option value="$PROJECT_DIR$/public/app/scripts/directives/calendar.js" />
         <option value="$PROJECT_DIR$/public/app/index.html" />
         <option value="$PROJECT_DIR$/public/app/views/calendar.html" />
-        <option value="$PROJECT_DIR$/public/app/scripts/controllers/calendar.js" />
-        <option value="$PROJECT_DIR$/public/app/scripts/directives/calendar-week.js" />
-        <option value="$PROJECT_DIR$/public/app/scripts/directives/calendar-month.js" />
-        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -588,7 +585,7 @@
     <option name="width" value="1202" />
     <option name="height" value="1925" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -823,6 +820,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nolla-server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nolla" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -830,13 +841,13 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="settings" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="restartRequiresConfirmation" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="PublishConfig" serverName="server on 9000" serverId="52c0ff24-879d-40d5-b2bc-e312a06df648">
     <servers>
@@ -1016,7 +1027,7 @@
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
-    <option name="SHOW_DIRTY_RECURSIVELY" value="false" />
+    <option name="SHOW_DIRTY_RECURSIVELY" value="true" />
     <option name="LIMIT_HISTORY" value="true" />
     <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
     <option name="UPDATE_FILTER_SCOPE_NAME" />
@@ -1046,116 +1057,114 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/public/app/scripts/controllers/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="28" selection-start="464" selection-end="464" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/scripts/controllers/client.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="6" selection-start="938" selection-end="1178" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sockets.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="53" selection-start="732" selection-end="732" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/scripts/services/calendar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="23" selection-start="517" selection-end="517" vertical-scroll-proportion="0.18187067">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/scripts/services/calendars.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="31" selection-start="227" selection-end="227" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/styles/_calendar.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="23" selection-start="368" selection-end="368" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/styles/_calendar-week.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/app/scripts/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="39" selection-start="2401" selection-end="2401" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/components/moment/component.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="22" selection-start="279" selection-end="279" vertical-scroll-proportion="0.102681115">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/components/angular-service-utilities/angular-service-utilities.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/scripts/lib/twix.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bower.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="1" selection-start="1304" selection-end="1304" vertical-scroll-proportion="-17.5">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/views/partials/calendar-month.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="470" vertical-scroll-proportion="-0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/views/partials/calendar-week.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="6" selection-start="612" selection-end="612" vertical-scroll-proportion="-10.625">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="52" selection-start="1726" selection-end="1726" vertical-scroll-proportion="-23.75">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/views/calendar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="48" selection-start="1518" selection-end="1518" vertical-scroll-proportion="-28.75">
+        <state line="64" column="35" selection-start="1910" selection-end="1910" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/app/styles/_calendar-month.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="12" selection-start="838" selection-end="838" vertical-scroll-proportion="0.0">
+        <state line="49" column="31" selection-start="719" selection-end="719" vertical-scroll-proportion="0.0">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/components/moment/lang/da.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="38" selection-start="706" selection-end="706" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/app/scripts/controllers/calendar.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="15" selection-start="919" selection-end="919" vertical-scroll-proportion="0.0">
+        <state line="41" column="5" selection-start="924" selection-end="924" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/scripts/directives/calendar-week.js">
+    <entry file="file://$PROJECT_DIR$/public/app/views/partials/calendar.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="27" selection-start="1348" selection-end="1348" vertical-scroll-proportion="0.0">
+        <state line="19" column="8" selection-start="556" selection-end="556" vertical-scroll-proportion="-11.875">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/scripts/directives/calendar-month.js">
+    <entry file="file://$PROJECT_DIR$/public/app/scripts/directives/calendar.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="27" selection-start="1384" selection-end="1384" vertical-scroll-proportion="0.0">
+        <state line="6" column="50" selection-start="164" selection-end="164" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/public/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="29" selection-start="55" selection-end="55" vertical-scroll-proportion="0.017084282">
+        <state line="47" column="56" selection-start="2221" selection-end="2221" vertical-scroll-proportion="-29.375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/views/client.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/views/calendar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="54" selection-start="1648" selection-end="1648" vertical-scroll-proportion="-33.75">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/styles/_client-list.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>

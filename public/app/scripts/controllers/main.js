@@ -10,6 +10,7 @@ angular.module('nolla')
       }
     })
 
+    clients.getAll();
 
     $scope.clients = clients;
     $scope.appModel = app.model;

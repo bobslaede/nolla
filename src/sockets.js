@@ -18,8 +18,9 @@ db.once('open', function() {
 var UserModel = require('../models/user');
 var ClientModel = require('../models/client');
 var JournalEntryModel = require('../models/journal-entry');
+var CalendarModel = require('../models/calendar');
+var EventModel = require('../models/event');
 var JournalHelper = require('../models/journal-helper');
-var SocketModel = require('./socket-model');
 
 var findModelFromCollection = function (collection) {
   var model = _.filter(mongoose.models, function (m) {
@@ -143,6 +144,7 @@ module.exports = function (io, sessionSockets) {
                       createdAt : Date.now()
                     }
                   });
+                  console.log('new ', collection, data)
                   var model = new Model(data);
                   model.save(function (err, response) {
                     if (err) {

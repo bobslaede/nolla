@@ -38,6 +38,7 @@
   @include flex-grow(1);
   @include flexbox();
   @include flex-flow(column nowrap);
+  margin-top: 15px;
 
   .cal-view {
     @include flexbox();

@@ -20,9 +20,10 @@ var nolla = angular.module('nolla', [
         'https://www.googleapis.com/auth/userinfo.email'
       ]);
 
-     // socketProvider.setServer('http://192.168.2.37:3003');
-     // authProvider.setHost('http://192.168.2.37:3003');
-      var host = location.origin;
+      var host = window.location.origin;
+      if (window.location.protocol == 'chrome-extension:') {
+        host = '192.168.2.37:3003';
+      }
       socketProvider.setServer(host);
       authProvider.setHost(host);
 
@@ -33,13 +34,7 @@ var nolla = angular.module('nolla', [
           url : '',
           resolve : {
             socketResolved : function (socket, $q) {
-              console.log('resolving socket');
-              var d = $q.defer();
-              socket.socketPromise.then(function () {
-                console.log('socket resolved');
-                d.resolve();
-              });
-              return d.promise;
+              return socket.socketPromise;
             }
           },
           controller: 'InitCtrl',
@@ -87,4 +82,5 @@ var nolla = angular.module('nolla', [
   .run(function ($rootScope, $state, $stateParams) {
     $rootScope.$state = $state;
     $rootScope.$stateParams = $stateParams;
+    $state.transitionTo('app');
   });

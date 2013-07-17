@@ -185,6 +185,9 @@
             remove : function (obj) {
               return remove($scope, obj);
             },
+            getAll : function (query) {
+              getAll($scope, query);
+            },
             readyDeferred : $q.defer()
           };
           return _.extend($scope, api);
@@ -204,7 +207,7 @@
 
           socket.socketPromise.then(function () {
             $log.log('socket is connected');
-            getAll($scope, query);
+           // getAll($scope, query);
           });
 
           return $scope;

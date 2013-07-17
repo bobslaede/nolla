@@ -6,39 +6,49 @@ angular.module('nolla')
 
     this.$get = ['$serviceScope', function ($serviceScope) {
       var $scope = $serviceScope();
-      
+
       $scope.date = moment();
+
       $scope.dayNames = [];
-      $scope.currentMonth = $scope.date.month();
-      $scope.today = moment().startOf('day');
-      $scope.todayString = $scope.today.format('LL');
-      
+      $scope.currentMonth = undefined;
+      $scope.today = undefined;
+      $scope.todayString = undefined;
+      $scope.range = undefined;
+
+      $scope.title = '';
+      $scope.view = 'month';
+
+      $scope.weeks = [];
+      $scope.days = [];
+
       var m = moment().startOf('week');
-      var dayNames = [];
       for (var i = 0, l = 7; i < l; ++i) {
-        dayNames.push(m.format('ddd'));
+        $scope.dayNames.push(m.format('ddd'));
         m.add('days', 1);
       }
-      $scope.dayNames = dayNames;
-      
-      $scope.weeks = [];
-      $scope.week = [];
-      $scope.day = [];
-      
+
       var update = function () {
         $scope.currentMonth = $scope.date.month();
-        $scope.calcMonth();
+        $scope.today = moment().startOf('day');
+        $scope.todayString = $scope.today.format('LL');
+        var allDay = $scope.view !== 'day';
+
+        console.log('scope view', $scope.view, allDay);
+
+        switch ($scope.view) {
+          case 'month':
+            $scope.range = $scope.date.startOf('month').startOf('week')
+              .twix(moment($scope.date).clone().endOf('month').endOf('week'), allDay);
+            break;
+        }
+
+        $scope.title = $scope.range.simpleFormat('L', { allDay : allDay == true ? null : ''});
+        $scope.getWeeks();
         $scope.$broadcast('update');
       };
-      
-      $scope.calcMonth = function () {
-        var date = $scope.date;
-        
-        var start = moment(date).startOf('month').startOf('week');
-        var end = moment(date).endOf('month').endOf('week');
-        var range = moment.twix(start, end);
 
-        var iter = range.iterate('days');
+      $scope.getWeeks = function () {
+        var iter = $scope.range.iterate('days');
         var weeks = [];
         var day, i = 0, w = 0;
 
@@ -50,24 +60,26 @@ angular.module('nolla')
           w += (i % 7 === 0 ? 1 : 0);
         }
         $scope.weeks = weeks;
-        $scope.$update('weeks', weeks);
       };
-      
-      $scope.setDate = function(date) {
-        $scope.$update('date', moment(date));
-        update();
-      };
-      
-      $scope.nextMonth = function () {
+
+      $scope.next = function () {
         $scope.date.add(1, 'months');
         update();
       };
-      $scope.prevMonth = function () {
+
+      $scope.prev = function () {
         $scope.date.subtract(1, 'months');
         update();
       };
-      
-      update();
+
+      $scope.today = function () {
+        $scope.date = moment();
+        update();
+      };
+
+      $scope.$watch('view', function () {
+        update();
+      });
 
       return $scope;
 

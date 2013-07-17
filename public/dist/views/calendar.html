@@ -17,7 +17,7 @@
         </button>
       </div>
       <div class="date-title">
-        <span>{{ dateTitle }}</span>
+        <span>{{ calendar.title }}</span>
       </div>
       <div class="btn-group pull-right" data-toggle="buttons-radio">
         <button type="button" class="btn" ng-click="setView('day')" ng-class="{ active : view == 'day' }">
@@ -35,16 +35,48 @@
       </div>
     </div>
 
-    <div class="cal" ng-switch="view">
-      <div ng-switch-when="day" class="cal-view">foo</div>
-      <div nl-calendar-week="" date="dateString" ng-switch-when="week" class="cal-view"></div>
-      <div nl-calendar-month="" date="dateString" ng-switch-when="month" class="cal-view"></div>
+    <div class="cal">
+      <div nl-calendar-month="" date="date" class="cal-view"></div>
     </div>
 
   </div>
 
   <div class="column well well-small calendar-list">
 
+
+    <div class="form form-horizontal client-contacts">
+      <div class="legend">
+        <div class="form-header">
+          Kalendre:
+        </div>
+
+        <div class="form-controls">
+
+          <div class="btn-group">
+            <button type="button" class="btn btn-small" ng-click="addCalendar()" ng-disabled="locked">
+              <i class="icon-plus-sign"></i>
+              Tilføj
+            </button>
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="control-group" ng-repeat="cal in calendars.list">
+
+        <div class="control-group">
+          <label class="control-label" for="cal.name">Navn:</label>
+
+          <div class="controls">
+            <input type="text" id="cal.name" ng-model="cal.name" ng-disabled="locked">
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
   </div>
 
 </div>
