@@ -1,21 +1,63 @@
 .client-list {
-  ul {
-    margin: 0;
-    list-style-type: none;
-    display: block;
-  }
-  li {
+  background: $white;
+  @include box-shadow(3px 0px 2px hsla(0, 0%, 0%, .1));
+  position: relative;
+  padding-right: 15px;
 
-    a {
-      text-decoration: none;
-      padding: 6px 4px;
+  &.hidden {
+    margin-left: -250px;
+  }
+
+  .drawer {
+    position: absolute;
+    top: 50%;
+    height: 40px;
+    right: -15px;
+    width: 30px;
+    @include translate(0, -50%);
+    z-index: 3;
+    background: $white;
+    .handle {
+      height: 40px;
+      width: 15px;
+      background: $white;
+      position: absolute;
+      top: 0;
+      left: 15px;
+      @include box-shadow(3px 0px 2px hsla(0, 0%, 0%, .1));
+      @include flexbox();
+      @include align-content(center);
+      @include justify-content(center);
+      @include align-items(center);
+      cursor: pointer;
+    }
+  }
+
+  nav {
+
+    @include flex-grow(1);
+    min-height: 0;
+    overflow: auto;
+    padding: 15px;
+
+    ul {
+      margin: 0;
+      list-style-type: none;
       display: block;
     }
+    li {
 
-    &.active a {
-      background-color: $blue;
-      color: $white;
+      a {
+        text-decoration: none;
+        padding: 6px 4px;
+        display: block;
+      }
+
+      &.active a {
+        background-color: $blue;
+        color: $white;
+      }
+
     }
-
   }
 }

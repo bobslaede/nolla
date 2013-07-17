@@ -3,3 +3,4 @@ public/*
 .idea/
 views/*
 .cache/*
+.sass-cache/*

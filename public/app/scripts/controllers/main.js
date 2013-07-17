@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('nolla')
-  .controller('MainCtrl', ['$scope', '$state', 'clients', 'app', 'auth', function ($scope, $state, clients, app, auth) {
+  .controller('MainCtrl', ['$scope', '$state', 'clients', 'app', 'auth', function ($scope, $state, clients, app, auth, $rootScope) {
 
     document.addEventListener('keyup', function (e) {
       if (e.ctrlKey && e.which == 70) {
@@ -27,5 +27,7 @@ angular.module('nolla')
       var state = $state.current;
       $state.transitionTo(state, params);
     };
+
+    $scope.clientListVisible = true;
 
   }]);

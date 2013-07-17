@@ -81,7 +81,7 @@
 
   <div class="app-container">
 
-    <div class="client-list">
+    <div class="client-list" ng-class="{ hidden : !clientListVisible }">
       <nav>
         <ul>
           <li ng-repeat="client in clients.list | filter:clientFilter | orderBy:['firstName', 'lastName']"
@@ -96,6 +96,12 @@
           </li>
         </ul>
       </nav>
+      <div class="drawer" ng-click="clientListVisible = !clientListVisible">
+        <div class="handle">
+          <i class="icon-angle-left" ng-show="clientListVisible"></i>
+          <i class="icon-angle-right" ng-hide="clientListVisible"></i>
+        </div>
+      </div>
     </div>
 
     <div class="main">

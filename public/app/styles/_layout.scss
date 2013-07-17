@@ -30,7 +30,7 @@
   .header {
     @include flex-grow(0);
     @include flex-shrink(0);
-    @include box-shadow(0 0px 2px hsla(0, 0%, 0%, .1));
+    @include box-shadow(3px 0px 2px hsla(0, 0%, 0%, .1));
     position: relative;
     z-index: 2;
   }
@@ -47,25 +47,22 @@
       @include flex-grow(0);
       @include flex-shrink(0);
       @include flexbox();
-      min-height: 0;
-      overflow: auto;
-      padding: 15px;
       position: relative;
-      z-index: 1;
+      z-index: 2;
     }
 
     .main {
       @include flex-grow(1);
       @include flexbox();
-      min-height: 0;
-      overflow: auto;
-      padding: 15px;
       position: relative;
       z-index: 1;
 
       .main-content {
         @include flex-grow(1);
         @include flexbox();
+        min-height: 0;
+        overflow: auto;
+        padding: 15px;
 
         .column {
           margin: 0 10px 10px 10px;
