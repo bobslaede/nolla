@@ -9,8 +9,10 @@ angular.module('nolla')
     calendars.getAll();
     $scope.calendars = calendars;
 
-
-    $scope.date = moment();
+    storage.get('calendar-date', moment().format())
+      .then(function (date) {
+        $scope.date = moment(date);
+      });
 
     $scope.view = storage.get('calendar-view', 'month');
 
@@ -25,9 +27,18 @@ angular.module('nolla')
         })
     };
 
+    $scope.setDate = function (date) {
+      $scope.date = moment(date);
+      $scope.$broadcast('update-date');
+    };
+
+    $scope.setWeek = function (date) {
+      $scope.setView('week');
+      $scope.setDate(date);
+    };
+
     $scope.next = function () {
       $scope.date.add(1, 'months');
-      console.log('emit update')
       $scope.$broadcast('update-date');
     };
 
@@ -39,6 +50,10 @@ angular.module('nolla')
     $scope.today = function () {
       $scope.date = moment();
       $scope.$broadcast('update-date');
-    }
+    };
+
+    $scope.$on('update-calendar', function () {
+      storage.set('calendar-date', $scope.date.format());
+    });
 
   });

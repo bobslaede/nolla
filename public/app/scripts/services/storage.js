@@ -22,7 +22,9 @@
           } else if ($window.localStorage && $window.localStorage.setItem) {
             var data = JSON.stringify(value);
             $window.localStorage.setItem(key, value);
-            d.resolve(value);
+            _.defer(function () {
+              d.resolve(value);
+            });
           }
           return d.promise;
         };
@@ -31,7 +33,7 @@
           var d = $q.defer();
           if (chrome && chrome.storage && chrome.storage.sync) {
             chrome.storage.sync.get(key, function (value) {
-              if (value && value[key]) {
+              if (value && value[key] !== undefined) {
                 $scope.$apply(function () {
                   d.resolve(value[key]);
                 });
@@ -48,12 +50,14 @@
               try {
                 value = JSON.parse(value);
               } catch(e) {}
-              d.resolve(value);
+              _.defer(function () {
+                d.resolve(value);
+              });
             } else {
-              d.resolve(defaultValue);
+              _.defer(function () {
+                d.resolve(defaultValue);
+              });
             }
-          } else {
-            d.resolve(defaultvalue);
           }
 
           return d.promise;

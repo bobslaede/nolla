@@ -10,7 +10,6 @@ angular.module('nolla')
       },
       controller : ['$scope', function ($scope) {
         console.log('calendar month ctrl')
-        $scope.date = moment();
 
         $scope.dayNames = [];
         $scope.currentMonth = undefined;
@@ -29,14 +28,16 @@ angular.module('nolla')
         }
 
         var update = function () {
-          $scope.currentMonth = $scope.date.month();
-          $scope.today = moment().startOf('day');
+          if ($scope.date) {
+            $scope.currentMonth = $scope.date.month();
+            $scope.today = moment().startOf('day');
 
-          $scope.range = moment($scope.date).startOf('month').startOf('week')
-            .twix(moment($scope.date).endOf('month').endOf('week'), true);
+            $scope.range = moment($scope.date).startOf('month').startOf('week')
+              .twix(moment($scope.date).endOf('month').endOf('week'), true);
 
-          $scope.getWeeks();
-          $scope.$emit('update-calendar');
+            $scope.getWeeks();
+            $scope.$emit('update-calendar');
+          }
         };
 
         $scope.getWeeks = function () {
