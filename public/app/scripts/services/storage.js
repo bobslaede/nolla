@@ -51,11 +51,15 @@
                 value = JSON.parse(value);
               } catch(e) {}
               _.defer(function () {
-                d.resolve(value);
+                $scope.$apply(function () {
+                  d.resolve(value);
+                });
               });
             } else {
               _.defer(function () {
-                d.resolve(defaultValue);
+                $scope.$apply(function () {
+                  d.resolve(defaultValue);
+                });
               });
             }
           }
