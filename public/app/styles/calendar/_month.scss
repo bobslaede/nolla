@@ -1,7 +1,7 @@
 
 
 
-.cal {
+.calendar-directive {
 
   %borderstyle {
     border-color: $inputBorder;
@@ -10,7 +10,7 @@
 
   .month {
     $weekNumberWidth: 2em;
-    $weekMinHeight: 6em;
+    $weekMinHeight: 2em;
     width: 100%;
     min-height: 100%;
 
@@ -19,12 +19,16 @@
 
     thead {
 
+      td {
+      }
+
       .day {
 
         margin: 4px;
         text-align: left;
         text-transform: uppercase;
         font-size: $fontSizeSmall;
+
       }
     }
 
@@ -51,6 +55,7 @@
         border-top-width: 1px;
         position: relative;
         min-height: $weekMinHeight;
+        width: 100%;
 
         &.active, &.today {
           background: $green;

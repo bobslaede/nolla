@@ -1,0 +1,43 @@
+.calendar-directive {
+
+  @include flex-grow(1);
+  @include flexbox();
+  @include flex-direction(column);
+  @include flex-wrap(nowrap);
+
+  .cal-nav {
+    @include flex-grow(0);
+    @include flex-shrink(0);
+    @include flexbox();
+    @include flex-direction(row);
+    @include flex-wrap(nowrap);
+
+
+    .pull-right {
+      float: none;
+      @include align-self(flex-end);
+    }
+
+    .date-title {
+      display: inline-block;
+      margin-left: 1em;
+    }
+  }
+
+  .cal {
+    @include flex-grow(1);
+    @include flexbox();
+    @include flex-flow(column nowrap);
+    margin-top: 15px;
+
+    .cal-view {
+      @include flexbox();
+      @include flex-flow(column nowrap);
+      @include flex-grow(1);
+    }
+  }
+
+}
+
+@import "month";
+@import "week";

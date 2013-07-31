@@ -6069,25 +6069,33 @@ a {
   border: 1px solid #e6e6e6;
   position: relative;
   border-bottom-color: #cccccc;
-  box-shadow: none; }
-  .btn:after {
+  box-shadow: none;
+  /*
+  &:after {
     content: "";
     display: block;
     position: absolute;
-    background: #427fed;
+    background: $blueDark;
     height: 2px;
     bottom: 0px;
     left: 0;
     right: 0;
-    opacity: 0;
-    filter: alpha(opacity=0);
-    -webkit-transition: opacity 0.2s linear;
-    -moz-transition: opacity 0.2s linear;
-    -o-transition: opacity 0.2s linear;
-    transition: opacity 0.2s linear; }
-  .btn:hover:after, .btn:active:after, .btn:focus:after {
-    opacity: 1;
-    filter: alpha(opacity=100); }
+    @include opacity(0);
+    @include transition(opacity .2s linear);
+  }
+
+
+  // Hover/focus state
+  &:hover,
+  &:active,
+  &:focus {
+    &:after {
+      @include opacity(100);
+    }
+  }
+  */ }
+  .btn.active, .btn:hover, .btn:active, .btn:focus {
+    outline: 1px solid #cccccc; }
   .btn:focus {
     outline: thin dotted #333;
     outline: 5px auto -webkit-focus-ring-color;
@@ -6095,7 +6103,6 @@ a {
   .btn.active, .btn:active {
     background-image: none;
     background-color: #eeeeee;
-    outline: 0;
     box-shadow: none; }
   .btn.disabled, .btn[disabled] {
     cursor: default;
@@ -6746,7 +6753,7 @@ body {
     -moz-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    width: 400px; }
+    min-width: 400px; }
   .client .input-append select,
   .client .input-append input[type=text],
   .client .input-append input[type=password],
@@ -6797,23 +6804,11 @@ body {
     -moz-flex-flow: column nowrap;
     -ms-flex-flow: column nowrap;
     flex-flow: column nowrap; }
-    .calendar .calendar-main .date-title {
-      display: inline-block;
-      margin-left: 1em; }
-    .calendar .calendar-main .cal-nav {
-      -webkit-flex-grow: 0;
-      -moz-flex-grow: 0;
-      -ms-flex-positive: 0;
-      flex-grow: 0;
-      -webkit-flex-shrink: 0;
-      -moz-flex-shrink: 0;
-      -ms-flex-negative: 0;
-      flex-shrink: 0; }
   .calendar .calendar-list {
     min-width: 220px;
     min-height: 120px; }
 
-.cal {
+.calendar-directive {
   -webkit-flex-grow: 1;
   -moz-flex-grow: 1;
   -ms-flex-positive: 1;
@@ -6823,12 +6818,54 @@ body {
   display: -moz-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-flow: column nowrap;
-  -moz-flex-flow: column nowrap;
-  -ms-flex-flow: column nowrap;
-  flex-flow: column nowrap;
-  margin-top: 15px; }
-  .cal .cal-view {
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-wrap: nowrap;
+  -moz-flex-wrap: nowrap;
+  -ms-flex-wrap: none;
+  flex-wrap: nowrap; }
+  .calendar-directive .cal-nav {
+    -webkit-flex-grow: 0;
+    -moz-flex-grow: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    -webkit-flex-shrink: 0;
+    -moz-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -moz-flex-wrap: nowrap;
+    -ms-flex-wrap: none;
+    flex-wrap: nowrap; }
+    .calendar-directive .cal-nav .pull-right {
+      float: none;
+      -webkit-align-self: flex-end;
+      -moz-align-self: flex-end;
+      -ms-flex-item-align: end;
+      align-self: flex-end; }
+    .calendar-directive .cal-nav .date-title {
+      display: inline-block;
+      margin-left: 1em; }
+  .calendar-directive .cal {
+    -webkit-flex-grow: 1;
+    -moz-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-flex;
@@ -6838,47 +6875,59 @@ body {
     -moz-flex-flow: column nowrap;
     -ms-flex-flow: column nowrap;
     flex-flow: column nowrap;
-    -webkit-flex-grow: 1;
-    -moz-flex-grow: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1; }
+    margin-top: 15px; }
+    .calendar-directive .cal .cal-view {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-flow: column nowrap;
+      -moz-flex-flow: column nowrap;
+      -ms-flex-flow: column nowrap;
+      flex-flow: column nowrap;
+      -webkit-flex-grow: 1;
+      -moz-flex-grow: 1;
+      -ms-flex-positive: 1;
+      flex-grow: 1; }
 
-.cal .month, .cal .month .week .day {
+.calendar-directive .month, .calendar-directive .month .week .day {
   border-color: #cccccc;
   border-style: solid; }
-.cal .month {
+.calendar-directive .month {
   width: 100%;
   min-height: 100%;
   border-width: 1px; }
-  .cal .month thead .day {
+  .calendar-directive .month thead .day {
     margin: 4px;
     text-align: left;
     text-transform: uppercase;
     font-size: 11.9px; }
-  .cal .month .week .week-number {
+  .calendar-directive .month .week .week-number {
     width: 2em; }
-    .cal .month .week .week-number .title {
+    .calendar-directive .month .week .week-number .title {
       text-align: center;
       font-size: 10.5px;
       color: #999999; }
-  .cal .month .week .day {
+  .calendar-directive .month .week .day {
     border-width: 0;
     border-left-width: 1px;
     border-top-width: 1px;
     position: relative;
-    min-height: 6em; }
-    .cal .month .week .day.active, .cal .month .week .day.today {
+    min-height: 2em;
+    width: 100%; }
+    .calendar-directive .month .week .day.active, .calendar-directive .month .week .day.today {
       background: #46a546;
       color: white; }
-      .cal .month .week .day.active .title, .cal .month .week .day.today .title {
+      .calendar-directive .month .week .day.active .title, .calendar-directive .month .week .day.today .title {
         color: white; }
-    .cal .month .week .day .title {
+    .calendar-directive .month .week .day .title {
       font-size: 11.9px;
       color: #555555;
       position: absolute;
       top: 2px;
       right: 2px; }
-    .cal .month .week .day.old .title {
+    .calendar-directive .month .week .day.old .title {
       color: #999999;
       text-shadow: 1px 1px white; }
 

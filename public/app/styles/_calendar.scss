@@ -15,15 +15,6 @@
     @include flexbox();
     @include flex-flow(column nowrap);
 
-    .date-title {
-      display: inline-block;
-      margin-left: 1em;
-    }
-
-    .cal-nav {
-      @include flex-grow(0);
-      @include flex-shrink(0);
-    }
   }
 
   .calendar-list {
@@ -31,18 +22,4 @@
     min-height: 120px;
   }
 
-}
-
-
-.cal {
-  @include flex-grow(1);
-  @include flexbox();
-  @include flex-flow(column nowrap);
-  margin-top: 15px;
-
-  .cal-view {
-    @include flexbox();
-    @include flex-flow(column nowrap);
-    @include flex-grow(1);
-  }
 }

@@ -6,11 +6,13 @@ angular.module('nolla')
       restrict: 'A',
       templateUrl: 'views/partials/calendar.html',
       scope : {
-        date: '='
+        nlCalendar: '='
       },
+      replace: true,
       controller : ['$scope', function ($scope) {
         console.log('calendar month ctrl')
 
+        $scope.calendar = $scope.nlCalendar;
         $scope.dayNames = [];
         $scope.currentMonth = undefined;
         $scope.today = undefined;
@@ -28,15 +30,14 @@ angular.module('nolla')
         }
 
         var update = function () {
-          if ($scope.date) {
-            $scope.currentMonth = $scope.date.month();
+          if ($scope.calendar.date) {
+            $scope.currentMonth = $scope.calendar.date.month();
             $scope.today = moment().startOf('day');
 
-            $scope.range = moment($scope.date).startOf('month').startOf('week')
-              .twix(moment($scope.date).endOf('month').endOf('week'), true);
+            $scope.range = moment($scope.calendar.date).startOf('month').startOf('week')
+              .twix(moment($scope.calendar.date).endOf('month').endOf('week'), true);
 
             $scope.getWeeks();
-            $scope.$emit('update-calendar');
           }
         };
 
@@ -55,11 +56,31 @@ angular.module('nolla')
           $scope.weeks = weeks;
         };
 
-        $scope.$watch('date', function () {
+        $scope.setView = function (view) {
+          $scope.calendar.view = view;
+        };
+
+        $scope.setToday = function () {
+          $scope.calendar.date = moment();
+        };
+
+        $scope.go = function (n) {
+          var view = $scope.calendar.view;
+          var method = n > 0 ? 'add' : 'subtract';
+          var type = view == 'week' ? 'weeks' :
+                     view == 'day' ? 'days'  :
+                       'months';
+
+          $scope.calendar.date = $scope.calendar.date[method](Math.abs(n), type).clone();
+        };
+
+        $scope.$watch('nlCalendar', function () {
+          console.log('watched nlCalendar')
           update();
         });
 
-        $scope.$on('update-date', function () {
+        $scope.$watch('calendar.date', function () {
+          console.log('watch from inside')
           update();
         });
 

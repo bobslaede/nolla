@@ -32,6 +32,10 @@ angular.module('nolla')
       }
     };
 
+    $scope.calendar = {};
+    $scope.calendar.view = 'month';
+    $scope.calendar.date = moment();
+
     $scope.locked = $scope.model.client === false;
 
     clients.findById(id)

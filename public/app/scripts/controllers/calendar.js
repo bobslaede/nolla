@@ -6,19 +6,25 @@ angular.module('nolla')
 
     $scope.dateTitle = '';
 
-    calendars.getAll();
-    $scope.calendars = calendars;
+    $scope.calendar = {};
 
     storage.get('calendar-date', moment().format())
       .then(function (date) {
-        $scope.date = moment(date);
+        $scope.calendar.date = moment(date);
       });
 
-    $scope.view = storage.get('calendar-view', 'month');
+    storage.get('calendar-view', 'month')
+      .then(function (view) {
+        $scope.calendar.view = view;
+      });
 
-    $scope.setView = function (view) {
-      $scope.view = storage.set('calendar-view', view);
-    };
+    $scope.$watch('calendar.view', function () {
+      storage.set('calendar-view', $scope.calendar.view);;
+    });
+
+    $scope.$watch('calendar.date', function () {
+      $scope.calendar.date && storage.set('calendar-date', $scope.calendar.date.format());
+    });
 
     $scope.addCalendar = function () {
       calendars.add({})
@@ -28,32 +34,9 @@ angular.module('nolla')
     };
 
     $scope.setDate = function (date) {
-      $scope.date = moment(date);
-      $scope.$broadcast('update-date');
+      $scope.calendar.date = moment(date);
     };
 
-    $scope.setWeek = function (date) {
-      $scope.setView('week');
-      $scope.setDate(date);
-    };
-
-    $scope.next = function () {
-      $scope.date.add(1, 'months');
-      $scope.$broadcast('update-date');
-    };
-
-    $scope.prev = function () {
-      $scope.date.subtract(1, 'months');
-      $scope.$broadcast('update-date');
-    };
-
-    $scope.today = function () {
-      $scope.date = moment();
-      $scope.$broadcast('update-date');
-    };
-
-    $scope.$on('update-calendar', function () {
-      storage.set('calendar-date', $scope.date.format());
-    });
-
+    calendars.getAll();
+    $scope.calendars = calendars;
   });

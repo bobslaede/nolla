@@ -11,6 +11,7 @@ a {
 
   @include box-shadow(none);
 
+  /*
   &:after {
     content: "";
     display: block;
@@ -24,6 +25,7 @@ a {
     @include transition(opacity .2s linear);
   }
 
+
   // Hover/focus state
   &:hover,
   &:active,
@@ -31,6 +33,14 @@ a {
     &:after {
       @include opacity(100);
     }
+  }
+  */
+
+  &.active,
+  &:hover,
+  &:active,
+  &:focus {
+    outline: 1px solid darken($btnBorder, 10%);
   }
 
   // Focus state for keyboard and accessibility
@@ -43,7 +53,6 @@ a {
   &:active {
     background-image: none;
     background-color: $grayLighter;
-    outline: 0;
     @include box-shadow(none);
   }
 
