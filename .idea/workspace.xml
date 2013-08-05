@@ -2,22 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="342fdae3-dca1-48ea-93cd-e022978dd8f9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/views/partials/calendar-month.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/styles/calendar/index.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/app/styles/_calendar-month.scss" afterPath="$PROJECT_DIR$/public/app/styles/calendar/_month.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/app/styles/_calendar-week.scss" afterPath="$PROJECT_DIR$/public/app/styles/calendar/_week.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/styles/_buttons.scss" afterPath="$PROJECT_DIR$/public/app/styles/_buttons.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/styles/_calendar.scss" afterPath="$PROJECT_DIR$/public/app/styles/_calendar.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/styles/_client.scss" afterPath="$PROJECT_DIR$/public/app/styles/_client.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/views/calendar.html" afterPath="$PROJECT_DIR$/public/app/views/calendar.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/views/partials/calendar.html" afterPath="$PROJECT_DIR$/public/app/views/partials/calendar.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/scripts/controllers/calendar.js" afterPath="$PROJECT_DIR$/public/app/scripts/controllers/calendar.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/scripts/directives/calendar.js" afterPath="$PROJECT_DIR$/public/app/scripts/directives/calendar.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/views/client.html" afterPath="$PROJECT_DIR$/public/app/views/client.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/scripts/controllers/client.js" afterPath="$PROJECT_DIR$/public/app/scripts/controllers/client.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/styles/main.css.map" afterPath="$PROJECT_DIR$/public/app/styles/main.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/styles/main.css" afterPath="$PROJECT_DIR$/public/app/styles/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/styles/main.scss" afterPath="$PROJECT_DIR$/public/app/styles/main.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/views/calendar.html" afterPath="$PROJECT_DIR$/public/dist/views/calendar.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/views/client.html" afterPath="$PROJECT_DIR$/public/dist/views/client.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/index.html" afterPath="$PROJECT_DIR$/public/dist/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="nolla-server.iws" />
@@ -44,7 +31,6 @@
     <file path="/client.html" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1375300659597" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/scripts/f17111db.components.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370037127645" ignored="false" />
     <file path="/socket-model.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370357951792" ignored="false" />
-    <file path="$PROJECT_DIR$/public/dist/views/client.html" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370000361351" ignored="false" />
     <file path="/Gruntfile.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370003106286" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/components/angular-strap/Gruntfile.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370003729303" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/scripts/cb88afea.app.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370004068806" ignored="false" />
@@ -53,7 +39,6 @@
     <file path="$PROJECT_DIR$/public/dist/components/bootstrap/less/component-animations.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370463100895" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/components/bootstrap/less/variables.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370463100894" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/components/bootstrap/less/navs.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370463100894" ignored="false" />
-    <file path="$PROJECT_DIR$/public/dist/components/bootstrap/docs/assets/css/bootstrap.css" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1373487499223" ignored="false" />
     <file path="/journal.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1374093390322" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/styles/a93e2369.main.css" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370206037028" ignored="false" />
     <file path="/packaged-app.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370205491882" ignored="false" />
@@ -63,7 +48,6 @@
     <file path="$PROJECT_DIR$/public/dist/components/bootstrap/less/labels-badges.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1373487499223" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/components/bootstrap-datepicker/css/datepicker.css" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370463100894" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/components/bootstrap/docs/assets/js/google-code-prettify/prettify.css" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370463100895" ignored="false" />
-    <file path="$PROJECT_DIR$/public/dist/components/bootstrap/less/button-groups.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1373487499223" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/components/angular-ui-router/release/doc/styles/prettify-tomorrow.css" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370463100895" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/components/angular-ui-router/release/doc/styles/prettify-jsdoc.css" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370463100894" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/components/bootstrap/less/navbar.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370463100895" ignored="false" />
@@ -409,7 +393,7 @@
     <file path="/calendar-month.html" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1374076614181" ignored="false" />
     <file path="/calendar-week.html" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1374077140860" ignored="false" />
     <file path="/calendar-week.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1374077084859" ignored="false" />
-    <file path="/Dummy.txt" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1375298873209" ignored="false" />
+    <file path="/Dummy.txt" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1375717540707" ignored="false" />
     <file path="/events.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1374058071104" ignored="false" />
     <file path="/.nodemonignore" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1374092169304" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/components/ui-router/release/doc/styles/jsdoc-default.css" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1374092391609" ignored="false" />
@@ -435,6 +419,11 @@
     <file path="$PROJECT_DIR$/public/dist/components/angular-scenario/angular-scenario.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1374523267218" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/components/angular-strap/test/lib/angular/angular.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1374523267218" ignored="false" />
     <file path="/index.scss" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1375301662463" ignored="false" />
+    <file path="$PROJECT_DIR$/public/dist/components/bootstrap/less/button-groups.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1375371995912" ignored="false" />
+    <file path="$PROJECT_DIR$/public/dist/components/bootstrap/docs/assets/css/bootstrap.css" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1375371995912" ignored="false" />
+    <file path="$PROJECT_DIR$/public/app/styles/main.css" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1375371995912" ignored="false" />
+    <file path="$PROJECT_DIR$/public/dist/components/bootstrap/less/utilities.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1375371995912" ignored="false" />
+    <file path="$PROJECT_DIR$/public/dist/components/ui-router/sample/bootstrap.min.css" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1375371995913" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -466,7 +455,7 @@
       <file leaf-file-name="client.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/app/views/client.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="291" column="33" selection-start="9197" selection-end="9197" vertical-scroll-proportion="-35.625">
+            <state line="291" column="33" selection-start="9197" selection-end="9197" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -502,7 +491,7 @@
       <file leaf-file-name="index.scss" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/app/styles/calendar/index.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="24" selection-start="173" selection-end="173" vertical-scroll-proportion="0.06928407">
+            <state line="38" column="0" selection-start="704" selection-end="704" vertical-scroll-proportion="0.3290993">
               <folding />
             </state>
           </provider>
@@ -511,7 +500,7 @@
       <file leaf-file-name="calendar.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/app/views/partials/calendar.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="59" selection-start="748" selection-end="749" vertical-scroll-proportion="-13.125">
+            <state line="21" column="59" selection-start="748" selection-end="749" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -592,7 +581,7 @@
     <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+    <navigator proportions="" version="1" splitterProportion="0.5">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -603,296 +592,18 @@
       <autoscrollFromSource />
       <sortByType />
     </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nolla-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nolla-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nolla" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nolla-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nolla" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nolla-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nolla" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nolla-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nolla" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nolla-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nolla" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nolla-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nolla" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="partials" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nolla-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nolla" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="styles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nolla-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nolla" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="styles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="calendar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nolla-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nolla" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nolla-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nolla" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="services" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nolla-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nolla" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="directives" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nolla-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nolla" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nolla-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nolla" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/app/scripts/controllers/calendar.js" />
+    <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/app/scripts/controllers/calendar.js" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="PublishConfig" serverName="server on 9000" serverId="52c0ff24-879d-40d5-b2bc-e312a06df648">
     <servers>
@@ -1047,9 +758,8 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294509" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2497876" sideWeight="0.6705491" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22790295" sideWeight="0.7262507" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22769754" sideWeight="0.7262507" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2737493" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24956672" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294509" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1060,6 +770,7 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24956672" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1131,58 +842,46 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/app/scripts/directives/journal-entry.js">
+    <entry file="file://$PROJECT_DIR$/public/app/styles/main.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="18" column="17" selection-start="365" selection-end="365" vertical-scroll-proportion="0.0">
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/scripts/directives/journal-entry.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/app/scripts/directives/journal-entry-helper.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/app/scripts/directives/modal.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/app/scripts/services/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/app/scripts/services/storage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="27" selection-start="952" selection-end="952" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="28" column="27" selection-start="952" selection-end="952" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/app/scripts/services/sync.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="172" column="67" selection-start="5075" selection-end="5075" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/scripts/controllers/client.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="27" selection-start="769" selection-end="769" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="172" column="67" selection-start="5075" selection-end="5075" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/app/views/client.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="291" column="33" selection-start="9197" selection-end="9197" vertical-scroll-proportion="-35.625">
+        <state line="291" column="33" selection-start="9197" selection-end="9197" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1224,14 +923,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/app/views/partials/calendar.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="59" selection-start="748" selection-end="749" vertical-scroll-proportion="-13.125">
+        <state line="21" column="59" selection-start="748" selection-end="749" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/scripts/controllers/client.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="27" selection-start="769" selection-end="769" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/app/styles/calendar/index.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="24" selection-start="173" selection-end="173" vertical-scroll-proportion="0.06928407">
+        <state line="38" column="0" selection-start="704" selection-end="704" vertical-scroll-proportion="0.3290993">
           <folding />
         </state>
       </provider>
