@@ -1,7 +1,8 @@
+
 <table class="month">
   <thead>
   <tr>
-    <td>&nbsp;</td>
+    <td class="week-number">&nbsp;</td>
     <td class="day" ng-repeat="day in dayNames">{{day}}</td>
   </tr>
   </thead>
@@ -11,6 +12,8 @@
       <div class="title">{{ week.number }}</div></td>
     <td ng-repeat="day in week">
       <div class="day"
+           ng-click="addEvent(day)"
+           data-toggle="modal" data-target="#add-event-modal" data-backdrop="false"
            ng-class="{ today: day.isSame(today, 'day'), old : day.month() != currentMonth }">
         <div class="title">{{ day | moment:'D' }}</div>
       </div>

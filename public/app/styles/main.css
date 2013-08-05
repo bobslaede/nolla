@@ -6824,98 +6824,91 @@ body {
   -moz-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-flex-wrap: nowrap;
-  -moz-flex-wrap: nowrap;
-  -ms-flex-wrap: none;
-  flex-wrap: nowrap; }
-  .calendar-directive .cal-nav {
-    -webkit-flex-grow: 0;
-    -moz-flex-grow: 0;
-    -ms-flex-positive: 0;
-    flex-grow: 0;
-    -webkit-flex-shrink: 0;
-    -moz-flex-shrink: 0;
-    -ms-flex-negative: 0;
-    flex-shrink: 0;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .calendar-directive .calendar-nav {
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    -moz-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    -webkit-box-align: streched;
+    -ms-flex-align: streched;
+    -webkit-align-items: streched;
+    -moz-align-items: streched;
+    align-items: streched;
     -webkit-box-direction: normal;
     -webkit-box-orient: horizontal;
     -webkit-flex-direction: row;
     -moz-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
-    -webkit-flex-wrap: nowrap;
-    -moz-flex-wrap: nowrap;
-    -ms-flex-wrap: none;
-    flex-wrap: nowrap; }
-    .calendar-directive .cal-nav .pull-right {
-      float: none;
-      -webkit-align-self: flex-end;
-      -moz-align-self: flex-end;
-      -ms-flex-item-align: end;
-      align-self: flex-end; }
-    .calendar-directive .cal-nav .date-title {
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .calendar-directive .calendar-nav .pull-right {
+      float: none; }
+    .calendar-directive .calendar-nav .date-title {
       display: inline-block;
-      margin-left: 1em; }
-  .calendar-directive .cal {
-    -webkit-flex-grow: 1;
-    -moz-flex-grow: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-flow: column nowrap;
-    -moz-flex-flow: column nowrap;
-    -ms-flex-flow: column nowrap;
-    flex-flow: column nowrap;
+      margin: 0 1em;
+      line-height: 30px; }
+  .calendar-directive .calendar {
+    -webkit-box-flex: 10;
+    -webkit-flex: 10 0 auto;
+    -moz-flex: 10 0 auto;
+    -ms-flex: 10 0 auto;
+    flex: 10 0 auto;
     margin-top: 15px; }
-    .calendar-directive .cal .cal-view {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -moz-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-flex-flow: column nowrap;
-      -moz-flex-flow: column nowrap;
-      -ms-flex-flow: column nowrap;
-      flex-flow: column nowrap;
-      -webkit-flex-grow: 1;
-      -moz-flex-grow: 1;
-      -ms-flex-positive: 1;
-      flex-grow: 1; }
+    .calendar-directive .calendar .calendar-view {
+      height: 100%;
+      width: 100%; }
 
-.calendar-directive .month, .calendar-directive .month .week .day {
+.calendar-directive .month td {
   border-color: #cccccc;
   border-style: solid; }
 .calendar-directive .month {
   width: 100%;
-  min-height: 100%;
-  border-width: 1px; }
+  height: 100%;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 auto;
+  -moz-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto; }
+  .calendar-directive .month td {
+    border-width: 1px;
+    font-size: 14px; }
+  .calendar-directive .month thead td {
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent; }
   .calendar-directive .month thead .day {
     margin: 4px;
     text-align: left;
     text-transform: uppercase;
     font-size: 11.9px; }
-  .calendar-directive .month .week .week-number {
-    width: 2em; }
-    .calendar-directive .month .week .week-number .title {
+  .calendar-directive .month tbody {
+    height: 100%; }
+  .calendar-directive .month .week-number {
+    width: 2em;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent; }
+    .calendar-directive .month .week-number .title {
       text-align: center;
       font-size: 10.5px;
       color: #999999; }
   .calendar-directive .month .week .day {
-    border-width: 0;
-    border-left-width: 1px;
-    border-top-width: 1px;
     position: relative;
     min-height: 2em;
-    width: 100%; }
+    height: 100%; }
     .calendar-directive .month .week .day.active, .calendar-directive .month .week .day.today {
       background: #46a546;
       color: white; }

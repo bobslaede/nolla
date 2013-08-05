@@ -19,6 +19,8 @@ angular.module('nolla')
         $scope.todayString = undefined;
         $scope.range = undefined;
 
+        $scope.model = {};
+
         $scope.title = '';
 
         $scope.weeks = [];
@@ -74,6 +76,17 @@ angular.module('nolla')
           $scope.calendar.date = $scope.calendar.date[method](Math.abs(n), type).clone();
         };
 
+        $scope.createEvent = function (data) {
+          $scope.calendar.events.add(data);
+        };
+
+        $scope.addEvent = function (date) {
+          console.log('add event', date);
+          $scope.model.currentEvent = {};
+          $scope.model.currentEvent.start = date;
+          $scope.model.currentEvent.end = date;
+        };
+
         $scope.$watch('nlCalendar', function () {
           console.log('watched nlCalendar')
           update();
@@ -88,7 +101,12 @@ angular.module('nolla')
 
       }],
       link : function (scope, element, attrs) {
-        console.log('calendar month link')
+        var cal = element.find('.calendar');
+        cal.height(cal.height());
+        $(window).on('resize', _.debounce(function () {
+          cal.css('min-height', '0');
+          cal.css('min-height', cal.height());
+        }, 200));
       }
     };
   });

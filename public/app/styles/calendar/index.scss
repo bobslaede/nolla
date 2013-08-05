@@ -3,38 +3,35 @@
   @include flex-grow(1);
   @include flexbox();
   @include flex-direction(column);
-  @include flex-wrap(nowrap);
+  @include flex-wrap(wrap);
 
-  .cal-nav {
-    @include flex-grow(0);
-    @include flex-shrink(0);
+  .calendar-nav {
     @include flexbox();
+    @include flex(0, 0, auto);
+    @include align-items(streched);
     @include flex-direction(row);
-    @include flex-wrap(nowrap);
-
+    @include flex-wrap(wrap);
 
     .pull-right {
       float: none;
-      @include align-self(flex-end);
     }
 
     .date-title {
       display: inline-block;
-      margin-left: 1em;
+      margin:0 1em;
+      line-height: 30px;
     }
   }
 
-  .cal {
-    @include flex-grow(1);
-    @include flexbox();
-    @include flex-flow(column nowrap);
+  .calendar {
+    @include flex(10, 0, auto);
     margin-top: 15px;
 
-    .cal-view {
-      @include flexbox();
-      @include flex-flow(column nowrap);
-      @include flex-grow(1);
+    .calendar-view {
+      height: 100%;
+      width: 100%;
     }
+
   }
 
 }

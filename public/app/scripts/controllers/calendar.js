@@ -1,12 +1,18 @@
 'use strict';
 
 angular.module('nolla')
-  .controller('CalendarCtrl', function ($scope, $state, storage, calendars) {
+  .controller('CalendarCtrl', function ($scope, $state, storage, calendars, events) {
     console.log('CalendarCtrl');
 
     $scope.dateTitle = '';
 
     $scope.calendar = {};
+
+    events.getAll();
+
+    $scope.calendar.events = events;
+
+    console.log(events);
 
     storage.get('calendar-date', moment().format())
       .then(function (date) {
@@ -30,7 +36,7 @@ angular.module('nolla')
       calendars.add({})
         .then(function (newCal) {
 
-        })
+        });
     };
 
     $scope.setDate = function (date) {
@@ -39,4 +45,5 @@ angular.module('nolla')
 
     calendars.getAll();
     $scope.calendars = calendars;
+    $scope.calendar.calendars = calendars;
   });
