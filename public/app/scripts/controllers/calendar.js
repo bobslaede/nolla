@@ -30,6 +30,21 @@ angular.module('nolla')
 
     $scope.$watch('calendar.date', function () {
       $scope.calendar.date && storage.set('calendar-date', $scope.calendar.date.format());
+
+    });
+
+    $scope.$on('calendar-update', function () {
+      if ($scope.calendar.range) {
+        var query = {
+          'start.dateTime' : {
+            '$gte' : $scope.calendar.range.start.format()
+          },
+          'end.dateTime' : {
+            '$lte' : $scope.calendar.range.end.format()
+          }
+        };
+        events.query(query);
+      }
     });
 
     $scope.addCalendar = function () {

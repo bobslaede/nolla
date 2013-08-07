@@ -1,9 +1,11 @@
 'use strict';
 
 angular.module('nolla')
-  .controller('ClientCtrl', ['$scope', '$state', 'clients', function ($scope, $state, clients) {
+  .controller('ClientCtrl', function ($scope, $state, clients, events, $q) {
 
     var id = $state.params.clientId;
+
+    var clientDeferred = $q.defer();
 
     $scope.model = {};
     $scope.model.client = undefined;
@@ -35,6 +37,25 @@ angular.module('nolla')
     $scope.calendar = {};
     $scope.calendar.view = 'month';
     $scope.calendar.date = moment();
+    $scope.calendar.events = events;
+
+
+    $scope.$on('calendar-update', function () {
+      if ($scope.calendar.range) {
+        clientDeferred.promise.then(function () {
+          var query = {
+            'start.dateTime' : {
+              '$gte' : $scope.calendar.range.start.format()
+            },
+            'end.dateTime' : {
+              '$lte' : $scope.calendar.range.end.format()
+            },
+            'client' : $scope.model.client._id
+          };
+          events.query(query);
+        });
+      }
+    });
 
     $scope.locked = $scope.model.client === false;
 
@@ -42,6 +63,9 @@ angular.module('nolla')
       .then(function (client) {
         $scope.model.client = client;
         $scope.locked = client === false;
+        if (client) {
+          clientDeferred.resolve();
+        }
       }, function () {
         $scope.locked = true;
       });
@@ -74,6 +98,7 @@ angular.module('nolla')
       $scope.model.client.$wrap();
     };
 
+
     $scope.removeContact = function (type, contact) {
       var index = _.indexOf($scope.model.client[type], contact);
       if (index > -1) {
@@ -82,4 +107,4 @@ angular.module('nolla')
       }
     };
 
-  }]);
+  });

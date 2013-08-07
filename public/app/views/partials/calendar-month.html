@@ -16,6 +16,9 @@
            data-toggle="modal" data-target="#add-event-modal" data-backdrop="false"
            ng-class="{ today: day.isSame(today, 'day'), old : day.month() != currentMonth }">
         <div class="title">{{ day | moment:'D' }}</div>
+        <div class="event"
+             ng-repeat="event in calendar.events.list"
+          >{{ day.isSame(event.end.dateTime, 'date') }}</div>
       </div>
     </td>
   </tr>

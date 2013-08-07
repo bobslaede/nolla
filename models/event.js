@@ -21,6 +21,10 @@ var schema = new Schema({
     type : Schema.Types.ObjectId,
     ref : 'Calendar'
   },
+  client : {
+    type : Schema.Types.ObjectId,
+    ref : 'Client'
+  },
   recurrence : [{ type: String, default: "" }]
 });
 

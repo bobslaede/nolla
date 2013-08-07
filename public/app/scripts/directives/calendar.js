@@ -18,6 +18,9 @@ angular.module('nolla')
         $scope.today = undefined;
         $scope.todayString = undefined;
         $scope.range = undefined;
+        $scope.calendar.start = undefined;
+        $scope.calendar.end = undefined;
+        $scope.calendar.range = undefined;
 
         $scope.model = {};
 
@@ -36,10 +39,20 @@ angular.module('nolla')
             $scope.currentMonth = $scope.calendar.date.month();
             $scope.today = moment().startOf('day');
 
-            $scope.range = moment($scope.calendar.date).startOf('month').startOf('week')
-              .twix(moment($scope.calendar.date).endOf('month').endOf('week'), true);
+            var start = moment($scope.calendar.date).startOf('month').startOf('week');
+            var end = moment($scope.calendar.date).endOf('month').endOf('week');
+
+            $scope.calendar.start = start;
+            $scope.calendar.end = end;
+
+            $scope.range = start
+              .twix(end, true);
+
+            $scope.calendar.range = $scope.range;
 
             $scope.getWeeks();
+
+            $scope.$emit('calendar-update');
           }
         };
 
@@ -83,8 +96,10 @@ angular.module('nolla')
         $scope.addEvent = function (date) {
           console.log('add event', date);
           $scope.model.currentEvent = {};
-          $scope.model.currentEvent.start = date;
-          $scope.model.currentEvent.end = date;
+          $scope.model.currentEvent.start = {};
+          $scope.model.currentEvent.start.dateTime = date;
+          $scope.model.currentEvent.end = {};
+          $scope.model.currentEvent.end.dateTime = date;
         };
 
         $scope.$watch('nlCalendar', function () {

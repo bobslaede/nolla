@@ -84,10 +84,9 @@ module.exports = function (io, sessionSockets) {
               };
               switch (type) {
                 case 'get':
-                  Model.find(findQuery)
+                  Model.find(_.extend(data, findQuery))
                     .exec(function (err, data) {
                       if (err) {
-
                       } else {
                         ack(data);
                       }

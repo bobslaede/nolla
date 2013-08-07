@@ -10,18 +10,24 @@
         var scopes = [];
 
         var getAll = function ($scope, query) {
+          var d = $q.defer();
+
           var model = $scope.model;
-          $log.log('emitting to socket', model, 'get', query)
-          socket.emit('msg', {
-            type: 'get',
-            model : model,
-            data : (query || {})
-          }, function (response) {
-            $log.log('sent some stuff, got this back', response);
-            $scope.$update('list', response);
-            $scope.$wrap($scope.list);
-            $scope.readyDeferred.resolve();
+          socket.socketPromise.then(function () {
+            socket.emit('msg', {
+              type: 'get',
+              model : model,
+              data : (query || {})
+            }, function (response) {
+              $scope.$update('list', response);
+              $scope.$wrap($scope.list);
+
+              d.resolve();
+            });
           });
+
+          return d.promise;
+
         };
 
         var addObjToScopeList = function ($scope, obj) {
@@ -185,7 +191,10 @@
             remove : function (obj) {
               return remove($scope, obj);
             },
-            getAll : function (query) {
+            getAll : function () {
+              getAll($scope);
+            },
+            query : function (query) {
               getAll($scope, query);
             },
             readyDeferred : $q.defer()
@@ -206,8 +215,7 @@
           modify($scope);
 
           socket.socketPromise.then(function () {
-            $log.log('socket is connected');
-           // getAll($scope, query);
+            $scope.readyDeferred.resolve();
           });
 
           return $scope;
