@@ -1,26 +1,15 @@
 'use strict';
 
 angular.module('nolla')
-  .controller('MainCtrl', function ($scope, $state, clients, app, auth, storage) {
+  .controller('Main', function ($scope, $state, storage, user) {
 
-    document.addEventListener('keyup', function (e) {
-      if (e.ctrlKey && e.which == 70) {
-        e.preventDefault();
-        $('.client-search').find('input').focus();
-      }
-    })
-
-    clients.getAll();
-
-    $scope.clients = clients;
-    $scope.appModel = app.model;
-    $scope.user = auth.user;
+    $scope.clients = {};
+    $scope.user = user.user;
 
     $scope.clientListVisible = true;
 
     $scope.$watch('clientListVisible', function () {
       var key = 'clientlist-visible-' + $state.current.name.replace(/\./g, '-');
-      console.log('saving client list visiblitity', key, $scope.clientListVisible);
       storage.set(key, $scope.clientListVisible);
     });
 
@@ -28,11 +17,9 @@ angular.module('nolla')
       var key = 'clientlist-visible-' + $state.current.name.replace(/\./g, '-');
       storage.get(key, true)
         .then(function (value) {
-          console.log('state change from ', key, 'got', value);
           $scope.clientListVisible = value;
         });
     });
-
 
     $scope.selectAction = function (action) {
       var params = _.clone($state.params);

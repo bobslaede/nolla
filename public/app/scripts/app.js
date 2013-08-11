@@ -16,8 +16,31 @@ var nolla = angular.module('nolla', [
       $stateProvider
         .state('app', {
           url : '',
-          controller: 'InitCtrl',
           templateUrl: 'views/index.html'
+        })
+        .state('app.login', {
+          url : '/login',
+          templateUrl : 'views/login.html'
+        })
+        .state('app.main', {
+          url : '/nolla',
+          templateUrl : 'views/main.html'
+        })
+        .state('app.main.home', {
+          url : '/nolla/home',
+          templateUrl : 'views/home.html'
+        })
+        .state('app.main.client', {
+          url : '/nolla/client',
+          templateUrl : 'views/client.html'
+        })
+        .state('app.main.journal', {
+          url : '/nolla/journal',
+          templateUrl : 'views/journal.html'
+        })
+        .state('app.main.calendar', {
+          url : '/nolla/calendar',
+          templateUrl : 'views/calendar.html'
         })
 
     })
