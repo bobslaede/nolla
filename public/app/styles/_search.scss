@@ -1,0 +1,17 @@
+.client-search {
+  margin: 6px 8px 0 8px;
+
+  .btn {
+    background: $blueDark;
+    color: $white;
+
+    &:active {
+      color: $blueDark;
+      background: $grayLighter;
+    }
+
+    &:after {
+      display: none;
+    }
+  }
+}

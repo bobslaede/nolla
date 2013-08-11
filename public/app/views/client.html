@@ -1,30 +1,44 @@
-<div class="client" ng-form="clientForm" ng-submit="saveClient()" nl-form-autosave>
+<div id="delete-modal" nl-modal class="modal hide animated bounceInDown" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    <h3 id="myModalLabel">Slet klient?</h3>
+  </div>
+  <div class="modal-body">
+    <p>Vil du slette denne klient?</p>
+  </div>
+  <div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">Luk</button>
+    <button class="btn btn-danger" data-dismiss="modal" ng-click="deleteClient()">Slet klient</button>
+  </div>
+</div>
 
-  <div class="column">
+<div class="client" ng-form="clientForm">
+
+  <div class="column well well-small">
 
     <div class="form form-horizontal">
       <div class="legend">
         <div class="form-header">
-          <span>Rediger: {{model.client.firstName}} {{model.client.lastName}}</span>
+          Rediger: {{model.client.firstName}} {{model.client.lastName}}
         </div>
 
         <div class="form-controls">
           <div class="btn-group">
 
-            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+            <button type="button" class="btn btn-small dropdown-toggle" data-toggle="dropdown">
               <i class="icon-cog"></i>
               <i class="caret"></i>
             </button>
 
-            <ul class="dropdown-menu">
+            <ul class="dropdown-menu pull-right">
               <li>
-                <a tabindex="-1" ng-click="addClient()">
+                <a tabindex="-1" ng-click="newClient()">
                   <i class="icon-plus-sign"></i>
                   Opret ny klient
                 </a>
               </li>
-              <li>
-                <a tabindex="-1" bs-modal="'/app/views/partials/client-del.html'">
+              <li ng-hide="locked">
+                <a tabindex="-1" data-toggle="modal" data-target="#delete-modal" data-backdrop="true">
                   <i class="icon-trash"></i>
                   Slet
                 </a>
@@ -37,43 +51,55 @@
 
       <div class="control-group">
         <label class="control-label" for="client.firstName">Fornavn:</label>
+
         <div class="controls">
-          <input type="text" id="client.firstName" ng-model="model.client.firstName" />
+          <input type="text" id="client.firstName" ng-model="model.client.firstName"
+                 ng-disabled="locked"/>
         </div>
       </div>
 
       <div class="control-group">
         <label class="control-label" for="client.lastName">Efternavn:</label>
+
         <div class="controls">
-          <input type="text" id="client.lastName" ng-model="model.client.lastName" />
+          <input type="text" id="client.lastName" ng-model="model.client.lastName"
+                 ng-disabled="locked"/>
         </div>
       </div>
 
       <div class="control-group">
         <label class="control-label" for="client.ssno">CPR:</label>
+
         <div class="controls">
-          <input type="text" id="client.ssno" ng-model="model.client.ssno" />
+          <input type="text" id="client.ssno" ng-model="model.client.ssno"
+                 ng-disabled="locked"/>
         </div>
       </div>
 
       <div class="control-group">
         <label class="control-label" for="client.address">Adresse:</label>
+
         <div class="controls">
-          <input type="text" id="client.address" ng-model="model.client.address" />
+          <input type="text" id="client.address" ng-model="model.client.address"
+                 ng-disabled="locked"/>
         </div>
       </div>
 
       <div class="control-group">
         <label class="control-label" for="client.zip">Postnr:</label>
+
         <div class="controls">
-          <input type="text" id="client.zip" ng-model="model.client.zip" />
+          <input type="text" id="client.zip" ng-model="model.client.zip"
+                 ng-disabled="locked"/>
         </div>
       </div>
 
       <div class="control-group">
         <label class="control-label" for="client.city">By:</label>
+
         <div class="controls">
-          <input type="text" id="client.city" ng-model="model.client.city" />
+          <input type="text" id="client.city" ng-model="model.client.city"
+                 ng-disabled="locked"/>
         </div>
       </div>
 
@@ -82,23 +108,25 @@
   </div>
 
 
-  <div class="column">
+  <div class="column well well-small">
 
     <div class="form form-horizontal client-contacts">
       <div class="legend">
         <div class="form-header">
-          <span>Kontaktinformationer:</span>
+          Kontaktinformationer:
         </div>
 
         <div class="form-controls">
+
           <div class="btn-group">
-            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+            <button type="button" class="btn btn-small dropdown-toggle" data-toggle="dropdown"
+                    ng-disabled="locked">
               <i class="icon-plus-sign"></i>
               Tilføj
               <i class="caret"></i>
             </button>
 
-            <ul class="dropdown-menu">
+            <ul class="dropdown-menu pull-right">
               <li>
                 <a tabindex="-1" ng-click="addContact('phone')">
                   <i class="icon-phone"></i>
@@ -113,6 +141,7 @@
               </li>
             </ul>
           </div>
+
         </div>
       </div>
 
@@ -121,18 +150,20 @@
         <div class="control-label control-label-input" for="client.contact.phone.{{$index}}">
 
           <div class="input-prepend">
-            <span class="add-on">
-              <i class="icon-phone"></i>
-            </span>
-            <input type="text" class="span2" ng-model="contact.type" list="client.contact.phones" />
+                  <span class="add-on">
+                    <i class="icon-phone"></i>
+                  </span>
+            <input type="text" class="span2" ng-model="contact.type" list="client.contact.phones"
+                   ng-disabled="locked"/>
           </div>
 
         </div>
         <div class="controls">
 
           <div class="input-append">
-            <input type="tel" class="span2" ng-model="contact.contact" />
-            <button class="btn" type="button" ng-click="removeContact('phone', $index)"><i class="icon-trash"></i></button>
+            <input type="tel" class="span2" ng-model="contact.contact"/>
+            <button class="btn" type="button" ng-click="removeContact('phone', contact)"
+                    ng-disabled="locked"><i class="icon-trash"></i></button>
           </div>
 
         </div>
@@ -142,31 +173,32 @@
         <div class="control-label control-label-input" for="client.contact.phone.{{$index}}">
 
           <div class="input-prepend">
-            <span class="add-on">
-              <i class="icon-envelope"></i>
-            </span>
-            <input type="text" class="span2" ng-model="contact.type" list="client.contact.phones" />
+                  <span class="add-on">
+                    <i class="icon-envelope"></i>
+                  </span>
+            <input type="text" class="span2" ng-model="contact.type" list="client.contact.phones"
+                   ng-disabled="locked"/>
           </div>
 
         </div>
         <div class="controls">
 
           <div class="input-append">
-            <input type="email" class="span2" ng-model="contact.contact" />
-            <button class="btn" type="button" ng-click="removeContact('email', $index)"><i class="icon-trash"></i></button>
+            <input type="email" class="span2" ng-model="contact.contact"/>
+            <button class="btn" type="button" ng-click="removeContact('email', contact)"
+                    ng-disabled="locked"><i class="icon-trash"></i></button>
           </div>
 
         </div>
       </div>
 
 
-
       <datalist id="client.contact.phones">
-        <option ng-repeat="type in model.schema.phone">{{type}}</option>
+        <option ng-repeat="type in model.schema.contact.phones">{{type}}</option>
       </datalist>
 
       <datalist id="client.contact.emails">
-        <option ng-repeat="type in model.schema.email">{{type}}</option>
+        <option ng-repeat="type in model.schema.contact.phones">{{type}}</option>
       </datalist>
 
 
@@ -175,67 +207,112 @@
   </div>
 
 
-    <div class="column">
+  <div class="column well well-small">
 
-      <div class="form form-horizontal client-details">
-        <div class="legend">
-          <div class="form-header">
-            <span>Detaljer:</span>
-          </div>
+    <div class="form form-horizontal client-details">
+      <div class="legend">
+        <div class="form-header">
+          Detaljer:
         </div>
-
-        <div class="control-group">
-          <label class="control-label" for="client.details.danmark">Danmark:</label>
-          <div class="controls">
-            <select id="client.details.danmark" ng-model="model.client.details.danmark"
-                    ng-options="item for item in model.schema.danmark">
-              <option></option>
-            </select>
-          </div>
-        </div>
-
-        <div class="control-group">
-          <label class="control-label" for="client.details.insurance">Sygesikringsgruppe:</label>
-          <div class="controls">
-            <select id="client.details.insurance" ng-model="model.client.details.insurance"
-                    ng-options="item for item in model.schema.insurance">
-              <option></option>
-            </select>
-          </div>
-        </div>
-
-        <div class="control-group">
-          <label class="control-label" for="client.details.municipality">Kommune:</label>
-          <div class="controls">
-            <input type="text" id="client.details.municipality" ng-model="model.client.details.municipality" />
-          </div>
-        </div>
-
-        <div class="control-group">
-          <label class="control-label" for="client.details.reminder">Skal rykkes:</label>
-          <div class="controls">
-            <input type="checkbox" id="client.details.reminder" ng-model="model.client.details.reminder" />
-          </div>
-        </div>
-
-        <div class="control-group">
-          <label class="control-label" for="client.details.subsidy">Tilskud:</label>
-          <div class="controls">
-            <div class="input-append">
-              <input type="number" min="0" max="100" id="client.details.subsidy" ng-model="model.client.details.subsidy" />
-              <span class="add-on">%</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="control-group">
-          <label class="control-label" for="client.details.notes">Noter:</label>
-          <div class="controls">
-            <textarea id="client.details.notes" ng-model="model.client.details.notes"></textarea>
-          </div>
-        </div>
-
       </div>
 
+      <div class="control-group">
+        <label class="control-label" for="client.details.danmark">Danmark:</label>
+
+        <div class="controls">
+          <select id="client.details.danmark" ng-model="model.client.details.danmark"
+                  ng-options="item for item in model.schema.danmark"
+                  ng-disabled="locked">
+            <option></option>
+          </select>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <label class="control-label" for="client.details.insurance">Sygesikringsgruppe:</label>
+
+        <div class="controls">
+          <select id="client.details.insurance" ng-model="model.client.details.insurance"
+                  ng-options="item for item in model.schema.insurance"
+                  ng-disabled="locked">
+            <option></option>
+          </select>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <label class="control-label" for="client.details.municipality">Kommune:</label>
+
+        <div class="controls">
+          <input type="text" id="client.details.municipality" ng-model="model.client.details.municipality"
+                 ng-disabled="locked"/>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <label class="control-label" for="client.details.reminder">Skal rykkes:</label>
+
+        <div class="controls">
+          <input type="checkbox" id="client.details.reminder" ng-model="model.client.details.reminder"
+                 ng-disabled="locked"/>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <label class="control-label" for="client.details.subsidy">Tilskud:</label>
+
+        <div class="controls">
+          <div class="input-append">
+            <input type="number" min="0" max="100" id="client.details.subsidy" ng-model="model.client.details.subsidy"
+                   ng-disabled="locked"/>
+            <span class="add-on">%</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <label class="control-label" for="client.details.notes">Noter:</label>
+
+        <div class="controls">
+          <textarea id="client.details.notes" ng-model="model.client.details.notes"
+                    ng-disabled="locked"></textarea>
+        </div>
+      </div>
+
+    </div>
+
   </div>
+
+
+  <div class="column well well-small">
+
+    <div class="form form-horizontal client-calendar">
+      <div class="legend">
+        <div class="form-header">
+          Kalender:
+        </div>
+
+        <div class="form-controls">
+
+          <div class="btn-group">
+            <button type="button" class="btn btn-small"
+                    ng-disabled="locked">
+              <i class="icon-plus-sign"></i>
+              Tilføj aftale
+            </button>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="client-calendar-holder">
+        <div nl-calendar="calendar"></div>
+      </div>
+
+
+    </div>
+
+  </div>
+
+
 </div>

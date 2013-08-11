@@ -12,18 +12,12 @@ var config = {
   db : db
 };
 
-config.urls = {
-  login : '/login',
-  logout : '/logout',
-  failureRedirect : '/login',
-  successRedirect : '/nolla',
-  callback : '/auth/google/callback'
-};
-
 config.google = {
-  clientID : '75672706662.apps.googleusercontent.com',
-  clientSecret : 'ApQubYsUnmQW48ipWeHqq-N-',
-  callbackURL : 'http://' + config.hostname + (config.hostname === 'localhost' && config.port ? ':' + config.port : '') + config.urls.callback
+  clientIds : [
+    '75672706662.apps.googleusercontent.com', // webapp
+    '75672706662-h20bb90m1rij7d4f9ihg7b8mjttfq0jr.apps.googleusercontent.com' // packaged app
+    ],
+  clientSecret : 'ApQubYsUnmQW48ipWeHqq-N-'
 };
 
 module.exports = config;

@@ -1,62 +1,86 @@
 'use strict';
 
-angular.module('nolla', ['ui.compat', 'restangular', '$strap.directives', 'goog'])
-  .config(function ($routeProvider, $stateProvider, $urlRouterProvider, RestangularProvider, gapiProvider) {
+var nolla = angular.module('nolla', [
+    'socket',
+    'hashKeyCopier',
+    'ui.compat',
+    'goog',
+    'auth',
+    'serviceUtilities'
+  ])
+  .config([
+    'socketProvider', '$stateProvider', '$urlRouterProvider', 'gapiProvider', 'authProvider',
+    function (socketProvider, $stateProvider, $urlRouterProvider, gapiProvider, authProvider) {
 
-    RestangularProvider.setBaseUrl('http://localhost\\:3003/api');
-    RestangularProvider.setRestangularFields({
-      id: '_id'
-    });
+      gapiProvider.setClientId('75672706662.apps.googleusercontent.com');
+      gapiProvider.setKey('AIzaSyAq9qPcsZoBDXtFP-Zt1whLgMTD3ZUnqY8');
+      gapiProvider.setScopes([
+        'https://www.googleapis.com/auth/plus.login',
+        'https://www.googleapis.com/auth/userinfo.profile',
+        'https://www.googleapis.com/auth/userinfo.email'
+      ]);
 
-    gapiProvider.setClientId('75672706662.apps.googleusercontent.com');
-    gapiProvider.setKey('AIzaSyAq9qPcsZoBDXtFP-Zt1whLgMTD3ZUnqY8');
-    gapiProvider.setScopes([
-      'https://www.googleapis.com/auth/plus.login',
-      'https://www.googleapis.com/auth/userinfo.profile',
-      'https://www.googleapis.com/auth/userinfo.email'
-    ]);
+      var host = window.location.origin;
+      if (window.location.protocol == 'chrome-extension:') {
+        host = 'http://192.168.2.37:3003';
+      }
+      socketProvider.setServer(host);
+      authProvider.setHost(host);
 
-    $urlRouterProvider
-      .otherwise('/app');
+      moment.lang('da');
 
-    $stateProvider
-      .state('app', {
-        url : '',
-        controller : 'AppCtrl',
-        templateUrl : '/app/views/index.html'
-      })
-      .state('app.login', {
-        url : '/login',
-        controller : 'LoginCtrl',
-        templateUrl : '/app/views/login.html'
-      })
-      .state('app.home', {
-        url : '/app',
-        resolve : {
-          user : function (Auth) {
-            return Auth.getAuth();
-          }
-        },
-        controller : 'MainCtrl',
-        templateUrl : '/app/views/main.html'
-      })
-      .state('app.home.client', {
-        url : '/client/{clientId}',
-        urlPath : 'client',
-        controller: 'ClientCtrl',
-        templateUrl : '/app/views/client.html'
-      })
-      .state('app.home.journal', {
-        url : '/journal/{clientId}',
-        urlPath : 'journal',
-        controller: 'JournalCtrl',
-        templateUrl : '/app/views/journal.html'
-      });
+      $stateProvider
+        .state('app', {
+          url : '',
+          resolve : {
+            socketResolved : function (socket, $q) {
+              return socket.socketPromise;
+            }
+          },
+          controller: 'InitCtrl',
+          templateUrl: 'views/index.html'
+        })
+        .state('app.main', {
+          url : '/nolla',
+          abstract: true,
+          resolve : {
+            user : function (auth, $state, $q) {
+              var d = $q.defer();
+              console.log('getting when authed');
 
+              auth.getAuth()
+                .then(function (user) {
+                  d.resolve(user);
+                }, function () {
+                  $state.transitionTo('app');
+                  d.reject();
+                });
 
-  })
+              return d.promise;
+            }
+          },
+          controller: 'MainCtrl',
+          templateUrl: 'views/main.html'
+        })
+        .state('app.main.client', {
+          url : '/client/{clientId}',
+          controller: 'ClientCtrl',
+          templateUrl: 'views/client.html'
+        })
+        .state('app.main.journal', {
+          url : '/journal/{clientId}',
+          controller: 'JournalCtrl',
+          templateUrl: 'views/journal.html'
+        })
+        .state('app.main.calendar', {
+          url : '/calendar/{clientId}',
+          controller: 'CalendarCtrl',
+          templateUrl: 'views/calendar.html'
+        })
+
+    }])
   .run(function ($rootScope, $state, $stateParams) {
- //   $state.transitionTo('app');
     $rootScope.$state = $state;
     $rootScope.$stateParams = $stateParams;
+    $state.transitionTo('app');
   });

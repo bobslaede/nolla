@@ -1,0 +1,29 @@
+.client {
+  @include flexbox();
+  @include flex-flow(row wrap);
+
+  .column {
+    @include flex-shrink(0);
+    min-width: 400px;
+  }
+
+  .input-append {
+    select,
+    input[type=text],
+    input[type=password],
+    input[type=tel],
+    input[type=number],
+    input[type=email] {
+      width: 160px;
+    }
+  }
+
+  .control-label-input {
+    padding: 0;
+
+    input {
+      width: 119px;
+    }
+  }
+
+}

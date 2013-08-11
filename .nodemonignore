@@ -1,5 +1,6 @@
-/public/*
+public/*
 .git/*
 .idea/
 views/*
 .cache/*
+.sass-cache/*

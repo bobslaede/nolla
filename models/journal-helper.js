@@ -9,8 +9,9 @@ require('./client');
 
 
 var schema = new Schema({
-  name : String,
-  description: String,
+  name : { type: String, default: '' },
+  description: { type: String, default: '' },
+  price : { type: Number, default: '' },
   children : [
     {
       type: Schema.Types.ObjectId,

@@ -1,0 +1,93 @@
+
+
+
+.calendar-directive {
+
+  %borderstyle {
+    border-color: $inputBorder;
+    border-style: solid;
+  }
+
+  .month {
+    $weekNumberWidth: 2em;
+    $weekMinHeight: 2em;
+    width: 100%;
+    height: 100%;
+    @include flex(1, 0, auto);
+
+    td {
+      @extend %borderstyle;
+      border-width: 1px;
+      font-size: $baseFontSize;
+    }
+
+    thead {
+
+      td {
+        border-top-color: transparent;
+        border-left-color: transparent;
+        border-right-color: transparent;
+      }
+
+      .day {
+
+        margin: 4px;
+        text-align: left;
+        text-transform: uppercase;
+        font-size: $fontSizeSmall;
+
+      }
+    }
+
+    tbody {
+      height: 100%;
+    }
+
+    .week-number {
+      width: $weekNumberWidth;
+      border-top-color: transparent;
+      border-bottom-color: transparent;
+      border-left-color: transparent;
+
+      .title {
+        text-align: center;
+        font-size: $fontSizeMini;
+        color: $grayLight;
+      }
+    }
+
+    .week {
+
+      .day {
+
+        position: relative;
+        min-height: $weekMinHeight;
+        height: 100%;
+
+        &.active, &.today {
+          background: $green;
+          color: $white;
+          .title {
+            color: $white;
+          }
+        }
+
+        .title {
+          font-size: $fontSizeSmall;
+          color: $gray;
+          position: absolute;
+          top: 2px;
+          right: 2px;
+        }
+
+        &.old {
+          .title {
+            color: $grayLight;
+            text-shadow: 1px 1px $white;
+          }
+        }
+      }
+    }
+
+  }
+}

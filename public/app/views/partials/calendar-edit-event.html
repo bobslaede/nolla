@@ -1,0 +1,48 @@
+
+<div id="add-event-modal" nl-modal class="modal hide animated bounceInDown" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    <h3 id="myModalLabel">Opret aftale</h3>
+  </div>
+  <div class="modal-body">
+    <div class="form form-horizontal">
+
+
+      <div class="control-group">
+        <label class="control-label" for="model.currentEvent.date">Hvornår:</label>
+
+        <div class="controls">
+          <input type="text" id="model.currentEvent.date" value="{{ model.currentEvent.start | moment:'L' }}"
+                 ng-disabled="true"/>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <label class="control-label" for="model.currentEvent.summary">Summary:</label>
+
+        <div class="controls">
+          <input type="text" id="model.currentEvent.summary" ng-model="model.currentEvent.summary"
+                 ng-disabled="locked"/>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <label class="control-label" for="model.currentEvent.calendar">Kalender:</label>
+
+        <div class="controls">
+          <select id="model.currentEvent.calendar" ng-model="model.currentEvent.calendar"
+                 ng-options="c._id as c.name for c in calendar.calendars.list"
+                 ng-disabled="locked"></select>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">Luk</button>
+    <button class="btn btn-danger" data-dismiss="modal" ng-show="model.currentEvent._id">Slet</button>
+    <button class="btn btn-primary" data-dismiss="modal" ng-show="model.currentEvent._id">Gem</button>
+    <button class="btn btn-primary" data-dismiss="modal" ng-hide="model.currentEvent._id"
+            ng-click="createEvent(model.currentEvent)">Opret</button>
+  </div>
+</div>

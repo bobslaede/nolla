@@ -1,0 +1,146 @@
+input[type=checkbox] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  position: relative;
+
+  &:after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid $inputBorder;
+    @include border-radius($inputBorderRadius);
+    background-color: $white;
+    @include box-shadow(inset 0 1px 1px rgba(0,0,0,.075));
+  }
+
+  &:checked {
+    &:after {
+      background: $blueDark;
+    }
+    &:before {
+      @include icon-FontAwesome();
+      content: $ok;
+      display: block;
+      position: absolute;
+      left: 3px;
+      top: 3px;
+      color: $white;
+      font-size: 16px
+    }
+  }
+
+  &[disabled] {
+    &:after {
+      background-color: $inputDisabledBackground;
+    }
+    &:checked {
+      &:after {
+        background-color: darken($inputDisabledBackground, 10%);
+      }
+      &:before {
+        color: $inputDisabledBackground;
+      }
+    }
+  }
+
+}
+
+input[type=radio] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  position: relative;
+
+  &:after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid $inputBorder;
+    @include border-radius(50%);
+    background-color: $white;
+    @include box-shadow(inset 0 1px 1px rgba(0,0,0,.075));
+  }
+
+  &:checked {
+    &:after {
+      background: $blueDark;
+    }
+    &:before {
+      @include icon-FontAwesome();
+      content: $circle;
+      display: block;
+      position: absolute;
+      left: 6px;
+      top: 6px;
+      color: $white;
+      font-size: 11px
+    }
+  }
+
+  &[disabled] {
+    &:after {
+      background-color: $inputDisabledBackground;
+    }
+    &:checked {
+      &:after {
+        background-color: darken($inputDisabledBackground, 10%);
+      }
+      &:before {
+        color: $inputDisabledBackground;
+      }
+    }
+  }
+
+}
+
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+
+  &:focus {
+    border-color: fade-out($blueDark, .2);
+    outline: 0;
+    outline: thin dotted \9; /* IE6-9 */
+    @include box-shadow(inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px fade-out($blueDark, .8));
+  }
+
+}
+
+.legend {
+  @include flexbox();
+  @include flex-flow(row nowrap);
+
+  margin-bottom: $baseLineHeight;
+  font-size: $baseFontSize * 1.5;
+  font-weight: 200;
+  line-height: $baseLineHeight * 1.5;
+
+  .form-header {
+    @include flex-grow(1);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-right: 1em;
+  }
+  .form-controls {
+    @include flex-shrink(0);
+  }
+}

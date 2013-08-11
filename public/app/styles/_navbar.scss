@@ -1,0 +1,77 @@
+.navbar {
+  background-color: lighten($grayLighter, 5%);
+  border-bottom: 1px solid darken($btnBorder, 10%);
+  margin: 0;
+
+  .btn {
+    margin-top: 0;
+  }
+}
+
+.navbar .nav {
+
+  & > li {
+    position: relative;
+    &:after {
+      display: block;
+      content: "";
+      width: 1px;
+      background-color: $btnBorder;
+      position: absolute;
+      top: 10%;
+      bottom: 10%;
+      right: 0;
+    }
+    &:last-child:after {
+      display: none;
+    }
+  }
+
+}
+
+// Links
+.navbar .nav > li > a {
+  position: relative;
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    background: $blueDark;
+    height: 2px;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    @include transition(opacity .2s linear, bottom .1s ease-in);
+  }
+}
+
+// Hover/focus
+.navbar .nav > li > a:focus,
+.navbar .nav > li > a:hover,
+.navbar .nav > .active > a,
+.navbar .nav > .active > a:hover,
+.navbar .nav > .active > a:focus {
+  &:after {
+    opacity: 1;
+    bottom: 0;
+  }
+}
+
+// Active nav items
+.navbar .nav > .active > a,
+.navbar .nav > .active > a:hover,
+.navbar .nav > .active > a:focus {
+  color: $navbarLinkColorActive;
+  text-decoration: none;
+  background-color: inherit;
+  @include box-shadow(none);
+}
+
+// Remove background color from open dropdown
+.navbar .nav li.dropdown.open > .dropdown-toggle,
+.navbar .nav li.dropdown.active > .dropdown-toggle,
+.navbar .nav li.dropdown.open.active > .dropdown-toggle {
+  background-color: inherit;
+  color: $navbarLinkColorActive;
+}

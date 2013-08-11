@@ -1,30 +1,57 @@
 'use strict';
 
-angular.module('nolla').controller('JournalCtrl', function ($scope, $stateParams, Restangular, $state, Journals, Clients) {
+angular.module('nolla')
+  .controller('JournalCtrl', function ($scope, $state, clients, journalentries, $rootScope, storage) {
+    console.log('JournalCtrl');
 
-  if ($stateParams.clientId === '') {
-    $state.transitionTo('app.home');
-  }
+    var id = $state.params.clientId;
 
-  var client = Restangular.one('clients', $stateParams.clientId);
-  var clientDeferred = client.get();
-  var journals = client.all('journalentries');
-  var journalsDeferred = journals.getList();
 
-  $scope.addJournalEntry = function () {
-    journals.post({});
-  };
+    $scope.model = {};
+    $scope.model.client = clients.findById(id);
+    $scope.locked = $scope.model.client === false;
 
-  $scope.model = {};
+    if ($scope.model.client) {
 
-  clientDeferred
-    .then(function (clientData) {
-      $scope.model.client = clientData;
-    });
+      $scope.model.journal = journalentries.fromClient($scope.model.client);
 
-  journalsDeferred
-    .then(function (journalsData) {
-      $scope.model.journals = journalsData;
-    });
+      $scope.model.helpers = journalentries.getHelpers();
 
-});
+      $scope.addJournalHelper = function () {
+        $scope.model.helpers.add({
+          name : 'foo ' + Math.random()
+        });
+      };
+
+      $scope.removeJournalHelper = function (helper) {
+        $scope.model.helpers.remove(helper);
+      }
+
+      $scope.addJournalEntry = function () {
+        _.each($scope.model.journal.list, function (obj) {
+          obj.locked = true;
+        });
+        $scope.model.journal.add({
+          client: $scope.model.client._id,
+          date : Date.now()
+        });
+      };
+
+      $scope.removeJournalEntry = function (entry) {
+        $scope.model.journal.remove(entry);
+      };
+
+      $scope.removeJournalEntryData = function (data, entry) {
+        var index = entry.entryData.indexOf(data);
+        if (index > -1) {
+          entry.entryData.splice(index, 1);
+        }
+      }
+
+      storage.get('clientlist-visible-journal', false)
+        .then(function (visible) {
+          $rootScope.clientListVisible = visible;
+        });
+
+    }
+  });

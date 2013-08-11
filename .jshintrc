@@ -21,10 +21,12 @@
   "white": true,
   "globals" : {
     "angular" : true,
+    "moment" : true,
     "$" : true,
     "jQuery" : true,
     "window" : true,
     "_" : true,
-    "chrome" : true
+    "chrome" : true,
+    "watch" : true
   }
 }

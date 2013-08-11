@@ -1,0 +1,45 @@
+<div class="calendar" ng-form="calendarForm">
+
+  <div class="column well well-small calendar-main">
+    <div nl-calendar="calendar"></div>
+  </div>
+
+  <div class="column well well-small calendar-list">
+
+
+    <div class="form form-horizontal client-contacts">
+      <div class="legend">
+        <div class="form-header">
+          Kalendre:
+        </div>
+
+        <div class="form-controls">
+
+          <div class="btn-group">
+            <button type="button" class="btn btn-small" ng-click="addCalendar()" ng-disabled="locked">
+              <i class="icon-plus-sign"></i>
+              Tilføj
+            </button>
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="control-group" ng-repeat="cal in calendars.list">
+
+        <div class="control-group">
+          <label class="control-label" for="cal.name">Navn:</label>
+
+          <div class="controls">
+            <input type="text" id="cal.name" ng-model="cal.name" ng-disabled="locked">
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+</div>

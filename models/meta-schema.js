@@ -16,7 +16,8 @@ var schema = {
     ref: 'App'
   },
   createdAt : {
-    type : Date
+    type : Date,
+    default: Date.now()
   }
 };
 

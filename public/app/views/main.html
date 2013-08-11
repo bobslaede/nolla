@@ -6,40 +6,39 @@
       <div class="navbar-inner-">
         <div class="container">
           <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">&hellip;</a>
+
           <div class="nav-collapse collapse">
             <ul class="nav pull-left">
               <li>
                 <div class="client-search">
-                  <div class="input-prepend">
-                    <span class="add-on">
-                      <i class="icon-search icon-large"></i>
-                    </span>
-                    <input type="search" placeholder="Søg i klienter">
+                  <div class="form-search">
+                    <input type="search" placeholder="Søg i klienter" ng-model="clientFilter">
+                    <button type="button" class="btn"><i class="icon-search icon-large"></i></button>
                   </div>
                 </div>
               </li>
             </ul>
             <ul class="nav">
-              <li ng-class="{ active : $state.includes('app.home.client') }">
-                <a ng-click="selectAction('app.home.client')">
+              <li ng-class="{ active : $state.includes('app.main.client') }">
+                <a ng-click="selectAction('app.main.client')">
                   <i class="icon-group icon-large"></i>
                   Klienter
                 </a>
               </li>
-              <li ng-class="{ active : $state.includes('app.home.journal') }">
-                <a ng-click="selectAction('app.home.journal')">
+              <li ng-class="{ active : $state.includes('app.main.journal') }">
+                <a ng-click="selectAction('app.main.journal')">
                   <i class="icon-book icon-large"></i>
                   Journaler
                 </a>
               </li>
-              <li>
-                <a href="#/app/appointments/{{ $stateParams.clientId }}">
+              <li ng-class="{ active : $state.includes('app.main.calendar') }">
+                <a ng-click="selectAction('app.main.calendar')">
                   <i class="icon-calendar icon-large"></i>
                   Aftalebog
                 </a>
               </li>
               <li>
-                <a href="#/app/accounting/{{ $stateParams.clientId }}">
+                <a>
                   <i class="icon-money icon-large"></i>
                   Regnskab
                 </a>
@@ -49,7 +48,7 @@
               <li class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown">
                   <i class="icon-user"></i>
-                  {{model.me.displayName}}
+                  {{user.displayName}}
                   <i class="caret"></i>
                 </a>
                 <ul class="dropdown-menu">
@@ -61,11 +60,11 @@
                     <i class="icon-signout"></i>
                     Logud
                   </a></li>
-                  <li class="divider" ng-hide="model.apps.length==0"></li>
-                  <li class="dropdown-submenu" ng-hide="model.apps.length==0">
+                  <li class="divider" ng-hide="user.apps.length==0"></li>
+                  <li class="dropdown-submenu" ng-hide="user.apps.length==0">
                     <a>Mine apps</a>
                     <ul class="dropdown-menu">
-                      <li ng-repeat="app in model.apps">
+                      <li ng-repeat="app in user.apps">
                         <a ng-click="chooseApp(app._id)">{{app.name}}</a>
                       </li>
                     </ul>
@@ -82,11 +81,12 @@
 
   <div class="app-container">
 
-    <div class="client-list">
+    <div class="client-list" ng-class="{ hidden : !clientListVisible }">
       <nav>
         <ul>
-          <li ng-repeat="client in clients | orderBy:clientOrder"  ng-class="{ active : $state.params.clientId == client._id }">
-            <a ng-click="selectClient({{client}})">
+          <li ng-repeat="client in clients.list | filter:clientFilter | orderBy:['firstName', 'lastName']"
+              ng-class="{ active : $state.params.clientId == client._id }">
+            <a ng-click="selectClient(client)">
               <span class="lead">{{client.firstName}} {{client.lastName}}</span>
               <small>
                 <span ng-repeat="contact in client.phone" title="{{contact.type}}">{{contact.contact}} </span>
@@ -96,6 +96,12 @@
           </li>
         </ul>
       </nav>
+      <div class="drawer" ng-click="clientListVisible = !clientListVisible">
+        <div class="handle">
+          <i class="icon-angle-left" ng-show="clientListVisible"></i>
+          <i class="icon-angle-right" ng-hide="clientListVisible"></i>
+        </div>
+      </div>
     </div>
 
     <div class="main">

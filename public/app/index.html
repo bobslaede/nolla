@@ -1,0 +1,66 @@
+<!doctype html>
+<html ng-app="nolla" ng-csp>
+  <head>
+    <meta charset="utf-8">
+    <title>nolla</title>
+    <meta name="viewport" content="width=device-width">
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+  </head>
+  <body>
+
+    <div class="nolla" ui-view></div>
+
+    <!-- build:js scripts/components.js -->
+    <script src="components/jquery/jquery.js"></script>
+    <script src="components/underscore/underscore.js"></script>
+    <script src="components/socket.io-client/dist/socket.io.js"></script>
+    <script src="components/angular/angular.js"></script>
+    <script src="components/angular-resource/angular-resource.js"></script>
+    <script src="components/angular-cookies/angular-cookies.js"></script>
+    <script src="components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="components/ui-router/release/angular-ui-router.js"></script>
+    <script src="components/bootstrap/docs/assets/js/bootstrap.js"></script>
+    <script src="components/angular-strap/dist/angular-strap.js"></script>
+    <script src="components/moment/moment.js"></script>
+    <script src="components/moment/min/langs.js"></script>
+    <script src="components/angular-service-utilities/angular-service-utilities.js"></script>
+    <!-- endbuild -->
+    <!-- build:js scripts/lib.js -->
+    <script src="scripts/lib/hash-key-copier.js"></script>
+    <script src="scripts/lib/watch.js"></script>
+    <script src="scripts/lib/twix.js"></script>
+    <!-- endbuild -->
+    <!-- build:js scripts/scripts.js -->
+    <script src="scripts/app.js"></script>
+
+    <script src="scripts/services/socket.io.js"></script>
+    <script src="scripts/services/sync.js"></script>
+    <script src="scripts/services/storage.js"></script>
+    <script src="scripts/services/gapi.js"></script>
+    <script src="scripts/services/auth.js"></script>
+    <script src="scripts/services/server.js"></script>
+    <script src="scripts/services/app.js"></script>
+    <script src="scripts/services/clients.js"></script>
+    <script src="scripts/services/calendars.js"></script>
+    <script src="scripts/services/events.js"></script>
+    <script src="scripts/services/calendar.js"></script>
+    <script src="scripts/services/journalentries.js"></script>
+
+    <script src="scripts/filters/moment.js"></script>
+
+    <script src="scripts/directives/calendar.js"></script>
+    <script src="scripts/directives/modal.js"></script>
+    <script src="scripts/directives/contenteditable.js"></script>
+    <script src="scripts/directives/journal-entry.js"></script>
+    <script src="scripts/directives/journal-entry-helper.js"></script>
+
+    <script src="scripts/controllers/init.js"></script>
+    <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/controllers/client.js"></script>
+    <script src="scripts/controllers/journal.js"></script>
+    <script src="scripts/controllers/calendar.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>

@@ -1,0 +1,38 @@
+/*
+.btn-group {
+
+  .btn {
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    z-index: 0;
+
+    &:before {
+      position: absolute;
+      display: block;
+      content: "";
+      top: 10%;
+      bottom: 10%;
+      left: 0;
+      background: $btnBorder;
+      width: 1px;
+      z-index: 2;
+    }
+
+    &:first-child {
+      border-left-width: 1px;
+      &:before {
+        display: none;
+      }
+      &:after {
+        left: 0;
+      }
+    }
+    &:last-child {
+      border-right-width: 1px;
+    }
+
+  }
+}
+*/

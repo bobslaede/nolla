@@ -1,65 +1,49 @@
 'use strict';
 
-angular.module('nolla').controller('MainCtrl', function ($scope, $state, Clients, $stateParams, $timeout, user, Auth, $window, App) {
+angular.module('nolla')
+  .controller('MainCtrl', function ($scope, $state, clients, app, auth, storage) {
 
-  console.log('MainCtrl');
+    document.addEventListener('keyup', function (e) {
+      if (e.ctrlKey && e.which == 70) {
+        e.preventDefault();
+        $('.client-search').find('input').focus();
+      }
+    })
 
-  if (!user) {
-    $state.transitionTo('login');
-  }
+    clients.getAll();
 
-  $scope.$stateParams = $stateParams;
+    $scope.clients = clients;
+    $scope.appModel = app.model;
+    $scope.user = auth.user;
 
-  $scope.logout = function () {
-    Auth.logout();
-    $state.transitionTo('app.login');
-  };
+    $scope.clientListVisible = true;
 
-  $scope.chooseApp = function (appId) {
-    App.setActiveApp(appId)
-      .then(function () {
-        $state.transitionTo('app.home');
-      });
-  };
-
-  $scope.selectClient = function (client) {
-    var to = $state.current.urlPath ? $state.current : 'app.home.client';
-    $state.transitionTo(to, { clientId : client._id });
-  };
-
-  $scope.selectAction = function (action) {
-    $state.transitionTo(action, $state.params);
-  };
-
-  $scope.clients = Clients.getList();
-
-  $scope.model = {};
-  $scope.model.me = user;
-  $scope.model.apps = user.apps;
-
-  $scope.$state = $state;
-  $scope.clientOrder = ['client.firstName', 'client.lastName'];
-
-  $scope.$watch('$state.current.urlPath', function () {
-    $scope.model.currentPath = $state.current.urlPath ? $state.current.urlPath : 'client';
-  });
-
-  $scope.alerts = [];
-
-  var shiftAlerts = function () {
-
-    $timeout(function () {
-      $scope.alerts.shift();
-    }, 3000);
-  };
-
-  $scope.$on('status', function (e, data) {
-    $scope.alerts.push({
-      type : data.type,
-      title : '',
-      content : data.msg
+    $scope.$watch('clientListVisible', function () {
+      var key = 'clientlist-visible-' + $state.current.name.replace(/\./g, '-');
+      console.log('saving client list visiblitity', key, $scope.clientListVisible);
+      storage.set(key, $scope.clientListVisible);
     });
-    shiftAlerts();
-  });
 
-});
+    $scope.$on('$stateChangeSuccess', function () {
+      var key = 'clientlist-visible-' + $state.current.name.replace(/\./g, '-');
+      storage.get(key, true)
+        .then(function (value) {
+          console.log('state change from ', key, 'got', value);
+          $scope.clientListVisible = value;
+        });
+    });
+
+
+    $scope.selectAction = function (action) {
+      var params = _.clone($state.params);
+      $state.transitionTo(action, params);
+    };
+
+    $scope.selectClient = function (client) {
+      var params = _.clone($state.params);
+      params.clientId = client._id;
+      var state = $state.current;
+      $state.transitionTo(state, params);
+    };
+
+  });

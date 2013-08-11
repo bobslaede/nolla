@@ -1,7 +1,5 @@
 'use strict';
 
-//var lrSnippet = require('grunt-contrib-livereload/lib/utils').livereloadSnippet;
-
 var mountFolder = function (connect, dir) {
   return connect.static(require('path').resolve(dir));
 };
@@ -15,7 +13,7 @@ module.exports = function (grunt) {
   // configurable paths
   var yeomanConfig = {
     app: 'public/app',
-    dist: 'public/app/dist'
+    dist: 'public/dist'
   };
 
   try {
@@ -47,7 +45,7 @@ module.exports = function (grunt) {
         files: [
           'app.js',
           'config/*.js',
-          'routes/*.js',
+          'src/*.js',
           'models/*.js'
         ],
         tasks: ['develop', 'delayed-livereload']
@@ -111,7 +109,9 @@ module.exports = function (grunt) {
         'Gruntfile.js',
         'models/*.js',
         'controllers/*.js',
-        '<%= yeoman.app %>/scripts/{,*/}*.js'
+        '<%= yeoman.app %>/scripts/services/{,*/}*.js',
+        '<%= yeoman.app %>/scripts/controllers/{,*/}*.js',
+        '<%= yeoman.app %>/scripts/directives/{,*/}*.js'
       ]
     },
     karma: {
@@ -162,7 +162,7 @@ module.exports = function (grunt) {
     },
     usemin: {
       html: ['<%= yeoman.dist %>/{,*/}*.html'],
-   //   css: ['<%= yeoman.dist %>/styles/{,*/}*.css'],
+      //   css: ['<%= yeoman.dist %>/styles/{,*/}*.css'],
       options: {
         dirs: ['<%= yeoman.dist %>'],
         baseDir : '<%= yeoman.app %>'
@@ -194,7 +194,7 @@ module.exports = function (grunt) {
         files: [{
           expand: true,
           cwd: '<%= yeoman.app %>',
-          src: ['*.html', 'views/*.html', 'templates/*.html'],
+          src: ['*.html', 'views/*.html', 'views/*/*.html'],
           dest: '<%= yeoman.dist %>'
         }]
       }
@@ -214,9 +214,6 @@ module.exports = function (grunt) {
         files: {
           '<%= yeoman.dist %>/scripts/scripts.js': [
             '<%= yeoman.dist %>/scripts/scripts.js'
-          ],
-          '<%= yeoman.dist %>/scripts/angular.js': [
-            '<%= yeoman.dist %>/scripts/angular.js'
           ]
         }
       }
@@ -241,11 +238,12 @@ module.exports = function (grunt) {
           cwd: '<%= yeoman.app %>',
           dest: '<%= yeoman.dist %>',
           src: [
-            '*.{ico,txt}',
+            '*.{ico,txt,json,js}',
             '.htaccess',
-            'lib/**/*',
-            'images/{,*/}*.{gif,webp}',
-            'styles/fonts/*'
+            'package/**/*',
+            'fonts/**/*',
+            'components/**/*',
+            'images/{,*/}*.{gif,webp}'
           ]
         }]
       }
@@ -263,39 +261,28 @@ module.exports = function (grunt) {
   grunt.renameTask('regarde', 'watch');
 
 
-  grunt.registerTask('server', [
-    'clean:server',
-    'less',
-    'livereload-start',
-    'develop',
-    'open',
-    'watch'
-  ]);
-
   grunt.registerTask('test', [
     'clean:server',
     'bower',
     'jshint',
-    'mochacli',
-    'less',
+    'mochacli',-
     'connect:test',
     'karma'
   ]);
 
   grunt.registerTask('build', [
     'clean:dist',
-    'bower',
-    'jshint',
-    'test',
-    'less',
+  //  'bower',
+  //  'jshint',
+    //'test',
     'useminPrepare',
     'imagemin',
- //   'cssmin',
+    'cssmin',
     'htmlmin',
     'concat',
     'copy',
     'ngmin',
-  //  'uglify',
+    //  'uglify',
     'rev',
     'usemin'
   ]);

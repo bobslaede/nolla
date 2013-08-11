@@ -48,20 +48,27 @@ angular.module('goog', [])
 
 
 
-    this.$get = function ($q, $http, $rootScope, $log, $window) {
+    this.$get = ['$q', '$http', '$rootScope', '$window', function ($q, $http, $rootScope, $window) {
       var loadedDeferred = $q.defer();
       var authorizedDeferred = $q.defer();
+      var _isLoaded = false;
 
       this.load = function () {
-        $window[onloadName] = angular.bind(this, function () {
+        if (_isLoaded === true) {
           gapi = $window.gapi;
-          $log.info('gapi onload callback fired');
+          console.info('gapi already loaded');
           loadedDeferred.resolve(gapi);
-          $rootScope.$digest();
-        });
+        } else {
+          $window[onloadName] = angular.bind(this, function () {
+            gapi = $window.gapi;
+            console.info('gapi onload callback fired');
+            _isLoaded = true;
+            loadedDeferred.resolve(gapi);
+            $rootScope.$digest();
+          });
 
-        $http.jsonp(url + '?onload=' + onloadName);
-
+          $http.jsonp(url + '?onload=' + onloadName);
+        }
         return loadedDeferred.promise;
       };
 
@@ -73,15 +80,16 @@ angular.module('goog', [])
         options = _.extend({
           silent : false
         }, options || {});
-        $log.debug('gapi auth options', options);
+        console.debug('gapi auth options', options);
         var authCallback = function (response) {
-          $log.debug('gapi auth callback', response);
+          console.debug('gapi auth callback', response);
           if (!response || response.error) {
-            $log.warn('Not authorized', response && response.error);
+            console.warn('Not authorized', response && response.error);
             authorizedDeferred.reject(response);
           } else {
-            $log.info('Authorized');
+            console.info('Authorized');
             authorizedDeferred.resolve(response);
+            $rootScope.$digest();
           }
           $rootScope.$digest();
         };
@@ -92,7 +100,7 @@ angular.module('goog', [])
               'client_id' : clientId,
               'scope' : scopes,
               'immediate' : !!options.silent,
-           //   'prompt' : (!!options.silent ? '' : 'consent'), // DEBUG
+              //   'prompt' : (!!options.silent ? '' : 'consent'), // DEBUG
               'access_type' : accessType
             }, authCallback);
           });
@@ -105,26 +113,7 @@ angular.module('goog', [])
         return authorizedDeferred.promise;
       };
 
-      this.gPlusSignin = function (elem, cb) {
-        loadedDeferred.promise.then(function () {
-          $log.log(elem);
-          gapi.signin.render(elem, {
-            'clientid' : clientId,
-            'cookiepolicy': 'single_host_origin',
-            'scope': scopes.join(' '),
-            'accesstype': accessType,
-            'redirecturi' : redirectUri,
-            'approval_prompt' : 'force',
-            callback : function (response) {
-              $log.info('Response from google signin callback', response);
-              cb(response);
-              $rootScope.$digest();
-            }
-          });
-        });
-      };
-
       return this;
-    };
+    }]
 
   });
