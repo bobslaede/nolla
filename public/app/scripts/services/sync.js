@@ -3,9 +3,8 @@
 
   angular.module('nolla')
     .provider('sync', function () {
-      console.log('syncprovider')
 
-      this.$get = ['socket', '$serviceScope', '$q', '$log', function (socket, $serviceScope, $q, $log) {
+      this.$get = function (socket, $serviceScope, $q, $log) {
 
         var scopes = [];
 
@@ -13,7 +12,7 @@
           var d = $q.defer();
 
           var model = $scope.model;
-          socket.socketPromise.then(function () {
+          $scope.readyDeferred.promise.then(function () {
             socket.emit('msg', {
               type: 'get',
               model : model,
@@ -60,14 +59,12 @@
 
         var add = function ($scope, obj) {
           var d = $q.defer();
-          console.log('adding stuff', $scope.model);
 
           socket.emit('msg', {
             type : 'add',
             model : $scope.model,
             data : obj
           }, function (response) {
-            console.log('got this back from adding', response);
             addObjToScopeList($scope, response);
             d.resolve(response);
           });
@@ -108,7 +105,7 @@
 
         var findById = function ($scope, id) {
           var d = $q.defer();
-          $scope.readyDeferred.promise.then(function () {
+          var find = function () {
             var searched = _.filter($scope.list, function (item) {
               return item._id === id;
             });
@@ -117,7 +114,13 @@
             } else {
               d.reject();
             }
-          });
+          }
+          if ($scope.list.length === 0) { // nothing in the list, will try to get all before finding by id
+            $scope.getAll()
+              .then(find);
+          } else {
+            $scope.readyDeferred.promise.then(find);
+          }
           return d.promise;
         };
 
@@ -160,7 +163,6 @@
           var origin = msg.origin;
           var me = socket.socket.socket.sessionid;
           if (me !== origin) {
-            $log.log('origin of event, was not this session', model, type);
             switch (type) {
               case 'update':
                 updateObjInScope($scope, data);
@@ -176,7 +178,7 @@
                 break;
             }
           } else {
-            $log.log('origin of event was this session, ignoring');
+            //$log.log('origin of event was this session, ignoring');
           }
         });
 
@@ -192,10 +194,10 @@
               return remove($scope, obj);
             },
             getAll : function () {
-              getAll($scope);
+              return getAll($scope);
             },
             query : function (query) {
-              getAll($scope, query);
+              return getAll($scope, query);
             },
             readyDeferred : $q.defer()
           };
@@ -204,7 +206,7 @@
 
         return function (model, query) {
 
-          $log.log('new ang sync', model);
+          $log.log('New sync model: %s', model);
           var $scope = $serviceScope();
           scopes[model] = $scope;
 
@@ -221,7 +223,7 @@
           return $scope;
         };
 
-      }];
+      };
 
     })
 }(angular));

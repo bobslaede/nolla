@@ -15,6 +15,7 @@ var nolla = angular.module('nolla', [
 
       $stateProvider
         .state('app', {
+          abstract: true,
           url : '',
           templateUrl: 'views/index.html'
         })
@@ -24,6 +25,20 @@ var nolla = angular.module('nolla', [
         })
         .state('app.main', {
           url : '/nolla',
+          abstract: true,
+          resolve : {
+            user : function (user, $q, $state) {
+              var d = $q.defer();
+              user.isAuthenticated()
+                .then(function () {
+                  d.resolve(user);
+                }, function (e) {
+                  d.reject(e);
+                  $state.transitionTo('app.login');
+                });
+              return d.promise;
+            }
+          },
           templateUrl : 'views/main.html'
         })
         .state('app.main.home', {
@@ -31,7 +46,7 @@ var nolla = angular.module('nolla', [
           templateUrl : 'views/home.html'
         })
         .state('app.main.client', {
-          url : '/nolla/client',
+          url : '/nolla/client/{clientId}',
           templateUrl : 'views/client.html'
         })
         .state('app.main.journal', {
@@ -47,5 +62,5 @@ var nolla = angular.module('nolla', [
   .run(function ($rootScope, $state, $stateParams) {
     $rootScope.$state = $state;
     $rootScope.$stateParams = $stateParams;
-    $state.transitionTo('app');
+    $state.transitionTo('app.main.home');
   });

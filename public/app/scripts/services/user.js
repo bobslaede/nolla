@@ -2,31 +2,30 @@
   'use strict';
 
   angular.module('nolla')
-    .factory('user', function (config, $http, $q) {
+    .factory('user', function (config, $http, $q, $serviceScope) {
 
-      var user = {};
+      var $scope = $serviceScope();
 
-      return {
+      $scope.user = undefined;
 
-        isAuthenticated : function () {
-          var d = $q.defer();
-          if (user) {
-            d.resolve();
-          } else {
-            $http.get(config.authUrl)
-              .then(function (response) {
-                user = response;
-                d.resolve();
-              }, function () {
-                user = {};
-                d.reject(new Error('not authed'));
-              });
-          }
-          return d.promise;
-        },
+      $scope.isAuthenticated = function () {
+        var d = $q.defer();
+        if ($scope.user !== undefined) {
+          d.resolve($scope.user);
+        } else {
+          $http.get(config.authUrl)
+            .then(function (response) {
+              $scope.user = response.data;
+              d.resolve($scope.user);
+            }, function () {
+              $scope.user = undefined;
+              d.reject(new Error('not authed'));
+            });
+        }
+        return d.promise;
+      };
 
-        user : user
-      }
+      return $scope;
 
     });
 

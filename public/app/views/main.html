@@ -85,7 +85,7 @@
       <nav>
         <ul>
           <li ng-repeat="client in clients.list | filter:clientFilter | orderBy:['firstName', 'lastName']"
-              ng-class="{ active : $state.params.clientId == client._id }">
+              ng-class="{ active : clientId == client._id }">
             <a ng-click="selectClient(client)">
               <span class="lead">{{client.firstName}} {{client.lastName}}</span>
               <small>

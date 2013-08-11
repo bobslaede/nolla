@@ -5,13 +5,6 @@ angular.module('nolla')
 
     $log.info('Init controller started');
 
-    user.isAuthenticated()
-      .then(function () {
-        $log.log('IS AUTHENTICATED!');
-        $state.transitionTo('app.main');
-      }, function () {
-        $state.transitionTo('app.login');
-      })
-
+    //$state.transitionTo('app.main.home');
 
   });

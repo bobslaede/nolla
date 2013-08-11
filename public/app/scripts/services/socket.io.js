@@ -1,24 +1,23 @@
 'use strict';
 
-angular.module('socket', [])
+angular.module('nolla')
   .provider('socket', function () {
-    console.log('socket provider');
 
     var server;
     this.setServer = function (value) {
       server = value;
     };
 
-    this.$get = ['$window', '$rootScope', '$q', function ($window, $rootScope, $q) {
+    this.$get = function ($window, $rootScope, $q, $log, config) {
       var io = $window.io;
 
 
       var d = $q.defer();
-      var socket = io.connect(server);
+      var socket = io.connect(config.host);
       $window.socket = socket;
 
       socket.on('connect', function () {
-        console.log('first connect');
+        $log.info('socket is connected');
         $rootScope.$apply(function () {
           d.resolve();
         });
@@ -49,6 +48,6 @@ angular.module('socket', [])
       };
 
 
-    }];
+    };
 
   });
