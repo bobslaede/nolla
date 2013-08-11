@@ -1,16 +1,8 @@
 'use strict';
 
 angular.module('nolla')
-  .controller('InitCtrl', ['$scope', 'auth', '$state', function ($scope, auth, $state) {
-    console.log('InitCtrl');
+  .controller('InitCtrl', function ($scope, $state, $log) {
+    $log.log('InitCtrl');
 
-    auth.getAuth()
-      .then(function () {
-        var state = $state.current;
-        if (state.name == 'app') {
-          state = 'app.main.client';
-        }
-        $state.transitionTo(state, $state.params);
-      })
 
-  }]);
+  });

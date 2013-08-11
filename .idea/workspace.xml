@@ -1,7 +1,819 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="342fdae3-dca1-48ea-93cd-e022978dd8f9" name="Default" comment="" />
+    <list default="true" id="342fdae3-dca1-48ea-93cd-e022978dd8f9" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitmodules" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/angular.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/angular-cookies/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/angular-cookies/angular-cookies.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/angular-cookies/angular-cookies.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/angular-cookies/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/angular-mocks/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/angular-mocks/angular-mocks.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/angular-mocks/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/angular-resource/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/angular-resource/angular-resource.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/angular-resource/angular-resource.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/angular-resource/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/angular-sanitize/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/angular-sanitize/angular-sanitize.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/angular-sanitize/angular-sanitize.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/angular-sanitize/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/angular-scenario/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/angular-scenario/angular-scenario.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/angular-scenario/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/angular-scenario/jstd-scenario-adapter-config.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/angular-scenario/jstd-scenario-adapter.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/angular-service-utilities/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/angular-service-utilities/angular-service-utilities.coffee" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/angular-service-utilities/angular-service-utilities.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/angular-service-utilities/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/angular-service-utilities/karma.conf.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/angular-service-utilities/test/angular-service-utilities.coffee" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/angular-service-utilities/test/angular-service-utilities.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/angular-service-utilities/test/lib/angular-mocks.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/angular-service-utilities/test/lib/angular.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/angular-strap/.editorconfig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/angular-strap/.gitattributes" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/angular-strap/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/angular-strap/.jshintrc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/angular-strap/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/angular-strap/Gruntfile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/angular-strap/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/angular-strap/dist/angular-strap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/angular-strap/dist/angular-strap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/angular-strap/license.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/angular-strap/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/angular-strap/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/angular-strap/src/common.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/angular-strap/src/directives/alert.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/angular-strap/src/directives/button.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/angular-strap/src/directives/buttonSelect.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/angular-strap/src/directives/datepicker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/angular-strap/src/directives/dropdown.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/angular-strap/src/directives/modal.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/angular-strap/src/directives/navbar.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/angular-strap/src/directives/popover.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/angular-strap/src/directives/select.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/angular-strap/src/directives/tab.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/angular-strap/src/directives/timepicker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/angular-strap/src/directives/tooltip.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/angular-strap/src/directives/typeahead.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/angular-strap/test/karma.conf.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/angular-strap/test/lib/angular/angular-mocks.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/angular-strap/test/lib/angular/angular-scenario.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/angular-strap/test/lib/angular/angular.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/angular-strap/test/lib/async-callback.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/angular-strap/test/lib/bootstrap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/angular-strap/test/lib/jquery-lite.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/angular-strap/test/lib/jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/angular-strap/test/testem.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/angular-strap/test/unit/directives/alertSpec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/angular-strap/test/unit/directives/buttonSelectSpec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/angular-strap/test/unit/directives/buttonSpec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/angular-strap/test/unit/directives/datepickerSpec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/angular-strap/test/unit/directives/dropdownSpec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/angular-strap/test/unit/directives/modalSpec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/angular-strap/test/unit/directives/navbarSpec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/angular-strap/test/unit/directives/popoverSpec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/angular-strap/test/unit/directives/selectSpec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/angular-strap/test/unit/directives/tabSpec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/angular-strap/test/unit/directives/timepickerSpec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/angular-strap/test/unit/directives/tooltipSpec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/angular-strap/test/unit/directives/typeaheadSpec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/angular-strap/vendor/bootstrap-datepicker.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/angular-strap/vendor/bootstrap-datepicker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/angular-strap/vendor/bootstrap-select.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/angular-strap/vendor/bootstrap-select.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/angular-strap/vendor/bootstrap-timepicker.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/angular-strap/vendor/bootstrap-timepicker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/angular/angular.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/angular/angular.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/angular/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/autotype/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/autotype/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/.hgignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/.hgtags" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/CHANGELOG.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/CONTRIBUTING.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/build/build.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/build/build_standalone.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/component.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/css/datepicker.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/js/bootstrap-datepicker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/js/locales/bootstrap-datepicker.bg.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/js/locales/bootstrap-datepicker.ca.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/js/locales/bootstrap-datepicker.cs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/js/locales/bootstrap-datepicker.da.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/js/locales/bootstrap-datepicker.de.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/js/locales/bootstrap-datepicker.el.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/js/locales/bootstrap-datepicker.es.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/js/locales/bootstrap-datepicker.et.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/js/locales/bootstrap-datepicker.fi.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/js/locales/bootstrap-datepicker.fr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/js/locales/bootstrap-datepicker.he.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/js/locales/bootstrap-datepicker.hr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/js/locales/bootstrap-datepicker.hu.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/js/locales/bootstrap-datepicker.id.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/js/locales/bootstrap-datepicker.is.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/js/locales/bootstrap-datepicker.it.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/js/locales/bootstrap-datepicker.ja.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/js/locales/bootstrap-datepicker.kr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/js/locales/bootstrap-datepicker.lt.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/js/locales/bootstrap-datepicker.lv.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/js/locales/bootstrap-datepicker.mk.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/js/locales/bootstrap-datepicker.ms.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/js/locales/bootstrap-datepicker.nb.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/js/locales/bootstrap-datepicker.nl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/js/locales/bootstrap-datepicker.pl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/js/locales/bootstrap-datepicker.pt-BR.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/js/locales/bootstrap-datepicker.pt.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/js/locales/bootstrap-datepicker.ro.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/js/locales/bootstrap-datepicker.rs-latin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/js/locales/bootstrap-datepicker.rs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/js/locales/bootstrap-datepicker.ru.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/js/locales/bootstrap-datepicker.sk.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/js/locales/bootstrap-datepicker.sl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/js/locales/bootstrap-datepicker.sq.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/js/locales/bootstrap-datepicker.sv.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/js/locales/bootstrap-datepicker.sw.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/js/locales/bootstrap-datepicker.th.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/js/locales/bootstrap-datepicker.tr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/js/locales/bootstrap-datepicker.uk.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/js/locales/bootstrap-datepicker.zh-CN.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/js/locales/bootstrap-datepicker.zh-TW.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/less/datepicker.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/tests/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/tests/_coverage.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/tests/assets/coverage.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/tests/assets/jquery-1.7.1.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/tests/assets/mock.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/tests/assets/qunit-logging.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/tests/assets/qunit.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/tests/assets/qunit.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/tests/assets/utils.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/tests/run-qunit.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/tests/suites/calendar-weeks.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/tests/suites/component.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/tests/suites/data-api.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/tests/suites/events.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/tests/suites/formats.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/tests/suites/inline.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/tests/suites/keyboard_navigation/2011.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/tests/suites/keyboard_navigation/2012.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/tests/suites/keyboard_navigation/all.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/tests/suites/mouse_navigation/2011.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/tests/suites/mouse_navigation/2012.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/tests/suites/mouse_navigation/all.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/tests/suites/options.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/tests/tests.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-select/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-select/bootstrap-select.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-select/bootstrap-select.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-select/bootstrap-select.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-select/bootstrap-select.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-select/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-select/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-select/test.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-timepicker/.bowerrc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-timepicker/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-timepicker/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-timepicker/Gruntfile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-timepicker/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-timepicker/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-timepicker/component.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-timepicker/composer.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-timepicker/css/bootstrap-timepicker.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-timepicker/css/bootstrap-timepicker.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-timepicker/js/bootstrap-timepicker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-timepicker/js/bootstrap-timepicker.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-timepicker/less/timepicker.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-timepicker/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-timepicker/spec/js/KeyboardEventsSpec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-timepicker/spec/js/MouseEventsSpec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-timepicker/spec/js/TimepickerSpec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-timepicker/spec/js/fixtures/timepicker.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-timepicker/spec/js/helpers/SpecHelper.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap-timepicker/spec/js/helpers/jasmine-jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/CHANGELOG.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/CONTRIBUTING.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/component.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/composer.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/assets/css/bootstrap-responsive.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/assets/css/bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/assets/css/docs.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/assets/ico/apple-touch-icon-114-precomposed.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/assets/ico/apple-touch-icon-144-precomposed.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/assets/ico/apple-touch-icon-57-precomposed.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/assets/ico/apple-touch-icon-72-precomposed.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/assets/ico/favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/assets/ico/favicon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/assets/img/bootstrap-docs-readme.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/assets/img/bootstrap-mdo-sfmoma-01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/assets/img/bootstrap-mdo-sfmoma-02.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/assets/img/bootstrap-mdo-sfmoma-03.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/assets/img/bs-docs-bootstrap-features.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/assets/img/bs-docs-masthead-pattern.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/assets/img/bs-docs-responsive-illustrations.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/assets/img/bs-docs-twitter-github.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/assets/img/example-sites/8020select.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/assets/img/example-sites/adoptahydrant.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/assets/img/example-sites/breakingnews.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/assets/img/example-sites/fleetio.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/assets/img/example-sites/gathercontent.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/assets/img/example-sites/jshint.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/assets/img/example-sites/kippt.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/assets/img/example-sites/soundready.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/assets/img/examples/bootstrap-example-carousel.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/assets/img/examples/bootstrap-example-fluid.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/assets/img/examples/bootstrap-example-justified-nav.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/assets/img/examples/bootstrap-example-marketing-narrow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/assets/img/examples/bootstrap-example-marketing.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/assets/img/examples/bootstrap-example-signin.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/assets/img/examples/bootstrap-example-starter.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/assets/img/examples/bootstrap-example-sticky-footer.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/assets/img/examples/browser-icon-chrome.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/assets/img/examples/browser-icon-firefox.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/assets/img/examples/browser-icon-safari.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/assets/img/examples/slide-01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/assets/img/examples/slide-02.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/assets/img/examples/slide-03.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/assets/img/glyphicons-halflings-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/assets/img/glyphicons-halflings.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/assets/img/grid-baseline-20px.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/assets/img/less-logo-large.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/assets/img/responsive-illustrations.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/assets/js/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/assets/js/application.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/assets/js/bootstrap-affix.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/assets/js/bootstrap-alert.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/assets/js/bootstrap-button.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/assets/js/bootstrap-carousel.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/assets/js/bootstrap-collapse.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/assets/js/bootstrap-dropdown.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/assets/js/bootstrap-modal.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/assets/js/bootstrap-popover.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/assets/js/bootstrap-scrollspy.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/assets/js/bootstrap-tab.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/assets/js/bootstrap-tooltip.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/assets/js/bootstrap-transition.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/assets/js/bootstrap-typeahead.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/assets/js/bootstrap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/assets/js/bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/assets/js/google-code-prettify/prettify.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/assets/js/google-code-prettify/prettify.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/assets/js/holder/holder.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/assets/js/html5shiv.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/assets/js/jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/base-css.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/build/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/build/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/components.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/customize.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/examples/carousel.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/examples/fluid.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/examples/hero.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/examples/justified-nav.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/examples/marketing-narrow.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/examples/signin.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/examples/starter-template.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/examples/sticky-footer-navbar.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/examples/sticky-footer.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/extend.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/getting-started.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/javascript.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/scaffolding.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/templates/layout.mustache" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/templates/pages/base-css.mustache" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/templates/pages/components.mustache" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/templates/pages/customize.mustache" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/templates/pages/extend.mustache" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/templates/pages/getting-started.mustache" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/templates/pages/index.mustache" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/templates/pages/javascript.mustache" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/docs/templates/pages/scaffolding.mustache" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/img/glyphicons-halflings-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/img/glyphicons-halflings.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/js/.jshintrc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/js/bootstrap-affix.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/js/bootstrap-alert.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/js/bootstrap-button.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/js/bootstrap-carousel.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/js/bootstrap-collapse.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/js/bootstrap-dropdown.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/js/bootstrap-modal.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/js/bootstrap-popover.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/js/bootstrap-scrollspy.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/js/bootstrap-tab.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/js/bootstrap-tooltip.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/js/bootstrap-transition.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/js/bootstrap-typeahead.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/js/tests/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/js/tests/phantom.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/js/tests/server.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/js/tests/unit/bootstrap-affix.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/js/tests/unit/bootstrap-alert.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/js/tests/unit/bootstrap-button.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/js/tests/unit/bootstrap-carousel.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/js/tests/unit/bootstrap-collapse.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/js/tests/unit/bootstrap-dropdown.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/js/tests/unit/bootstrap-modal.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/js/tests/unit/bootstrap-phantom.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/js/tests/unit/bootstrap-popover.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/js/tests/unit/bootstrap-scrollspy.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/js/tests/unit/bootstrap-tab.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/js/tests/unit/bootstrap-tooltip.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/js/tests/unit/bootstrap-transition.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/js/tests/unit/bootstrap-typeahead.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/js/tests/vendor/jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/js/tests/vendor/qunit.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/js/tests/vendor/qunit.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/less/accordion.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/less/alerts.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/less/bootstrap.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/less/breadcrumbs.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/less/button-groups.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/less/buttons.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/less/carousel.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/less/close.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/less/code.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/less/component-animations.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/less/dropdowns.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/less/forms.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/less/grid.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/less/hero-unit.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/less/labels-badges.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/less/layouts.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/less/media.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/less/mixins.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/less/modals.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/less/navbar.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/less/navs.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/less/pager.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/less/pagination.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/less/popovers.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/less/progress-bars.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/less/reset.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/less/responsive-1200px-min.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/less/responsive-767px-max.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/less/responsive-768px-979px.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/less/responsive-navbar.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/less/responsive-utilities.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/less/responsive.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/less/scaffolding.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/less/sprites.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/less/tables.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/less/tests/buttons.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/less/tests/css-tests.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/less/tests/css-tests.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/less/tests/forms-responsive.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/less/tests/forms.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/less/tests/navbar-fixed-top.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/less/tests/navbar-static-top.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/less/tests/navbar.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/less/thumbnails.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/less/tooltip.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/less/type.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/less/utilities.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/less/variables.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/less/wells.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/bootstrap/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/es5-shim/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/es5-shim/CHANGES" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/es5-shim/CONTRIBUTORS.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/es5-shim/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/es5-shim/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/es5-shim/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/es5-shim/es5-sham.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/es5-shim/es5-sham.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/es5-shim/es5-sham.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/es5-shim/es5-shim.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/es5-shim/es5-shim.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/es5-shim/es5-shim.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/es5-shim/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/es5-shim/tests/helpers/h-kill.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/es5-shim/tests/helpers/h-matchers.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/es5-shim/tests/helpers/h.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/es5-shim/tests/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/es5-shim/tests/index.min.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/es5-shim/tests/lib/jasmine-html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/es5-shim/tests/lib/jasmine.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/es5-shim/tests/lib/jasmine.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/es5-shim/tests/lib/jasmine_favicon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/es5-shim/tests/lib/json2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/es5-shim/tests/spec/s-array.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/es5-shim/tests/spec/s-date.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/es5-shim/tests/spec/s-function.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/es5-shim/tests/spec/s-number.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/es5-shim/tests/spec/s-object.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/es5-shim/tests/spec/s-string.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/jquery/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/jquery/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/jquery/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/jquery/component.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/jquery/composer.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/jquery/jquery-migrate.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/jquery/jquery-migrate.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/jquery/jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/jquery/jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/jquery/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/json3/.gitmodules" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/json3/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/json3/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/json3/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/json3/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/json3/build.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/json3/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/json3/jsl.conf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/json3/lib/json3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/json3/lib/json3.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/json3/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/json3/page/background.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/json3/page/logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/json3/page/page.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/json3/page/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/json3/test/test_browser.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/json3/test/test_json3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/json3/vendor/closure-compiler.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/json3/vendor/curl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/json3/vendor/prototype.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/json3/vendor/require.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/component.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/lang/ar-ma.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/lang/ar.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/lang/bg.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/lang/br.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/lang/ca.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/lang/cs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/lang/cv.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/lang/da.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/lang/de.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/lang/el.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/lang/en-ca.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/lang/en-gb.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/lang/eo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/lang/es.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/lang/et.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/lang/eu.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/lang/fa.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/lang/fi.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/lang/fr-ca.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/lang/fr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/lang/gl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/lang/he.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/lang/hi.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/lang/hu.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/lang/id.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/lang/is.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/lang/it.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/lang/ja.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/lang/ka.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/lang/ko.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/lang/lv.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/lang/ms-my.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/lang/nb.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/lang/ne.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/lang/nl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/lang/nn.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/lang/pl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/lang/pt-br.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/lang/pt.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/lang/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/lang/ro.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/lang/ru.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/lang/sk.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/lang/sl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/lang/sq.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/lang/sv.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/lang/th.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/lang/tr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/lang/tzm-la.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/lang/tzm.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/lang/uk.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/lang/zh-cn.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/lang/zh-tw.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/min/lang/ar-ma.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/min/lang/ar.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/min/lang/bg.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/min/lang/br.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/min/lang/ca.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/min/lang/cs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/min/lang/cv.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/min/lang/da.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/min/lang/de.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/min/lang/el.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/min/lang/en-ca.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/min/lang/en-gb.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/min/lang/eo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/min/lang/es.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/min/lang/et.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/min/lang/eu.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/min/lang/fa.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/min/lang/fi.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/min/lang/fr-ca.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/min/lang/fr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/min/lang/gl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/min/lang/he.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/min/lang/hi.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/min/lang/hu.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/min/lang/id.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/min/lang/is.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/min/lang/it.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/min/lang/ja.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/min/lang/ka.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/min/lang/ko.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/min/lang/lv.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/min/lang/ms-my.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/min/lang/nb.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/min/lang/ne.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/min/lang/nl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/min/lang/nn.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/min/lang/pl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/min/lang/pt-br.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/min/lang/pt.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/min/lang/ro.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/min/lang/ru.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/min/lang/sk.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/min/lang/sl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/min/lang/sq.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/min/lang/sv.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/min/lang/th.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/min/lang/tr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/min/lang/tzm-la.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/min/lang/tzm.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/min/lang/uk.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/min/lang/zh-cn.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/min/lang/zh-tw.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/min/langs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/min/langs.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/min/moment.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/moment.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/moment/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/History.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/bin/builder.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/dist/WebSocketMain.swf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/dist/WebSocketMainInsecure.swf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/dist/socket.io.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/dist/socket.io.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/events.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/io.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/json.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/namespace.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/parser.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/socket.io-client.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/socket.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/transport.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/transports/flashsocket.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/transports/htmlfile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/transports/jsonp-polling.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/transports/websocket.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/transports/xhr-polling.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/transports/xhr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/util.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/WebSocketMain.swf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/WebSocketMainInsecure.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/IWebSocketLogger.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/WebSocket.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/WebSocketEvent.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/WebSocketMain.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/WebSocketMainInsecure.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/build.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/adobe/net/proxies/RFC2817Socket.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/gsolo/encryption/MD5.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/Crypto.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/cert/MozillaRootCertificates.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/cert/X509Certificate.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/cert/X509CertificateCollection.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/HMAC.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/IHMAC.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/IHash.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/MAC.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/MD2.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/MD5.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/SHA1.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/SHA224.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/SHA256.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/SHABase.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/prng/ARC4.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/prng/IPRNG.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/prng/Random.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/prng/TLSPRF.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/rsa/RSAKey.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/AESKey.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/BlowFishKey.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/CBCMode.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/CFB8Mode.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/CFBMode.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/CTRMode.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/DESKey.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/ECBMode.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/ICipher.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/IMode.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/IPad.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/IStreamCipher.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/ISymmetricKey.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/IVMode.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/NullPad.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/OFBMode.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/PKCS5.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/SSLPad.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/SimpleIVMode.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/TLSPad.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/TripleDESKey.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/XTeaKey.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/aeskey.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/dump.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/AESKeyTest.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/ARC4Test.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/BigIntegerTest.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/BlowFishKeyTest.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/CBCModeTest.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/CFB8ModeTest.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/CFBModeTest.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/CTRModeTest.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/DESKeyTest.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/ECBModeTest.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/HMACTest.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/ITestHarness.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/MD2Test.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/MD5Test.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/OFBModeTest.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/RSAKeyTest.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/SHA1Test.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/SHA224Test.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/SHA256Test.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/TLSPRFTest.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/TestCase.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/TripleDESKeyTest.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/XTeaKeyTest.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/BulkCiphers.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/CipherSuites.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/IConnectionState.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/ISecurityParameters.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/KeyExchanges.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/MACs.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/SSLConnectionState.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/SSLEvent.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/SSLSecurityParameters.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSConfig.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSConnectionState.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSEngine.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSError.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSEvent.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSSecurityParameters.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSSocket.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSSocketEvent.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSTest.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/math/BarrettReduction.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/math/BigInteger.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/math/ClassicReduction.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/math/IReduction.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/math/MontgomeryReduction.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/math/NullReduction.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/math/bi_internal.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/ArrayUtil.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/Base64.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/Hex.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/Memory.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/ByteString.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/DER.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/IAsn1Type.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/Integer.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/OID.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/ObjectIdentifier.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/PEM.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/PrintableString.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/Sequence.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/Set.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/Type.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/UTCTime.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/sample.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/swfobject.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/web_socket.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/support/should.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/support/test-runner/app.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/support/test-runner/index.jade" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/support/test-runner/public/javascript/jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/support/test-runner/public/javascript/runner.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/support/test-runner/public/javascript/script.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/support/test-runner/public/javascript/should.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/support/test-runner/public/stylesheets/main.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/support/test-runner/public/stylesheets/main.styl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/test/events.test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/test/io.test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/test/node/builder.common.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/test/node/builder.test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/test/parser.test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/test/socket.test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/test/util.test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/socket.io-client/test/worker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/ui-router/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/ui-router/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/ui-router/Gruntfile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/ui-router/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/ui-router/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/ui-router/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/ui-router/jsdoc-conf.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/ui-router/lib/angular-1.0.6.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/ui-router/lib/angular-1.1.4.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/ui-router/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/ui-router/release/angular-ui-router.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/ui-router/release/angular-ui-router.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/ui-router/release/doc/$templateFactory.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/ui-router/release/doc/$urlMatcherFactory.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/ui-router/release/doc/UrlMatcher.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/ui-router/release/doc/global.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/ui-router/release/doc/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/ui-router/release/doc/scripts/prettify/Apache-License-2.0.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/ui-router/release/doc/scripts/prettify/lang-css.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/ui-router/release/doc/scripts/prettify/prettify.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/ui-router/release/doc/styles/jsdoc-default.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/ui-router/release/doc/styles/prettify-jsdoc.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/ui-router/release/doc/styles/prettify-tomorrow.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/ui-router/sample/bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/ui-router/sample/contacts.detail.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/ui-router/sample/contacts.detail.item.edit.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/ui-router/sample/contacts.detail.item.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/ui-router/sample/contacts.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/ui-router/sample/contacts.list.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/ui-router/sample/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/ui-router/src/common.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/ui-router/src/compat.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/ui-router/src/state.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/ui-router/src/templateFactory.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/ui-router/src/urlMatcherFactory.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/ui-router/src/urlRouter.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/ui-router/src/viewDirective.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/ui-router/test/compat/matchers.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/ui-router/test/compat/routeParamsSpec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/ui-router/test/compat/routeSpec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/ui-router/test/lib/angular-mocks-1.0.4.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/ui-router/test/lib/angular-mocks-1.1.4.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/ui-router/test/stateSpec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/ui-router/test/templateFactorySpec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/ui-router/test/test-config.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/ui-router/test/testUtils.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/ui-router/test/urlMatcherFactorySpec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/ui-router/test/urlRouterSpec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/ui-router/test/viewDirectiveSpec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/underscore/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/underscore/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/underscore/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/underscore/CNAME" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/underscore/CONTRIBUTING.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/underscore/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/underscore/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/underscore/Rakefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/underscore/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/underscore/docs/docco.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/underscore/docs/favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/underscore/docs/images/background.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/underscore/docs/images/underscore.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/underscore/docs/underscore.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/underscore/favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/underscore/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/underscore/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/underscore/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/underscore/test/arrays.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/underscore/test/chaining.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/underscore/test/collections.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/underscore/test/functions.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/underscore/test/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/underscore/test/objects.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/underscore/test/speed.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/underscore/test/utility.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/underscore/test/vendor/jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/underscore/test/vendor/jslitmus.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/underscore/test/vendor/qunit.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/underscore/test/vendor/qunit.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/underscore/test/vendor/runner.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/underscore/underscore-min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/components/underscore/underscore.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/scripts/app.js" afterPath="$PROJECT_DIR$/public/app/scripts/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower.json" afterPath="$PROJECT_DIR$/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/index.html" afterPath="$PROJECT_DIR$/public/app/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/scripts/controllers/init.js" afterPath="$PROJECT_DIR$/public/app/scripts/controllers/init.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="nolla-server.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/a.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1372922017412" ignored="false" />
@@ -9,14 +821,14 @@
     <file path="/socket.io.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1372970117077" ignored="false" />
     <file path="/sockets.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1375898906187" ignored="false" />
     <file path="/main.html" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1374092007093" ignored="false" />
-    <file path="/index.html" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1375726644876" ignored="false" />
+    <file path="/index.html" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1376244344133" ignored="false" />
     <file path="/.jshintrc" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1369936783753" ignored="false" />
     <file path="/auth.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370036296756" ignored="false" />
     <file path="/main.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1374094023557" ignored="false" />
     <file path="/clients.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1372970071236" ignored="false" />
     <file path="/gapi.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370003781302" ignored="false" />
     <file path="/server.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370429778578" ignored="false" />
-    <file path="/init.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370202167540" ignored="false" />
+    <file path="/init.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1376242341242" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/scripts/029d5d9f.components.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1369943639886" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/components/angular/angular.min.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370000361351" ignored="false" />
     <file path="/index.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1369942667829" ignored="false" />
@@ -107,9 +919,6 @@
     <file path="$PROJECT_DIR$/public/app/components/angular-ui-router/sample/index.html" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955827" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/angular-ui-router/release/doc/$urlMatcherFactory.html" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955827" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/tests/tests.html" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955827" ignored="false" />
-    <file path="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/build/build.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955827" ignored="false" />
-    <file path="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/build/build_standalone.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955827" ignored="false" />
-    <file path="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/css/datepicker.css" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955827" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/angular-ui-router/sample/contacts.detail.html" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955827" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/js/locales/bootstrap-datepicker.hu.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955827" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/angular-ui-router/release/doc/scripts/prettify/prettify.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955827" ignored="false" />
@@ -162,7 +971,6 @@
     <file path="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/js/locales/bootstrap-datepicker.nb.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/js/locales/bootstrap-datepicker.nl.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/js/locales/bootstrap-datepicker.is.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
-    <file path="$PROJECT_DIR$/public/app/components/bootstrap-datepicker/js/bootstrap-datepicker.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/ByteString.as" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/Set.as" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/socket.io-client/lib/parser.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
@@ -170,12 +978,7 @@
     <file path="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/Base64.as" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/ArrayUtil.as" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/socket.io-client/lib/json.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
-    <file path="$PROJECT_DIR$/public/app/components/bootstrap-select/bootstrap-select.css" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
-    <file path="$PROJECT_DIR$/public/app/components/bootstrap-select/bootstrap-select.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
-    <file path="$PROJECT_DIR$/public/app/components/bootstrap-select/package.json" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
-    <file path="$PROJECT_DIR$/public/app/components/bootstrap-select/bootstrap-select.min.css" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/socket.io-client/lib/events.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
-    <file path="$PROJECT_DIR$/public/app/components/bootstrap-select/bootstrap-select.min.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/angular-ui-router/src/templateFactory.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/angular-strap/vendor/bootstrap-datepicker.css" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/angular-strap/vendor/bootstrap-datepicker.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
@@ -264,16 +1067,10 @@
     <file path="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/PEM.as" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/bootstrap-timepicker/less/timepicker.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/DER.as" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
-    <file path="$PROJECT_DIR$/public/app/components/bootstrap-timepicker/css/bootstrap-timepicker.min.css" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/math/IReduction.as" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
-    <file path="$PROJECT_DIR$/public/app/components/bootstrap-timepicker/css/bootstrap-timepicker.css" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
-    <file path="$PROJECT_DIR$/public/app/components/bootstrap-timepicker/js/bootstrap-timepicker.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/socket.io-client/support/test-runner/public/stylesheets/main.css" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
-    <file path="$PROJECT_DIR$/public/app/components/bootstrap-timepicker/js/bootstrap-timepicker.min.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/MACs.as" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/socket.io-client/package.json" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
-    <file path="$PROJECT_DIR$/public/app/components/bootstrap-timepicker/composer.json" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
-    <file path="$PROJECT_DIR$/public/app/components/bootstrap-timepicker/Gruntfile.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/SSLEvent.as" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/OFBMode.as" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
     <file path="$PROJECT_DIR$/public/app/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/CTRMode.as" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370280955828" ignored="false" />
@@ -388,7 +1185,7 @@
     <file path="/calendar-month.html" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1375899830289" ignored="false" />
     <file path="/calendar-week.html" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1374077140860" ignored="false" />
     <file path="/calendar-week.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1374077084859" ignored="false" />
-    <file path="/Dummy.txt" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1376241348298" ignored="false" />
+    <file path="/Dummy.txt" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1376242131363" ignored="false" />
     <file path="/events.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1374058071104" ignored="false" />
     <file path="/.nodemonignore" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1374092169304" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/components/ui-router/release/doc/styles/jsdoc-default.css" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1374092391609" ignored="false" />
@@ -441,80 +1238,71 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="calendar.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/app/scripts/directives/calendar.js">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/app/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="84" column="47" selection-start="2399" selection-end="2399" vertical-scroll-proportion="0.0">
+            <state line="45" column="40" selection-start="2050" selection-end="2050" vertical-scroll-proportion="0.39519906">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="calendar.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/app/scripts/controllers/calendar.js">
+      <file leaf-file-name="angular-sanitize.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/app/angular.js/build/angular-sanitize.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="7" selection-start="823" selection-end="1184" vertical-scroll-proportion="0.0">
+            <state line="19" column="2" selection-start="531" selection-end="531" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sockets.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sockets.js">
+      <file leaf-file-name="angular-route.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/app/angular.js/build/angular-route.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="88" column="32" selection-start="2489" selection-end="2489" vertical-scroll-proportion="0.0">
+            <state line="91" column="4" selection-start="3458" selection-end="3458" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="event.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/event.js">
+      <file leaf-file-name="angular-touch.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/app/angular.js/build/angular-touch.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="12" selection-start="462" selection-end="462" vertical-scroll-proportion="0.0">
+            <state line="22" column="19" selection-start="485" selection-end="485" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="calendar.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/app/views/partials/calendar.html">
+      <file leaf-file-name="bower.json" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bower.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="8" selection-start="1579" selection-end="1579" vertical-scroll-proportion="0.0">
+            <state line="14" column="4" selection-start="311" selection-end="311" vertical-scroll-proportion="-7.5">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="calendar-month.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/app/views/partials/calendar-month.html">
+      <file leaf-file-name="bower.json" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/app/angular.js/bower.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="8" selection-start="819" selection-end="819" vertical-scroll-proportion="0.0">
+            <state line="12" column="0" selection-start="516" selection-end="516" vertical-scroll-proportion="-7.5">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="client.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/app/scripts/controllers/client.js">
+      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/app/scripts/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="0" selection-start="797" selection-end="797" vertical-scroll-proportion="0.0">
+            <state line="28" column="0" selection-start="664" selection-end="664" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sync.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/app/scripts/services/sync.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="138" column="13" selection-start="3821" selection-end="3821" vertical-scroll-proportion="0.4157044">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/app/views/index.html">
+      <file leaf-file-name="manifest.json" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/app/manifest.json">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
               <folding />
@@ -522,10 +1310,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/app/index.html">
+      <file leaf-file-name="auth.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/auth.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="57" selection-start="2827" selection-end="2827" vertical-scroll-proportion="-37.5">
+            <state line="15" column="29" selection-start="461" selection-end="461" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -549,13 +1337,8 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/public/app/styles/main.scss" />
-        <option value="$PROJECT_DIR$/public/app/styles/_calendar.scss" />
-        <option value="$PROJECT_DIR$/public/app/styles/calendar/index.scss" />
-        <option value="$PROJECT_DIR$/public/app/styles/calendar/_month.scss" />
         <option value="$PROJECT_DIR$/public/app/views/client.html" />
         <option value="$PROJECT_DIR$/public/app/scripts/filters/date.js" />
-        <option value="$PROJECT_DIR$/public/app/index.html" />
         <option value="$PROJECT_DIR$/public/app/views/partials/calendar-edit-event.html" />
         <option value="$PROJECT_DIR$/src/sockets.js" />
         <option value="$PROJECT_DIR$/public/app/scripts/directives/calendar.js" />
@@ -565,6 +1348,11 @@
         <option value="$PROJECT_DIR$/public/app/views/partials/calendar.html" />
         <option value="$PROJECT_DIR$/public/app/views/partials/calendar-month.html" />
         <option value="$PROJECT_DIR$/public/app/scripts/services/sync.js" />
+        <option value="$PROJECT_DIR$/public/app/scripts/controllers/init.js" />
+        <option value="$PROJECT_DIR$/public/app/scripts/app.js" />
+        <option value="$PROJECT_DIR$/public/app/angular.js/bower.json" />
+        <option value="$PROJECT_DIR$/bower.json" />
+        <option value="$PROJECT_DIR$/public/app/index.html" />
       </list>
     </option>
   </component>
@@ -629,20 +1417,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nolla-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nolla" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -662,216 +1436,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nolla-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nolla" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nolla-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nolla" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="partials" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nolla-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nolla" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="styles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nolla-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nolla" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nolla-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nolla" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="services" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nolla-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nolla" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="filters" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nolla-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nolla" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="directives" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nolla-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nolla" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nolla-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nolla" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -882,13 +1446,13 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/app/scripts/controllers/calendar.js" />
+    <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/app/scripts/controllers/calendar.js" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="PublishConfig" serverName="server on 9000" serverId="52c0ff24-879d-40d5-b2bc-e312a06df648">
     <servers>
@@ -1038,12 +1602,12 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="-4" width="1202" height="1925" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32996064" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294509" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2497876" sideWeight="0.6705491" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22769754" sideWeight="0.7262507" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22769754" sideWeight="0.67003936" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2737493" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1127,64 +1691,9 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/app/scripts/filters/moment.js">
+    <entry file="file://$PROJECT_DIR$/public/app/views/partials/calendar-month.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="286" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/views/client.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="235" column="70" selection-start="7409" selection-end="7461" vertical-scroll-proportion="-30.625" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/calendar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="23" selection-start="530" selection-end="530" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/views/partials/delete.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/views/partials/calendar-edit-event.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="6" selection-start="1928" selection-end="1928" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/scripts/services/events.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="28" selection-start="215" selection-end="215" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sockets.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="32" selection-start="2489" selection-end="2489" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/event.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="12" selection-start="462" selection-end="462" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/scripts/controllers/calendar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="7" selection-start="823" selection-end="1184" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/scripts/directives/calendar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="47" selection-start="2399" selection-end="2399" vertical-scroll-proportion="0.0">
+        <state line="25" column="8" selection-start="819" selection-end="819" vertical-scroll-proportion="-0.625">
           <folding />
         </state>
       </provider>
@@ -1196,21 +1705,93 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/views/partials/calendar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="8" selection-start="1579" selection-end="1579" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/views/partials/calendar-month.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="8" selection-start="819" selection-end="819" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/app/views/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/scripts/services/sync.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="178" column="51" selection-start="5056" selection-end="5056" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/scripts/controllers/init.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="126" selection-end="126" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/auth.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="29" selection-start="461" selection-end="461" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/scripts/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="0" selection-start="664" selection-end="664" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/manifest.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/angular.js/bower.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="516" selection-end="516" vertical-scroll-proportion="-7.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bower.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="4" selection-start="311" selection-end="311" vertical-scroll-proportion="-7.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/components/jquery/jquery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/angular.js/build/angular-touch.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="19" selection-start="485" selection-end="485" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/angular.js/build/angular-route.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="91" column="4" selection-start="3458" selection-end="3458" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/angular.js/build/angular-sanitize.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="2" selection-start="531" selection-end="531" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/components/bootstrap-datepicker/bower.json">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
@@ -1219,14 +1800,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="57" selection-start="2827" selection-end="2827" vertical-scroll-proportion="-37.5">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/scripts/services/sync.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="138" column="13" selection-start="3821" selection-end="3821" vertical-scroll-proportion="0.4157044">
+        <state line="45" column="40" selection-start="2050" selection-end="2050" vertical-scroll-proportion="0.39519906">
           <folding />
         </state>
       </provider>

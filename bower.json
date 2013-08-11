@@ -3,24 +3,15 @@
   "version": "0.0.0",
   "appPath": "public/app",
   "dependencies": {
-    "angular": "git://github.com/angular/bower-angular.git#1.0.7",
-    "json3": "git://github.com/bestiejs/json3.git#3.2.4",
-    "es5-shim": "git://github.com/kriskowal/es5-shim#2.0.11",
-    "angular-resource": "git://github.com/angular/bower-angular-resource.git#1.0.7",
-    "angular-cookies": "git://github.com/angular/bower-angular-cookies.git#1.0.7",
-    "angular-sanitize": "git://github.com/angular/bower-angular-sanitize.git#1.0.7",
-    "underscore": "git://github.com/documentcloud/underscore.git#1.4.4",
-    "socket.io-client": "git://github.com/LearnBoost/socket.io-client.git#0.9.16",
-    "jquery": "git://github.com/components/jquery.git#2.0.2",
-    "angular-strap": "git://github.com/mgcrea/angular-strap.git#0.7.4",
-    "bootstrap-datepicker": "git://github.com/eternicode/bootstrap-datepicker.git#1.1.1",
+    "socket.io-client": "~0.9.16",
+    "jquery": "~2.0.3",
+    "angular-strap": "~0.7.5",
     "moment": "~2.1.0",
-    "ui-router": "~0.0.1",
-    "angular-service-utilities": "https://github.com/mbertolacci/angular-service-utilities.git"
+    "lodash": "~1.3.1",
+    "ui-router": "~0.0.1"
   },
   "devDependencies": {
-    "angular-mocks": "git://github.com/angular/bower-angular-mocks.git#1.0.7",
-    "angular-scenario": "git://github.com/angular/bower-angular-scenario.git#1.0.7"
+    "angular-mocks": "*"
   },
   "ignore": [
     "**/.*",
