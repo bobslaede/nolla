@@ -1,0 +1,25 @@
+<div class="month">
+  <table>
+    <thead>
+    <tr>
+      <td class="week-number">&nbsp;</td>
+      <td class="day" ng-repeat="day in dayNames">{{day}}</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="week in weeks" class="week">
+      <td class="week-number">
+        <div class="title">{{ week.number }}</div>
+      </td>
+      <td ng-repeat="day in week">
+        <div class="day" data-date="{{ day | moment:'L' }}">
+          <div class="title">{{ day | moment:'D' }}</div>
+        </div>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+  <div class="event" nl-calendar-month-event ng-repeat="event in events">
+    {{ event.summary }} - {{ event.start.dateTime | moment:'L' }}
+  </div>
+</div>

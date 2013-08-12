@@ -6871,57 +6871,61 @@ body {
       height: 100%;
       width: 100%; }
 
-.calendar-directive .month td {
+.calendar-directive .month table td {
   border-color: #cccccc;
   border-style: solid; }
 .calendar-directive .month {
-  width: 100%;
-  height: 100%;
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 0 auto;
-  -moz-flex: 1 0 auto;
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto; }
-  .calendar-directive .month td {
-    border-width: 1px;
-    font-size: 14px; }
-  .calendar-directive .month thead td {
-    border-top-color: transparent;
-    border-left-color: transparent;
-    border-right-color: transparent; }
-  .calendar-directive .month thead .day {
-    margin: 4px;
-    text-align: left;
-    text-transform: uppercase;
-    font-size: 11.9px; }
-  .calendar-directive .month tbody {
-    height: 100%; }
-  .calendar-directive .month .week-number {
-    width: 2em;
-    border-top-color: transparent;
-    border-bottom-color: transparent;
-    border-left-color: transparent; }
-    .calendar-directive .month .week-number .title {
-      text-align: center;
-      font-size: 10.5px;
-      color: #999999; }
-  .calendar-directive .month .week .day {
-    position: relative;
-    min-height: 2em;
-    height: 100%; }
-    .calendar-directive .month .week .day.active, .calendar-directive .month .week .day.today {
-      background: #46a546;
-      color: white; }
-      .calendar-directive .month .week .day.active .title, .calendar-directive .month .week .day.today .title {
+  position: relative; }
+  .calendar-directive .month .event {
+    position: absolute; }
+  .calendar-directive .month table {
+    width: 100%;
+    height: 100%;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 0 auto;
+    -moz-flex: 1 0 auto;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto; }
+    .calendar-directive .month table td {
+      border-width: 1px;
+      font-size: 14px; }
+    .calendar-directive .month table thead td {
+      border-top-color: transparent;
+      border-left-color: transparent;
+      border-right-color: transparent; }
+    .calendar-directive .month table thead .day {
+      margin: 4px;
+      text-align: left;
+      text-transform: uppercase;
+      font-size: 11.9px; }
+    .calendar-directive .month table tbody {
+      height: 100%; }
+    .calendar-directive .month table .week-number {
+      width: 2em;
+      border-top-color: transparent;
+      border-bottom-color: transparent;
+      border-left-color: transparent; }
+      .calendar-directive .month table .week-number .title {
+        text-align: center;
+        font-size: 10.5px;
+        color: #999999; }
+    .calendar-directive .month table .week .day {
+      position: relative;
+      min-height: 4em;
+      height: 100%; }
+      .calendar-directive .month table .week .day.active, .calendar-directive .month table .week .day.today {
+        background: #46a546;
         color: white; }
-    .calendar-directive .month .week .day .title {
-      font-size: 11.9px;
-      color: #555555;
-      position: absolute;
-      top: 2px;
-      right: 2px; }
-    .calendar-directive .month .week .day.old .title {
-      color: #999999;
-      text-shadow: 1px 1px white; }
+        .calendar-directive .month table .week .day.active .title, .calendar-directive .month table .week .day.today .title {
+          color: white; }
+      .calendar-directive .month table .week .day .title {
+        font-size: 11.9px;
+        color: #555555;
+        position: absolute;
+        top: 2px;
+        right: 2px; }
+      .calendar-directive .month table .week .day.old .title {
+        color: #999999;
+        text-shadow: 1px 1px white; }
 
 /*# sourceMappingURL=main.css.map */

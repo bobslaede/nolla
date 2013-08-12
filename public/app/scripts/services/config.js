@@ -1,18 +1,22 @@
 (function (angular) {
   'use strict';
 
-  angular.module('nolla')
-    .factory('config', function () {
+  angular.module('nolla.config', [])
+    .provider('config', function () {
 
-      var config = {
-        host : 'http://localhost:3003',
-        get authUrl () {
-          console.log('get authUrl')
-          return config.host + '/auth'
+      var self = this;
+
+      self.host = 'http://localhost:3003';
+
+      Object.defineProperty(self, 'authUrl', {
+        get : function () {
+          return self.host + '/auth'
         }
-      };
+      });
 
-      return config;
+      this.$get = function () {
+        return self;
+      }
 
     });
 

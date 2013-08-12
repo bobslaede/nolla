@@ -9,81 +9,89 @@
   }
 
   .month {
-    $weekNumberWidth: 2em;
-    $weekMinHeight: 2em;
-    width: 100%;
-    height: 100%;
-    @include flex(1, 0, auto);
+    position: relative;
 
-    td {
-      @extend %borderstyle;
-      border-width: 1px;
-      font-size: $baseFontSize;
+    .event {
+      position: absolute;
     }
 
-    thead {
+    table {
+      $weekNumberWidth: 2em;
+      $weekMinHeight: 4em;
+      width: 100%;
+      height: 100%;
+      @include flex(1, 0, auto);
 
       td {
-        border-top-color: transparent;
-        border-left-color: transparent;
-        border-right-color: transparent;
+        @extend %borderstyle;
+        border-width: 1px;
+        font-size: $baseFontSize;
       }
 
-      .day {
+      thead {
 
-        margin: 4px;
-        text-align: left;
-        text-transform: uppercase;
-        font-size: $fontSizeSmall;
-
-      }
-    }
-
-    tbody {
-      height: 100%;
-    }
-
-    .week-number {
-      width: $weekNumberWidth;
-      border-top-color: transparent;
-      border-bottom-color: transparent;
-      border-left-color: transparent;
-
-      .title {
-        text-align: center;
-        font-size: $fontSizeMini;
-        color: $grayLight;
-      }
-    }
-
-    .week {
-
-      .day {
-
-        position: relative;
-        min-height: $weekMinHeight;
-        height: 100%;
-
-        &.active, &.today {
-          background: $green;
-          color: $white;
-          .title {
-            color: $white;
-          }
+        td {
+          border-top-color: transparent;
+          border-left-color: transparent;
+          border-right-color: transparent;
         }
+
+        .day {
+
+          margin: 4px;
+          text-align: left;
+          text-transform: uppercase;
+          font-size: $fontSizeSmall;
+
+        }
+      }
+
+      tbody {
+        height: 100%;
+      }
+
+      .week-number {
+        width: $weekNumberWidth;
+        border-top-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
 
         .title {
-          font-size: $fontSizeSmall;
-          color: $gray;
-          position: absolute;
-          top: 2px;
-          right: 2px;
+          text-align: center;
+          font-size: $fontSizeMini;
+          color: $grayLight;
         }
+      }
 
-        &.old {
+      .week {
+
+        .day {
+
+          position: relative;
+          min-height: $weekMinHeight;
+          height: 100%;
+
+          &.active, &.today {
+            background: $green;
+            color: $white;
+            .title {
+              color: $white;
+            }
+          }
+
           .title {
-            color: $grayLight;
-            text-shadow: 1px 1px $white;
+            font-size: $fontSizeSmall;
+            color: $gray;
+            position: absolute;
+            top: 2px;
+            right: 2px;
+          }
+
+          &.old {
+            .title {
+              color: $grayLight;
+              text-shadow: 1px 1px $white;
+            }
           }
         }
       }

@@ -17,7 +17,7 @@
       </button>
     </div>
     <div class="date-title">
-      <span>{{ calendar.title }} title</span>
+      <span>{{ title }}</span>
     </div>
     <div class="btn-group pull-right" data-toggle="buttons-radio">
       <button type="button" class="btn"
@@ -44,7 +44,9 @@
   </div>
 
   <div class="calendar" ng-switch="calendar.view">
-    <div ng-switch-when="month" class="calendar-view" ng-include="'views/partials/calendar-month.html'"></div>
+    <div ng-switch-when='month' class="calendar-view">
+      <div nl-calendar-month></div>
+    </div>
   </div>
 
 

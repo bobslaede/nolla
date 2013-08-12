@@ -52,7 +52,7 @@ angular.module('nolla')
     };
 
     $scope.newClient = function () {
-      clients.add({})
+      $scope.clients.add({})
         .then(function (addedClient) {
           var id = addedClient._id;
           var params = _.clone($state.params);
@@ -63,7 +63,7 @@ angular.module('nolla')
 
     $scope.deleteClient = function () {
       //$scope.model.client.$remove();
-      clients.remove($scope.model.client)
+      $scope.clients.remove($scope.model.client)
         .then(function () {
           $state.transitionTo($state.current.name, {});
         }, function (err) {
