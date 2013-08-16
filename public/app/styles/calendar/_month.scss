@@ -3,99 +3,105 @@
 
 .calendar-directive {
 
-  %borderstyle {
-    border-color: $inputBorder;
-    border-style: solid;
-  }
-
   .month {
-    position: relative;
+    $weekNumberWidth: 2em;
+    $weekMinHeight: 4em;
 
-    .event {
-      position: absolute;
+    @include flexbox();
+    @include flex(1, 0, auto);
+
+    .events-placeholder {
+      .events {
+        display: none;
+      }
     }
 
-    table {
-      $weekNumberWidth: 2em;
-      $weekMinHeight: 4em;
-      width: 100%;
-      height: 100%;
+    .events {
+
+      .event {
+        background: fade-out($blue, .1);
+        color: $white;
+        padding: 0px 6px;
+        margin: 1px;
+        cursor: pointer;
+      }
+    }
+
+    .month-view {
+      @include flexbox();
+      @include flex-direction(column);
+      @include flex-wrap(nowrap);
       @include flex(1, 0, auto);
 
-      td {
-        @extend %borderstyle;
-        border-width: 1px;
-        font-size: $baseFontSize;
+      .day {
+        @include flex(1, 0, 13%);
+
+        &.active, &.today {
+          background: lighten($yellow, 30%);
+          .title {
+          }
+        }
+
+        &.othermonth, &.past {
+          background: fade-out($grayLighter, .5);
+          .title {
+            color: $grayLight;
+            text-shadow: 1px 1px $white;
+          }
+        }
+
       }
 
-      thead {
+      .title {
+        padding: 2px;
+        text-align: right;
+        font-size: $fontSizeSmall;
+      }
 
-        td {
-          border-top-color: transparent;
-          border-left-color: transparent;
-          border-right-color: transparent;
+      .week-number {
+        @include flex(0, 0, $weekNumberWidth);
+        border-right: 1px solid $inputBorder;
+        .title {
+          color: $gray;
         }
+      }
+      .month-row {
+        @include flexbox();
+        @include flex-direction(row);
+        @include flex-wrap(nowrap);
+      }
+      .month-header {
+        @include flex(0, 0, auto);
+        border-bottom: 1px solid $inputBorder;
 
         .day {
 
-          margin: 4px;
+          padding: 4px;
           text-align: left;
           text-transform: uppercase;
           font-size: $fontSizeSmall;
 
         }
+
       }
+      .month-content {
+        border-bottom: 1px solid $inputBorder;
 
-      tbody {
-        height: 100%;
-      }
+        @include flexbox();
+        @include flex-direction(column);
+        @include flex-wrap(nowrap);
+        @include flex(1, 0, auto);
 
-      .week-number {
-        width: $weekNumberWidth;
-        border-top-color: transparent;
-        border-bottom-color: transparent;
-        border-left-color: transparent;
-
-        .title {
-          text-align: center;
-          font-size: $fontSizeMini;
-          color: $grayLight;
+        .week {
+          @include flex(1, 0, auto);
         }
-      }
-
-      .week {
 
         .day {
-
-          position: relative;
-          min-height: $weekMinHeight;
-          height: 100%;
-
-          &.active, &.today {
-            background: $green;
-            color: $white;
-            .title {
-              color: $white;
-            }
-          }
-
-          .title {
-            font-size: $fontSizeSmall;
-            color: $gray;
-            position: absolute;
-            top: 2px;
-            right: 2px;
-          }
-
-          &.old {
-            .title {
-              color: $grayLight;
-              text-shadow: 1px 1px $white;
-            }
-          }
+          border-right: 1px solid $inputBorder;
         }
       }
     }
+
 
   }
 }

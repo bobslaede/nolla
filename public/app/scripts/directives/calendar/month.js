@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('nolla.calendar')
-  .directive('nlCalendarMonth', function () {
+  .directive('nlCalendarMonth', function ($timeout) {
 
     return {
       restrict: 'A',
@@ -9,7 +9,10 @@ angular.module('nolla.calendar')
       replace: true,
       require: '^nlCalendar',
       controller : function ($scope) {
-        var self = this;
+
+      },
+      link : function ($scope, element, attrs, calendar) {
+        $scope.calendarCtrl = calendar;
 
         $scope.weeks = [];
         $scope.range = undefined;
@@ -18,7 +21,7 @@ angular.module('nolla.calendar')
         $scope.today = undefined;
 
         $scope.$on('calendar-draw', function () {
-          self.update();
+          $scope.update();
         });
 
         $scope.dayNames = [];
@@ -28,10 +31,11 @@ angular.module('nolla.calendar')
           m.add('days', 1);
         }
 
-        this.update = function () {
+        $scope.update = function () {
 
           $scope.currentMonth = $scope.calendar.date.month();
           $scope.today = moment().startOf('day');
+          $scope.todayString = $scope.today.format('L');
 
           var start = moment($scope.calendar.date).startOf('month').startOf('week');
           var end = moment($scope.calendar.date).endOf('month').endOf('week');
@@ -45,28 +49,76 @@ angular.module('nolla.calendar')
           $scope.calendar.range = $scope.range;
           $scope.calendarCtrl.getEvents();
 
-          this.draw();
+          $scope.draw();
         };
 
-        this.draw = function () {
+        $scope.positionEvents = _.throttle(function () {
+          $timeout(function () {
+
+            element.find('.events').each(function () {
+              var events = $(this);
+              var date = events.data('date');
+              var placeholder = element.find('.event-placeholder[data-date="' + date + '"]');
+              placeholder.append(events);
+            })
+
+          }, 0, false);
+        }, 100);
+
+        $scope.draw = function () {
           var iter = $scope.range.iterate('days');
           var weeks = [];
           var day, i = 0, w = 0;
 
           while (day = iter.next()) {
             var week = weeks[w] ? weeks[w] : weeks[w] = [];
+            day.dateString = day.format('L');
+            day.dayString = day.format('D');
+            day.currentMonth = day.isSame($scope.calendar.date, 'month');
+            day.isPast = day.isBefore($scope.today);
             week.push(day);
             week.number = day.isoWeek();
             i += 1;
             w += (i % 7 === 0 ? 1 : 0);
           }
           $scope.weeks = weeks;
-
+          $scope.positionEvents();
         };
 
-      },
-      link : function ($scope, element, attrs, calendar) {
-        $scope.calendarCtrl = calendar;
+        $scope.groupedEvents = {};
+
+        $scope.$watch('events', function () {
+          $scope.groupedEvents = {};
+          _.each($scope.events, function (origEvent) {
+
+            var start = moment(origEvent.start.dateTime);
+            var end = moment(origEvent.end.dateTime);
+
+            var isSame = start.isSame(end, 'day');
+
+            var startL = start.format('L');
+            var endL = end.format('L');
+
+            var event = {};
+            event.original = origEvent;
+            event.start = start;
+            event.end = end;
+            event.isSame = isSame;
+
+            var group;
+            if ($scope.groupedEvents[startL]) {
+              group = $scope.groupedEvents[startL];
+            } else {
+              group = $scope.groupedEvents[startL] = {
+                events : [],
+                date : startL
+              };
+            }
+            group.events.push(event);
+          });
+          $scope.positionEvents();
+        })
+
         calendar.draw();
       }
     };

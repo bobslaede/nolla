@@ -13,30 +13,24 @@ angular.module('nolla.calendar')
 
     return {
       restrict: 'A',
-      require: '^nlCalendarMonth',
+      require: ['^nlCalendarMonth'],
+      scope : {
+        nlCalendarMonthEvent: '='
+      },
       controller : function ($scope) {
 
       },
-      link : function ($scope, element, attrs, month) {
-        var start = moment($scope.event.start.dateTime);
-        var end = moment($scope.event.end.dateTime);
-        var parent = getParent(element[0]);
-        var cell = parent.querySelector('[data-date="' + start.format('L') + '"]');
-        console.log(cell);
+      compile : function (element, attrs) {
 
-        var position = function () {
-          var x = cell.offsetLeft;
-          var y = cell.offsetTop;
-          console.log(x, y);
-          element.css({
-            left : x,
-            top: y
-          });
-        };
+        return function ($scope, element, attrs, controllers) {
 
-        $window.addEventListener('resize', _.debounce(position, 100), false);
-        position();
+          var event = $scope.nlCalendarMonthEvent;
+          var date = event.date;
+          $scope.group = event;
+          var parent = getParent(element[0]).querySelector('table');
+          var cell = parent.querySelector('.event-placeholder[data-date="' + date + '"]');
 
+        }
       }
     };
 

@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('nolla')
-  .controller('Client', function ($scope, $state, $q, $log) {
+  .controller('Client', function ($scope, $state, $q, $log, sync) {
 
     var id = $state.params.clientId;
 
@@ -15,6 +15,14 @@ angular.module('nolla')
     $scope.model = {};
     $scope.model.client = undefined;
     $scope.locked = $scope.model.client === false;
+
+
+    $scope.events = sync('events');
+    $scope.events.getAll();
+
+    $scope.calendar = {};
+    $scope.calendar.date = moment();
+    $scope.calendar.events = $scope.events;
 
     $scope.clients.findById(id)
       .then(function (client) {

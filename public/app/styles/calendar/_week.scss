@@ -1,0 +1,147 @@
+.calendar-directive {
+
+  .week {
+    $weekNumberWidth: 4em;
+    $weekMinHeight: 2em;
+    @include flexbox();
+    @include flex(1, 0, auto);
+
+    .week-view {
+
+      @include flexbox();
+      @include flex-direction(column);
+      @include flex-wrap(nowrap);
+      @include flex(1, 0, auto);
+
+      .week-number {
+        @include flex(0, 0, $weekNumberWidth);
+        border-right: 1px solid $inputBorder;
+        .title {
+          padding: 4px;
+          text-align: right;
+          font-size: $fontSizeSmall;
+          color: $gray;
+        }
+      }
+
+      .week-row {
+        @include flexbox();
+        @include flex-direction(row);
+        @include flex-wrap(nowrap);
+      }
+
+      .week-header {
+        @include flex(0, 0, auto);
+        border-bottom: 1px solid $inputBorder;
+        padding-right: 20px;
+
+        .day {
+
+          padding: 4px;
+          text-align: left;
+          text-transform: uppercase;
+          font-size: $fontSizeSmall;
+
+        }
+
+      }
+
+      .week-fullday-events {
+        @include flex(0, 0, $weekMinHeight);
+        border-bottom: 1px solid $inputBorder;
+        padding-right: 20px;
+
+        .day {
+          border-right: 1px solid $inputBorder;
+        }
+
+      }
+      .week-hour-events {
+
+        @include flex(0, 0, auto);
+        @include flexbox();
+        min-height: 0;
+
+        border-bottom: 1px solid $inputBorder;
+
+        .week-hour-events-viewport {
+          @include flex(1, 0, auto);
+          @include flexbox();
+          overflow-y: scroll;
+          padding-right: 10px;
+          position: relative;
+        }
+
+        .day {
+          border-right: 1px solid $inputBorder;
+        }
+
+      }
+
+      .day {
+        @include flex(1, 0, 13%);
+
+        &.active, &.today {
+          background: lighten($yellow, 30%);
+          .title {
+          }
+        }
+
+        &.othermonth, &.past {
+          background: fade-out($grayLighter, .5);
+          .title {
+            color: $grayLight;
+            text-shadow: 1px 1px $white;
+          }
+        }
+
+        .hour {
+          position: relative;
+          .seperator {
+            border-top: 1px dotted $inputBorder;
+            border-bottom: 1px solid $inputBorder;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 50%;
+          }
+        }
+
+      }
+      .event {
+        box-sizing: border-box;
+        position: absolute;
+        min-height: 2em;
+        font-size: $fontSizeSmall;
+        width: 14%;
+        margin-left: -2px;
+        background: fade-out($blue, .1);
+        margin-right: 2px;
+        color: $white;
+        padding: 0px 6px;
+        .event-value {
+          font-size: $baseFontSize;
+        }
+      }
+
+      .hours {
+        @include flex(0, 0, $weekNumberWidth);
+        border-right: 1px solid $inputBorder;
+      }
+      .hour {
+        text-align: right;
+        font-size: $fontSizeSmall;
+        height: 40px;
+        .title {
+          padding: 2px;
+        }
+      }
+
+
+
+    }
+
+  }
+
+}

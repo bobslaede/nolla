@@ -1,10 +1,8 @@
 <div class="calendar-directive">
 
-  <div ng-include="'views/partials/calendar-edit-event.html'"></div>
-
   <div class="calendar-nav">
     <div class="btn-group">
-      <button type="button" class="btn" ng-click="setToday()">
+      <button type="button" class="btn" ng-click="today()">
         I dag
       </button>
     </div>
@@ -43,11 +41,13 @@
     </div>
   </div>
 
-  <div class="calendar" ng-switch="calendar.view">
+  <div class="calendar-view-holder" ng-switch="calendar.view">
     <div ng-switch-when='month' class="calendar-view">
       <div nl-calendar-month></div>
     </div>
+    <div ng-switch-when='week' class="calendar-view">
+      <div nl-calendar-week></div>
+    </div>
   </div>
-
 
 </div>

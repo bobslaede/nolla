@@ -1,0 +1,51 @@
+<div class="week">
+
+  <div class="week-view">
+    <div class="week-header week-row">
+      <div class="week-number">
+        <div class="title">{{ week.number }}</div>
+      </div>
+      <div class="day" ng-repeat="day in week"
+           ng-class="{ today : day.isToday, othermonth : !day.currentMonth, past : day.isPast }">{{day.dayName}}</div>
+    </div>
+    <div class="week-fullday-events week-row">
+      <div class="hours placeholder"></div>
+      <div class="day"
+           ng-class="{ today : day.isToday, othermonth : !day.currentMonth, past : day.isPast }"
+           ng-repeat="day in week">
+      </div>
+    </div>
+    <div class="week-hour-events week-row">
+        <div class="hours">
+          <div class="hour" ng-repeat="h in hours">
+            <div class="title">{{ h }}</div>
+          </div>
+        </div>
+      <div class="week-hour-events-viewport">
+        <div class="day"
+             ng-class="{ today : day.isToday, othermonth : !day.currentMonth, past : day.isPast }"
+             ng-repeat="day in week">
+          <div class="hour" ng-repeat="h in hours"><div class="seperator"></div></div>
+        </div>
+        <div class="event" ng-repeat="event in groupedEvents"
+             style="left:{{ event.pos.left }}%;top:{{ event.pos.top }}%;bottom:{{ event.pos.bottom }}%;">
+          <div class="event-value">
+            {{ event.original.summary }}
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="events-placeholder">
+
+    <div class="events" ng-repeat="group in groupedEvents" data-date="{{ group.date }}">
+      <div class="event" nl-event="event.original" ng-repeat="event in group.events" data-placement=top data-unique=1 bs-popover="'views/partials/calendar/event.html'">
+        {{ event.original.summary }} - {{ event.start | moment:'L' }}
+      </div>
+    </div>
+
+  </div>
+
+</div>

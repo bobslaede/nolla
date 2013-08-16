@@ -1,25 +1,34 @@
 <div class="month">
-  <table>
-    <thead>
-    <tr>
-      <td class="week-number">&nbsp;</td>
-      <td class="day" ng-repeat="day in dayNames">{{day}}</td>
-    </tr>
-    </thead>
-    <tbody>
-    <tr ng-repeat="week in weeks" class="week">
-      <td class="week-number">
-        <div class="title">{{ week.number }}</div>
-      </td>
-      <td ng-repeat="day in week">
-        <div class="day" data-date="{{ day | moment:'L' }}">
-          <div class="title">{{ day | moment:'D' }}</div>
+
+  <div class="month-view">
+    <div class="month-header month-row">
+      <div class="week-number">&nbsp;</div>
+      <div class="day" ng-repeat="day in dayNames">{{day}}</div>
+    </div>
+    <div class="month-content">
+      <div ng-repeat="week in weeks" class="week month-row">
+        <div class="week-number">
+          <div class="title">{{ week.number }}</div>
         </div>
-      </td>
-    </tr>
-    </tbody>
-  </table>
-  <div class="event" nl-calendar-month-event ng-repeat="event in events">
-    {{ event.summary }} - {{ event.start.dateTime | moment:'L' }}
+        <div class="day"
+             ng-class="{ today : day.dateString == todayString, othermonth : !day.currentMonth, past : day.isPast }"
+             ng-repeat="day in week">
+          <div class="title">{{ day.dayString }}</div>
+          <div class="event-placeholder" data-date="{{ day.dateString }}"></div>
+        </div>
+      </div>
+    </div>
+
   </div>
+
+  <div class="events-placeholder">
+
+    <div class="events" ng-repeat="group in groupedEvents" data-date="{{ group.date }}">
+      <div class="event" nl-event="event.original" ng-repeat="event in group.events" data-placement=top data-unique=1 bs-popover="'views/partials/calendar/event.html'">
+        {{ event.original.summary }} - {{ event.start | moment:'L' }}
+      </div>
+    </div>
+
+  </div>
+
 </div>

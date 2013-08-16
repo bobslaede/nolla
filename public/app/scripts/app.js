@@ -4,6 +4,7 @@ var nolla = angular.module('nolla', [
     'nolla.calendar',
     'ui.compat',
     'serviceUtilities',
+    '$strap.directives',
     'nolla.config'
   ])
   .config(function ($stateProvider, $urlRouterProvider, configProvider) {

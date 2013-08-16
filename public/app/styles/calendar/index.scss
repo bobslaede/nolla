@@ -8,30 +8,35 @@
   .calendar-nav {
     @include flexbox();
     @include flex(0, 0, auto);
-    @include align-items(streched);
     @include flex-direction(row);
     @include flex-wrap(wrap);
 
+    .btn-group, .date-title {
+      @include align-self(flex-start);
+    }
+
     .pull-right {
       float: none;
+      @include align-self(flex-end);
     }
 
     .date-title {
-      display: inline-block;
+      display: block;
       margin:0 1em;
       line-height: 30px;
+      @include flex(10, 0, auto);
     }
   }
 
-  .calendar {
-    @include flex(10, 0, auto);
+  .calendar-view-holder {
+    @include flex(1, 0, auto);
+    @include flexbox();
     margin-top: 15px;
 
     .calendar-view {
-      height: 100%;
-      width: 100%;
+      @include flexbox();
+      @include flex(1, 0, auto);
     }
-
   }
 
 }

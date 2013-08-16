@@ -1,6 +1,7 @@
 'use strict';
 
-angular.module('nolla.calendar', [])
+angular.module('nolla.calendar', [
+    '$strap.directives'])
   .directive('nlCalendar', function () {
     return {
       restrict: 'A',
@@ -23,12 +24,17 @@ angular.module('nolla.calendar', [])
         this.draw = function () {
           $scope.$broadcast('calendar-draw');
           $scope.title = '';
+          if (!$scope.calendar.date) return;
+
           switch ($scope.calendar.view) {
             case 'month':
             default:
               $scope.title = $scope.calendar.date.format('MMMM YYYY');
               break;
             case 'week':
+              if (!$scope.calendar.range) {
+                break;
+              }
               $scope.title = $scope.calendar.range.start.format('L')
                   + ' - '
                   + $scope.calendar.range.end.format('L');
@@ -71,6 +77,13 @@ angular.module('nolla.calendar', [])
           var amount = Math.abs(n);
           $scope.calendar.date[method](amount, type);
           self.update();
+        };
+
+        $scope.today = this.today = function () {
+          if (!$scope.calendar.date.isSame(moment(), 'day')) {
+            $scope.calendar.date = moment();
+            self.update();
+          }
         };
 
       },

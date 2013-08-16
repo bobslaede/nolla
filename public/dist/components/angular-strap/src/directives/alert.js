@@ -12,6 +12,12 @@ angular.module('$strap.directives')
         setter = getter.assign,
         value = getter(scope);
 
+      var closeAlert = function closeAlertFn(delay) {
+        $timeout(function(){
+          element.alert('close');
+        }, delay * 1);
+      };
+
       // For static alerts
       if(!attrs.bsAlert) {
 
@@ -19,6 +25,9 @@ angular.module('$strap.directives')
         if(angular.isUndefined(attrs.closeButton) || (attrs.closeButton !== '0' && attrs.closeButton !== 'false')) {
           element.prepend('<button type="button" class="close" data-dismiss="alert">&times;</button>');
         }
+
+        // Support close-after attribute
+        if(attrs.closeAfter) closeAlert(attrs.closeAfter);
 
       } else {
 
@@ -42,6 +51,10 @@ angular.module('$strap.directives')
             oldValue.type && element.removeClass('alert-' + oldValue.type);
             newValue.type && element.addClass('alert-' + newValue.type);
           }
+
+          // Support close-after attribute
+          if(angular.isDefined(newValue.closeAfter)) closeAlert(newValue.closeAfter);
+          else if(attrs.closeAfter) closeAlert(attrs.closeAfter);
 
           // Setup close button
           if(angular.isUndefined(attrs.closeButton) || (attrs.closeButton !== '0' && attrs.closeButton !== 'false')) {

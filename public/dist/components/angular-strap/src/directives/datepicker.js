@@ -133,13 +133,25 @@ angular.module('$strap.directives')
           }
         });
 
+        // Update start-date when changed
+        attrs.$observe('startDate', function(value) {
+          element.datepicker('setStartDate',value);
+        });
+
+        // Update end-date when changed
+        attrs.$observe('endDate', function(value) {
+          element.datepicker('setEndDate',value);
+        });
+
       }
 
       // Support add-on
       var component = element.siblings('[data-toggle="datepicker"]');
       if(component.length) {
         component.on('click', function() {
-          element.trigger('focus');
+          if (!element.prop('disabled')) { // Hack check for IE 8
+            element.trigger('focus');
+          }
         });
       }
 
