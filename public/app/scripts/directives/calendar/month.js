@@ -98,7 +98,7 @@ angular.module('nolla.calendar')
             })
 
           }, 0, false);
-        }, 100);
+        }, 10);
 
         $scope.draw = function () {
           var iter = $scope.range.iterate('days');

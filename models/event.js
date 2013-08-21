@@ -25,6 +25,7 @@ var schema = new Schema({
     type : Schema.Types.ObjectId,
     ref : 'Client'
   },
+  allday : { type: Boolean, default: false },
   recurrence : [{ type: String, default: "" }]
 });
 

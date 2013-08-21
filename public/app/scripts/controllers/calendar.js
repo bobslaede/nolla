@@ -15,9 +15,17 @@ angular.module('nolla')
       .then(function (view) {
         $scope.calendar.view = view;
       });
+    storage.get('calendar-date', moment())
+      .then(function (date) {
+        $scope.calendar.date = moment(date);
+      });
 
     $scope.$on('calendar-update-view', function (e, view) {
       storage.set('calendar-view', view);
+    });
+
+    $scope.$on('calendar-update-date', function (e, date) {
+      storage.set('calendar-date', date);
     });
 
   });

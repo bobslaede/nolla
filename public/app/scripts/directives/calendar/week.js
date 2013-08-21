@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('nolla.calendar')
-  .directive('nlCalendarWeek', function ($timeout) {
+  .directive('nlCalendarWeek', function ($timeout, eventsHelpers) {
 
     return {
       restrict: 'A',
@@ -82,6 +82,9 @@ angular.module('nolla.calendar')
 
         $scope.$watch('events', function () {
           $scope.groupedEvents = [];
+
+          var n = eventsHelpers.organizeEventsByDay($scope.events);
+          console.log(n);
 
           var minInDay = 60 * 24;
 
