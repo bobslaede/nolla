@@ -2,335 +2,646 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="342fdae3-dca1-48ea-93cd-e022978dd8f9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/views/partials/calendar/event.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/directives/calendar/event.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/views/partials/calendar/week.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/directives/calendar/week.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/angular-cookies/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/angular-cookies/angular-cookies.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/angular-cookies/angular-cookies.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/angular-cookies/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/angular-resource/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/angular-resource/angular-resource.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/angular-resource/angular-resource.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/angular-resource/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/angular-sanitize/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/angular-sanitize/angular-sanitize.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/angular-sanitize/angular-sanitize.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/angular-sanitize/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/angular-scenario/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/angular-scenario/angular-scenario.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/angular-scenario/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/angular-scenario/jstd-scenario-adapter-config.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/angular-scenario/jstd-scenario-adapter.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/bootstrap-datepicker/component.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/bootstrap/component.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/es5-shim/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/es5-shim/CHANGES" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/es5-shim/CONTRIBUTORS.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/es5-shim/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/es5-shim/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/es5-shim/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/es5-shim/es5-sham.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/es5-shim/es5-sham.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/es5-shim/es5-sham.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/es5-shim/es5-shim.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/es5-shim/es5-shim.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/es5-shim/es5-shim.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/es5-shim/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/es5-shim/tests/helpers/h-kill.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/es5-shim/tests/helpers/h-matchers.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/es5-shim/tests/helpers/h.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/es5-shim/tests/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/es5-shim/tests/index.min.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/es5-shim/tests/lib/jasmine-html.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/es5-shim/tests/lib/jasmine.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/es5-shim/tests/lib/jasmine.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/es5-shim/tests/lib/jasmine_favicon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/es5-shim/tests/lib/json2.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/es5-shim/tests/spec/s-array.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/es5-shim/tests/spec/s-date.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/es5-shim/tests/spec/s-function.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/es5-shim/tests/spec/s-number.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/es5-shim/tests/spec/s-object.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/es5-shim/tests/spec/s-string.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/json3/.gitmodules" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/json3/.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/json3/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/json3/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/json3/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/json3/build.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/json3/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/json3/jsl.conf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/json3/lib/json3.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/json3/lib/json3.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/json3/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/json3/page/background.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/json3/page/logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/json3/page/page.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/json3/page/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/json3/test/test_browser.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/json3/test/test_json3.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/json3/vendor/closure-compiler.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/json3/vendor/curl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/json3/vendor/prototype.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/json3/vendor/require.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/underscore/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/underscore/.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/underscore/.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/underscore/CNAME" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/underscore/CONTRIBUTING.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/underscore/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/underscore/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/underscore/Rakefile" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/underscore/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/underscore/docs/docco.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/underscore/docs/favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/underscore/docs/images/background.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/underscore/docs/images/underscore.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/underscore/docs/underscore.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/underscore/favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/underscore/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/underscore/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/underscore/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/underscore/test/arrays.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/underscore/test/chaining.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/underscore/test/collections.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/underscore/test/functions.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/underscore/test/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/underscore/test/objects.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/underscore/test/speed.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/underscore/test/utility.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/underscore/test/vendor/jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/underscore/test/vendor/jslitmus.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/underscore/test/vendor/qunit.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/underscore/test/vendor/qunit.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/underscore/test/vendor/runner.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/underscore/underscore-min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/components/underscore/underscore.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/bootstrap-datepicker/.hgtags" afterPath="$PROJECT_DIR$/public/dist/components/bootstrap-datepicker/.hgtags" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/AESKey.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/AESKey.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/AESKeyTest.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/AESKeyTest.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/prng/ARC4.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/prng/ARC4.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/ARC4Test.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/ARC4Test.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/ArrayUtil.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/ArrayUtil.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/math/BarrettReduction.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/math/BarrettReduction.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/Base64.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/Base64.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/math/BigInteger.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/math/BigInteger.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/BigIntegerTest.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/BigIntegerTest.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/BlowFishKey.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/BlowFishKey.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/BlowFishKeyTest.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/BlowFishKeyTest.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/ByteString.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/ByteString.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/CBCMode.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/CBCMode.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/CBCModeTest.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/CBCModeTest.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/CFB8Mode.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/CFB8Mode.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/CFB8ModeTest.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/CFB8ModeTest.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/CFBMode.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/CFBMode.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/CFBModeTest.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/CFBModeTest.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/bootstrap/CHANGELOG.md" afterPath="$PROJECT_DIR$/public/dist/components/bootstrap/CHANGELOG.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/bootstrap-datepicker/CHANGELOG.md" afterPath="$PROJECT_DIR$/public/dist/components/bootstrap-datepicker/CHANGELOG.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/bootstrap/CONTRIBUTING.md" afterPath="$PROJECT_DIR$/public/dist/components/bootstrap/CONTRIBUTING.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/CTRMode.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/CTRMode.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/CTRModeTest.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/CTRModeTest.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/CipherSuites.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/CipherSuites.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/math/ClassicReduction.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/math/ClassicReduction.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/Crypto.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/Crypto.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/DER.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/DER.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/DESKey.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/DESKey.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/DESKeyTest.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/DESKeyTest.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/ECBMode.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/ECBMode.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/ECBModeTest.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/ECBModeTest.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gruntfile.js" afterPath="$PROJECT_DIR$/Gruntfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/HMAC.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/HMAC.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/HMACTest.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/HMACTest.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/Hex.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/Hex.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/IAsn1Type.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/IAsn1Type.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/ICipher.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/ICipher.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/IConnectionState.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/IConnectionState.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/IHMAC.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/IHMAC.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/IHash.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/IHash.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/IMode.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/IMode.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/prng/IPRNG.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/prng/IPRNG.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/IPad.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/IPad.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/math/IReduction.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/math/IReduction.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/ISecurityParameters.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/ISecurityParameters.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/IStreamCipher.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/IStreamCipher.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/ISymmetricKey.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/ISymmetricKey.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/ITestHarness.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/ITestHarness.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/IVMode.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/IVMode.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/Integer.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/Integer.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/KeyExchanges.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/KeyExchanges.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/MAC.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/MAC.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/MACs.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/MACs.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/MD2.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/MD2.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/MD2Test.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/MD2Test.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/gsolo/encryption/MD5.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/gsolo/encryption/MD5.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/MD5.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/MD5.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/MD5Test.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/MD5Test.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/bootstrap/Makefile" afterPath="$PROJECT_DIR$/public/dist/components/bootstrap/Makefile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/Memory.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/Memory.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/math/MontgomeryReduction.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/math/MontgomeryReduction.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/NullPad.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/NullPad.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/math/NullReduction.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/math/NullReduction.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/OFBMode.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/OFBMode.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/OFBModeTest.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/OFBModeTest.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/OID.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/OID.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/ObjectIdentifier.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/ObjectIdentifier.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/PEM.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/PEM.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/PKCS5.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/PKCS5.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/PrintableString.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/PrintableString.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/bootstrap/README.md" afterPath="$PROJECT_DIR$/public/dist/components/bootstrap/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/bootstrap-datepicker/README.md" afterPath="$PROJECT_DIR$/public/dist/components/bootstrap-datepicker/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/bootstrap-select/README.md" afterPath="$PROJECT_DIR$/public/dist/components/bootstrap-select/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/jquery/README.md" afterPath="$PROJECT_DIR$/public/dist/components/jquery/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/RSAKeyTest.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/RSAKeyTest.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/prng/Random.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/prng/Random.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/SHA1.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/SHA1.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/SHA1Test.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/SHA1Test.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/SHA224.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/SHA224.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/SHA224Test.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/SHA224Test.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/SHA256.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/SHA256.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/SHA256Test.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/SHA256Test.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/SHABase.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/SHABase.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/SSLEvent.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/SSLEvent.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/SSLSecurityParameters.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/SSLSecurityParameters.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/Sequence.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/Sequence.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/Set.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/Set.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/SimpleIVMode.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/SimpleIVMode.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSConfig.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSConfig.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSConnectionState.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSConnectionState.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSError.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSError.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSEvent.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSEvent.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/prng/TLSPRF.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/prng/TLSPRF.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/TLSPRFTest.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/TLSPRFTest.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/TLSPad.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/TLSPad.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSSecurityParameters.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSSecurityParameters.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSSocket.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSSocket.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSSocketEvent.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSSocketEvent.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/TestCase.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/TestCase.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/TripleDESKey.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/TripleDESKey.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/TripleDESKeyTest.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/TripleDESKeyTest.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/Type.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/Type.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/UTCTime.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/UTCTime.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/cert/X509Certificate.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/cert/X509Certificate.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/cert/X509CertificateCollection.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/cert/X509CertificateCollection.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/XTeaKey.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/XTeaKey.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/XTeaKeyTest.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/XTeaKeyTest.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/styles/mixins/_flex.scss" afterPath="$PROJECT_DIR$/public/app/styles/mixins/_flex.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/styles/calendar/_month.scss" afterPath="$PROJECT_DIR$/public/app/styles/calendar/_month.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/styles/calendar/_week.scss" afterPath="$PROJECT_DIR$/public/app/styles/calendar/_week.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/angular-strap/src/directives/alert.js" afterPath="$PROJECT_DIR$/public/dist/components/angular-strap/src/directives/alert.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/angular-strap/dist/angular-strap.js" afterPath="$PROJECT_DIR$/public/dist/components/angular-strap/dist/angular-strap.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/angular-strap/dist/angular-strap.min.js" afterPath="$PROJECT_DIR$/public/dist/components/angular-strap/dist/angular-strap.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/angular.js" afterPath="$PROJECT_DIR$/public/app/angular.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/scripts/app.js" afterPath="$PROJECT_DIR$/public/app/scripts/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/bootstrap/docs/base-css.html" afterPath="$PROJECT_DIR$/public/dist/components/bootstrap/docs/base-css.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/math/bi_internal.as" afterPath="$PROJECT_DIR$/public/dist/components/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/math/bi_internal.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/bootstrap/docs/assets/js/bootstrap-affix.js" afterPath="$PROJECT_DIR$/public/dist/components/bootstrap/docs/assets/js/bootstrap-affix.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/bootstrap/js/bootstrap-affix.js" afterPath="$PROJECT_DIR$/public/dist/components/bootstrap/js/bootstrap-affix.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/bootstrap/docs/assets/js/bootstrap-alert.js" afterPath="$PROJECT_DIR$/public/dist/components/bootstrap/docs/assets/js/bootstrap-alert.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/bootstrap/js/bootstrap-alert.js" afterPath="$PROJECT_DIR$/public/dist/components/bootstrap/js/bootstrap-alert.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/bootstrap/docs/assets/js/bootstrap-button.js" afterPath="$PROJECT_DIR$/public/dist/components/bootstrap/docs/assets/js/bootstrap-button.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/bootstrap/js/bootstrap-button.js" afterPath="$PROJECT_DIR$/public/dist/components/bootstrap/js/bootstrap-button.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/bootstrap/docs/assets/js/bootstrap-carousel.js" afterPath="$PROJECT_DIR$/public/dist/components/bootstrap/docs/assets/js/bootstrap-carousel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/bootstrap/js/bootstrap-carousel.js" afterPath="$PROJECT_DIR$/public/dist/components/bootstrap/js/bootstrap-carousel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/bootstrap/docs/assets/js/bootstrap-collapse.js" afterPath="$PROJECT_DIR$/public/dist/components/bootstrap/docs/assets/js/bootstrap-collapse.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/bootstrap/js/bootstrap-collapse.js" afterPath="$PROJECT_DIR$/public/dist/components/bootstrap/js/bootstrap-collapse.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/bootstrap-datepicker/js/locales/bootstrap-datepicker.el.js" afterPath="$PROJECT_DIR$/public/dist/components/bootstrap-datepicker/js/locales/bootstrap-datepicker.el.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/bootstrap-datepicker/js/locales/bootstrap-datepicker.fr.js" afterPath="$PROJECT_DIR$/public/dist/components/bootstrap-datepicker/js/locales/bootstrap-datepicker.fr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/bootstrap-datepicker/js/locales/bootstrap-datepicker.id.js" afterPath="$PROJECT_DIR$/public/dist/components/bootstrap-datepicker/js/locales/bootstrap-datepicker.id.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/bootstrap-datepicker/js/bootstrap-datepicker.js" afterPath="$PROJECT_DIR$/public/dist/components/bootstrap-datepicker/js/bootstrap-datepicker.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/bootstrap-datepicker/js/locales/bootstrap-datepicker.pt-BR.js" afterPath="$PROJECT_DIR$/public/dist/components/bootstrap-datepicker/js/locales/bootstrap-datepicker.pt-BR.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/bootstrap-datepicker/js/locales/bootstrap-datepicker.pt.js" afterPath="$PROJECT_DIR$/public/dist/components/bootstrap-datepicker/js/locales/bootstrap-datepicker.pt.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/bootstrap-datepicker/js/locales/bootstrap-datepicker.rs-latin.js" afterPath="$PROJECT_DIR$/public/dist/components/bootstrap-datepicker/js/locales/bootstrap-datepicker.rs-latin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/bootstrap-datepicker/js/locales/bootstrap-datepicker.sv.js" afterPath="$PROJECT_DIR$/public/dist/components/bootstrap-datepicker/js/locales/bootstrap-datepicker.sv.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/bootstrap-datepicker/js/locales/bootstrap-datepicker.tr.js" afterPath="$PROJECT_DIR$/public/dist/components/bootstrap-datepicker/js/locales/bootstrap-datepicker.tr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/bootstrap-datepicker/js/locales/bootstrap-datepicker.zh-CN.js" afterPath="$PROJECT_DIR$/public/dist/components/bootstrap-datepicker/js/locales/bootstrap-datepicker.zh-CN.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/bootstrap-datepicker/js/locales/bootstrap-datepicker.zh-TW.js" afterPath="$PROJECT_DIR$/public/dist/components/bootstrap-datepicker/js/locales/bootstrap-datepicker.zh-TW.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/bootstrap/docs/assets/js/bootstrap-dropdown.js" afterPath="$PROJECT_DIR$/public/dist/components/bootstrap/docs/assets/js/bootstrap-dropdown.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/bootstrap/js/bootstrap-dropdown.js" afterPath="$PROJECT_DIR$/public/dist/components/bootstrap/js/bootstrap-dropdown.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/bootstrap/docs/assets/js/bootstrap-modal.js" afterPath="$PROJECT_DIR$/public/dist/components/bootstrap/docs/assets/js/bootstrap-modal.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/bootstrap/js/bootstrap-modal.js" afterPath="$PROJECT_DIR$/public/dist/components/bootstrap/js/bootstrap-modal.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/bootstrap/docs/assets/js/bootstrap-popover.js" afterPath="$PROJECT_DIR$/public/dist/components/bootstrap/docs/assets/js/bootstrap-popover.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/bootstrap/js/bootstrap-popover.js" afterPath="$PROJECT_DIR$/public/dist/components/bootstrap/js/bootstrap-popover.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/bootstrap/docs/assets/js/bootstrap-scrollspy.js" afterPath="$PROJECT_DIR$/public/dist/components/bootstrap/docs/assets/js/bootstrap-scrollspy.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/bootstrap/js/bootstrap-scrollspy.js" afterPath="$PROJECT_DIR$/public/dist/components/bootstrap/js/bootstrap-scrollspy.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/bootstrap-select/bootstrap-select.css" afterPath="$PROJECT_DIR$/public/dist/components/bootstrap-select/bootstrap-select.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/bootstrap-select/bootstrap-select.js" afterPath="$PROJECT_DIR$/public/dist/components/bootstrap-select/bootstrap-select.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/bootstrap-select/bootstrap-select.min.css" afterPath="$PROJECT_DIR$/public/dist/components/bootstrap-select/bootstrap-select.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/bootstrap-select/bootstrap-select.min.js" afterPath="$PROJECT_DIR$/public/dist/components/bootstrap-select/bootstrap-select.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/bootstrap/docs/assets/js/bootstrap-tab.js" afterPath="$PROJECT_DIR$/public/dist/components/bootstrap/docs/assets/js/bootstrap-tab.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/bootstrap/js/bootstrap-tab.js" afterPath="$PROJECT_DIR$/public/dist/components/bootstrap/js/bootstrap-tab.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/bootstrap/docs/assets/js/bootstrap-tooltip.js" afterPath="$PROJECT_DIR$/public/dist/components/bootstrap/docs/assets/js/bootstrap-tooltip.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/bootstrap/js/bootstrap-tooltip.js" afterPath="$PROJECT_DIR$/public/dist/components/bootstrap/js/bootstrap-tooltip.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/bootstrap/docs/assets/js/bootstrap-transition.js" afterPath="$PROJECT_DIR$/public/dist/components/bootstrap/docs/assets/js/bootstrap-transition.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/bootstrap/js/bootstrap-transition.js" afterPath="$PROJECT_DIR$/public/dist/components/bootstrap/js/bootstrap-transition.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/bootstrap/docs/assets/js/bootstrap-typeahead.js" afterPath="$PROJECT_DIR$/public/dist/components/bootstrap/docs/assets/js/bootstrap-typeahead.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/bootstrap/js/bootstrap-typeahead.js" afterPath="$PROJECT_DIR$/public/dist/components/bootstrap/js/bootstrap-typeahead.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/bootstrap/docs/assets/js/bootstrap.js" afterPath="$PROJECT_DIR$/public/dist/components/bootstrap/docs/assets/js/bootstrap.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/bootstrap/less/bootstrap.less" afterPath="$PROJECT_DIR$/public/dist/components/bootstrap/less/bootstrap.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/bootstrap/docs/assets/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/public/dist/components/bootstrap/docs/assets/js/bootstrap.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/angular-strap/bower.json" afterPath="$PROJECT_DIR$/public/dist/components/angular-strap/bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/bootstrap-select/bower.json" afterPath="$PROJECT_DIR$/public/dist/components/bootstrap-select/bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/jquery/bower.json" afterPath="$PROJECT_DIR$/public/dist/components/jquery/bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/bootstrap-datepicker/build/build_standalone.less" afterPath="$PROJECT_DIR$/public/dist/components/bootstrap-datepicker/build/build_standalone.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/views/calendar.html" afterPath="$PROJECT_DIR$/public/app/views/calendar.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/views/calendar.html" afterPath="$PROJECT_DIR$/public/dist/views/calendar.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/scripts/controllers/calendar.js" afterPath="$PROJECT_DIR$/public/app/scripts/controllers/calendar.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/bootstrap/docs/examples/carousel.html" afterPath="$PROJECT_DIR$/public/dist/components/bootstrap/docs/examples/carousel.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/views/client.html" afterPath="$PROJECT_DIR$/public/dist/views/client.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/scripts/controllers/client.js" afterPath="$PROJECT_DIR$/public/app/scripts/controllers/client.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/bootstrap-datepicker/tests/suites/component.js" afterPath="$PROJECT_DIR$/public/dist/components/bootstrap-datepicker/tests/suites/component.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/jquery/component.json" afterPath="$PROJECT_DIR$/public/dist/components/jquery/component.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/bootstrap/docs/components.html" afterPath="$PROJECT_DIR$/public/dist/components/bootstrap/docs/components.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/bootstrap/composer.json" afterPath="$PROJECT_DIR$/public/dist/components/bootstrap/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/bootstrap/less/tests/css-tests.html" afterPath="$PROJECT_DIR$/public/dist/components/bootstrap/less/tests/css-tests.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/bootstrap/docs/customize.html" afterPath="$PROJECT_DIR$/public/dist/components/bootstrap/docs/customize.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/bootstrap/docs/templates/pages/customize.mustache" afterPath="$PROJECT_DIR$/public/dist/components/bootstrap/docs/templates/pages/customize.mustache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/bootstrap-datepicker/css/datepicker.css" afterPath="$PROJECT_DIR$/public/dist/components/bootstrap-datepicker/css/datepicker.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/angular-strap/src/directives/datepicker.js" afterPath="$PROJECT_DIR$/public/dist/components/angular-strap/src/directives/datepicker.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/bootstrap-datepicker/less/datepicker.less" afterPath="$PROJECT_DIR$/public/dist/components/bootstrap-datepicker/less/datepicker.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/angular-strap/test/unit/directives/datepickerSpec.js" afterPath="$PROJECT_DIR$/public/dist/components/angular-strap/test/unit/directives/datepickerSpec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/bootstrap-datepicker/tests/suites/events.js" afterPath="$PROJECT_DIR$/public/dist/components/bootstrap-datepicker/tests/suites/events.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/bootstrap/docs/extend.html" afterPath="$PROJECT_DIR$/public/dist/components/bootstrap/docs/extend.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/bootstrap/docs/templates/pages/extend.mustache" afterPath="$PROJECT_DIR$/public/dist/components/bootstrap/docs/templates/pages/extend.mustache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/bootstrap/docs/getting-started.html" afterPath="$PROJECT_DIR$/public/dist/components/bootstrap/docs/getting-started.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/bootstrap/docs/templates/pages/getting-started.mustache" afterPath="$PROJECT_DIR$/public/dist/components/bootstrap/docs/templates/pages/getting-started.mustache" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/components/font-awesome/font/FontAwesome.otf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/angular-1.2.0-4bd8b81.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/components/font-awesome/font/fontawesome-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/components/font-awesome/font/fontawesome-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/components/font-awesome/font/fontawesome-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/components/bootstrap/img/glyphicons-halflings-white.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/components/bootstrap/img/glyphicons-halflings.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/$animate:notcsel.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/$cacheFactory:iid.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/$compile:ctreq.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/$compile:iscp.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/$compile:multidir.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/$compile:nodomevents.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/$compile:nonassign.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/$compile:selmulti.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/$compile:tpload.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/$compile:tplrt.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/$compile:uterdir.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/$controller:noscp.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/$httpBackend:noxhr.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/$injector:cdep.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/$injector:itkn.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/$injector:modulerr.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/$injector:nomod.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/$injector:pget.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/$injector:unpr.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/$interpolate:interr.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/$interpolate:noconcat.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/$location:ihshprfx.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/$location:ipthprfx.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/$location:isrcharg.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/$parse:isecfld.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/$parse:isecfn.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/$parse:lexerr.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/$parse:syntax.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/$parse:ueoe.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/$resource:badargs.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/$resource:badcfg.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/$rootScope:infdig.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/$rootScope:inprog.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/$sanitize:badparse.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/$sce:icontext.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/$sce:iequirks.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/$sce:insecurl.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/$sce:itype.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/$sce:unsafe.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/components/bootstrap/.bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/.htaccess" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/AUTO.$injector.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/AUTO.$provide.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/AUTO.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/cookbook/advancedform.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/angular-animate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/angular-animate.min.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/angular-animate.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/components/angular-bootstrap-prettify.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/components/angular-bootstrap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/angular-cookies.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/angular-cookies.min.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/angular-cookies.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/angular-loader.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/angular-loader.min.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/angular-loader.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_af-na.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_af-za.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_af.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_am-et.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_am.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ar-001.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ar-ae.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ar-bh.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ar-dz.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ar-eg.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ar-iq.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ar-jo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ar-kw.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ar-lb.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ar-ly.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ar-ma.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ar-om.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ar-qa.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ar-sa.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ar-sd.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ar-sy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ar-tn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ar-ye.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_bg-bg.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_bg.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_bn-bd.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_bn-in.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_bn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ca-ad.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ca-es.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ca.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_chr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_cs-cz.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_cs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_cy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_da-dk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_da.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_de-at.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_de-be.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_de-ch.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_de-de.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_de-li.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_de-lu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_de.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_el-cy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_el-gr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_el-polyton.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_el.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_en-as.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_en-au.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_en-bb.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_en-be.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_en-bm.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_en-bw.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_en-bz.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_en-ca.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_en-dsrt-us.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_en-dsrt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_en-fm.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_en-gb.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_en-gu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_en-gy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_en-hk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_en-ie.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_en-in.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_en-iso.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_en-jm.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_en-mh.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_en-mp.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_en-mt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_en-mu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_en-na.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_en-nz.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_en-ph.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_en-pk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_en-pr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_en-pw.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_en-sg.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_en-tc.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_en-tt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_en-um.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_en-us.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_en-vg.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_en-vi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_en-za.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_en-zw.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_en-zz.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_en.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_es-419.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_es-ar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_es-bo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_es-cl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_es-co.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_es-cr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_es-do.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_es-ea.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_es-ec.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_es-es.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_es-gq.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_es-gt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_es-hn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_es-ic.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_es-mx.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_es-ni.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_es-pa.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_es-pe.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_es-pr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_es-py.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_es-sv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_es-us.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_es-uy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_es-ve.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_es.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_et-ee.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_et.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_eu-es.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_eu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_fa-af.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_fa-ir.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_fa.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_fi-fi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_fi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_fil-ph.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_fil.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_fr-be.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_fr-bf.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_fr-bi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_fr-bj.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_fr-bl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_fr-ca.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_fr-cd.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_fr-cf.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_fr-cg.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_fr-ch.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_fr-ci.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_fr-cm.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_fr-dj.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_fr-fr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_fr-ga.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_fr-gf.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_fr-gn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_fr-gp.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_fr-gq.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_fr-km.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_fr-lu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_fr-mc.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_fr-mf.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_fr-mg.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_fr-ml.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_fr-mq.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_fr-ne.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_fr-re.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_fr-rw.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_fr-sn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_fr-td.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_fr-tg.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_fr-yt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_fr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_gl-es.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_gl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_gsw-ch.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_gsw.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_gu-in.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_gu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_haw.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_he-il.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_he.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_hi-in.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_hi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_hr-hr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_hr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_hu-hu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_hu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_id-id.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_id.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_in.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_is-is.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_is.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_it-ch.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_it-it.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_it-sm.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_it.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_iw.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ja-jp.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ja.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_kn-in.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_kn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ko-kr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ko.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ln-cd.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ln-cg.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ln.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_lt-lt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_lt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_lv-lv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_lv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ml-in.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ml.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_mo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_mr-in.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_mr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ms-bn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ms-my.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ms.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_mt-mt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_mt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_nl-aw.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_nl-be.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_nl-cw.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_nl-nl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_nl-sx.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_nl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_no.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_or-in.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_or.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_pl-pl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_pl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_pt-ao.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_pt-br.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_pt-gw.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_pt-mz.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_pt-pt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_pt-st.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_pt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ro-md.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ro-ro.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ro.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ru-md.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ru-ru.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ru-ua.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ru.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_sk-sk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_sk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_sl-si.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_sl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_sq-al.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_sq.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_sr-cyrl-ba.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_sr-cyrl-me.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_sr-cyrl-rs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_sr-cyrl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_sr-latn-ba.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_sr-latn-me.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_sr-latn-rs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_sr-latn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_sr-rs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_sr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_sv-fi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_sv-se.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_sv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_sw-ke.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_sw-tz.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_sw.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ta-in.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ta-lk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ta.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_te-in.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_te.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_th-th.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_th.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_tl-ph.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_tl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_tr-tr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_tr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_uk-ua.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_uk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ur-in.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ur-pk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ur.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_vi-vn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_vi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_zh-cn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_zh-hans-cn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_zh-hans-hk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_zh-hans-mo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_zh-hans-sg.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_zh-hans.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_zh-hant-hk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_zh-hant-mo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_zh-hant-tw.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_zh-hant.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_zh-hk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_zh-tw.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_zh.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_zu-za.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_zu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/angular-mocks.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/angular-resource.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/angular-resource.min.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/angular-resource.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/angular-route.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/angular-route.min.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/angular-route.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/angular-sanitize.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/angular-sanitize.min.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/angular-sanitize.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/angular-scenario.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/angular-touch.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/angular-touch.min.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/angular-touch.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/angular.IModule.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/angular.bind.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/angular.bootstrap.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/angular.copy.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/angular.element.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/angular.equals.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/angular.extend.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/angular.forEach.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/angular.fromJson.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/angular.identity.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/angular.injector.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/angular.isArray.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/angular.isDate.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/angular.isDefined.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/angular.isElement.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/angular.isFunction.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/angular.isNumber.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/angular.isObject.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/angular.isString.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/angular.isUndefined.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/angular.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/angular.lowercase.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/angular.min.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/angular.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/angular.mock.TzDate.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/angular.mock.dump.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/angular.mock.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/angular.mock.inject.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/angular.mock.module.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/angular.module.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/angular.noop.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/angular.toJson.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/angular.uppercase.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/angular.version.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/appcache-offline.manifest" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/appcache.manifest" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/components/bootstrap/css/bootstrap-responsive.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/components/bootstrap/css/bootstrap-responsive.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/components/bootstrap/css/bootstrap.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/guide/bootstrap.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/components/bootstrap/js/bootstrap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/components/bootstrap/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/components/bootstrap/js/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/cookbook/buzz.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/guide/compiler.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/guide/concepts.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/misc/contribute.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/views/partials/calendar/day.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/cookbook/deeplinking.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/guide/dev_guide.e2e-testing.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/guide/dev_guide.mvc.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/guide/dev_guide.mvc.understanding_controller.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/guide/dev_guide.mvc.understanding_model.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/guide/dev_guide.mvc.understanding_view.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/guide/dev_guide.services.$location.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/guide/dev_guide.services.creating_services.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/guide/dev_guide.services.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/guide/dev_guide.services.injecting_controllers.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/guide/dev_guide.services.managing_dependencies.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/guide/dev_guide.services.testing_services.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/guide/dev_guide.services.understanding_services.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/guide/dev_guide.templates.css-styling.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/guide/dev_guide.templates.databinding.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/guide/dev_guide.templates.filters.creating_filters.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/guide/dev_guide.templates.filters.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/guide/dev_guide.templates.filters.using_filters.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/guide/dev_guide.templates.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/guide/dev_guide.unit-testing.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/guide/di.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/guide/directive.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/docs-data.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/docs-scenario.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/docs-scenario.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/misc/downloading.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/errors.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/guide/expression.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/misc/faq.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/components/font-awesome/css/font-awesome-ie7.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/components/font-awesome/css/font-awesome.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/components/font-awesome/css/font-awesome.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/components/font-awesome/font/fontawesome-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/cookbook/form.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/guide/forms.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/components/google-code-prettify.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/cookbook/helloworld.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/guide/i18n.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/guide/ie.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/index-debug.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/index-jq-debug.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/index-jq-nocache.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/index-jq.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/index-nocache.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/cookbook/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/guide/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/tutorial/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/guide/introduction.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/jqLite:nosel.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/jqLite:offargs.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/jqLite:onargs.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/components/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/components/jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/components/lunr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/components/lunr.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/components/marked.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/guide/module.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/cookbook/mvc.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.$anchorScroll.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.$animate.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.$animateProvider.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.$cacheFactory.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.$compile.directive.Attributes.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.$compile.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.$compileProvider.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.$controller.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.$controllerProvider.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.$document.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.$exceptionHandler.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.$filter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.$filterProvider.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.$http.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.$httpBackend.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.$interpolate.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.$interpolateProvider.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.$locale.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.$location.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.$locationProvider.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.$log.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.$logProvider.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.$parse.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.$q.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.$rootElement.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.$rootScope.Scope.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.$rootScope.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.$rootScopeProvider.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.$sce.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.$sceDelegate.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.$sceDelegateProvider.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.$sceProvider.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.$templateCache.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.$timeout.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.$window.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:a.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:form.FormController.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:form.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:input.checkbox.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:input.email.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:input.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:input.number.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:input.radio.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:input.text.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:input.url.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngApp.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngBind.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngBindHtml.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngBindTemplate.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngBlur.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngChange.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngChecked.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngClass.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngClassEven.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngClassOdd.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngClick.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngCloak.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngController.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngCsp.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngDblclick.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngDisabled.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngFocus.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngForm.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngHide.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngHref.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngIf.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngInclude.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngInit.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngKeydown.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngKeypress.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngKeyup.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngList.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngModel.NgModelController.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngModel.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngMousedown.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngMouseenter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngMouseleave.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngMousemove.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngMouseover.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngMouseup.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngNonBindable.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngOpen.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngPluralize.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngReadonly.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngRepeat.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngSelected.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngShow.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngSrc.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngSrcset.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngStyle.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngSubmit.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngSwitch.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngTransclude.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:script.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:select.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:textarea.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.filter:currency.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.filter:date.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.filter:filter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.filter:json.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.filter:limitTo.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.filter:lowercase.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.filter:number.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.filter:orderBy.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.filter:uppercase.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/ng:areq.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/ng:btstrpd.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/ng:cpi.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/ng:cpws.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ngAnimate.$animate.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ngAnimate.$animateProvider.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ngAnimate.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ngCookies.$cookieStore.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ngCookies.$cookies.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ngCookies.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ngMock.$exceptionHandler.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ngMock.$exceptionHandlerProvider.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ngMock.$httpBackend.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ngMock.$log.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ngMock.$timeout.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ngMock.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ngMockE2E.$httpBackend.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ngMockE2E.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/ngModel:nonassign.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/ngOptions:iexp.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/ngPattern:noregexp.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/ngRepeat:dupes.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/ngRepeat:iexp.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/ngRepeat:iidexp.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ngResource.$resource.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ngResource.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ngRoute.$route.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ngRoute.$routeParams.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ngRoute.$routeProvider.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ngRoute.directive:ngView.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ngRoute.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ngSanitize.$sanitize.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ngSanitize.filter:linky.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ngSanitize.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ngTouch.$swipe.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ngTouch.directive:ngClick.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ngTouch.directive:ngSwipeLeft.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ngTouch.directive:ngSwipeRight.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ngTouch.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/guide/overview.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/robots.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/guide/scope.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/sitemap.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/misc/started.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/tutorial/step_00.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/tutorial/step_01.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/tutorial/step_02.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/tutorial/step_03.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/tutorial/step_04.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/tutorial/step_05.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/tutorial/step_06.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/tutorial/step_07.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/tutorial/step_08.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/tutorial/step_09.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/tutorial/step_10.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/tutorial/step_11.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/tutorial/the_end.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/version.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/version.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/index.html" afterPath="$PROJECT_DIR$/public/app/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/views/partials/calendar/index.html" afterPath="$PROJECT_DIR$/public/app/views/partials/calendar/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/index.html" afterPath="$PROJECT_DIR$/public/dist/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/bootstrap/docs/index.html" afterPath="$PROJECT_DIR$/public/dist/components/bootstrap/docs/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/views/index.html" afterPath="$PROJECT_DIR$/public/dist/views/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/scripts/directives/calendar/index.js" afterPath="$PROJECT_DIR$/public/app/scripts/directives/calendar/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/bootstrap/docs/templates/pages/index.mustache" afterPath="$PROJECT_DIR$/public/dist/components/bootstrap/docs/templates/pages/index.mustache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/styles/calendar/index.scss" afterPath="$PROJECT_DIR$/public/app/styles/calendar/index.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/bootstrap/docs/javascript.html" afterPath="$PROJECT_DIR$/public/dist/components/bootstrap/docs/javascript.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/bootstrap/docs/templates/pages/javascript.mustache" afterPath="$PROJECT_DIR$/public/dist/components/bootstrap/docs/templates/pages/javascript.mustache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/jquery/jquery.js" afterPath="$PROJECT_DIR$/public/dist/components/jquery/jquery.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/jquery/jquery.min.js" afterPath="$PROJECT_DIR$/public/dist/components/jquery/jquery.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/bootstrap/docs/templates/layout.mustache" afterPath="$PROJECT_DIR$/public/dist/components/bootstrap/docs/templates/layout.mustache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/styles/main.css.map" afterPath="$PROJECT_DIR$/public/app/styles/main.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/styles/main.css" afterPath="$PROJECT_DIR$/public/app/styles/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/views/main.html" afterPath="$PROJECT_DIR$/public/dist/views/main.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/bootstrap/less/mixins.less" afterPath="$PROJECT_DIR$/public/dist/components/bootstrap/less/mixins.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/angular-strap/src/directives/modal.js" afterPath="$PROJECT_DIR$/public/dist/components/angular-strap/src/directives/modal.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/scripts/directives/calendar/month-event.js" afterPath="$PROJECT_DIR$/public/app/scripts/directives/calendar/month-event.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/views/partials/calendar/month.html" afterPath="$PROJECT_DIR$/public/app/views/partials/calendar/month.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/scripts/directives/calendar/month.js" afterPath="$PROJECT_DIR$/public/app/scripts/directives/calendar/month.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/angular-strap/src/directives/navbar.js" afterPath="$PROJECT_DIR$/public/dist/components/angular-strap/src/directives/navbar.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/bootstrap-datepicker/tests/suites/options.js" afterPath="$PROJECT_DIR$/public/dist/components/bootstrap-datepicker/tests/suites/options.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/angular-strap/package.json" afterPath="$PROJECT_DIR$/public/dist/components/angular-strap/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/bootstrap/package.json" afterPath="$PROJECT_DIR$/public/dist/components/bootstrap/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/jquery/package.json" afterPath="$PROJECT_DIR$/public/dist/components/jquery/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/angular-strap/src/directives/popover.js" afterPath="$PROJECT_DIR$/public/dist/components/angular-strap/src/directives/popover.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/angular-strap/test/unit/directives/popoverSpec.js" afterPath="$PROJECT_DIR$/public/dist/components/angular-strap/test/unit/directives/popoverSpec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/angular-strap/readme.md" afterPath="$PROJECT_DIR$/public/dist/components/angular-strap/readme.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/bootstrap/less/responsive.less" afterPath="$PROJECT_DIR$/public/dist/components/bootstrap/less/responsive.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/bootstrap/docs/scaffolding.html" afterPath="$PROJECT_DIR$/public/dist/components/bootstrap/docs/scaffolding.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/angular-strap/src/directives/select.js" afterPath="$PROJECT_DIR$/public/dist/components/angular-strap/src/directives/select.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/bootstrap-datepicker/tests/tests.html" afterPath="$PROJECT_DIR$/public/dist/components/bootstrap-datepicker/tests/tests.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/angular-strap/src/directives/timepicker.js" afterPath="$PROJECT_DIR$/public/dist/components/angular-strap/src/directives/timepicker.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/components/bootstrap/less/type.less" afterPath="$PROJECT_DIR$/public/dist/components/bootstrap/less/type.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="nolla-server.iws" />
@@ -731,7 +1042,7 @@
     <file path="/user.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1376247932997" ignored="false" />
     <file path="/login.html" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1376245904738" ignored="false" />
     <file path="/home.html" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1376246224696" ignored="false" />
-    <file path="/month.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1376582991413" ignored="false" />
+    <file path="/month.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1377108289423" ignored="false" />
     <file path="/month.html" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1376585874944" ignored="false" />
     <file path="/month-event.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1376584517826" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/components/angular-strap/test/lib/angular/angular.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1376583190025" ignored="false" />
@@ -747,6 +1058,7 @@
     <file path="/week.html" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1376596065405" ignored="false" />
     <file path="/week.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1376595997226" ignored="false" />
     <file path="/_week.scss" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1376598052343" ignored="false" />
+    <file path="$PROJECT_DIR$/public/app/styles/main.css" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1377107027153" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -775,37 +1087,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_variables.scss" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/app/styles/_variables.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="7" selection-start="678" selection-end="685" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="month.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/app/scripts/directives/calendar/month.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="47" selection-start="1395" selection-end="1438" vertical-scroll-proportion="0.0">
+            <state line="38" column="0" selection-start="941" selection-end="941" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_week.scss" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_week.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/app/styles/calendar/_week.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="116" column="18" selection-start="2496" selection-end="2496" vertical-scroll-proportion="0.69284064">
+            <state line="89" column="30" selection-start="1858" selection-end="1858" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="calendar.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/app/views/calendar.html">
+      <file leaf-file-name="month.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/app/views/partials/calendar/month.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="16" selection-start="703" selection-end="703" vertical-scroll-proportion="-15.0">
+            <state line="18" column="12" selection-start="747" selection-end="747" vertical-scroll-proportion="-11.25">
               <folding />
             </state>
           </provider>
@@ -838,13 +1141,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="da.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/app/components/moment/lang/da.js">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/app/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="38" selection-start="706" selection-end="706" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+            <state line="21" column="42" selection-start="817" selection-end="817" vertical-scroll-proportion="0.18442623">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -852,10 +1153,19 @@
       <file leaf-file-name="week.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/app/views/partials/calendar/week.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="12" selection-start="1828" selection-end="1828" vertical-scroll-proportion="-28.125">
+            <state line="33" column="16" selection-start="1401" selection-end="1401" vertical-scroll-proportion="-20.625">
               <folding>
                 <element signature="n#style#0;n#div#1;n#div#1;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="day.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/app/views/partials/calendar/day.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -878,14 +1188,11 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/public/app/scripts/directives/calendar/month-event.js" />
-        <option value="$PROJECT_DIR$/public/app/scripts/app.js" />
         <option value="$PROJECT_DIR$/public/app/views/partials/calendar/event.html" />
         <option value="$PROJECT_DIR$/public/app/views/partials/calendar/month.html" />
         <option value="$PROJECT_DIR$/public/app/scripts/directives/calendar/event.js" />
         <option value="$PROJECT_DIR$/public/app/styles/calendar/index.scss" />
         <option value="$PROJECT_DIR$/public/app/scripts/directives/calendar/week.ts" />
-        <option value="$PROJECT_DIR$/public/app/index.html" />
         <option value="$PROJECT_DIR$/public/app/scripts/controllers/calendar.js" />
         <option value="$PROJECT_DIR$/public/app/styles/calendar/_month.scss" />
         <option value="$PROJECT_DIR$/public/app/views/calendar.html" />
@@ -894,6 +1201,9 @@
         <option value="$PROJECT_DIR$/public/app/scripts/directives/calendar/week.js" />
         <option value="$PROJECT_DIR$/public/app/views/partials/calendar/week.html" />
         <option value="$PROJECT_DIR$/public/app/styles/calendar/_week.scss" />
+        <option value="$PROJECT_DIR$/public/app/views/partials/calendar/day.html" />
+        <option value="$PROJECT_DIR$/public/app/scripts/directives/calendar/month.js" />
+        <option value="$PROJECT_DIR$/public/app/index.html" />
       </list>
     </option>
   </component>
@@ -1164,63 +1474,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="directives" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nolla-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nolla" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="directives" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="calendar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nolla-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nolla" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
+              <option name="myItemId" value="lib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1477,20 +1731,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/app/views/partials/calendar/event.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="7" selection-start="212" selection-end="212" vertical-scroll-proportion="-5.625">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="35" selection-start="1989" selection-end="1989" vertical-scroll-proportion="-27.5">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/app/scripts/controllers/calendar.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="41" selection-start="552" selection-end="552" vertical-scroll-proportion="0.0">
@@ -1501,13 +1741,6 @@
     <entry file="file://$PROJECT_DIR$/public/app/scripts/directives/calendar/event.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="5" selection-start="359" selection-end="359" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/views/partials/calendar/month.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="54" selection-start="638" selection-end="638" vertical-scroll-proportion="-9.375">
           <folding />
         </state>
       </provider>
@@ -1549,13 +1782,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/scripts/directives/calendar/month.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="47" selection-start="1395" selection-end="1438" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/app/scripts/directives/calendar/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="45" column="10" selection-start="1299" selection-end="1299" vertical-scroll-proportion="0.0">
@@ -1577,18 +1803,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/styles/calendar/_week.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="89" column="30" selection-start="1858" selection-end="1858" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/views/partials/calendar/day.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/app/views/partials/calendar/week.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="12" selection-start="1828" selection-end="1828" vertical-scroll-proportion="-28.125">
+        <state line="33" column="16" selection-start="1401" selection-end="1401" vertical-scroll-proportion="-20.625">
           <folding>
             <element signature="n#style#0;n#div#1;n#div#1;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/styles/calendar/_week.scss">
+    <entry file="file://$PROJECT_DIR$/public/app/views/partials/calendar/month.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="116" column="18" selection-start="2496" selection-end="2496" vertical-scroll-proportion="0.69284064">
+        <state line="18" column="12" selection-start="747" selection-end="747" vertical-scroll-proportion="-11.25">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/scripts/directives/calendar/month.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="0" selection-start="941" selection-end="941" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="42" selection-start="817" selection-end="817" vertical-scroll-proportion="0.18442623">
           <folding />
         </state>
       </provider>

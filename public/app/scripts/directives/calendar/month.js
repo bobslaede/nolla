@@ -31,6 +31,10 @@ angular.module('nolla.calendar')
           m.add('days', 1);
         }
 
+        var createHtml = function () {
+
+        };
+
         $scope.update = function () {
 
           $scope.currentMonth = $scope.calendar.date.month();
@@ -84,6 +88,8 @@ angular.module('nolla.calendar')
           $scope.weeks = weeks;
           $scope.positionEvents();
         };
+
+
 
         $scope.groupedEvents = {};
 
