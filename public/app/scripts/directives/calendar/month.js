@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('nolla.calendar')
-  .directive('nlCalendarMonth', function ($timeout) {
+  .directive('nlCalendarMonth', function ($timeout, $compile) {
 
     return {
       restrict: 'A',
@@ -32,7 +32,38 @@ angular.module('nolla.calendar')
         }
 
         var createHtml = function () {
+          var html = '<div class="month-header month-row">';
+          // header
+          html += '<div class="week-number">&nbsp;</div>';
+          $scope.dayNames.forEach(function (day) {
+            html += '<div class="day">' + day + '</div>';
+          });
+          html += '</div>';
 
+          html += '<div class="month-content">';
+          $scope.weeks.forEach(function (week) {
+            html += '<div class="week month-row">'
+              + '<div class="week-number">'
+                + '<div class="title">' + week.number + '</div>'
+              + '</div>';
+
+            week.forEach(function (day) {
+              var cls = '';
+              cls += day.dateString == $scope.todayString ? 'today ' : '';
+              cls += !day.currentMonth ? 'othermonth ' : '';
+              cls += day.isPast ? 'past ': '';
+
+              html += '<div class="day ' + cls + '">'
+                + '<div class="title">' + day.dayString + '</div>'
+                + '<div class="event-placeholder" data-date="' + day.dateString + '"></div>'
+                + '</div>'
+            });
+
+            html += '</div>';
+          });
+          html += '</div>';
+
+          element.find('.month-view').html(html);
         };
 
         $scope.update = function () {
@@ -86,6 +117,7 @@ angular.module('nolla.calendar')
             w += (i % 7 === 0 ? 1 : 0);
           }
           $scope.weeks = weeks;
+          createHtml();
           $scope.positionEvents();
         };
 
