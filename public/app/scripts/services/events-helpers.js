@@ -34,8 +34,8 @@ angular.module('nolla')
       return events;
     };
 
+
     return {
-      organizeEventsByDay: organizeEventsByDay,
     }
 
   });

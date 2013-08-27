@@ -6884,96 +6884,32 @@ body {
     padding: 0px 6px;
     margin: 1px;
     cursor: pointer; }
-  .calendar-directive .month .month-view {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-direction: column;
-    -moz-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-flex-wrap: nowrap;
-    -moz-flex-wrap: nowrap;
-    -ms-flex-wrap: none;
-    flex-wrap: nowrap;
-    -webkit-flex: 1 0 auto;
-    -moz-flex: 1 0 auto;
-    -ms-flex: 1 0 auto;
-    flex: 1 0 auto; }
-    .calendar-directive .month .month-view .day {
-      -webkit-flex: 1 0 13%;
-      -moz-flex: 1 0 13%;
-      -ms-flex: 1 0 13%;
-      flex: 1 0 13%; }
-      .calendar-directive .month .month-view .day.active, .calendar-directive .month .month-view .day.today {
-        background: #ffe9a6; }
-      .calendar-directive .month .month-view .day.othermonth, .calendar-directive .month .month-view .day.past {
-        background: rgba(238, 238, 238, 0.5); }
-        .calendar-directive .month .month-view .day.othermonth .title, .calendar-directive .month .month-view .day.past .title {
-          color: #999999;
-          text-shadow: 1px 1px white; }
-    .calendar-directive .month .month-view .title {
-      padding: 2px;
-      text-align: right;
+  .calendar-directive .month .month-view .day.active, .calendar-directive .month .month-view .day.today {
+    background: #ffe9a6; }
+  .calendar-directive .month .month-view .day.othermonth, .calendar-directive .month .month-view .day.past {
+    background: rgba(238, 238, 238, 0.5); }
+    .calendar-directive .month .month-view .day.othermonth .title, .calendar-directive .month .month-view .day.past .title {
+      color: #999999;
+      text-shadow: 1px 1px white; }
+  .calendar-directive .month .month-view .title {
+    padding: 2px;
+    text-align: right;
+    font-size: 11.9px; }
+  .calendar-directive .month .month-view .week-number {
+    border-right: 1px solid #cccccc; }
+    .calendar-directive .month .month-view .week-number .title {
+      color: #555555; }
+  .calendar-directive .month .month-view .month-header {
+    border-bottom: 1px solid #cccccc; }
+    .calendar-directive .month .month-view .month-header .day {
+      padding: 4px;
+      text-align: left;
+      text-transform: uppercase;
       font-size: 11.9px; }
-    .calendar-directive .month .month-view .week-number {
-      -webkit-flex: 0 0 2em;
-      -moz-flex: 0 0 2em;
-      -ms-flex: 0 0 2em;
-      flex: 0 0 2em;
+  .calendar-directive .month .month-view .month-content {
+    border-bottom: 1px solid #cccccc; }
+    .calendar-directive .month .month-view .month-content .day {
       border-right: 1px solid #cccccc; }
-      .calendar-directive .month .month-view .week-number .title {
-        color: #555555; }
-    .calendar-directive .month .month-view .month-row {
-      display: -webkit-flex;
-      display: -moz-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-flex-direction: row;
-      -moz-flex-direction: row;
-      -ms-flex-direction: row;
-      flex-direction: row;
-      -webkit-flex-wrap: nowrap;
-      -moz-flex-wrap: nowrap;
-      -ms-flex-wrap: none;
-      flex-wrap: nowrap; }
-    .calendar-directive .month .month-view .month-header {
-      -webkit-flex: 0 0 auto;
-      -moz-flex: 0 0 auto;
-      -ms-flex: 0 0 auto;
-      flex: 0 0 auto;
-      border-bottom: 1px solid #cccccc; }
-      .calendar-directive .month .month-view .month-header .day {
-        padding: 4px;
-        text-align: left;
-        text-transform: uppercase;
-        font-size: 11.9px; }
-    .calendar-directive .month .month-view .month-content {
-      border-bottom: 1px solid #cccccc;
-      display: -webkit-flex;
-      display: -moz-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-flex-direction: column;
-      -moz-flex-direction: column;
-      -ms-flex-direction: column;
-      flex-direction: column;
-      -webkit-flex-wrap: nowrap;
-      -moz-flex-wrap: nowrap;
-      -ms-flex-wrap: none;
-      flex-wrap: nowrap;
-      -webkit-flex: 1 0 auto;
-      -moz-flex: 1 0 auto;
-      -ms-flex: 1 0 auto;
-      flex: 1 0 auto; }
-      .calendar-directive .month .month-view .month-content .week {
-        -webkit-flex: 1 0 auto;
-        -moz-flex: 1 0 auto;
-        -ms-flex: 1 0 auto;
-        flex: 1 0 auto; }
-      .calendar-directive .month .month-view .month-content .day {
-        border-right: 1px solid #cccccc; }
 
 .calendar-directive .week {
   display: -webkit-flex;

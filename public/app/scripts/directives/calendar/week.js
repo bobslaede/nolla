@@ -34,6 +34,42 @@ angular.module('nolla.calendar')
 
         $scope.dayNames = [];
 
+        var createHtml = function () {
+          var html = '<table class="week-table"><thead><tr class="week-header week-row">';
+          // header
+          html += '<td class="week-number">' + $scope.week.number + '</td>';
+          $scope.week.forEach(function (day) {
+            html += '<td class="day">' + day.dayName + '</td>';
+          });
+          html += '</tr></thead>';
+
+          html += '<tbody class="week-content">';
+          $scope.week.forEach(function (week) {
+            html += '<tr class="week-row">'
+
+              + '<td class="week-number">'
+              + '<div class="title">' + week.number + '</div>'
+              + '</td>';
+
+            week.forEach(function (day) {
+              var cls = '';
+              cls += day.dateString == $scope.todayString ? 'today ' : '';
+              cls += !day.currentMonth ? 'othermonth ' : '';
+              cls += day.isPast ? 'past ': '';
+
+              html += '<td class="day ' + cls + '">'
+                + '<div class="title">' + day.dayString + '</div>'
+                + '<div class="event-placeholder" data-date="' + day.dateString + '"></div>'
+                + '</td>'
+            });
+
+            html += '</tr>';
+          })
+          html += '</tbody></table>';
+
+          element.find('.week-view').html(html);
+        };
+
         $scope.update = function () {
 
           $scope.currentMonth = $scope.calendar.date.month();
@@ -72,6 +108,7 @@ angular.module('nolla.calendar')
             week.push(day);
           }
           $scope.week = week;
+          createHtml();
         };
 
         $scope.positionEvents = function () {
@@ -82,9 +119,6 @@ angular.module('nolla.calendar')
 
         $scope.$watch('events', function () {
           $scope.groupedEvents = [];
-
-          var n = eventsHelpers.organizeEventsByDay($scope.events);
-          console.log(n);
 
           var minInDay = 60 * 24;
 

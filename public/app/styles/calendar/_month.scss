@@ -28,13 +28,8 @@
     }
 
     .month-view {
-      @include flexbox();
-      @include flex-direction(column);
-      @include flex-wrap(nowrap);
-      @include flex(1, 0, auto);
 
       .day {
-        @include flex(1, 0, 13%);
 
         &.active, &.today {
           background: lighten($yellow, 30%);
@@ -59,19 +54,14 @@
       }
 
       .week-number {
-        @include flex(0, 0, $weekNumberWidth);
         border-right: 1px solid $inputBorder;
         .title {
           color: $gray;
         }
       }
       .month-row {
-        @include flexbox();
-        @include flex-direction(row);
-        @include flex-wrap(nowrap);
       }
       .month-header {
-        @include flex(0, 0, auto);
         border-bottom: 1px solid $inputBorder;
 
         .day {
@@ -87,13 +77,8 @@
       .month-content {
         border-bottom: 1px solid $inputBorder;
 
-        @include flexbox();
-        @include flex-direction(column);
-        @include flex-wrap(nowrap);
-        @include flex(1, 0, auto);
 
         .week {
-          @include flex(1, 0, auto);
         }
 
         .day {
