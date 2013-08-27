@@ -1,656 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="342fdae3-dca1-48ea-93cd-e022978dd8f9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/angular-1.2.0-4bd8b81.zip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/angular-animate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/angular-animate.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/angular-animate.min.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/angular-cookies.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/angular-cookies.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/angular-cookies.min.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/angular-loader.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/angular-loader.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/angular-loader.min.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/angular-mocks.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/angular-resource.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/angular-resource.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/angular-resource.min.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/angular-route.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/angular-route.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/angular-route.min.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/angular-sanitize.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/angular-sanitize.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/angular-sanitize.min.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/angular-scenario.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/angular-touch.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/angular-touch.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/angular-touch.min.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/angular.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/angular.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/angular.min.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/.htaccess" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/appcache-offline.manifest" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/appcache.manifest" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/components/angular-bootstrap-prettify.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/components/angular-bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/components/bootstrap/.bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/components/bootstrap/css/bootstrap-responsive.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/components/bootstrap/css/bootstrap-responsive.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/components/bootstrap/css/bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/components/bootstrap/css/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/components/bootstrap/img/glyphicons-halflings-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/components/bootstrap/img/glyphicons-halflings.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/components/bootstrap/js/bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/components/bootstrap/js/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/components/font-awesome/css/font-awesome-ie7.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/components/font-awesome/css/font-awesome.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/components/font-awesome/css/font-awesome.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/components/font-awesome/font/FontAwesome.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/components/font-awesome/font/fontawesome-webfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/components/font-awesome/font/fontawesome-webfont.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/components/font-awesome/font/fontawesome-webfont.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/components/font-awesome/font/fontawesome-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/components/google-code-prettify.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/components/jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/components/jquery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/components/lunr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/components/lunr.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/components/marked.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/docs-data.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/docs-scenario.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/docs-scenario.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/index-debug.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/index-jq-debug.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/index-jq-nocache.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/index-jq.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/index-nocache.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/AUTO.$injector.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/AUTO.$provide.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/AUTO.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/angular.IModule.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/angular.bind.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/angular.bootstrap.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/angular.copy.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/angular.element.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/angular.equals.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/angular.extend.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/angular.forEach.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/angular.fromJson.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/angular.identity.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/angular.injector.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/angular.isArray.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/angular.isDate.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/angular.isDefined.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/angular.isElement.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/angular.isFunction.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/angular.isNumber.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/angular.isObject.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/angular.isString.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/angular.isUndefined.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/angular.lowercase.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/angular.mock.TzDate.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/angular.mock.dump.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/angular.mock.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/angular.mock.inject.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/angular.mock.module.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/angular.module.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/angular.noop.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/angular.toJson.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/angular.uppercase.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/angular.version.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.$anchorScroll.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.$animate.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.$animateProvider.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.$cacheFactory.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.$compile.directive.Attributes.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.$compile.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.$compileProvider.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.$controller.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.$controllerProvider.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.$document.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.$exceptionHandler.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.$filter.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.$filterProvider.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.$http.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.$httpBackend.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.$interpolate.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.$interpolateProvider.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.$locale.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.$location.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.$locationProvider.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.$log.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.$logProvider.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.$parse.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.$q.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.$rootElement.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.$rootScope.Scope.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.$rootScope.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.$rootScopeProvider.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.$sce.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.$sceDelegate.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.$sceDelegateProvider.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.$sceProvider.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.$templateCache.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.$timeout.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.$window.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:a.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:form.FormController.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:form.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:input.checkbox.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:input.email.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:input.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:input.number.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:input.radio.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:input.text.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:input.url.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngApp.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngBind.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngBindHtml.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngBindTemplate.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngBlur.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngChange.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngChecked.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngClass.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngClassEven.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngClassOdd.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngClick.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngCloak.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngController.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngCsp.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngDblclick.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngDisabled.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngFocus.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngForm.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngHide.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngHref.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngIf.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngInclude.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngInit.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngKeydown.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngKeypress.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngKeyup.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngList.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngModel.NgModelController.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngModel.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngMousedown.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngMouseenter.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngMouseleave.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngMousemove.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngMouseover.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngMouseup.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngNonBindable.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngOpen.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngPluralize.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngReadonly.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngRepeat.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngSelected.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngShow.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngSrc.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngSrcset.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngStyle.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngSubmit.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngSwitch.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:ngTransclude.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:script.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:select.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.directive:textarea.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.filter:currency.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.filter:date.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.filter:filter.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.filter:json.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.filter:limitTo.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.filter:lowercase.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.filter:number.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.filter:orderBy.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.filter:uppercase.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ng.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ngAnimate.$animate.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ngAnimate.$animateProvider.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ngAnimate.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ngCookies.$cookieStore.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ngCookies.$cookies.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ngCookies.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ngMock.$exceptionHandler.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ngMock.$exceptionHandlerProvider.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ngMock.$httpBackend.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ngMock.$log.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ngMock.$timeout.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ngMock.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ngMockE2E.$httpBackend.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ngMockE2E.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ngResource.$resource.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ngResource.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ngRoute.$route.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ngRoute.$routeParams.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ngRoute.$routeProvider.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ngRoute.directive:ngView.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ngRoute.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ngSanitize.$sanitize.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ngSanitize.filter:linky.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ngSanitize.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ngTouch.$swipe.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ngTouch.directive:ngClick.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ngTouch.directive:ngSwipeLeft.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ngTouch.directive:ngSwipeRight.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/api/ngTouch.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/cookbook/advancedform.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/cookbook/buzz.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/cookbook/deeplinking.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/cookbook/form.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/cookbook/helloworld.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/cookbook/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/cookbook/mvc.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/$animate:notcsel.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/$cacheFactory:iid.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/$compile:ctreq.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/$compile:iscp.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/$compile:multidir.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/$compile:nodomevents.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/$compile:nonassign.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/$compile:selmulti.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/$compile:tpload.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/$compile:tplrt.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/$compile:uterdir.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/$controller:noscp.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/$httpBackend:noxhr.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/$injector:cdep.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/$injector:itkn.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/$injector:modulerr.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/$injector:nomod.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/$injector:pget.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/$injector:unpr.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/$interpolate:interr.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/$interpolate:noconcat.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/$location:ihshprfx.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/$location:ipthprfx.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/$location:isrcharg.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/$parse:isecfld.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/$parse:isecfn.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/$parse:lexerr.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/$parse:syntax.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/$parse:ueoe.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/$resource:badargs.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/$resource:badcfg.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/$rootScope:infdig.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/$rootScope:inprog.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/$sanitize:badparse.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/$sce:icontext.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/$sce:iequirks.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/$sce:insecurl.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/$sce:itype.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/$sce:unsafe.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/jqLite:nosel.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/jqLite:offargs.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/jqLite:onargs.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/ng:areq.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/ng:btstrpd.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/ng:cpi.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/ng:cpws.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/ngModel:nonassign.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/ngOptions:iexp.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/ngPattern:noregexp.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/ngRepeat:dupes.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/ngRepeat:iexp.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/error/ngRepeat:iidexp.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/guide/bootstrap.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/guide/compiler.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/guide/concepts.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/guide/dev_guide.e2e-testing.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/guide/dev_guide.mvc.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/guide/dev_guide.mvc.understanding_controller.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/guide/dev_guide.mvc.understanding_model.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/guide/dev_guide.mvc.understanding_view.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/guide/dev_guide.services.$location.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/guide/dev_guide.services.creating_services.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/guide/dev_guide.services.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/guide/dev_guide.services.injecting_controllers.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/guide/dev_guide.services.managing_dependencies.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/guide/dev_guide.services.testing_services.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/guide/dev_guide.services.understanding_services.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/guide/dev_guide.templates.css-styling.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/guide/dev_guide.templates.databinding.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/guide/dev_guide.templates.filters.creating_filters.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/guide/dev_guide.templates.filters.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/guide/dev_guide.templates.filters.using_filters.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/guide/dev_guide.templates.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/guide/dev_guide.unit-testing.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/guide/di.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/guide/directive.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/guide/expression.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/guide/forms.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/guide/i18n.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/guide/ie.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/guide/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/guide/introduction.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/guide/module.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/guide/overview.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/guide/scope.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/misc/contribute.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/misc/downloading.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/misc/faq.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/misc/started.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/tutorial/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/tutorial/step_00.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/tutorial/step_01.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/tutorial/step_02.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/tutorial/step_03.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/tutorial/step_04.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/tutorial/step_05.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/tutorial/step_06.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/tutorial/step_07.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/tutorial/step_08.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/tutorial/step_09.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/tutorial/step_10.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/tutorial/step_11.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/partials/tutorial/the_end.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/robots.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/docs/sitemap.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/errors.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_af-na.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_af-za.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_af.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_am-et.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_am.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ar-001.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ar-ae.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ar-bh.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ar-dz.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ar-eg.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ar-iq.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ar-jo.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ar-kw.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ar-lb.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ar-ly.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ar-ma.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ar-om.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ar-qa.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ar-sa.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ar-sd.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ar-sy.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ar-tn.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ar-ye.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ar.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_bg-bg.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_bg.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_bn-bd.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_bn-in.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_bn.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ca-ad.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ca-es.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ca.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_chr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_cs-cz.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_cs.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_cy.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_da-dk.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_da.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_de-at.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_de-be.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_de-ch.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_de-de.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_de-li.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_de-lu.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_de.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_el-cy.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_el-gr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_el-polyton.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_el.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_en-as.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_en-au.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_en-bb.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_en-be.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_en-bm.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_en-bw.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_en-bz.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_en-ca.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_en-dsrt-us.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_en-dsrt.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_en-fm.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_en-gb.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_en-gu.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_en-gy.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_en-hk.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_en-ie.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_en-in.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_en-iso.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_en-jm.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_en-mh.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_en-mp.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_en-mt.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_en-mu.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_en-na.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_en-nz.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_en-ph.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_en-pk.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_en-pr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_en-pw.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_en-sg.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_en-tc.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_en-tt.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_en-um.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_en-us.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_en-vg.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_en-vi.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_en-za.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_en-zw.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_en-zz.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_en.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_es-419.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_es-ar.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_es-bo.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_es-cl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_es-co.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_es-cr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_es-do.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_es-ea.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_es-ec.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_es-es.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_es-gq.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_es-gt.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_es-hn.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_es-ic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_es-mx.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_es-ni.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_es-pa.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_es-pe.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_es-pr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_es-py.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_es-sv.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_es-us.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_es-uy.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_es-ve.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_es.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_et-ee.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_et.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_eu-es.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_eu.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_fa-af.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_fa-ir.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_fa.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_fi-fi.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_fi.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_fil-ph.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_fil.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_fr-be.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_fr-bf.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_fr-bi.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_fr-bj.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_fr-bl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_fr-ca.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_fr-cd.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_fr-cf.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_fr-cg.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_fr-ch.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_fr-ci.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_fr-cm.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_fr-dj.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_fr-fr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_fr-ga.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_fr-gf.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_fr-gn.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_fr-gp.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_fr-gq.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_fr-km.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_fr-lu.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_fr-mc.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_fr-mf.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_fr-mg.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_fr-ml.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_fr-mq.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_fr-ne.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_fr-re.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_fr-rw.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_fr-sn.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_fr-td.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_fr-tg.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_fr-yt.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_fr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_gl-es.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_gl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_gsw-ch.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_gsw.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_gu-in.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_gu.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_haw.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_he-il.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_he.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_hi-in.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_hi.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_hr-hr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_hr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_hu-hu.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_hu.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_id-id.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_id.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_in.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_is-is.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_is.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_it-ch.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_it-it.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_it-sm.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_it.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_iw.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ja-jp.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ja.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_kn-in.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_kn.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ko-kr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ko.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ln-cd.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ln-cg.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ln.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_lt-lt.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_lt.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_lv-lv.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_lv.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ml-in.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ml.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_mo.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_mr-in.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_mr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ms-bn.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ms-my.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ms.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_mt-mt.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_mt.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_nl-aw.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_nl-be.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_nl-cw.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_nl-nl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_nl-sx.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_nl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_no.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_or-in.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_or.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_pl-pl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_pl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_pt-ao.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_pt-br.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_pt-gw.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_pt-mz.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_pt-pt.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_pt-st.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_pt.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ro-md.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ro-ro.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ro.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ru-md.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ru-ru.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ru-ua.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ru.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_sk-sk.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_sk.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_sl-si.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_sl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_sq-al.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_sq.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_sr-cyrl-ba.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_sr-cyrl-me.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_sr-cyrl-rs.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_sr-cyrl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_sr-latn-ba.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_sr-latn-me.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_sr-latn-rs.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_sr-latn.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_sr-rs.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_sr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_sv-fi.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_sv-se.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_sv.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_sw-ke.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_sw-tz.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_sw.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ta-in.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ta-lk.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ta.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_te-in.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_te.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_th-th.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_th.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_tl-ph.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_tl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_tr-tr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_tr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_uk-ua.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_uk.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ur-in.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ur-pk.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_ur.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_vi-vn.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_vi.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_zh-cn.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_zh-hans-cn.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_zh-hans-hk.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_zh-hans-mo.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_zh-hans-sg.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_zh-hans.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_zh-hant-hk.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_zh-hant-mo.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_zh-hant-tw.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_zh-hant.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_zh-hk.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_zh-tw.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_zh.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_zu-za.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/i18n/angular-locale_zu.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/version.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/build/version.txt" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/styles/calendar/_month.scss" afterPath="$PROJECT_DIR$/public/app/styles/calendar/_month.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/angular.js" afterPath="$PROJECT_DIR$/public/app/angular.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/scripts/services/events-helpers.js" afterPath="$PROJECT_DIR$/public/app/scripts/services/events-helpers.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/index.html" afterPath="$PROJECT_DIR$/public/app/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/styles/main.css.map" afterPath="$PROJECT_DIR$/public/app/styles/main.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/styles/main.css" afterPath="$PROJECT_DIR$/public/app/styles/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/scripts/directives/calendar/month.js" afterPath="$PROJECT_DIR$/public/app/scripts/directives/calendar/month.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/views/partials/calendar/week.html" afterPath="$PROJECT_DIR$/public/app/views/partials/calendar/week.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/scripts/directives/calendar/week.js" afterPath="$PROJECT_DIR$/public/app/scripts/directives/calendar/week.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="342fdae3-dca1-48ea-93cd-e022978dd8f9" name="Default" comment="" />
     <ignored path="nolla-server.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/a.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1372922017412" ignored="false" />
@@ -1124,7 +475,7 @@
       <file leaf-file-name="week.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/app/scripts/directives/calendar/week.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="49" selection-start="1378" selection-end="1378" vertical-scroll-proportion="0.38972285">
+            <state line="39" column="31" selection-start="1122" selection-end="1122" vertical-scroll-proportion="0.33775982">
               <folding />
             </state>
           </provider>
@@ -1478,6 +829,62 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nolla-server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nolla" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angular" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nolla-server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nolla" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="directives" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -1691,12 +1098,12 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="-4" width="1202" height="1925" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32996064" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294509" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2497876" sideWeight="0.6705491" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22769754" sideWeight="0.67003936" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22769754" sideWeight="0.67003936" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2737493" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1881,7 +1288,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/app/scripts/directives/calendar/week.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="49" selection-start="1378" selection-end="1378" vertical-scroll-proportion="0.38972285">
+        <state line="39" column="31" selection-start="1122" selection-end="1122" vertical-scroll-proportion="0.33775982">
           <folding />
         </state>
       </provider>
