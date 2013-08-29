@@ -34,38 +34,90 @@ angular.module('nolla.calendar')
 
         $scope.dayNames = [];
 
+        var formatHour = function (n) {
+          return ("00" + n).substr(-2) + ":00";
+        };
+
         var createHtml = function () {
-          var html = '<table class="week-table"><thead><tr class="week-header week-row">';
-          // header
-          html += '<td class="week-number">' + $scope.week.number + '</td>';
-          $scope.week.forEach(function (day) {
-            html += '<td class="day">' + day.dayName + '</td>';
-          });
-          html += '</tr></thead>';
+          var html = '';
 
-          html += '<tbody class="week-content">';
-          $scope.week.forEach(function (week) {
-            html += '<tr class="week-row">'
+          var createHourDivs = function (showHours) {
+            var html = '';
+            for (var i = 0, l = 24; i < l; ++i) {
+              html += '<div class="hour-div">' + (showHours ? formatHour(i) : '') + '</div>';
+            }
+            return html;
+          };
 
-              + '<td class="week-number">'
-              + '<div class="title">' + week.number + '</div>'
-              + '</td>';
+          var getDayName = function (day) {
+            return day.dayName;
+          };
 
-            week.forEach(function (day) {
-              var cls = '';
-              cls += day.dateString == $scope.todayString ? 'today ' : '';
-              cls += !day.currentMonth ? 'othermonth ' : '';
-              cls += day.isPast ? 'past ': '';
+          var getDayEventPlaceholder = function (day) {
+            var html = '<div class="event-placeholder" data-date="' + day.dateString + '"></div>';
+            return html;
+          };
 
-              html += '<td class="day ' + cls + '">'
-                + '<div class="title">' + day.dayString + '</div>'
-                + '<div class="event-placeholder" data-date="' + day.dateString + '"></div>'
-                + '</td>'
+          var getDayClasses = function (day) {
+            var cls = '';
+            cls += day.dateString == $scope.todayString ? 'today ' : '';
+            cls += !day.currentMonth ? 'othermonth ' : '';
+            cls += day.isPast ? 'past ': '';
+            return cls;
+          };
+
+          var createDayTds = function (m) {
+            var html = '';
+            $scope.week.forEach(function (day) {
+              var cls = getDayClasses(day);
+              html += '<td class="day ' + cls + '">' + m(day) + '</td>';
             });
+            return html;
+          };
 
-            html += '</tr>';
-          })
-          html += '</tbody></table>';
+          var getDayHtml = function (day) {
+            var events = getDayEventPlaceholder(day);
+            var hours = createHourDivs(false);
+            return hours + events;
+          };
+
+          html += '<table class="week-table">'
+            + '<thead>'
+            + '<tr>'
+              + '<td class="week-table-hour-column">'
+                + '<div class="title">' + $scope.week.number + '</div>'
+              + '</td>'
+              + '<td>'
+                + '<table class="week-table-header">'
+                + '<tbody>'
+                  + '<tr>'
+                    + createDayTds(getDayName)
+                  + '</tr>'
+                + '</tbody>'
+                + '</table>'
+              +' </td>'
+              + '</tr>'
+            + '</thead>'
+            + '<tbody>'
+              + '<tr>'
+                + '<td class="week-table-hour-column">'
+                  + createHourDivs(true)
+                + '</td>'
+                + '<td>'
+                  + '<div class="week-table-body-parent">'
+                    + '<table class="week-table-body">'
+                    + '<tbody>'
+                      + '<tr>'
+                        + createDayTds(getDayHtml)
+                      + '</tr>'
+                    + '</tbody>'
+                    + '</table>'
+                  + '</div>'
+                + '</td>'
+              + '</tr>'
+            + '</tbody>'
+            + '</table>';
+
 
           element.find('.week-view').html(html);
         };

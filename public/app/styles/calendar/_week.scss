@@ -1,114 +1,125 @@
 .calendar-directive {
 
   .week {
-    $weekNumberWidth: 4em;
+    $weekNumberWidth: 3em;
     $weekMinHeight: 2em;
+    $hourHeight: 40px;
     @include flexbox();
     @include flex(1, 0, auto);
 
     .week-view {
+      width: 100%;
+      height: 100%;
+      position: relative;
 
-      @include flexbox();
-      @include flex-direction(column);
-      @include flex-wrap(nowrap);
-      @include flex(1, 0, auto);
-
-      .week-number {
-        @include flex(0, 0, $weekNumberWidth);
-        border-right: 1px solid $inputBorder;
-        .title {
-          padding: 4px;
-          text-align: right;
-          font-size: $fontSizeSmall;
-          color: $gray;
-        }
+      table {
+        width: 100%;
       }
 
-      .week-row {
-        @include flexbox();
-        @include flex-direction(row);
-        @include flex-wrap(nowrap);
-      }
+      .week-table {
 
-      .week-header {
-        @include flex(0, 0, auto);
-        border-bottom: 1px solid $inputBorder;
-        padding-right: 20px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
 
-        .day {
-
-          padding: 4px;
-          text-align: left;
-          text-transform: uppercase;
-          font-size: $fontSizeSmall;
-
-        }
-
-      }
-
-      .week-fullday-events {
-        @include flex(0, 0, $weekMinHeight);
-        border-bottom: 1px solid $inputBorder;
-        padding-right: 20px;
-
-        .day {
-          border-right: 1px solid $inputBorder;
-        }
-
-      }
-      .week-hour-events {
-
-        @include flex(0, 0, auto);
-        @include flexbox();
-        min-height: 0;
-
-        border-bottom: 1px solid $inputBorder;
-
-        .week-hour-events-viewport {
-          @include flex(1, 0, auto);
-          @include flexbox();
-          overflow-y: scroll;
-          padding-right: 10px;
-          position: relative;
+        td {
+          padding: 0;
         }
 
         .day {
-          border-right: 1px solid $inputBorder;
+          width: (100% / 7);
+
+
+          &.active, &.today {
+            background: lighten($yellow, 30%);
+            .title {
+            }
+          }
+
+          &.othermonth, &.past {
+            background: fade-out($grayLighter, .5);
+            .title {
+              color: $grayLight;
+              text-shadow: 1px 1px $white;
+            }
+          }
+
         }
 
-      }
-
-      .day {
-        @include flex(1, 0, 13%);
-
-        &.active, &.today {
-          background: lighten($yellow, 30%);
+        .week-table-hour-column {
+          width: $weekNumberWidth;
+          max-width: $weekNumberWidth;
           .title {
+            padding: 4px;
+          }
+          .title, .hour-div {
+            text-align: right;
+            font-size: $fontSizeSmall;
+            color: $gray;
+            padding-right: 4px;
           }
         }
 
-        &.othermonth, &.past {
-          background: fade-out($grayLighter, .5);
-          .title {
-            color: $grayLight;
-            text-shadow: 1px 1px $white;
+        .hour-div {
+          height: $hourHeight;
+          line-height: $hourHeight;
+          box-sizing: border-box;
+        }
+
+        thead {
+          border-bottom: 1px solid $inputBorder;
+        }
+
+        tbody {
+        }
+
+        .week-table-header {
+          border-left: 1px solid $inputBorder;
+          .day {
+            padding: 4px;
+            text-align: left;
+            text-transform: uppercase;
+            font-size: $fontSizeSmall;
           }
         }
 
-        .hour {
-          position: relative;
-          .seperator {
-            border-top: 1px dotted $inputBorder;
+        .week-table-body {
+          height: 100%;
+
+          .hour-div {
+            position: relative;
             border-bottom: 1px solid $inputBorder;
-            position: absolute;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            top: 50%;
+
+            &:after {
+              content: '';
+              display: block;
+              position: absolute;
+              top: 50%;
+              left: 0;
+              bottom: 0;
+              right: 0;
+              border-top: 1px dotted $inputBorder;
+            }
+
+            &:nth-child(2n+1) {
+
+            }
+          }
+
+          .day {
+            border-left: 1px solid $inputBorder;
+            height: 100%;
           }
         }
 
       }
+
+      .week-number, .week-hour-number {
+      }
+
+
       .event {
         box-sizing: border-box;
         position: absolute;
@@ -126,7 +137,6 @@
       }
 
       .hours {
-        @include flex(0, 0, $weekNumberWidth);
         border-right: 1px solid $inputBorder;
       }
       .hour {
