@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="342fdae3-dca1-48ea-93cd-e022978dd8f9" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/directives/calendar/day-event-maker.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/styles/calendar/_week.scss" afterPath="$PROJECT_DIR$/public/app/styles/calendar/_week.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/index.html" afterPath="$PROJECT_DIR$/public/app/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/styles/main.css.map" afterPath="$PROJECT_DIR$/public/app/styles/main.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/styles/main.css" afterPath="$PROJECT_DIR$/public/app/styles/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/scripts/directives/calendar/week.js" afterPath="$PROJECT_DIR$/public/app/scripts/directives/calendar/week.js" />
@@ -15,7 +17,7 @@
     <file path="/socket.io.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1376247102402" ignored="false" />
     <file path="/sockets.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1375898906187" ignored="false" />
     <file path="/main.html" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1376246075318" ignored="false" />
-    <file path="/index.html" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1377625767967" ignored="false" />
+    <file path="/index.html" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1377883742567" ignored="false" />
     <file path="/.jshintrc" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1369936783753" ignored="false" />
     <file path="/auth.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1376245756799" ignored="false" />
     <file path="/main.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1376249926552" ignored="false" />
@@ -420,9 +422,10 @@
     <file path="/event.html" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1376585429185" ignored="false" />
     <file path="/week.ts" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1376586985773" ignored="false" />
     <file path="/week.html" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1377626918239" ignored="false" />
-    <file path="/week.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1377806784924" ignored="false" />
-    <file path="/_week.scss" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1377806592323" ignored="false" />
+    <file path="/week.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1377883800680" ignored="false" />
+    <file path="/_week.scss" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1377887307606" ignored="false" />
     <file path="/events-helpers.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1377115067108" ignored="false" />
+    <file path="/day-event-maker.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1377887259066" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -442,11 +445,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="week.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="week.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/app/scripts/directives/calendar/week.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="118" column="25" selection-start="3673" selection-end="3673" vertical-scroll-proportion="0.53907585">
-              <folding />
+            <state line="48" column="24" selection-start="1401" selection-end="1401" vertical-scroll-proportion="0.0">
+              <folding>
+                <marker date="1377883801080" expanded="true" signature="2761:2765" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -469,10 +474,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_week.scss" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="_week.scss" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/app/styles/calendar/_week.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="121" column="0" selection-start="2345" selection-end="2345" vertical-scroll-proportion="0.0">
+            <state line="161" column="34" selection-start="3372" selection-end="3372" vertical-scroll-proportion="0.45350826">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_variables.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/app/styles/_variables.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="5" selection-start="762" selection-end="767" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="day-event-maker.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/app/scripts/directives/calendar/day-event-maker.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="53" column="0" selection-start="1441" selection-end="1441" vertical-scroll-proportion="-15.588235">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/app/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="74" column="63" selection-start="3349" selection-end="3349" vertical-scroll-proportion="-37.083332">
               <folding />
             </state>
           </provider>
@@ -496,7 +528,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/public/app/views/partials/calendar/index.html" />
         <option value="$PROJECT_DIR$/public/app/scripts/directives/calendar/index.js" />
         <option value="$PROJECT_DIR$/public/app/views/partials/calendar/day.html" />
         <option value="$PROJECT_DIR$/public/app/views/partials/calendar/month.html" />
@@ -508,10 +539,11 @@
         <option value="$PROJECT_DIR$/public/app/styles/calendar/_month.scss" />
         <option value="$PROJECT_DIR$/public/app/scripts/directives/calendar/month.js" />
         <option value="$PROJECT_DIR$/public/app/views/partials/calendar/week.html" />
-        <option value="$PROJECT_DIR$/public/app/index.html" />
         <option value="/HTML Fragment (week.js:1124).html" />
-        <option value="$PROJECT_DIR$/public/app/styles/calendar/_week.scss" />
+        <option value="$PROJECT_DIR$/public/app/index.html" />
         <option value="$PROJECT_DIR$/public/app/scripts/directives/calendar/week.js" />
+        <option value="$PROJECT_DIR$/public/app/scripts/directives/calendar/day-event-maker.js" />
+        <option value="$PROJECT_DIR$/public/app/styles/calendar/_week.scss" />
       </list>
     </option>
   </component>
@@ -978,16 +1010,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/app/scripts/services/sync.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="35" selection-start="100" selection-end="100" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/scripts/controllers/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="40" selection-start="157" selection-end="157" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/app/scripts/services/user.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="8" selection-start="73" selection-end="73" vertical-scroll-proportion="0.0" />
@@ -1040,13 +1062,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="21" selection-start="2390" selection-end="2390" vertical-scroll-proportion="0.25043377">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/app/scripts/directives/calendar.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -1068,16 +1083,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/styles/calendar/_week.scss">
+    <entry file="file://$PROJECT_DIR$/public/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="121" column="0" selection-start="2345" selection-end="2345" vertical-scroll-proportion="0.0">
+        <state line="74" column="63" selection-start="3349" selection-end="3349" vertical-scroll-proportion="-37.083332">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/styles/_variables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="5" selection-start="762" selection-end="767" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/app/scripts/directives/calendar/week.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="118" column="25" selection-start="3673" selection-end="3673" vertical-scroll-proportion="0.53907585">
+        <state line="48" column="24" selection-start="1401" selection-end="1401" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1377883801080" expanded="true" signature="2761:2765" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/scripts/directives/calendar/day-event-maker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="0" selection-start="1441" selection-end="1441" vertical-scroll-proportion="-15.588235">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/styles/calendar/_week.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="161" column="34" selection-start="3372" selection-end="3372" vertical-scroll-proportion="0.45350826">
           <folding />
         </state>
       </provider>

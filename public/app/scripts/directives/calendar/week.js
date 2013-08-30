@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('nolla.calendar')
-  .directive('nlCalendarWeek', function ($timeout, eventsHelpers) {
+  .directive('nlCalendarWeek', function ($timeout, eventsHelpers, $compile) {
 
     return {
       restrict: 'A',
@@ -44,7 +44,7 @@ angular.module('nolla.calendar')
           var createHourDivs = function (showHours) {
             var html = '';
             for (var i = 0, l = 24; i < l; ++i) {
-              html += '<div class="hour-div">' + (showHours ? formatHour(i) : '') + '</div>';
+              html += '<div class="hour-div" data-hour="' + i + '">' + (showHours ? formatHour(i) : '') + '</div>';
             }
             return html;
           };
@@ -75,51 +75,78 @@ angular.module('nolla.calendar')
             return html;
           };
 
-          var getDayHtml = function (day) {
-            var events = getDayEventPlaceholder(day);
-            var hours = createHourDivs(false);
-            return hours + events;
+          var getTodayHourLine = function (day) {
+            if (day.dateString == $scope.todayString) {
+              var html = '';
+              var now = moment();
+              var minute = now.minute();
+              var hour = now.hour();
+              var totalMinutes = (hour * 60) + minute;
+              var totalMinutesInDay = (24 * 60);
+              var percentFromTop = (totalMinutes / totalMinutesInDay) * 100;
+              html += '<div class="hour-line" style="top:' + percentFromTop + '%;"></div>'
+              return html;
+            }
+            return '';
           };
 
-          html += '<table class="week-table">'
-            + '<thead>'
-            + '<tr>'
-              + '<td class="week-table-hour-column">'
-                + '<div class="title">' + $scope.week.number + '</div>'
-              + '</td>'
-              + '<td>'
-                + '<table class="week-table-header">'
-                + '<tbody>'
-                  + '<tr>'
-                    + createDayTds(getDayName)
-                  + '</tr>'
-                + '</tbody>'
-                + '</table>'
-              +' </td>'
-              + '</tr>'
-            + '</thead>'
-            + '<tbody>'
+          var getDayHtml = function (day) {
+            var html = '<div class="day-holder" nl-make-day-event>'
+              + createHourDivs(false)
+              + getDayEventPlaceholder(day)
+              + getTodayHourLine(day)
+              + '</div>';
+            return html;
+          };
+
+          html += ''
+            + '<div class="week-header">'
+              + '<table class="week-table">'
+              + '<thead>'
               + '<tr>'
                 + '<td class="week-table-hour-column">'
-                  + createHourDivs(true)
+                  + '<div class="title">' + $scope.week.number + '</div>'
                 + '</td>'
                 + '<td>'
-                  + '<div class="week-table-body-parent">'
-                    + '<table class="week-table-body">'
-                    + '<tbody>'
-                      + '<tr>'
-                        + createDayTds(getDayHtml)
-                      + '</tr>'
-                    + '</tbody>'
-                    + '</table>'
-                  + '</div>'
-                + '</td>'
-              + '</tr>'
-            + '</tbody>'
-            + '</table>';
+                  + '<table class="week-table-header">'
+                  + '<tbody>'
+                    + '<tr>'
+                      + createDayTds(getDayName)
+                    + '</tr>'
+                  + '</tbody>'
+                  + '</table>'
+                +' </td>'
+                + '</tr>'
+              + '</thead>'
+              + '</table>'
+            + '</div>'
+            + '<div class="week-body">'
+              + '<table class="week-table">'
+              + '<tbody>'
+                + '<tr>'
+                  + '<td class="week-table-hour-column">'
+                    + createHourDivs(true)
+                  + '</td>'
+                  + '<td>'
+                    + '<div class="week-table-body-parent">'
+                      + '<table class="week-table-body">'
+                      + '<tbody>'
+                        + '<tr>'
+                          + createDayTds(getDayHtml)
+                        + '</tr>'
+                      + '</tbody>'
+                      + '</table>'
+                    + '</div>'
+                  + '</td>'
+                + '</tr>'
+              + '</tbody>'
+              + '</table>'
+            + '</div>';
 
 
-          element.find('.week-view').html(html);
+          var ele = angular.element(html);
+          var compiled = $compile(ele);
+          element.find('.week-view').html(compiled($scope));
         };
 
         $scope.update = function () {
