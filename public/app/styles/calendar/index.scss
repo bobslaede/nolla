@@ -41,5 +41,9 @@
 
 }
 
+.event-drag-y {
+  cursor: ns-resize;
+}
+
 @import "month";
 @import "week";

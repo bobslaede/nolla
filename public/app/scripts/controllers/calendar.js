@@ -10,6 +10,7 @@ angular.module('nolla')
     $scope.calendar = {};
     $scope.calendar.date = moment();
     $scope.calendar.events = $scope.events;
+    $scope.calendar.view = 'month';
 
     storage.get('calendar-view', 'month')
       .then(function (view) {

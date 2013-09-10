@@ -2,12 +2,13 @@
 
 
 angular.module('nolla.calendar')
-  .directive('nlMakeDayEvent', function ($timeout, eventsHelpers) {
+  .directive('nlMakeDayEvent', function ($timeout, eventsHelpers, $document) {
     return {
       link: function (scope, element, attrs) {
         var snap = 10; // minutes
         var MINUTES_IN_DAY = (24 * 60);
         var snapPercentage = (snap / MINUTES_IN_DAY) * 100;
+        var KEY_ESC = 27;
 
         var active = false;
 
@@ -63,28 +64,48 @@ angular.module('nolla.calendar')
           ele.html(str);
         };
 
+        var setActive = function (flag) {
+          $('body').toggleClass('event-drag-y', flag);
+        };
+
         element
           .on('mousedown', function (e) {
             if (e.button === 0) {
-              active = true;
+              e.originalEvent.preventDefault();
+              ele.active = true;
               $('.event-ghost').remove(); // remove all old ghosts
               element.append(ele);
               y1 = e.offsetY;
               tHeight = this.offsetHeight;
               positionEle(e);
+              setActive(ele.active);
             }
           })
           .on('mousemove', function (e) {
-            if (active === true) {
-              e.preventDefault();
+            if (ele.active === true) {
               positionEle(e);
+              e.originalEvent.preventDefault();
+              e.preventDefault();
+              ele[0].scrollIntoViewIfNeeded(false);
             }
           })
-        $(document)
+        $($document)
           .on('mouseup', function (e) {
-            if (active) {
+            if (ele.active) {
+              e.originalEvent.preventDefault();
               active = false;
               ele.remove();
+              setActive(active);
+            }
+          })
+          .on('keydown', function (e) {
+            if (ele.active) {
+              if (e.which == KEY_ESC) {
+                e.originalEvent.preventDefault();
+                ele.active = false;
+                ele.remove();
+                setActive(ele.active);
+              }
             }
           })
       }

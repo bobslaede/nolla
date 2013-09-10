@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="342fdae3-dca1-48ea-93cd-e022978dd8f9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/directives/calendar/day-event-maker.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/styles/calendar/_week.scss" afterPath="$PROJECT_DIR$/public/app/styles/calendar/_week.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/index.html" afterPath="$PROJECT_DIR$/public/app/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/scripts/controllers/calendar.js" afterPath="$PROJECT_DIR$/public/app/scripts/controllers/calendar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/scripts/directives/calendar/day-event-maker.js" afterPath="$PROJECT_DIR$/public/app/scripts/directives/calendar/day-event-maker.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/scripts/directives/calendar/index.js" afterPath="$PROJECT_DIR$/public/app/scripts/directives/calendar/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/styles/calendar/index.scss" afterPath="$PROJECT_DIR$/public/app/styles/calendar/index.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/styles/main.css.map" afterPath="$PROJECT_DIR$/public/app/styles/main.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/styles/main.css" afterPath="$PROJECT_DIR$/public/app/styles/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/scripts/directives/calendar/week.js" afterPath="$PROJECT_DIR$/public/app/scripts/directives/calendar/week.js" />
@@ -27,7 +29,7 @@
     <file path="/init.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1376245920492" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/scripts/029d5d9f.components.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1369943639886" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/components/angular/angular.min.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370000361351" ignored="false" />
-    <file path="/index.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1376595455573" ignored="false" />
+    <file path="/index.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1378836993951" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/styles/c63fa633.main.css" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1369943639886" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/components/angular-ui-router/sample/bootstrap.min.css" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1373487499223" ignored="false" />
     <file path="/client.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1376583722972" ignored="false" />
@@ -331,7 +333,7 @@
     <file path="/contenteditable.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370375104034" ignored="false" />
     <file path="/calendar.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370464205994" ignored="false" />
     <file path="/calendar.html" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1376593297404" ignored="false" />
-    <file path="/calendar.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1377114304619" ignored="false" />
+    <file path="/calendar.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1378836813235" ignored="false" />
     <file path="/.gitignore" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1373747097612" ignored="false" />
     <file path="$PROJECT_DIR$/../nolla2/nolla-back/config/express.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1372922091888" ignored="false" />
     <file path="/a.coffee" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1372922053878" ignored="false" />
@@ -375,7 +377,7 @@
     <file path="/calendar-month.html" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1375899830289" ignored="false" />
     <file path="/calendar-week.html" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1374077140860" ignored="false" />
     <file path="/calendar-week.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1374077084859" ignored="false" />
-    <file path="/Dummy.txt" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1377802864258" ignored="false" />
+    <file path="/Dummy.txt" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1378832855560" ignored="false" />
     <file path="/events.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1377115386331" ignored="false" />
     <file path="/.nodemonignore" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1374092169304" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/components/ui-router/release/doc/styles/jsdoc-default.css" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1374092391609" ignored="false" />
@@ -395,7 +397,7 @@
     <file path="$PROJECT_DIR$/public/dist/components/bootstrap/less/tooltip.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1374092391609" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/components/bootstrap/less/modals.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1374092391609" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/components/angular-scenario/angular-scenario.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1374523267218" ignored="false" />
-    <file path="/index.scss" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1376586616237" ignored="false" />
+    <file path="/index.scss" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1378835906110" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/components/bootstrap/less/button-groups.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1375371995912" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/components/bootstrap/docs/assets/css/bootstrap.css" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1375371995912" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/components/bootstrap/less/utilities.less" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1375371995912" ignored="false" />
@@ -422,10 +424,10 @@
     <file path="/event.html" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1376585429185" ignored="false" />
     <file path="/week.ts" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1376586985773" ignored="false" />
     <file path="/week.html" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1377626918239" ignored="false" />
-    <file path="/week.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1377883800680" ignored="false" />
-    <file path="/_week.scss" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1377887307606" ignored="false" />
+    <file path="/week.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1378835576577" ignored="false" />
+    <file path="/_week.scss" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1378836381341" ignored="false" />
     <file path="/events-helpers.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1377115067108" ignored="false" />
-    <file path="/day-event-maker.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1377887259066" ignored="false" />
+    <file path="/day-event-maker.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1378836555841" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -448,19 +450,10 @@
       <file leaf-file-name="week.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/app/scripts/directives/calendar/week.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="24" selection-start="1401" selection-end="1401" vertical-scroll-proportion="0.0">
+            <state line="88" column="26" selection-start="2855" selection-end="2855" vertical-scroll-proportion="0.0">
               <folding>
-                <marker date="1377883801080" expanded="true" signature="2761:2765" placeholder="..." />
+                <marker date="1378835581336" expanded="false" signature="2791:2795" placeholder="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="month.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/app/scripts/directives/calendar/month.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="41" selection-start="1549" selection-end="1760" vertical-scroll-proportion="0.0">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -474,10 +467,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_week.scss" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_week.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/app/styles/calendar/_week.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="161" column="34" selection-start="3372" selection-end="3372" vertical-scroll-proportion="0.45350826">
+            <state line="76" column="29" selection-start="1549" selection-end="1549" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/app/styles/calendar/index.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="44" column="20" selection-start="793" selection-end="793" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -495,7 +497,34 @@
       <file leaf-file-name="day-event-maker.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/app/scripts/directives/calendar/day-event-maker.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="0" selection-start="1441" selection-end="1441" vertical-scroll-proportion="-15.588235">
+            <state line="36" column="0" selection-start="882" selection-end="882" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/app/scripts/directives/calendar/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="0" selection-start="402" selection-end="402" vertical-scroll-proportion="0.14722864">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/app/views/partials/calendar/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="44" column="54" selection-start="1438" selection-end="1438" vertical-scroll-proportion="-27.5">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="calendar.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/app/scripts/controllers/calendar.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="9" selection-start="485" selection-end="485" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -504,7 +533,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/app/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="74" column="63" selection-start="3349" selection-end="3349" vertical-scroll-proportion="-37.083332">
+            <state line="74" column="63" selection-start="3349" selection-end="3349" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -528,11 +557,8 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/public/app/scripts/directives/calendar/index.js" />
-        <option value="$PROJECT_DIR$/public/app/views/partials/calendar/day.html" />
         <option value="$PROJECT_DIR$/public/app/views/partials/calendar/month.html" />
         <option value="$PROJECT_DIR$/public/app/scripts/services/calendar.js" />
-        <option value="$PROJECT_DIR$/public/app/scripts/controllers/calendar.js" />
         <option value="$PROJECT_DIR$/public/app/scripts/services/events.js" />
         <option value="$PROJECT_DIR$/models/event.js" />
         <option value="$PROJECT_DIR$/public/app/scripts/services/events-helpers.js" />
@@ -542,8 +568,11 @@
         <option value="/HTML Fragment (week.js:1124).html" />
         <option value="$PROJECT_DIR$/public/app/index.html" />
         <option value="$PROJECT_DIR$/public/app/scripts/directives/calendar/week.js" />
+        <option value="$PROJECT_DIR$/public/app/styles/calendar/index.scss" />
         <option value="$PROJECT_DIR$/public/app/scripts/directives/calendar/day-event-maker.js" />
+        <option value="$PROJECT_DIR$/public/app/scripts/controllers/calendar.js" />
         <option value="$PROJECT_DIR$/public/app/styles/calendar/_week.scss" />
+        <option value="$PROJECT_DIR$/public/app/scripts/directives/calendar/index.js" />
       </list>
     </option>
   </component>
@@ -647,6 +676,84 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nolla-server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nolla" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="partials" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nolla-server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nolla" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="partials" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="calendar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nolla-server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nolla" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="styles" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -752,6 +859,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="calendar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nolla-server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nolla" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -763,13 +896,13 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="recentsLimit" value="5" />
-    <property name="restartRequiresConfirmation" value="true" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/public/app/scripts/controllers/calendar.js" />
+    <property name="restartRequiresConfirmation" value="true" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="PublishConfig" serverName="server on 9000" serverId="52c0ff24-879d-40d5-b2bc-e312a06df648">
     <servers>
@@ -1010,56 +1143,24 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/app/scripts/services/user.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="8" selection-start="73" selection-end="73" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/scripts/services/calendar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="14" selection-end="14" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/scripts/controllers/calendar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="71" selection-start="110" selection-end="110" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/views/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/event.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="8" selection-start="529" selection-end="529" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="27" column="8" selection-start="529" selection-end="529" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/app/scripts/services/events-helpers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="5" selection-start="992" selection-end="992" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="40" column="5" selection-start="992" selection-end="992" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/app/views/partials/calendar/week.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="50" selection-start="176" selection-end="176" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="6" column="50" selection-start="176" selection-end="176" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/app/components/angular-strap/src/directives/modal.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/app/scripts/directives/calendar.js">
@@ -1085,7 +1186,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="63" selection-start="3349" selection-end="3349" vertical-scroll-proportion="-37.083332">
+        <state line="74" column="63" selection-start="3349" selection-end="3349" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1099,23 +1200,51 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/app/scripts/directives/calendar/week.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="24" selection-start="1401" selection-end="1401" vertical-scroll-proportion="0.0">
+        <state line="88" column="26" selection-start="2855" selection-end="2855" vertical-scroll-proportion="0.0">
           <folding>
-            <marker date="1377883801080" expanded="true" signature="2761:2765" placeholder="..." />
+            <marker date="1378835581336" expanded="false" signature="2791:2795" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/styles/calendar/index.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="20" selection-start="793" selection-end="793" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/app/scripts/directives/calendar/day-event-maker.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="0" selection-start="1441" selection-end="1441" vertical-scroll-proportion="-15.588235">
+        <state line="36" column="0" selection-start="882" selection-end="882" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/scripts/controllers/calendar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="9" selection-start="485" selection-end="485" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/views/partials/calendar/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="54" selection-start="1438" selection-end="1438" vertical-scroll-proportion="-27.5">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/app/styles/calendar/_week.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="161" column="34" selection-start="3372" selection-end="3372" vertical-scroll-proportion="0.45350826">
+        <state line="76" column="29" selection-start="1549" selection-end="1549" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/scripts/directives/calendar/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="0" selection-start="402" selection-end="402" vertical-scroll-proportion="0.14722864">
           <folding />
         </state>
       </provider>

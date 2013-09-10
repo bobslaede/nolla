@@ -19,6 +19,7 @@ angular.module('nolla.calendar')
         $scope.start = undefined;
         $scope.end = undefined;
         $scope.today = undefined;
+        $scope.startHour = 8;
 
         $scope.hours = [];
         var range = moment().startOf('day').twix(moment().endOf('day'));
@@ -147,6 +148,9 @@ angular.module('nolla.calendar')
           var ele = angular.element(html);
           var compiled = $compile(ele);
           element.find('.week-view').html(compiled($scope));
+
+          var scrollTo = element.find('.hour-line')[0] || element.find('[data-hour="' + $scope.startHour + '"]')[0];
+          scrollTo && scrollTo.scrollIntoView(true);
         };
 
         $scope.update = function () {

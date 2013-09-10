@@ -6867,6 +6867,9 @@ body {
       -ms-flex: 1 0 auto;
       flex: 1 0 auto; }
 
+.event-drag-y {
+  cursor: ns-resize; }
+
 .calendar-directive .month {
   display: -webkit-flex;
   display: -moz-flex;
@@ -6951,14 +6954,16 @@ body {
       -webkit-flex: 0 0 auto;
       -moz-flex: 0 0 auto;
       -ms-flex: 0 0 auto;
-      flex: 0 0 auto; }
+      flex: 0 0 auto;
+      margin-right: 10px; }
     .calendar-directive .week .week-view .week-body {
       -webkit-flex-grow: 1;
       -moz-flex-grow: 1;
       -ms-flex-positive: 1;
       flex-grow: 1;
-      min-height: 0;
-      overflow: auto; }
+      min-height: 250px;
+      overflow-y: scroll;
+      height: 0; }
     .calendar-directive .week .week-view table {
       width: 100%; }
     .calendar-directive .week .week-view .week-table td {
@@ -6986,7 +6991,13 @@ body {
       position: absolute;
       left: 0;
       right: 0;
-      border-bottom: 1px solid red; }
+      border-bottom: 1px solid red;
+      -webkit-pointer-events: none;
+      -moz-pointer-events: none;
+      pointer-events: none;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none; }
     .calendar-directive .week .week-view .week-table .hour-div {
       height: 40px;
       line-height: 40px;
@@ -7010,7 +7021,13 @@ body {
         font-size: 11.9px; }
     .calendar-directive .week .week-view .week-table .week-table-body .hour-div {
       position: relative;
-      border-bottom: 1px solid #cccccc; }
+      border-bottom: 1px solid #cccccc;
+      -webkit-pointer-events: none;
+      -moz-pointer-events: none;
+      pointer-events: none;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none; }
       .calendar-directive .week .week-view .week-table .week-table-body .hour-div:after {
         content: '';
         display: block;

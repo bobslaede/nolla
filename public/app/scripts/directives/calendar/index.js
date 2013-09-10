@@ -88,9 +88,10 @@ angular.module('nolla.calendar', [
 
       },
       link : function ($scope, element, attrs, controller) {
-        $scope.calendar = _.extend({
-          view: 'month'
-        }, $scope.nlCalendar);
+        $scope.calendar = $scope.nlCalendar;
+        if (!$scope.calendar.date) {
+          $scope.calendar.date = moment();
+        }
 
         controller.draw();
       }
