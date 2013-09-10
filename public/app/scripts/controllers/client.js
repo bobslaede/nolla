@@ -23,6 +23,7 @@ angular.module('nolla')
     $scope.calendar = {};
     $scope.calendar.date = moment();
     $scope.calendar.events = $scope.events;
+    $scope.calendar.view = 'week';
 
     $scope.clients.findById(id)
       .then(function (client) {

@@ -1,5 +1,5 @@
 /**
- * @license AngularJS v1.2.0-6b91aa0
+ * @license AngularJS v1.2.0-e4415d2
  * (c) 2010-2012 Google, Inc. http://angularjs.org
  * License: MIT
  *
@@ -104,31 +104,19 @@ angular.mock.$Browser = function() {
    * @param {number=} number of milliseconds to flush. See {@link #defer.now}
    */
   self.defer.flush = function(delay) {
-    var flushedSomething = false;
-        now = self.defer.now;
-
     if (angular.isDefined(delay)) {
-      now += delay;
+      self.defer.now += delay;
     } else {
       if (self.deferredFns.length) {
-        now = self.deferredFns[self.deferredFns.length-1].time;
+        self.defer.now = self.deferredFns[self.deferredFns.length-1].time;
+      } else {
+        throw Error('No deferred tasks to be flushed');
       }
     }
 
-    while (self.deferredFns.length && self.deferredFns[0].time <= now) {
-      flushedSomething = true;
+    while (self.deferredFns.length && self.deferredFns[0].time <= self.defer.now) {
       self.deferredFns.shift().fn();
     }
-
-    if (!flushedSomething) {
-      if (angular.isUndefined(delay)) {
-        throw Error('No deferred tasks to be flushed!');
-      } else {
-        throw Error('No deferred tasks with delay up to ' + delay + 'ms to be flushed!')
-      }
-    }
-
-    self.defer.now = now;
   };
 
   /**
@@ -328,7 +316,7 @@ angular.mock.$LogProvider = function() {
   }
 
   this.debugEnabled = function(flag) {
-	  if (isDefined(flag)) {
+	  if (angular.isDefined(flag)) {
 		  debug = flag;
 		  return this;
 	  } else {
@@ -1863,9 +1851,11 @@ angular.mock.clearDataCache = function() {
    *
    * See {@link angular.mock.inject inject} for usage example
    *
-   * @param {...(string|Function)} fns any number of modules which are represented as string
+   * @param {...(string|Function|Object)} fns any number of modules which are represented as string
    *        aliases or as anonymous module initialization functions. The modules are used to
-   *        configure the injector. The 'ng' and 'ngMock' modules are automatically loaded.
+   *        configure the injector. The 'ng' and 'ngMock' modules are automatically loaded. If an 
+   *        object literal is passed they will be register as values in the module, the key being
+   *        the module name and the value being what is returned.
    */
   window.module = angular.mock.module = function() {
     var moduleFns = Array.prototype.slice.call(arguments, 0);
@@ -1877,7 +1867,15 @@ angular.mock.clearDataCache = function() {
       } else {
         var modules = currentSpec.$modules || (currentSpec.$modules = []);
         angular.forEach(moduleFns, function(module) {
-          modules.push(module);
+          if (angular.isObject(module) && !angular.isArray(module)) {
+            modules.push(function($provide) {
+              angular.forEach(module, function(value, key) {
+                $provide.value(key, value);
+              });
+            });
+          } else {
+            modules.push(module);
+          }
         });
       }
     }
@@ -1894,8 +1892,40 @@ angular.mock.clearDataCache = function() {
    * instance of {@link AUTO.$injector $injector} per test, which is then used for
    * resolving references.
    *
-   * See also {@link angular.mock.module module}
    *
+   * ## Resolving References (Underscore Wrapping)
+   * Often, we would like to inject a reference once, in a `beforeEach()` block and reuse this
+   * in multiple `it()` clauses. To be able to do this we must assign the reference to a variable
+   * that is declared in the scope of the `describe()` block. Since we would, most likely, want 
+   * the variable to have the same name of the reference we have a problem, since the parameter
+   * to the `inject()` function would hide the outer variable.
+   *
+   * To help with this, the injected parameters can, optionally, be enclosed with underscores.
+   * These are ignored by the injector when the reference name is resolved.
+   * 
+   * For example, the parameter `_myService_` would be resolved as the reference `myService`.
+   * Since it is available in the function body as _myService_, we can then assign it to a variable
+   * defined in an outer scope.
+   * 
+   * ```
+   * // Defined out reference variable outside
+   * var myService;
+   *
+   * // Wrap the parameter in underscores
+   * beforeEach( inject( function(_myService_){
+   *   myService = _myService_;
+   * })); 
+   *
+   * // Use myService in a series of tests.
+   * it('makes use of myService', function() {
+   *   myService.doStuff();
+   * });
+   * 
+   * ```
+   * 
+   * See also {@link angular.mock.module angular.mock.module}
+   *
+   * ## Example
    * Example of what a typical jasmine tests looks like with the inject method.
    * <pre>
    *
@@ -1932,7 +1962,7 @@ angular.mock.clearDataCache = function() {
    *   });
    *
    * </pre>
-   *
+   * 
    * @param {...Function} fns any number of functions which will be injected using the injector.
    */
   window.inject = angular.mock.inject = function() {

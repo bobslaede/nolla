@@ -5,6 +5,17 @@
   .column {
     @include flex-shrink(0);
     min-width: 400px;
+    @include flexbox();
+    @include flex-direction(column);
+    @include flex-wrap(nowrap);
+  }
+
+  .form {
+    @include flexbox();
+    @include flex-grow(1);
+    @include flex-shrink(0);
+    @include flex-direction(column);
+    @include flex-wrap(nowrap);
   }
 
   .input-append {
@@ -24,6 +35,10 @@
     input {
       width: 119px;
     }
+  }
+
+  .client-calendar-holder {
+
   }
 
 }

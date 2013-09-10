@@ -2,14 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="342fdae3-dca1-48ea-93cd-e022978dd8f9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/styles/calendar/_week.scss" afterPath="$PROJECT_DIR$/public/app/styles/calendar/_week.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/scripts/controllers/calendar.js" afterPath="$PROJECT_DIR$/public/app/scripts/controllers/calendar.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/scripts/directives/calendar/day-event-maker.js" afterPath="$PROJECT_DIR$/public/app/scripts/directives/calendar/day-event-maker.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/styles/_client.scss" afterPath="$PROJECT_DIR$/public/app/styles/_client.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/angular-animate.js" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/angular-animate.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/angular-animate.min.js" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/angular-animate.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/angular-cookies.js" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/angular-cookies.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/angular-cookies.min.js" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/angular-cookies.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/angular-loader.js" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/angular-loader.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/angular-loader.min.js" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/angular-loader.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/angular-mocks.js" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/angular-mocks.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/angular-resource.js" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/angular-resource.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/angular-resource.min.js" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/angular-resource.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/angular-route.js" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/angular-route.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/angular-route.min.js" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/angular-route.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/angular-sanitize.js" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/angular-sanitize.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/angular-sanitize.min.js" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/angular-sanitize.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/angular-scenario.js" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/angular-scenario.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/angular-touch.js" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/angular-touch.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/angular-touch.min.js" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/angular-touch.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/angular.js" afterPath="$PROJECT_DIR$/public/app/angular.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/angular.js" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/angular.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/scripts/lib/angular/angular.min.js" afterPath="$PROJECT_DIR$/public/app/scripts/lib/angular/angular.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/scripts/controllers/client.js" afterPath="$PROJECT_DIR$/public/app/scripts/controllers/client.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/scripts/directives/calendar/index.js" afterPath="$PROJECT_DIR$/public/app/scripts/directives/calendar/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/styles/calendar/index.scss" afterPath="$PROJECT_DIR$/public/app/styles/calendar/index.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/styles/main.css.map" afterPath="$PROJECT_DIR$/public/app/styles/main.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/styles/main.css" afterPath="$PROJECT_DIR$/public/app/styles/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/scripts/directives/calendar/week.js" afterPath="$PROJECT_DIR$/public/app/scripts/directives/calendar/week.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="nolla-server.iws" />
@@ -29,10 +45,10 @@
     <file path="/init.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1376245920492" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/scripts/029d5d9f.components.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1369943639886" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/components/angular/angular.min.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370000361351" ignored="false" />
-    <file path="/index.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1378836993951" ignored="false" />
+    <file path="/index.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1378837157061" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/styles/c63fa633.main.css" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1369943639886" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/components/angular-ui-router/sample/bootstrap.min.css" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1373487499223" ignored="false" />
-    <file path="/client.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1376583722972" ignored="false" />
+    <file path="/client.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1378837202825" ignored="false" />
     <file path="/client.html" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1376248572880" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/scripts/f17111db.components.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370037127645" ignored="false" />
     <file path="/socket-model.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1370357951792" ignored="false" />
@@ -359,7 +375,7 @@
     <file path="/_layout.scss" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1374092460302" ignored="false" />
     <file path="/_wells.scss" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1372947144632" ignored="false" />
     <file path="/_client-list.scss" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1374093038804" ignored="false" />
-    <file path="/_client.scss" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1375300705331" ignored="false" />
+    <file path="/_client.scss" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1378837570355" ignored="false" />
     <file path="/sync.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1376331812989" ignored="false" />
     <file path="/fragment.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1372970786408" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/components/socket.io-client/dist/socket.io.min.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1373059919313" ignored="false" />
@@ -377,7 +393,7 @@
     <file path="/calendar-month.html" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1375899830289" ignored="false" />
     <file path="/calendar-week.html" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1374077140860" ignored="false" />
     <file path="/calendar-week.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1374077084859" ignored="false" />
-    <file path="/Dummy.txt" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1378832855560" ignored="false" />
+    <file path="/Dummy.txt" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1378843532667" ignored="false" />
     <file path="/events.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1377115386331" ignored="false" />
     <file path="/.nodemonignore" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1374092169304" ignored="false" />
     <file path="$PROJECT_DIR$/public/dist/components/ui-router/release/doc/styles/jsdoc-default.css" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1374092391609" ignored="false" />
@@ -428,6 +444,7 @@
     <file path="/_week.scss" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1378836381341" ignored="false" />
     <file path="/events-helpers.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1377115067108" ignored="false" />
     <file path="/day-event-maker.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1378836555841" ignored="false" />
+    <file path="$PROJECT_DIR$/public/app/angular.js/build/angular-scenario.js" changelist="342fdae3-dca1-48ea-93cd-e022978dd8f9" time="1378837090126" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -458,15 +475,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_month.scss" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/app/styles/calendar/_month.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="7" selection-start="757" selection-end="757" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="_week.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/app/styles/calendar/_week.scss">
           <provider selected="true" editor-type-id="text-editor">
@@ -485,15 +493,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_variables.scss" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/app/styles/_variables.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="5" selection-start="762" selection-end="767" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="day-event-maker.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/app/scripts/directives/calendar/day-event-maker.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -503,10 +502,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/app/scripts/directives/calendar/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="0" selection-start="402" selection-end="402" vertical-scroll-proportion="0.14722864">
+            <state line="94" column="26" selection-start="2913" selection-end="2913" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -524,16 +523,34 @@
       <file leaf-file-name="calendar.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/app/scripts/controllers/calendar.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="9" selection-start="485" selection-end="485" vertical-scroll-proportion="0.0">
+            <state line="32" column="0" selection-start="843" selection-end="843" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/app/index.html">
+      <file leaf-file-name="client.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/app/scripts/controllers/client.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="74" column="63" selection-start="3349" selection-end="3349" vertical-scroll-proportion="0.0">
+            <state line="25" column="34" selection-start="583" selection-end="583" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="client.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/app/views/client.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="275" column="0" selection-start="8835" selection-end="8835" vertical-scroll-proportion="-25.625">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_client.scss" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/app/styles/_client.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="3" selection-start="566" selection-end="566" vertical-scroll-proportion="0.37991267">
               <folding />
             </state>
           </provider>
@@ -557,8 +574,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/public/app/views/partials/calendar/month.html" />
-        <option value="$PROJECT_DIR$/public/app/scripts/services/calendar.js" />
         <option value="$PROJECT_DIR$/public/app/scripts/services/events.js" />
         <option value="$PROJECT_DIR$/models/event.js" />
         <option value="$PROJECT_DIR$/public/app/scripts/services/events-helpers.js" />
@@ -573,6 +588,8 @@
         <option value="$PROJECT_DIR$/public/app/scripts/controllers/calendar.js" />
         <option value="$PROJECT_DIR$/public/app/styles/calendar/_week.scss" />
         <option value="$PROJECT_DIR$/public/app/scripts/directives/calendar/index.js" />
+        <option value="$PROJECT_DIR$/public/app/scripts/controllers/client.js" />
+        <option value="$PROJECT_DIR$/public/app/styles/_client.scss" />
       </list>
     </option>
   </component>
@@ -942,6 +959,13 @@
       <option name="testName" />
       <method />
     </configuration>
+    <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
+      <setting name="configLocationType" value="CONFIG_FILE" />
+      <setting name="settingsFile" value="" />
+      <setting name="serverType" value="INTERNAL" />
+      <setting name="preferredDebugBrowser" value="CHROME" />
+      <method />
+    </configuration>
     <configuration default="true" type="NodeJSRemoteDebug" factoryName="Node.js Remote Debug">
       <node-js-remote-debug />
       <method />
@@ -1028,7 +1052,11 @@
       <created>1374523906087</created>
       <updated>1374523906087</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="fixed week view">
+      <created>1378837079444</created>
+      <updated>1378837079444</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1053,8 +1081,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="-4" width="1202" height="1925" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
+      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32996064" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32996064" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294509" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2497876" sideWeight="0.6705491" order="1" side_tool="false" content_ui="tabs" />
@@ -1069,7 +1098,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24956672" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1117,7 +1145,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="storing state" />
+    <option name="LAST_COMMIT_MESSAGE" value="added new angular, fixed some week view on clients" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1136,6 +1164,8 @@
     <MESSAGE value="auto hide and show sidebar" />
     <MESSAGE value="debugging sidebar" />
     <MESSAGE value="storing state" />
+    <MESSAGE value="fixed week view" />
+    <MESSAGE value="added new angular, fixed some week view on clients" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1143,21 +1173,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/models/event.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="8" selection-start="529" selection-end="529" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/scripts/services/events-helpers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="5" selection-start="992" selection-end="992" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/views/partials/calendar/week.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="50" selection-start="176" selection-end="176" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/app/components/angular-strap/src/directives/modal.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
@@ -1221,13 +1236,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/scripts/controllers/calendar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="9" selection-start="485" selection-end="485" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/app/views/partials/calendar/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="44" column="54" selection-start="1438" selection-end="1438" vertical-scroll-proportion="-27.5">
@@ -1244,7 +1252,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/app/scripts/directives/calendar/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="402" selection-end="402" vertical-scroll-proportion="0.14722864">
+        <state line="94" column="26" selection-start="2913" selection-end="2913" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/scripts/controllers/calendar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="0" selection-start="843" selection-end="843" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/scripts/controllers/client.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="34" selection-start="583" selection-end="583" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/views/client.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="275" column="0" selection-start="8835" selection-end="8835" vertical-scroll-proportion="-25.625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/styles/_client.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="3" selection-start="566" selection-end="566" vertical-scroll-proportion="0.37991267">
           <folding />
         </state>
       </provider>

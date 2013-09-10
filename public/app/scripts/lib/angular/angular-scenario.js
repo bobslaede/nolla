@@ -9472,7 +9472,7 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
 })( window );
 
 /**
- * @license AngularJS v1.2.0-6b91aa0
+ * @license AngularJS v1.2.0-e4415d2
  * (c) 2010-2012 Google, Inc. http://angularjs.org
  * License: MIT
  */
@@ -9611,7 +9611,7 @@ if ('i' !== 'I'.toLowerCase()) {
 
 
 var /** holds major version number for IE or NaN for real browsers */
-    msie              = int((/msie (\d+)/.exec(lowercase(navigator.userAgent)) || [])[1]),
+    msie,
     jqLite,           // delay binding since jQuery could be loaded after us.
     jQuery,           // delay binding
     slice             = [].slice,
@@ -9626,6 +9626,16 @@ var /** holds major version number for IE or NaN for real browsers */
     angularModule,
     nodeName_,
     uid               = ['0', '0', '0'];
+
+/**
+ * IE 11 changed the format of the UserAgent string.
+ * See http://msdn.microsoft.com/en-us/library/ms537503.aspx
+ */
+msie = int((/msie (\d+)/.exec(lowercase(navigator.userAgent)) || [])[1]);
+if (isNaN(msie)) {
+  msie = int((/trident\/.*; rv:(\d+)/.exec(lowercase(navigator.userAgent)) || [])[1]);
+}
+
 
 /**
  * @private
@@ -10596,7 +10606,9 @@ function angularInit(element, bootstrap) {
  * They must use {@link api/ng.directive:ngApp ngApp}.
  *
  * @param {Element} element DOM element which is the root of angular application.
- * @param {Array<String|Function>=} modules an array of module declarations. See: {@link angular.module modules}
+ * @param {Array<String|Function|Array>=} modules an array of modules to load into the application.
+ *     Each item in the array should be the name of a predefined module or a (DI annotated)
+ *     function that will be invoked by the injector as a run block. See: {@link angular.module modules}
  * @returns {AUTO.$injector} Returns the newly created injector for this app.
  */
 function bootstrap(element, modules) {
@@ -11018,11 +11030,11 @@ function setupModuleLoader(window) {
  * - `codeName` – `{string}` – Code name of the release, such as "jiggling-armfat".
  */
 var version = {
-  full: '1.2.0-6b91aa0',    // all of these placeholder strings will be replaced by grunt's
+  full: '1.2.0-e4415d2',    // all of these placeholder strings will be replaced by grunt's
   major: 1,    // package task
   minor: 2,
   dot: 0,
-  codeName: 'barehand-atomspliting'
+  codeName: 'ferocious-twitch'
 };
 
 
@@ -12664,8 +12676,36 @@ function createInjector(modulesToLoad) {
  * according to rules specified in
  * {@link http://dev.w3.org/html5/spec/Overview.html#the-indicated-part-of-the-document Html5 spec}.
  *
- * It also watches the `$location.hash()` and scroll whenever it changes to match any anchor.
+ * It also watches the `$location.hash()` and scrolls whenever it changes to match any anchor.
  * This can be disabled by calling `$anchorScrollProvider.disableAutoScrolling()`.
+ * 
+ * @example
+   <example>
+     <file name="index.html">
+       <div ng-controller="MainCtrl">
+         <a ng-click="gotoBottom()">Go to bottom</a>
+         <a id="bottom"></a> You're at the bottom!
+       </div>
+     </file>
+     <file name="script.js">
+       function ScrollCtrl($scope, $location, $anchorScroll) {
+         $scope.gotoBottom = function (){
+           // set the location.hash to the id of
+           // the element you wish to scroll to.
+           $location.hash('bottom');
+           
+           // call $anchorScroll()
+           $anchorScroll();
+         }
+       }
+     </file>
+     <file name="style.css">
+       #bottom {
+         display: block;
+         margin-top: 2000px;
+       }
+     </file>
+   </example>
  */
 function $AnchorScrollProvider() {
 
@@ -12817,7 +12857,7 @@ var $AnimateProvider = ['$provide', function($provide) {
         forEach(element, function(node) {
           parentNode.insertBefore(node, afterNextSibling);
         });
-        $timeout(done || noop, 0, false);
+        done && $timeout(done, 0, false);
       },
 
       /**
@@ -12834,7 +12874,7 @@ var $AnimateProvider = ['$provide', function($provide) {
        */
       leave : function(element, done) {
         element.remove();
-        $timeout(done || noop, 0, false);
+        done && $timeout(done, 0, false);
       },
 
       /**
@@ -12876,7 +12916,7 @@ var $AnimateProvider = ['$provide', function($provide) {
                       className :
                       isArray(className) ? className.join(' ') : '';
         element.addClass(className);
-        $timeout(done || noop, 0, false);
+        done && $timeout(done, 0, false);
       },
 
       /**
@@ -12897,7 +12937,7 @@ var $AnimateProvider = ['$provide', function($provide) {
                       className :
                       isArray(className) ? className.join(' ') : '';
         element.removeClass(className);
-        $timeout(done || noop, 0, false);
+        done && $timeout(done, 0, false);
       },
 
       enabled : noop
@@ -15196,7 +15236,7 @@ function $HttpProvider() {
         // strip json vulnerability protection prefix
         data = data.replace(PROTECTION_PREFIX, '');
         if (JSON_START.test(data) && JSON_END.test(data))
-          data = fromJson(data, true);
+          data = fromJson(data);
       }
       return data;
     }],
@@ -15992,7 +16032,7 @@ function $HttpProvider() {
 
       if (cache) {
         cachedResp = cache.get(url);
-        if (cachedResp) {
+        if (isDefined(cachedResp)) {
           if (cachedResp.then) {
             // cached request has already been sent, but there is no response yet
             cachedResp.then(removePendingReq, removePendingReq);
@@ -16012,7 +16052,7 @@ function $HttpProvider() {
       }
 
       // if we won't have the response in cache, send the request to the backend
-      if (!cachedResp) {
+      if (isUndefined(cachedResp)) {
         $httpBackend(config.method, url, reqData, done, reqHeaders, config.timeout,
             config.withCredentials, config.responseType);
       }
@@ -17065,7 +17105,7 @@ function $LocationProvider(){
    * @name ng.$locationProvider#html5Mode
    * @methodOf ng.$locationProvider
    * @description
-   * @param {string=} mode Use HTML5 strategy if available.
+   * @param {boolean=} mode Use HTML5 strategy if available.
    * @returns {*} current value if used as getter or itself (chaining) if used as setter
    */
   this.html5Mode = function(mode) {
@@ -18342,6 +18382,8 @@ function $ParseProvider() {
  *       // since this fn executes async in a future turn of the event loop, we need to wrap
  *       // our code into an $apply call so that the model changes are properly observed.
  *       scope.$apply(function() {
+ *         deferred.notify('About to greet ' + name + '.');
+ *
  *         if (okToGreet(name)) {
  *           deferred.resolve('Hello, ' + name + '!');
  *         } else {
@@ -18358,6 +18400,8 @@ function $ParseProvider() {
  *     alert('Success: ' + greeting);
  *   }, function(reason) {
  *     alert('Failed: ' + reason);
+ *   }, function(update) {
+ *     alert('Got notification: ' + update);
  *   });
  * </pre>
  *
@@ -18376,7 +18420,8 @@ function $ParseProvider() {
  * A new instance of deferred is constructed by calling `$q.defer()`.
  *
  * The purpose of the deferred object is to expose the associated Promise instance as well as APIs
- * that can be used for signaling the successful or unsuccessful completion of the task.
+ * that can be used for signaling the successful or unsuccessful completion, as well as the status
+ * of the task.
  *
  * **Methods**
  *
@@ -18384,6 +18429,8 @@ function $ParseProvider() {
  *   constructed via `$q.reject`, the promise will be rejected instead.
  * - `reject(reason)` – rejects the derived promise with the `reason`. This is equivalent to
  *   resolving it with a rejection constructed via `$q.reject`.
+ * - `notify(value)` - provides updates on the status of the promises execution. This may be called
+ *   multiple times before the promise is either resolved or rejected.
  *
  * **Properties**
  *
@@ -18400,12 +18447,15 @@ function $ParseProvider() {
  *
  * **Methods**
  *
- * - `then(successCallback, errorCallback)` – regardless of when the promise was or will be resolved
- *   or rejected, `then` calls one of the success or error callbacks asynchronously as soon as the result
- *   is available. The callbacks are called with a single argument: the result or rejection reason.
+ * - `then(successCallback, errorCallback, notifyCallback)` – regardless of when the promise was or
+ *   will be resolved or rejected, `then` calls one of the success or error callbacks asynchronously
+ *   as soon as the result is available. The callbacks are called with a single argument: the result
+ *   or rejection reason. Additionally, the notify callback may be called zero or more times to
+ *   provide a progress indication, before the promise is resolved or rejected.
  *
  *   This method *returns a new promise* which is resolved or rejected via the return value of the
- *   `successCallback` or `errorCallback`.
+ *   `successCallback`, `errorCallback`. It also notifies via the return value of the `notifyCallback`
+ *   method. The promise can not be resolved or rejected from the notifyCallback method.
  *
  * - `catch(errorCallback)` – shorthand for `promise.then(null, errorCallback)`
  *
@@ -18940,6 +18990,7 @@ function $RootScopeProvider(){
       this['this'] = this.$root =  this;
       this.$$destroyed = false;
       this.$$asyncQueue = [];
+      this.$$postDigestQueue = [];
       this.$$listeners = {};
       this.$$isolateBindings = {};
     }
@@ -18954,6 +19005,7 @@ function $RootScopeProvider(){
 
 
     Scope.prototype = {
+      constructor: Scope,
       /**
        * @ngdoc function
        * @name ng.$rootScope.Scope#$new
@@ -18988,6 +19040,7 @@ function $RootScopeProvider(){
           child.$root = this.$root;
           // ensure that there is just one async queue per $rootScope and it's children
           child.$$asyncQueue = this.$$asyncQueue;
+          child.$$postDigestQueue = this.$$postDigestQueue;
         } else {
           Child = function() {}; // should be anonymous; This is so that when the minifier munges
             // the name it does not become random set of chars. These will then show up as class
@@ -19315,6 +19368,7 @@ function $RootScopeProvider(){
         var watch, value, last,
             watchers,
             asyncQueue = this.$$asyncQueue,
+            postDigestQueue = this.$$postDigestQueue,
             length,
             dirty, ttl = TTL,
             next, current, target = this,
@@ -19387,6 +19441,14 @@ function $RootScopeProvider(){
         } while (dirty || asyncQueue.length);
 
         clearPhase();
+
+        while(postDigestQueue.length) {
+          try {
+            postDigestQueue.shift()();
+          } catch (e) {
+            $exceptionHandler(e);
+          }
+        }
       },
 
 
@@ -19515,6 +19577,10 @@ function $RootScopeProvider(){
         }
 
         this.$$asyncQueue.push(expr);
+      },
+
+      $$postDigest : function(expr) {
+        this.$$postDigestQueue.push(expr);
       },
 
       /**
@@ -20978,7 +21044,7 @@ function $$UrlUtilsProvider() {
      */
     function resolve(url, parse) {
       var href = url;
-      if (msie) {
+      if (msie <= 11) {
         // Normalize before parse.  Refer Implementation Notes on why this is
         // done in two steps on IE.
         urlParsingNode.setAttribute("href", href);
@@ -22308,7 +22374,8 @@ var htmlAnchorDirective = valueFn({
     </doc:example>
  *
  * @element INPUT
- * @param {expression} ngDisabled Angular expression that will be evaluated.
+ * @param {expression} ngDisabled If the {@link guide/expression expression} is truthy, 
+ *     then special attribute "disabled" will be set on the element
  */
 
 
@@ -22338,7 +22405,8 @@ var htmlAnchorDirective = valueFn({
     </doc:example>
  *
  * @element INPUT
- * @param {expression} ngChecked Angular expression that will be evaluated.
+ * @param {expression} ngChecked If the {@link guide/expression expression} is truthy, 
+ *     then special attribute "checked" will be set on the element
  */
 
 
@@ -22368,7 +22436,8 @@ var htmlAnchorDirective = valueFn({
     </doc:example>
  *
  * @element INPUT
- * @param {string} expression Angular expression that will be evaluated.
+ * @param {expression} ngReadonly If the {@link guide/expression expression} is truthy, 
+ *     then special attribute "readonly" will be set on the element
  */
 
 
@@ -22401,7 +22470,8 @@ var htmlAnchorDirective = valueFn({
     </doc:example>
  *
  * @element OPTION
- * @param {string} expression Angular expression that will be evaluated.
+ * @param {expression} ngSelected If the {@link guide/expression expression} is truthy, 
+ *     then special attribute "selected" will be set on the element
  */
 
 /**
@@ -22433,7 +22503,8 @@ var htmlAnchorDirective = valueFn({
      </doc:example>
  *
  * @element DETAILS
- * @param {string} expression Angular expression that will be evaluated.
+ * @param {expression} ngOpen If the {@link guide/expression expression} is truthy, 
+ *     then special attribute "open" will be set on the element
  */
 
 var ngAttributeAliasDirectives = {};
@@ -24325,8 +24396,8 @@ var ngBindTemplateDirective = ['$interpolate', function($interpolate) {
 var ngBindHtmlDirective = ['$sce', function($sce) {
   return function(scope, element, attr) {
     element.addClass('ng-binding').data('$binding', attr.ngBindHtml);
-    scope.$watch($sce.parseAsHtml(attr.ngBindHtml), function ngBindHtmlWatchAction(value) {
-      element.html(value || '');
+    scope.$watch(attr.ngBindHtml, function ngBindHtmlWatchAction(value) {
+      element.html($sce.getTrustedHtml(value) || '');
     });
   };
 }];
@@ -27792,15 +27863,18 @@ _jQuery.fn.bindings = function(windowJquery, bindExp) {
    * not specified.
    *
    * @param {Object} element Either a wrapped jQuery/jqLite node or a DOMElement
-   * @param {string} eventType Optional event type.
-   * @param {Array.<string>=} keys Optional list of pressed keys
-   *        (valid values: 'alt', 'meta', 'shift', 'ctrl')
-   * @param {number} x Optional x-coordinate for mouse/touch events.
-   * @param {number} y Optional y-coordinate for mouse/touch events.
+   * @param {string} eventType Optional event type
+   * @param {Object=} eventData An optional object which contains additional event data (such as x,y coordinates, keys, etc...) that
+   * are passed into the event when triggered
    */
-  window.browserTrigger = function browserTrigger(element, eventType, keys, x, y) {
+  window.browserTrigger = function browserTrigger(element, eventType, eventData) {
     if (element && !element.nodeName) element = element[0];
     if (!element) return;
+
+    eventData = eventData || {};
+    var keys = eventData.keys;
+    var x = eventData.x;
+    var y = eventData.y;
 
     var inputType = (element.type) ? element.type.toLowerCase() : null,
         nodeName = element.nodeName.toLowerCase();
@@ -27859,8 +27933,48 @@ _jQuery.fn.bindings = function(windowJquery, bindExp) {
       }
       return ret;
     } else {
-      var evnt = document.createEvent('MouseEvents'),
-          originalPreventDefault = evnt.preventDefault,
+      var evnt;
+      if(/transitionend/.test(eventType)) {
+        if(window.WebKitTransitionEvent) {
+          evnt = new WebKitTransitionEvent(eventType, eventData);
+          evnt.initEvent(eventType, false, true);
+        }
+        else {
+          try {
+            evnt = new TransitionEvent(eventType, eventData);
+          }
+          catch(e) {
+            evnt = document.createEvent('TransitionEvent');
+            evnt.initTransitionEvent(eventType, null, null, null, eventData.elapsedTime);
+          }
+        }
+      }
+      else if(/animationend/.test(eventType)) {
+        if(window.WebKitAnimationEvent) {
+          evnt = new WebKitAnimationEvent(eventType, eventData);
+          evnt.initEvent(eventType, false, true);
+        }
+        else {
+          try {
+            evnt = new AnimationEvent(eventType, eventData);
+          }
+          catch(e) {
+            evnt = document.createEvent('AnimationEvent');
+            evnt.initAnimationEvent(eventType, null, null, null, eventData.elapsedTime);
+          }
+        }
+      }
+      else {
+        evnt = document.createEvent('MouseEvents');
+        x = x || 0;
+        y = y || 0;
+        evnt.initMouseEvent(eventType, true, true, window, 0, x, y, x, y, pressed('ctrl'), pressed('alt'),
+            pressed('shift'), pressed('meta'), 0, element);
+      }
+
+      if(!evnt) return;
+
+      var originalPreventDefault = evnt.preventDefault,
           appWindow = element.ownerDocument.defaultView,
           fakeProcessDefault = true,
           finalProcessDefault,
@@ -27872,11 +27986,6 @@ _jQuery.fn.bindings = function(windowJquery, bindExp) {
         fakeProcessDefault = false;
         return originalPreventDefault.apply(evnt, arguments);
       };
-
-      x = x || 0;
-      y = y || 0;
-      evnt.initMouseEvent(eventType, true, true, window, 0, x, y, x, y, pressed('ctrl'), pressed('alt'),
-          pressed('shift'), pressed('meta'), 0, element);
 
       element.dispatchEvent(evnt);
       finalProcessDefault = !(angular['ff-684208-preventDefault'] || !fakeProcessDefault);
