@@ -7,7 +7,7 @@ angular.module('nolla.calendar', [
       restrict: 'A',
       templateUrl: 'views/partials/calendar/index.html',
       scope : {
-        nlCalendar: '='
+        calendar: '=nlCalendar'
       },
       replace: true,
       controller : function ($scope, $q) {
@@ -15,10 +15,31 @@ angular.module('nolla.calendar', [
 
         $scope.title = '';
         $scope.events = [];
+        $scope.activeEvent = undefined;
 
         this.update = function () {
           $scope.$emit('calendar-update-date', $scope.calendar.date);
           self.draw();
+        };
+
+        this.editEvent = function (eventObj) {
+
+        };
+
+        this.newEvent = function (eventObj) {
+
+        };
+
+        this.createEventObjectFromPartial = function (partial) {
+          var obj = angular.extend({
+            start: moment(),
+            end: moment(),
+            client: undefined,
+            calendar: undefined,
+            allday: false,
+            summary: ''
+          }, partial)
+          return obj;
         };
 
         this.draw = function () {
@@ -47,6 +68,9 @@ angular.module('nolla.calendar', [
 
         this.getEvents = function () {
           var find = angular.noop;
+          if (!$scope.calendar.events) {
+            return;
+          }
           if ($scope.calendar.range) {
             find = function (obj) {
               var inStart = $scope.calendar.range.contains(obj.start.dateTime);
@@ -88,7 +112,6 @@ angular.module('nolla.calendar', [
 
       },
       link : function ($scope, element, attrs, controller) {
-        $scope.calendar = $scope.nlCalendar;
         if (!$scope.calendar) {
           $scope.calendar = {
             date : moment(),

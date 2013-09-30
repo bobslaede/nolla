@@ -4,7 +4,11 @@
 angular.module('nolla.calendar')
   .directive('nlMakeDayEvent', function ($timeout, eventsHelpers, $document) {
     return {
-      link: function (scope, element, attrs) {
+      scope: true,
+      require: '^nlCalendar',
+      link: function (scope, element, attrs, calendar) {
+        var date = attrs.nlMakeDayEvent;
+        var format = moment().lang().longDateFormat('L');
         var snap = 10; // minutes
         var MINUTES_IN_DAY = (24 * 60);
         var snapPercentage = (snap / MINUTES_IN_DAY) * 100;
@@ -28,8 +32,8 @@ angular.module('nolla.calendar')
         var startMinute = 0;
         var endMinute = 0;
 
-        var start = moment().startOf('day');
-        var end = moment().startOf('day');
+        var start = moment(date, format).startOf('day');
+        var end = moment(date, format).startOf('day');
 
         var positionEle = function (e) {
           y2 = e.offsetY;
@@ -54,6 +58,14 @@ angular.module('nolla.calendar')
           })
 
           updateGhostWithTime();
+        };
+
+        var createNewEvent = function () {
+          var eventObj = calendar.createEventObjectFromPartial({
+            start: start,
+            end: end
+          });
+          calendar.newEvent(editEvent);
         };
 
         var updateGhostWithTime = function () {
@@ -96,6 +108,7 @@ angular.module('nolla.calendar')
               active = false;
               ele.remove();
               setActive(active);
+              createNewEvent();
             }
           })
           .on('keydown', function (e) {

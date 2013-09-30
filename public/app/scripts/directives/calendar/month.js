@@ -50,9 +50,9 @@ angular.module('nolla.calendar')
 
             week.forEach(function (day) {
               var cls = '';
-              cls += day.dateString == $scope.todayString ? 'today ' : '';
               cls += !day.currentMonth ? 'othermonth ' : '';
               cls += day.isPast ? 'past ': '';
+              cls += day.dateString == $scope.todayString ? 'today ' : '';
 
               html += '<td class="day ' + cls + '">'
                 + '<div class="title">' + day.dayString + '</div>'

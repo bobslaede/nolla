@@ -11,12 +11,8 @@ var meta = require('./meta-schema');
 var schema = new Schema({
   meta: meta,
   summary : { type: String, default: "" },
-  start : {
-    dateTime : { type: Date, default: Date.now() }
-  },
-  end : {
-    dateTime : { type: Date, default: Date.now() }
-  },
+  start : { type: Date, default: Date.now() },
+  end : { type: Date, default: Date.now() },
   calendar : {
     type : Schema.Types.ObjectId,
     ref : 'Calendar'

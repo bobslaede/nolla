@@ -2,15 +2,16 @@
 
 angular.module('nolla.calendar')
   .directive('nlEvent', function ($compile, $rootScope) {
-
     return {
       restrict: 'A',
-      require: ['^nlCalendar'],
-      controller : function ($scope) {
+      require: '^nlCalendar',
+      scope: {
+        event : '=nlEvent'
       },
-      compile: function (element, attrs) {
-        return function ($scope, element, attrs, controllers) {
-        }
+      controller : function ($scope) {
+
+      },
+      compile: function ($scope, element, attrs, calendar) {
       }
     };
 

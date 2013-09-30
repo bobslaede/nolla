@@ -7,11 +7,11 @@ angular.module('nolla.calendar')
       var r = Array.apply(null, { length: to }).map(Number.call, Number);
       return r.slice(from, to);
     }
-    
+
     var zeroPrefix = function (n, a) {
       return ("000000000000" + n).slice(-a);
     }
-    
+
     var hourFormat = function (n) {
       return zeroPrefix(n, 2) + ":00";
     }
@@ -108,7 +108,7 @@ angular.module('nolla.calendar')
           };
 
           var getDayHtml = function (day) {
-            var html = '<div class="day-holder" nl-make-day-event>'
+            var html = '<div class="day-holder" nl-make-day-event="' + day.dateString + '">'
               + createHourDivs(false)
               + getDayEventPlaceholder(day)
               + getTodayHourLine(day)
@@ -162,8 +162,11 @@ angular.module('nolla.calendar')
 
 
           var ele = angular.element(html);
-          var compiled = $compile(ele);
-          element.find('.week-view').html(compiled($scope));
+          //var compiled = $compile(ele);
+          //element.find('.week-view').html(compiled($scope));
+          var parent = element.find('.week-view').html('');
+          parent.append(ele);
+          $compile(ele)($scope);
 
           var scrollTo = element.find('.hour-line')[0] || element.find('[data-hour="' + $scope.startHour + '"]')[0];
           scrollTo && scrollTo.scrollIntoView(true);

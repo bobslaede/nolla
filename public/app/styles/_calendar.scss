@@ -18,8 +18,19 @@
   }
 
   .calendar-list {
-    min-width: 220px;
+    min-width: 300px;
+    max-width: 300px;
     min-height: 120px;
+    @include flex-direction(row);
+
+    .form {
+      @include flex(0, 0, auto);
+      @include flexbox();
+    }
+  }
+
+  .calendar-mini {
+    height: 250px;
   }
 
 }
