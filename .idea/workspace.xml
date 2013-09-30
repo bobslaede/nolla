@@ -1,20 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="342fdae3-dca1-48ea-93cd-e022978dd8f9" name="Default" comment="added new angular, fixed some week view on clients">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/styles/_calendar.scss" afterPath="$PROJECT_DIR$/public/app/styles/_calendar.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/views/calendar.html" afterPath="$PROJECT_DIR$/public/app/views/calendar.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/scripts/controllers/calendar.js" afterPath="$PROJECT_DIR$/public/app/scripts/controllers/calendar.js" />
+    <list default="true" id="342fdae3-dca1-48ea-93cd-e022978dd8f9" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/views/partials/moment-edit.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/scripts/directives/moment-edit.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/scripts/directives/calendar/day-event-maker.js" afterPath="$PROJECT_DIR$/public/app/scripts/directives/calendar/day-event-maker.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/views/partials/calendar/event.html" afterPath="$PROJECT_DIR$/public/app/views/partials/calendar/event.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/event.js" afterPath="$PROJECT_DIR$/models/event.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/scripts/directives/calendar/event.js" afterPath="$PROJECT_DIR$/public/app/scripts/directives/calendar/event.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/index.html" afterPath="$PROJECT_DIR$/public/app/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/views/partials/calendar/index.html" afterPath="$PROJECT_DIR$/public/app/views/partials/calendar/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/scripts/directives/calendar/index.js" afterPath="$PROJECT_DIR$/public/app/scripts/directives/calendar/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/styles/main.css.map" afterPath="$PROJECT_DIR$/public/app/styles/main.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/styles/main.css" afterPath="$PROJECT_DIR$/public/app/styles/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/scripts/directives/calendar/month.js" afterPath="$PROJECT_DIR$/public/app/scripts/directives/calendar/month.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/scripts/directives/calendar/week.js" afterPath="$PROJECT_DIR$/public/app/scripts/directives/calendar/week.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="nolla-server.iws" />
@@ -38,100 +32,91 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="week.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/app/scripts/directives/calendar/week.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="202" column="37" selection-start="6439" selection-end="6439" vertical-scroll-proportion="-26.37037" vertical-offset="2924" max-vertical-offset="4644">
-              <folding>
-                <marker date="1380563244960" expanded="false" signature="3190:3194" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/app/scripts/directives/calendar/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="0" selection-start="698" selection-end="698" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2394">
+            <state line="20" column="51" selection-start="548" selection-end="548" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2664">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="event.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/event.js">
+      <file leaf-file-name="month-event.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/app/scripts/directives/calendar/month-event.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="4" selection-start="407" selection-end="407" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="684">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="756">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="event.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="event.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/app/views/partials/calendar/event.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="7" selection-start="230" selection-end="230" vertical-scroll-proportion="0.094186045" vertical-offset="0" max-vertical-offset="1720">
+            <state line="19" column="14" selection-start="720" selection-end="720" vertical-scroll-proportion="-12.666667" vertical-offset="0" max-vertical-offset="648">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="day-event-maker.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/app/scripts/directives/calendar/day-event-maker.js">
+      <file leaf-file-name="moment-edit.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/app/scripts/directives/moment-edit.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="67" column="39" selection-start="1914" selection-end="1914" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2358">
+            <state line="20" column="29" selection-start="569" selection-end="569" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1170">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="event.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/app/scripts/directives/calendar/event.js">
+      <file leaf-file-name="contenteditable.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/app/scripts/directives/contenteditable.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="7" selection-start="338" selection-end="338" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="414">
+            <state line="3" column="25" selection-start="108" selection-end="108" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="486">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="month.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/app/scripts/directives/calendar/month.js">
+      <file leaf-file-name="journal.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/app/views/journal.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="9" selection-start="859" selection-end="859" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3042">
+            <state line="45" column="126" selection-start="1748" selection-end="1748" vertical-scroll-proportion="-16.0" vertical-offset="378" max-vertical-offset="3420">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="moment-edit.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/app/views/partials/moment-edit.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="0" selection-start="26" selection-end="26" vertical-scroll-proportion="0.010465116" vertical-offset="0" max-vertical-offset="1720">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/app/views/partials/calendar/index.html">
+        <entry file="file://$PROJECT_DIR$/public/app/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="6" selection-start="1619" selection-end="1619" vertical-scroll-proportion="-27.333334" vertical-offset="0" max-vertical-offset="846">
-              <folding>
-                <element signature="tag#div#0;tag#div#0;tag#div#0" expanded="false" />
-                <element signature="tag#button#0;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
-                <element signature="tag#div#1;tag#div#0;tag#div#0" expanded="false" />
-                <element signature="tag#button#0;tag#div#1;tag#div#0;tag#div#0" expanded="false" />
-                <element signature="tag#button#1;tag#div#1;tag#div#0;tag#div#0" expanded="false" />
-                <element signature="tag#div#2;tag#div#0;tag#div#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="week.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/app/views/partials/calendar/week.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="168" selection-start="1761" selection-end="1761" vertical-scroll-proportion="-29.333334" vertical-offset="0" max-vertical-offset="1062">
+            <state line="38" column="59" selection-start="1734" selection-end="1734" vertical-scroll-proportion="-23.333334" vertical-offset="54" max-vertical-offset="2034">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="calendar.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/app/scripts/controllers/calendar.js">
+      <file leaf-file-name="modal.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/app/scripts/directives/modal.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="0" selection-start="938" selection-end="938" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="810">
+            <state line="18" column="5" selection-start="355" selection-end="355" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="432">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="client.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/app/views/client.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="30" selection-start="220" selection-end="220" vertical-scroll-proportion="-2.6666667" vertical-offset="0" max-vertical-offset="5886">
               <folding />
             </state>
           </provider>
@@ -155,22 +140,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/public/app/index.html" />
-        <option value="$PROJECT_DIR$/public/app/styles/calendar/index.scss" />
-        <option value="$PROJECT_DIR$/public/app/styles/calendar/_week.scss" />
         <option value="$PROJECT_DIR$/public/app/scripts/controllers/client.js" />
         <option value="$PROJECT_DIR$/public/app/styles/_client.scss" />
-        <option value="$PROJECT_DIR$/public/app/views/partials/calendar/index.html" />
         <option value="$PROJECT_DIR$/public/app/scripts/controllers/calendar.js" />
         <option value="$PROJECT_DIR$/public/app/styles/_calendar.scss" />
         <option value="$PROJECT_DIR$/public/app/views/calendar.html" />
         <option value="$PROJECT_DIR$/public/app/scripts/directives/calendar/month.js" />
-        <option value="$PROJECT_DIR$/public/app/views/partials/calendar/event.html" />
         <option value="$PROJECT_DIR$/public/app/scripts/directives/calendar/event.js" />
         <option value="$PROJECT_DIR$/models/event.js" />
         <option value="$PROJECT_DIR$/public/app/scripts/directives/calendar/week.js" />
         <option value="$PROJECT_DIR$/public/app/scripts/directives/calendar/day-event-maker.js" />
+        <option value="$PROJECT_DIR$/public/app/views/partials/calendar/index.html" />
         <option value="$PROJECT_DIR$/public/app/scripts/directives/calendar/index.js" />
+        <option value="$PROJECT_DIR$/public/app/index.html" />
+        <option value="$PROJECT_DIR$/public/app/views/partials/calendar/event.html" />
+        <option value="$PROJECT_DIR$/public/app/scripts/directives/moment-edit.js" />
+        <option value="$PROJECT_DIR$/public/app/views/partials/moment-edit.html" />
       </list>
     </option>
   </component>
@@ -352,28 +337,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="styles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nolla-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nolla" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="scripts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -431,46 +394,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="calendar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nolla-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nolla" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nolla-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nolla" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -633,7 +556,11 @@
       <created>1378843640312</created>
       <updated>1378843640312</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="calendar stuff to add events">
+      <created>1380563990041</created>
+      <updated>1380563990041</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -660,6 +587,7 @@
     <frame x="-1" y="-4" width="1202" height="1925" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32996064" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32996064" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294509" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -675,7 +603,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32996064" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24956672" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -696,7 +623,8 @@
     <MESSAGE value="storing state" />
     <MESSAGE value="fixed week view" />
     <MESSAGE value="added new angular, fixed some week view on clients" />
-    <option name="LAST_COMMIT_MESSAGE" value="added new angular, fixed some week view on clients" />
+    <MESSAGE value="calendar stuff to add events" />
+    <option name="LAST_COMMIT_MESSAGE" value="calendar stuff to add events" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -704,109 +632,25 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/app/styles/calendar/_week.scss">
+    <entry file="file://$PROJECT_DIR$/public/app/scripts/directives/calendar/week.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="29" selection-start="1549" selection-end="1549" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
+        <state line="202" column="37" selection-start="6439" selection-end="6439" vertical-scroll-proportion="-26.37037" vertical-offset="2924" max-vertical-offset="4644">
+          <folding>
+            <marker date="1380563244960" expanded="false" signature="-1:-1" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/app/scripts/controllers/client.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="34" selection-start="583" selection-end="583" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/views/client.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="275" column="0" selection-start="8835" selection-end="8835" vertical-scroll-proportion="0.0" vertical-offset="4125" max-vertical-offset="4860">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/styles/_client.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="0" selection-start="652" selection-end="652" vertical-scroll-proportion="-25.333334" vertical-offset="0" max-vertical-offset="882">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/styles/_calendar.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="25" selection-start="494" selection-end="494" vertical-scroll-proportion="-18.0" vertical-offset="0" max-vertical-offset="738">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/views/calendar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="33" selection-start="462" selection-end="462" vertical-scroll-proportion="-10.666667" vertical-offset="0" max-vertical-offset="1044">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/scripts/controllers/calendar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="0" selection-start="938" selection-end="938" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="810">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/scripts/directives/calendar/month.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="9" selection-start="859" selection-end="859" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3042">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/scripts/directives/calendar/event.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="7" selection-start="338" selection-end="338" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="414">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/views/partials/calendar/week.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="168" selection-start="1761" selection-end="1761" vertical-scroll-proportion="-29.333334" vertical-offset="0" max-vertical-offset="1062">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/event.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="4" selection-start="407" selection-end="407" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="684">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/scripts/directives/calendar/week.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="202" column="37" selection-start="6439" selection-end="6439" vertical-scroll-proportion="-26.37037" vertical-offset="2924" max-vertical-offset="4644">
-          <folding>
-            <marker date="1380563244960" expanded="false" signature="3190:3194" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/scripts/directives/calendar/day-event-maker.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="39" selection-start="1914" selection-end="1914" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2358">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/scripts/directives/calendar/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="0" selection-start="698" selection-end="698" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2394">
+        <state line="79" column="11" selection-start="1895" selection-end="1895" vertical-scroll-proportion="0.0" vertical-offset="161" max-vertical-offset="1908">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/app/views/partials/calendar/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="6" selection-start="1619" selection-end="1619" vertical-scroll-proportion="-27.333334" vertical-offset="0" max-vertical-offset="846">
+        <state line="1" column="0" selection-start="33" selection-end="33" vertical-scroll-proportion="-0.6666667" vertical-offset="0" max-vertical-offset="864">
           <folding>
             <element signature="tag#div#0;tag#div#0;tag#div#0" expanded="false" />
             <element signature="tag#button#0;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
@@ -818,9 +662,97 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/scripts/directives/calendar/event.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="7" selection-start="338" selection-end="338" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="414">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/scripts/directives/calendar/day-event-maker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="32" selection-start="1646" selection-end="1646" vertical-scroll-proportion="0.0" vertical-offset="216" max-vertical-offset="2430">
+          <folding>
+            <marker date="1380564131280" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1380564131280" expanded="true" signature="-1:-1" placeholder="{&quot;scope&quot;: true...}" />
+            <marker date="1380564131280" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/components/angular-strap/src/directives/modal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="45" selection-start="1577" selection-end="1577" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1998">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/scripts/directives/modal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="5" selection-start="355" selection-end="355" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="432">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="59" selection-start="1734" selection-end="1734" vertical-scroll-proportion="-23.333334" vertical-offset="54" max-vertical-offset="2034">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/views/journal.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="126" selection-start="1748" selection-end="1748" vertical-scroll-proportion="-16.0" vertical-offset="378" max-vertical-offset="3420">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/scripts/directives/calendar/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="51" selection-start="548" selection-end="548" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2664">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/scripts/directives/calendar/month-event.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1747">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/views/client.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="30" selection-start="220" selection-end="220" vertical-scroll-proportion="-2.6666667" vertical-offset="0" max-vertical-offset="5886">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/app/views/partials/calendar/event.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="7" selection-start="230" selection-end="230" vertical-scroll-proportion="0.094186045" vertical-offset="0" max-vertical-offset="1720">
+        <state line="19" column="14" selection-start="720" selection-end="720" vertical-scroll-proportion="-12.666667" vertical-offset="0" max-vertical-offset="648">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/scripts/directives/moment-edit.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="29" selection-start="569" selection-end="569" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1170">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/scripts/directives/contenteditable.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="25" selection-start="108" selection-end="108" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="486">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/views/partials/moment-edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="26" selection-end="26" vertical-scroll-proportion="0.010465116" vertical-offset="0" max-vertical-offset="1720">
           <folding />
         </state>
       </provider>

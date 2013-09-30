@@ -2,7 +2,7 @@
 
 angular.module('nolla.calendar', [
     '$strap.directives'])
-  .directive('nlCalendar', function () {
+  .directive('nlCalendar', function ($modal, $q) {
     return {
       restrict: 'A',
       templateUrl: 'views/partials/calendar/index.html',
@@ -23,11 +23,26 @@ angular.module('nolla.calendar', [
         };
 
         this.editEvent = function (eventObj) {
-
+          console.log('edit event', eventObj);
         };
 
         this.newEvent = function (eventObj) {
-
+          console.log('new event', eventObj);
+          var scope = $scope.$new();
+          scope.model = {
+            event: eventObj
+          };
+          scope.save = function () {
+            console.log('save');
+          };
+          scope.delete = function () {
+            console.log('delete');
+          };
+          var modal = $modal({
+            template: '/views/partials/calendar/event.html',
+            scope: scope,
+            backdrop: false
+          });
         };
 
         this.createEventObjectFromPartial = function (partial) {

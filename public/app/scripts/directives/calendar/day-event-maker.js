@@ -65,7 +65,7 @@ angular.module('nolla.calendar')
             start: start,
             end: end
           });
-          calendar.newEvent(editEvent);
+          calendar.newEvent(eventObj);
         };
 
         var updateGhostWithTime = function () {
@@ -101,6 +101,11 @@ angular.module('nolla.calendar')
               ele[0].scrollIntoViewIfNeeded(false);
             }
           })
+          .on('mouseup', function (e) {
+            if (ele.active) {
+              createNewEvent();
+            }
+          });
         $($document)
           .on('mouseup', function (e) {
             if (ele.active) {
@@ -108,7 +113,6 @@ angular.module('nolla.calendar')
               active = false;
               ele.remove();
               setActive(active);
-              createNewEvent();
             }
           })
           .on('keydown', function (e) {
