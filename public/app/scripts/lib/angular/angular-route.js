@@ -1,5 +1,5 @@
 /**
- * @license AngularJS v1.2.0-e4415d2
+ * @license AngularJS v1.2.0-448bd14
  * (c) 2010-2012 Google, Inc. http://angularjs.org
  * License: MIT
  */
@@ -394,6 +394,7 @@ function $RouteProvider(){
      * @description
      * Broadcasted if any of the resolve promises are rejected.
      *
+     * @param {Object} angularEvent Synthetic event object
      * @param {Route} current Current route information.
      * @param {Route} previous Previous route information.
      * @param {Route} rejection Rejection of the promise. Usually the error of the failed promise.
@@ -848,7 +849,7 @@ function ngViewFactory(   $route,   $anchorScroll,   $compile,   $controller,   
                   currentScope[current.controllerAs] = controller;
                 }
                 clone.data('$ngControllerController', controller);
-                clone.contents().data('$ngControllerController', controller);
+                clone.children().data('$ngControllerController', controller);
               }
 
               link(currentScope);
