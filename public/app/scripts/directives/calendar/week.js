@@ -3,6 +3,19 @@
 angular.module('nolla.calendar')
   .directive('nlCalendarWeek', function ($timeout, eventsHelpers, $compile) {
 
+    var range = function (from, to) {
+      var r = Array.apply(null, { length: to }).map(Number.call, Number);
+      return r.slice(from, to);
+    }
+    
+    var zeroPrefix = function (n, a) {
+      return ("000000000000" + n).slice(-a);
+    }
+    
+    var hourFormat = function (n) {
+      return zeroPrefix(n, 2) + ":00";
+    }
+
     return {
       restrict: 'A',
       templateUrl: 'views/partials/calendar/week.html',
@@ -21,6 +34,7 @@ angular.module('nolla.calendar')
         $scope.today = undefined;
         $scope.startHour = 8;
 
+        /*
         $scope.hours = [];
         var range = moment().startOf('day').twix(moment().endOf('day'));
         var iter = range.iterate('hours');
@@ -28,6 +42,8 @@ angular.module('nolla.calendar')
         while (h = iter.next()) {
           $scope.hours.push(h.format('HH:mm'));
         }
+        */
+        $scope.hours = range(0, 24).map(hourFormat);
 
         $scope.$on('calendar-draw', function () {
           $scope.update();

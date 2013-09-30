@@ -9,6 +9,7 @@
 
     @include flexbox();
     @include flex(1, 0, auto);
+    position: relative;
 
     .events-placeholder {
       .events {
@@ -28,6 +29,16 @@
     }
 
     .month-view {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      
+      table {
+        width: 100%;
+        height: 100%;
+      }
 
       .day {
 
@@ -55,6 +66,8 @@
 
       .week-number {
         border-right: 1px solid $inputBorder;
+        max-width: $weekNumberWidth;
+        width: $weekNumberWidth;
         .title {
           color: $gray;
         }
