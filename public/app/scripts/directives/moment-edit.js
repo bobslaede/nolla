@@ -8,7 +8,8 @@ angular.module('nolla')
       replace: true,
       require: 'ngModel',
       scope: {
-        moment: '=ngModel'
+        moment: '=ngModel',
+        show: '@momentEdit'
       },
       controller: function momentEditCtrl() {
 
@@ -16,12 +17,11 @@ angular.module('nolla')
       compile: function momentEditCompile() {
         return {
           pre: function momentEditPreLink(scope, element, attrs, ngModel) {
-            console.log(ngModel);
+            console.log(scope.show);
             scope.dateFormat = 'YYYY-MM-DD';
             scope.model = {};
             scope.model.date = scope.moment.format(scope.dateFormat);
             scope.model.time = scope.moment.format('HH:mm');
-            console.log(scope.model.time);
 
             scope.$watch('model.date', function () {
               if (!scope.model.date) {
@@ -34,8 +34,8 @@ angular.module('nolla')
               scope.moment.date(m.date());
               scope.moment.year(m.year());
               scope.moment.month(m.month());
-              console.log(scope.moment.format('LLLL'));
               ngModel.$setViewValue(scope.moment);
+              console.log(scope.moment.format());
             });
 
             scope.$watch('model.time', function () {
@@ -49,10 +49,10 @@ angular.module('nolla')
               scope.moment.hour(m.hour());
               scope.moment.minute(m.minute());
               ngModel.$setViewValue(scope.moment);
+              console.log(scope.moment.format());
             })
           },
           post: function momentEditPostLink(scope, element, attrs) {
-            element.attr('tabindex', 0);
           }
         }
       }

@@ -1,4 +1,4 @@
-<div ng-form>
+<div ng-form ng-controller="EventCtrl as event">
   <div class="modal-header">
     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
     <h3 id="myModalLabel">Rediger aftale</h3>
@@ -7,24 +7,31 @@
     <div class="form form-horizontal">
 
       <div class="control-group">
+        <label class="control-label" for="event.startDate">Dato:</label>
+        <div class="controls">
+          <input id="event.startDate" moment-edit="date" ng-model="model.event.start">
+        </div>
+      </div>
+
+      <div class="control-group">
         <label class="control-label" for="event.start">Start:</label>
         <div class="controls">
-          <input id="event.start" moment-edit ng-model="model.event.start">
+          <input id="event.start" moment-edit="time" ng-model="model.event.start">
         </div>
       </div>
 
       <div class="control-group">
         <label class="control-label" for="event.end">Slut:</label>
         <div class="controls">
-          <input id="event.end" moment-edit ng-model="model.event.end">
+          <input id="event.end" moment-edit="time" ng-model="model.event.end">
         </div>
       </div>
 
     </div>
   </div>
   <div class="modal-footer">
-    <button class="btn btn-primary" data-dismiss="modal" aria-hidden="true" ng-click="save()">Gem</button>
+    <button class="btn btn-primary" data-dismiss="modal" aria-hidden="true" ng-click="event.save()">Gem</button>
     <button class="btn" data-dismiss="modal" aria-hidden="true">Luk</button>
-    <button class="btn btn-danger" data-dismiss="modal" ng-click="delete()" ng-show="model.event.id">Slet aftale</button>
+    <button class="btn btn-danger" data-dismiss="modal" ng-click="event.delete()" ng-show="model.event.id">Slet aftale</button>
   </div>
 </div>

@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('nolla.calendar')
-  .directive('nlCalendarWeek', function ($timeout, eventsHelpers, $compile) {
+  .directive('nlCalendarWeek', function ($timeout, eventsHelpers, $compile, calendarEventService) {
 
     var range = function (from, to) {
       var r = Array.apply(null, { length: to }).map(Number.call, Number);
@@ -225,8 +225,8 @@ angular.module('nolla.calendar')
           var minInDay = 60 * 24;
 
           _.each($scope.events, function (origEvent) {
-            var start = moment(origEvent.start.dateTime);
-            var end = moment(origEvent.end.dateTime);
+            var start = moment(origEvent.start);
+            var end = moment(origEvent.end);
             var event = {};
             event.original = origEvent;
             event.pos = {};

@@ -1,7 +1,6 @@
 'use strict';
 
-angular.module('nolla.calendar', [
-    '$strap.directives'])
+angular.module('nolla.calendar')
   .directive('nlCalendar', function ($modal, $q) {
     return {
       restrict: 'A',
@@ -20,41 +19,6 @@ angular.module('nolla.calendar', [
         this.update = function () {
           $scope.$emit('calendar-update-date', $scope.calendar.date);
           self.draw();
-        };
-
-        this.editEvent = function (eventObj) {
-          console.log('edit event', eventObj);
-        };
-
-        this.newEvent = function (eventObj) {
-          console.log('new event', eventObj);
-          var scope = $scope.$new();
-          scope.model = {
-            event: eventObj
-          };
-          scope.save = function () {
-            console.log('save');
-          };
-          scope.delete = function () {
-            console.log('delete');
-          };
-          var modal = $modal({
-            template: '/views/partials/calendar/event.html',
-            scope: scope,
-            backdrop: false
-          });
-        };
-
-        this.createEventObjectFromPartial = function (partial) {
-          var obj = angular.extend({
-            start: moment(),
-            end: moment(),
-            client: undefined,
-            calendar: undefined,
-            allday: false,
-            summary: ''
-          }, partial)
-          return obj;
         };
 
         this.draw = function () {
@@ -81,6 +45,10 @@ angular.module('nolla.calendar', [
           }
         };
 
+        this.getEventsSync = function () {
+          return $scope.calendar.events;
+        };
+
         this.getEvents = function () {
           var find = angular.noop;
           if (!$scope.calendar.events) {
@@ -94,7 +62,7 @@ angular.module('nolla.calendar', [
             };
           }
           var events = _.filter($scope.calendar.events.list, find);
-          $scope.events = events;
+          return $scope.events = events;
         };
 
         $scope.$watch('calendar.events.list.length', function () {

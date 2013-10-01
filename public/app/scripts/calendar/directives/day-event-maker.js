@@ -2,7 +2,7 @@
 
 
 angular.module('nolla.calendar')
-  .directive('nlMakeDayEvent', function ($timeout, eventsHelpers, $document) {
+  .directive('nlMakeDayEvent', function ($timeout, eventsHelpers, $document, calendarEventService) {
     return {
       scope: true,
       require: '^nlCalendar',
@@ -61,11 +61,11 @@ angular.module('nolla.calendar')
         };
 
         var createNewEvent = function () {
-          var eventObj = calendar.createEventObjectFromPartial({
+          var eventObj = calendarEventService.createEventObjectFromPartial({
             start: start,
             end: end
           });
-          calendar.newEvent(eventObj);
+          calendarEventService.newEvent(eventObj, calendar.getEventsSync());
         };
 
         var updateGhostWithTime = function () {

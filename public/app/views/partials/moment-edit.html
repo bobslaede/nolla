@@ -1,4 +1,14 @@
 <div class="moment-edit">
-  <input type="date" ng-model="model.date">
-  <input type="time" ng-model="model.time">
+  <div class="input-append" ng-hide="show == 'time'">
+    <input type="date" ng-model="model.date">
+    <span class="add-on">
+      <i class="icon-calendar"></i>
+    </span>
+  </div>
+  <div class="input-append" ng-hide="show == 'date'">
+    <input type="time" ng-model="model.time">
+    <span class="add-on">
+      <i class="icon-time"></i>
+    </span>
+  </div>
 </div>
